@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://qrbuild.app
+
+# Sitemaps
+Sitemap: https://qrbuild.app/sitemap.xml

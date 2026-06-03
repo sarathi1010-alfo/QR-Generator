@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "instagram",
+    "name": "Instagram",
+    "description": "Create a QR code for your Instagram profile, post, or reel. Make it easy for people to follow you in the physical world.",
+    "color": "#E1306C"
+  },
+  {
+    "slug": "whatsapp",
+    "name": "WhatsApp",
+    "description": "Generate a QR code that starts a WhatsApp chat with you instantly. Perfect for customer support or personal networking.",
+    "color": "#25D366"
+  },
+  {
+    "slug": "youtube",
+    "name": "YouTube",
+    "description": "Link directly to your YouTube channel or a specific video. Increase your views and subscribers with ease.",
+    "color": "#FF0000"
+  },
+  {
+    "slug": "linkedin",
+    "name": "LinkedIn",
+    "description": "Add a QR code to your resume or presentation that links to your LinkedIn profile. Networking made simple.",
+    "color": "#0077B5"
+  }
+]

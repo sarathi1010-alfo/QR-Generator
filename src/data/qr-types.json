@@ -1,0 +1,38 @@
+[
+  {
+    "id": "url",
+    "label": "URL",
+    "icon": "Link",
+    "placeholder": "https://example.com"
+  },
+  {
+    "id": "text",
+    "label": "Text",
+    "icon": "Type",
+    "placeholder": "Enter your text here"
+  },
+  {
+    "id": "wifi",
+    "label": "WiFi",
+    "icon": "Wifi",
+    "placeholder": ""
+  },
+  {
+    "id": "email",
+    "label": "Email",
+    "icon": "Mail",
+    "placeholder": "hello@example.com"
+  },
+  {
+    "id": "phone",
+    "label": "Phone",
+    "icon": "Phone",
+    "placeholder": "+1 234 567 890"
+  },
+  {
+    "id": "vcard",
+    "label": "VCard",
+    "icon": "User",
+    "placeholder": ""
+  }
+]

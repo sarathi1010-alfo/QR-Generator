@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 26, 26, 46;
+  --background-rgb: 245, 243, 238;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-cta text-white px-6 py-3 rounded-lg font-bold transition-all hover:scale-[1.02] active:scale-[0.98] shadow-lg hover:shadow-xl disabled:opacity-50 disabled:hover:scale-100;
+  }
+
+  .btn-secondary {
+    @apply bg-surface text-accent border border-border px-6 py-3 rounded-lg font-bold transition-all hover:bg-bg active:scale-[0.98] disabled:opacity-50;
+  }
+
+  .card {
+    @apply bg-surface border border-border rounded-xl shadow-sm overflow-hidden;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 rounded-lg border border-border bg-surface focus:outline-none focus:ring-2 focus:ring-cta/20 focus:border-cta transition-all;
+  }
+
+  .label {
+    @apply block text-sm font-bold mb-2 text-accent;
+  }
+}
+
+/* Custom transitions */
+.transition-qr {
+  transition: all 150ms ease-in-out;
+}
+
+/* Dot grid background */
+.dot-grid {
+  background-image: radial-gradient(#E0DDD8 1px, transparent 1px);
+  background-size: 24px 24px;
+}

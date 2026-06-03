@@ -1,0 +1,54 @@
+[
+  {
+    "slug": "restaurants",
+    "title": "Restaurants",
+    "headline": "Digital Menus for Restaurants",
+    "description": "Improve your dining experience and reduce printing costs with scannable QR code menus. Easy for customers, hygienic, and instantly updatable.",
+    "primaryUse": "url",
+    "features": [
+      "Contactless ordering",
+      "Always up-to-date menus",
+      "Professional table tents",
+      "Social media integration"
+    ]
+  },
+  {
+    "slug": "gyms",
+    "title": "Gyms & Studios",
+    "headline": "QR Codes for Gyms and Fitness Studios",
+    "description": "Streamline member check-ins, link to workout videos, or provide instant access to class schedules with durable QR codes.",
+    "primaryUse": "url",
+    "features": [
+      "Member check-in",
+      "Exercise tutorials",
+      "Class schedules",
+      "Special offers"
+    ]
+  },
+  {
+    "slug": "events",
+    "title": "Events & Weddings",
+    "headline": "QR Codes for Your Special Events",
+    "description": "From digital invitations to photo sharing, QR codes make your event more interactive and organized.",
+    "primaryUse": "url",
+    "features": [
+      "Digital RSVPs",
+      "Photo sharing folders",
+      "Event agendas",
+      "Venue directions"
+    ]
+  },
+  {
+    "slug": "business-cards",
+    "title": "Business Cards",
+    "headline": "Smart QR Business Cards",
+    "description": "Never run out of business cards again. A VCard QR code lets contacts save your details directly to their phone with one scan.",
+    "primaryUse": "vcard",
+    "features": [
+      "One-tap save to contacts",
+      "Professional networking",
+      "Environmentally friendly",
+      "Always accurate info"
+    ]
+  }
+]
