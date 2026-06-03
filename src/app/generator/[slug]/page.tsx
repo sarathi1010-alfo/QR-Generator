@@ -9,7 +9,7 @@ import { generateFAQSchema, generateBreadcrumbSchema, generateSoftwareAppSchema 
 import Script from "next/script";
 
 interface Props {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
 export async function generateStaticParams() {
@@ -19,7 +19,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const config = getSEOConfigBySlug(params.slug);
+  const { slug } = await params;
+  const config = getSEOConfigBySlug(slug);
   if (!config) return {};
 
   return {
@@ -37,8 +38,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function GeneratorPage({ params }: Props) {
-  const config = getSEOConfigBySlug(params.slug);
+export default async function GeneratorPage({ params }: Props) {
+  const { slug } = await params;
+  const config = getSEOConfigBySlug(slug);
 
   if (!config) {
     notFound();

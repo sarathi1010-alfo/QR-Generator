@@ -7,7 +7,7 @@ import { generateQRCodeToCanvas } from "@/lib/qr-generator";
 export const useQRGenerator = (initialText: string, initialOptions: QROptions) => {
   const [text, setText] = useState(initialText);
   const [options, setOptions] = useState<QROptions>(initialOptions);
-  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
   const updateQR = useCallback(async () => {
     if (canvasRef.current && text) {
