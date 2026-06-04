@@ -41,6 +41,20 @@ export default function RootLayout({
       <head>
         <Script
           async
+          src={`https://www.googletagmanager.com/gtag/js?id=G-WFZWYNSSF3`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-WFZWYNSSF3');
+          `}
+        </Script>
+        <Script
+          async
           src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_ADSENSE_CLIENT}`}
           crossOrigin="anonymous"
           strategy="lazyOnload"
