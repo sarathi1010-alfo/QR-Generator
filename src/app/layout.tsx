@@ -38,17 +38,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <Script
-          async
-          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_ADSENSE_CLIENT}`}
-          crossOrigin="anonymous"
-          strategy="lazyOnload"
-        />
-      </head>
       <body
         className={`${syne.variable} ${dmSans.variable} ${jetbrainsMono.variable} font-sans bg-bg text-accent antialiased`}
       >
+        {process.env.NEXT_PUBLIC_ADSENSE_CLIENT && (
+          <Script
+            async
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_ADSENSE_CLIENT}`}
+            crossOrigin="anonymous"
+            strategy="afterInteractive"
+          />
+        )}
         <div className="flex flex-col min-h-screen">
           <Navbar />
           <main className="flex-grow">{children}</main>
