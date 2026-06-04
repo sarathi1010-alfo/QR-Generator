@@ -26,6 +26,9 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "QRBuild - Free QR Code Generator",
   description: "Generate QR codes for URLs, WiFi, text, and more. Free, instant, no sign-up. Download as PNG or SVG.",
+  verification: {
+    google: "Yd94cBgBDh-ApjaS4Xfym1S2i2fNXeDpkGNpyfVZoCo",
+  },
 };
 
 export default function RootLayout({
