@@ -22,6 +22,8 @@ export async function generateStaticParams() {
   return params;
 }
 
+import { SITE_URL } from "@/lib/seo-config";
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug, competitor } = await params;
   const config = getSEOConfigBySlug(slug);
@@ -33,7 +35,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `QRBuild vs ${comp.name} for ${config.title} QR Codes`,
     description: `Compare QRBuild and ${comp.name} for creating ${config.title} QR codes. Find out why QRBuild is the best free, instant alternative.`,
     alternates: {
-      canonical: `https://qrbuild.app/generator/${config.slug}/vs/${comp.slug}`,
+      canonical: `${SITE_URL}/generator/${config.slug}/vs/${comp.slug}`,
     },
   };
 }
