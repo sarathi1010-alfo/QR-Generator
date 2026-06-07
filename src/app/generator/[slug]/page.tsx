@@ -1,4 +1,4 @@
-import { allSEOConfigs, getSEOConfigBySlug } from "@/lib/seo-config";
+import { allSEOConfigs, getSEOConfigBySlug, SITE_URL } from "@/lib/seo-config";
 import { notFound } from "next/navigation";
 import QRGeneratorRoot from "@/components/QRGenerator/QRGeneratorRoot";
 import AdUnit from "@/components/layout/AdUnit";
@@ -28,13 +28,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${config.title} QR Code Generator - Free & Instant | QRBuild`,
     description: config.description,
     alternates: {
-      canonical: `https://qrbuild.app/generator/${config.slug}`,
+      canonical: `${SITE_URL}/generator/${config.slug}`,
     },
     openGraph: {
       title: `${config.title} QR Code Generator`,
       description: config.description,
       type: "website",
-      url: `https://qrbuild.app/generator/${config.slug}`,
+      url: `${SITE_URL}/generator/${config.slug}`,
     }
   };
 }
@@ -49,8 +49,8 @@ export default async function GeneratorPage({ params }: Props) {
 
   const faqSchema = generateFAQSchema(config.faqs);
   const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: "Home", item: "https://qrbuild.app" },
-    { name: config.title, item: `https://qrbuild.app/generator/${config.slug}` },
+    { name: "Home", item: SITE_URL },
+    { name: config.title, item: `${SITE_URL}/generator/${config.slug}` },
   ]);
   const appSchema = generateSoftwareAppSchema();
 

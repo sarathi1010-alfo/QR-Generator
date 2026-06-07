@@ -1,4 +1,4 @@
-import { allSEOConfigs, getSEOConfigBySlug, competitors, getCompetitorBySlug } from "@/lib/seo-config";
+import { allSEOConfigs, getSEOConfigBySlug, competitors, getCompetitorBySlug, SITE_URL } from "@/lib/seo-config";
 import { notFound } from "next/navigation";
 import QRGeneratorRoot from "@/components/QRGenerator/QRGeneratorRoot";
 import AdUnit from "@/components/layout/AdUnit";
@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `QRBuild vs ${comp.name} for ${config.title} QR Codes`,
     description: `Compare QRBuild and ${comp.name} for creating ${config.title} QR codes. Find out why QRBuild is the best free, instant alternative.`,
     alternates: {
-      canonical: `https://qrbuild.app/generator/${config.slug}/vs/${comp.slug}`,
+      canonical: `${SITE_URL}/generator/${config.slug}/vs/${comp.slug}`,
     },
   };
 }

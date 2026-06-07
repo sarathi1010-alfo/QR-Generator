@@ -1,3 +1,5 @@
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://qr.alfo.online';
+
 export interface SEOPageConfig {
   slug: string;
   title: string;

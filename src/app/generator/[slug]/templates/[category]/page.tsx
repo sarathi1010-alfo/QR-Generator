@@ -1,4 +1,4 @@
-import { allSEOConfigs, getSEOConfigBySlug, templateCategories, getTemplateCategoryBySlug } from "@/lib/seo-config";
+import { allSEOConfigs, getSEOConfigBySlug, templateCategories, getTemplateCategoryBySlug, SITE_URL } from "@/lib/seo-config";
 import { notFound } from "next/navigation";
 import QRGeneratorRoot from "@/components/QRGenerator/QRGeneratorRoot";
 import AdUnit from "@/components/layout/AdUnit";
@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `Free ${cat.name} Templates for ${config.title} QR Codes | QRBuild`,
     description: `Browse our collection of free ${cat.name.toLowerCase()} templates using ${config.title} QR codes. Generate, customize, and download instantly.`,
     alternates: {
-      canonical: `https://qrbuild.app/generator/${config.slug}/templates/${cat.slug}`,
+      canonical: `${SITE_URL}/generator/${config.slug}/templates/${cat.slug}`,
     },
   };
 }
