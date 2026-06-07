@@ -48,6 +48,9 @@ export const metadata: Metadata = {
     description: "Generate QR codes for URLs, WiFi, text, and more. Free, instant, no sign-up. Download as PNG or SVG.",
     images: ["https://qrbuild.app/og-image.jpg"],
   },
+  alternates: {
+    canonical: "https://qrbuild.app",
+  },
 
   verification: {
     google: "Y94cBgBDh-ApjaS4Xfym1S2i2fNXeDpkGNpyfVZoCo",
@@ -63,9 +66,48 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "QRBuild",
+    url: "https://qrbuild.app",
+    description: "Generate QR codes for URLs, WiFi, text, and more. Free, instant, no sign-up. Download as PNG or SVG.",
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: "https://qrbuild.app/generator/{search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  };
+
+  const softwareAppSchema = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: "QRBuild",
+    operatingSystem: "All",
+    applicationCategory: "MultimediaApplication",
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "USD"
+    }
+  };
+
   return (
     <html lang="en">
       <head>
+        <Script
+          id="website-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
+        <Script
+          id="software-app-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareAppSchema) }}
+        />
         <Script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=G-WFZWYNSSF3`}

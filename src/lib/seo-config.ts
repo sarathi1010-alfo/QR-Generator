@@ -273,3 +273,23 @@ export const allSEOConfigs = [...coreUseCases, ...businessUseCases, ...platformU
 export function getSEOConfigBySlug(slug: string) {
   return allSEOConfigs.find(c => c.slug === slug);
 }
+
+export const competitors = [
+  { slug: "canva", name: "Canva" },
+  { slug: "qrcode-monkey", name: "QRCode Monkey" },
+  { slug: "qr-code-generator-pro", name: "QR Code Generator Pro" },
+];
+
+export function getCompetitorBySlug(slug: string) {
+  return competitors.find(c => c.slug === slug);
+}
+
+export const templateCategories = [
+  { slug: "marketing", name: "Marketing" },
+  { slug: "events", name: "Events" },
+  { slug: "business", name: "Business" },
+];
+
+export function getTemplateCategoryBySlug(slug: string) {
+  return templateCategories.find(c => c.slug === slug);
+}
