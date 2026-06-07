@@ -21,6 +21,8 @@ export async function generateStaticParams() {
   return params;
 }
 
+import { SITE_URL } from "@/lib/seo-config";
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug, category } = await params;
   const config = getSEOConfigBySlug(slug);
@@ -32,7 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `Free ${cat.name} Templates for ${config.title} QR Codes | QRBuild`,
     description: `Browse our collection of free ${cat.name.toLowerCase()} templates using ${config.title} QR codes. Generate, customize, and download instantly.`,
     alternates: {
-      canonical: `https://qrbuild.app/generator/${config.slug}/templates/${cat.slug}`,
+      canonical: `${SITE_URL}/generator/${config.slug}/templates/${cat.slug}`,
     },
   };
 }

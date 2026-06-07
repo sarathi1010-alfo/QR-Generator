@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Script from "next/script";
+import { SITE_URL } from "@/lib/seo-config";
 
 const syne = Syne({
   subsets: ["latin"],
@@ -30,12 +31,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: "QRBuild - Free QR Code Generator",
     description: "Generate QR codes for URLs, WiFi, text, and more. Free, instant, no sign-up. Download as PNG or SVG.",
-    url: "https://qrbuild.app",
+    url: SITE_URL,
     siteName: "QRBuild",
     type: "website",
     images: [
       {
-        url: "https://qrbuild.app/og-image.jpg",
+        url: `${SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
         alt: "QRBuild - Free QR Code Generator",
@@ -46,10 +47,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "QRBuild - Free QR Code Generator",
     description: "Generate QR codes for URLs, WiFi, text, and more. Free, instant, no sign-up. Download as PNG or SVG.",
-    images: ["https://qrbuild.app/og-image.jpg"],
+    images: [`${SITE_URL}/og-image.jpg`],
   },
   alternates: {
-    canonical: "https://qrbuild.app",
+    canonical: SITE_URL,
   },
 
   verification: {
@@ -70,13 +71,13 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "QRBuild",
-    url: "https://qrbuild.app",
+    url: SITE_URL,
     description: "Generate QR codes for URLs, WiFi, text, and more. Free, instant, no sign-up. Download as PNG or SVG.",
     potentialAction: {
       "@type": "SearchAction",
       target: {
         "@type": "EntryPoint",
-        urlTemplate: "https://qrbuild.app/generator/{search_term_string}"
+        urlTemplate: `${SITE_URL}/generator/{search_term_string}`
       },
       "query-input": "required name=search_term_string"
     }
