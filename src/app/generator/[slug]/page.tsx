@@ -2,6 +2,7 @@ import { allSEOConfigs, getSEOConfigBySlug } from "@/lib/seo-config";
 import { notFound } from "next/navigation";
 import QRGeneratorRoot from "@/components/QRGenerator/QRGeneratorRoot";
 import AdUnit from "@/components/layout/AdUnit";
+import RelatedTools from "@/components/layout/RelatedTools";
 import { CheckCircle2, ArrowLeft } from "lucide-react";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -146,6 +147,8 @@ export default async function GeneratorPage({ params }: Props) {
 
         <AdUnit slot={`gen-${config.slug}-bottom`} />
       </div>
+
+      <RelatedTools />
     </div>
   );
 }

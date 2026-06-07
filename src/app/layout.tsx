@@ -27,6 +27,27 @@ export const metadata: Metadata = {
   title: "QRBuild - Free QR Code Generator",
   description:
     "Generate QR codes for URLs, WiFi, text, and more. Free, instant, no sign-up. Download as PNG or SVG.",
+  openGraph: {
+    title: "QRBuild - Free QR Code Generator",
+    description: "Generate QR codes for URLs, WiFi, text, and more. Free, instant, no sign-up. Download as PNG or SVG.",
+    url: "https://qrbuild.app",
+    siteName: "QRBuild",
+    type: "website",
+    images: [
+      {
+        url: "https://qrbuild.app/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "QRBuild - Free QR Code Generator",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "QRBuild - Free QR Code Generator",
+    description: "Generate QR codes for URLs, WiFi, text, and more. Free, instant, no sign-up. Download as PNG or SVG.",
+    images: ["https://qrbuild.app/og-image.jpg"],
+  },
 
   verification: {
     google: "Y94cBgBDh-ApjaS4Xfym1S2i2fNXeDpkGNpyfVZoCo",

@@ -4,6 +4,7 @@ import QRGeneratorRoot from "@/components/QRGenerator/QRGeneratorRoot";
 import { Star, Zap, Shield, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import AdUnit from "@/components/layout/AdUnit";
+import RelatedTools from "@/components/layout/RelatedTools";
 import { motion } from "framer-motion";
 import { businessUseCases, platformUseCases, coreUseCases, formatUseCases } from "@/lib/seo-config";
 
@@ -106,6 +107,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Internal Traffic Engine */}
+      <RelatedTools />
     </div>
   );
 }
