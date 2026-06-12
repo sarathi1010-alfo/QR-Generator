@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next';
-import { SITE_URL, allSEOConfigs } from '@/lib/seo-config';
+import { SITE_URL, allSEOConfigs, competitors, templateCategories } from '@/lib/seo-config';
 import { getBlogPosts } from '@/lib/blog';
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -22,12 +22,37 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   // Generator routes
-  const generatorRoutes = allSEOConfigs.map((config) => ({
-    url: `${SITE_URL}/generator/${config.slug}`,
-    lastModified,
-    changeFrequency: 'daily' as const,
-    priority: 0.9,
-  }));
+  const generatorRoutes: MetadataRoute.Sitemap = [];
+
+  for (const config of allSEOConfigs) {
+    // Main generator route
+    generatorRoutes.push({
+      url: `${SITE_URL}/generator/${config.slug}`,
+      lastModified,
+      changeFrequency: 'daily' as const,
+      priority: 0.9,
+    });
+
+    // Competitor vs routes
+    for (const comp of competitors) {
+      generatorRoutes.push({
+        url: `${SITE_URL}/generator/${config.slug}/vs/${comp.slug}`,
+        lastModified,
+        changeFrequency: 'weekly' as const,
+        priority: 0.8,
+      });
+    }
+
+    // Template category routes
+    for (const cat of templateCategories) {
+      generatorRoutes.push({
+        url: `${SITE_URL}/generator/${config.slug}/templates/${cat.slug}`,
+        lastModified,
+        changeFrequency: 'weekly' as const,
+        priority: 0.8,
+      });
+    }
+  }
 
   // Blog routes
   const blogPosts = getBlogPosts();

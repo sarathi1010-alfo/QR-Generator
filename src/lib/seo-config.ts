@@ -1,4 +1,14 @@
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://qrbuild.app";
+let baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://qrbuild.app";
+if (!baseUrl.startsWith("http")) {
+  baseUrl = `https://${baseUrl}`;
+}
+if (baseUrl.startsWith("http://") && !baseUrl.includes("localhost")) {
+  baseUrl = baseUrl.replace("http://", "https://");
+}
+if (baseUrl.endsWith("/")) {
+  baseUrl = baseUrl.slice(0, -1);
+}
+export const SITE_URL = baseUrl;
 
 export interface SEOPageConfig {
   slug: string;

@@ -1,3 +1,13 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Terms of Service | QRBuild",
+  description: "Terms of service for QRBuild. Learn about the rules and guidelines for using our QR code generator.",
+  alternates: {
+    canonical: "/terms-of-service",
+  },
+};
+
 export default function TermsPage() {
   return (
     <div className="py-20 max-w-4xl mx-auto px-4">
