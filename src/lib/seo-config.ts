@@ -1,4 +1,4 @@
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://qrbuild.app";
+export const SITE_URL = process.env.SITE_URL || process.env.NEXT_PUBLIC_SITE_URL || "https://qrbuild.app";
 
 export interface SEOPageConfig {
   slug: string;
