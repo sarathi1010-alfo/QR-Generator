@@ -1,3 +1,5 @@
+fix-sitemap-site-url-436246357213907439
+export const SITE_URL = process.env.SITE_URL || process.env.NEXT_PUBLIC_SITE_URL || "https://qrbuild.app";
 let baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://qrbuild.app";
 if (!baseUrl.startsWith("http")) {
   baseUrl = `https://${baseUrl}`;
@@ -9,6 +11,7 @@ if (baseUrl.endsWith("/")) {
   baseUrl = baseUrl.slice(0, -1);
 }
 export const SITE_URL = baseUrl;
+ feature/qr-generator-production-ready-3847120602456323442
 
 export interface SEOPageConfig {
   slug: string;
