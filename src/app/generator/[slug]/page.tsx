@@ -2,6 +2,7 @@ import { allSEOConfigs, getSEOConfigBySlug } from "@/lib/seo-config";
 import { notFound } from "next/navigation";
 import QRGeneratorRoot from "@/components/QRGenerator/QRGeneratorRoot";
 import AdUnit from "@/components/layout/AdUnit";
+import RelatedTools from "@/components/layout/RelatedTools";
 import { CheckCircle2, ArrowLeft } from "lucide-react";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -9,7 +10,7 @@ import { generateFAQSchema, generateBreadcrumbSchema, generateSoftwareAppSchema 
 import Script from "next/script";
 
 interface Props {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
 export async function generateStaticParams() {
@@ -18,27 +19,31 @@ export async function generateStaticParams() {
   }));
 }
 
+import { SITE_URL } from "@/lib/seo-config";
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const config = getSEOConfigBySlug(params.slug);
+  const { slug } = await params;
+  const config = getSEOConfigBySlug(slug);
   if (!config) return {};
 
   return {
     title: `${config.title} QR Code Generator - Free & Instant | QRBuild`,
     description: config.description,
     alternates: {
-      canonical: `https://qrbuild.app/generator/${config.slug}`,
+      canonical: `${SITE_URL}/generator/${config.slug}`,
     },
     openGraph: {
       title: `${config.title} QR Code Generator`,
       description: config.description,
       type: "website",
-      url: `https://qrbuild.app/generator/${config.slug}`,
+      url: `${SITE_URL}/generator/${config.slug}`,
     }
   };
 }
 
-export default function GeneratorPage({ params }: Props) {
-  const config = getSEOConfigBySlug(params.slug);
+export default async function GeneratorPage({ params }: Props) {
+  const { slug } = await params;
+  const config = getSEOConfigBySlug(slug);
 
   if (!config) {
     notFound();
@@ -46,8 +51,8 @@ export default function GeneratorPage({ params }: Props) {
 
   const faqSchema = generateFAQSchema(config.faqs);
   const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: "Home", item: "https://qrbuild.app" },
-    { name: config.title, item: `https://qrbuild.app/generator/${config.slug}` },
+    { name: "Home", item: SITE_URL },
+    { name: config.title, item: `${SITE_URL}/generator/${config.slug}` },
   ]);
   const appSchema = generateSoftwareAppSchema();
 
@@ -144,6 +149,8 @@ export default function GeneratorPage({ params }: Props) {
 
         <AdUnit slot={`gen-${config.slug}-bottom`} />
       </div>
+
+      <RelatedTools />
     </div>
   );
 }

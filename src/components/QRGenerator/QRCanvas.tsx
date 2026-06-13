@@ -4,7 +4,7 @@ import { useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 
 interface QRCanvasProps {
-  canvasRef: React.RefObject<HTMLCanvasElement>;
+  canvasRef: React.RefObject<HTMLCanvasElement | null>;
   size: number;
 }
 

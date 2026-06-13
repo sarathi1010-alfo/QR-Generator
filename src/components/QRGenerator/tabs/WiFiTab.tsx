@@ -10,7 +10,7 @@ const wifiSchema = z.object({
   ssid: z.string().min(1, "SSID is required"),
   password: z.string().optional(),
   security: z.enum(["WPA", "WEP", "nopass"]),
-  hidden: z.boolean().default(false),
+  hidden: z.boolean(),
 });
 
 type WifiValues = z.infer<typeof wifiSchema>;

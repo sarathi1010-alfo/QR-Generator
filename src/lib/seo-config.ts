@@ -1,3 +1,18 @@
+fix-sitemap-site-url-436246357213907439
+export const SITE_URL = process.env.SITE_URL || process.env.NEXT_PUBLIC_SITE_URL || "https://qrbuild.app";
+let baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://qrbuild.app";
+if (!baseUrl.startsWith("http")) {
+  baseUrl = `https://${baseUrl}`;
+}
+if (baseUrl.startsWith("http://") && !baseUrl.includes("localhost")) {
+  baseUrl = baseUrl.replace("http://", "https://");
+}
+if (baseUrl.endsWith("/")) {
+  baseUrl = baseUrl.slice(0, -1);
+}
+export const SITE_URL = baseUrl;
+ feature/qr-generator-production-ready-3847120602456323442
+
 export interface SEOPageConfig {
   slug: string;
   title: string;
@@ -272,4 +287,24 @@ export const allSEOConfigs = [...coreUseCases, ...businessUseCases, ...platformU
 
 export function getSEOConfigBySlug(slug: string) {
   return allSEOConfigs.find(c => c.slug === slug);
+}
+
+export const competitors = [
+  { slug: "canva", name: "Canva" },
+  { slug: "qrcode-monkey", name: "QRCode Monkey" },
+  { slug: "qr-code-generator-pro", name: "QR Code Generator Pro" },
+];
+
+export function getCompetitorBySlug(slug: string) {
+  return competitors.find(c => c.slug === slug);
+}
+
+export const templateCategories = [
+  { slug: "marketing", name: "Marketing" },
+  { slug: "events", name: "Events" },
+  { slug: "business", name: "Business" },
+];
+
+export function getTemplateCategoryBySlug(slug: string) {
+  return templateCategories.find(c => c.slug === slug);
 }
