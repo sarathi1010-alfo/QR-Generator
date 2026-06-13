@@ -1,3 +1,13 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy | QRBuild",
+  description: "Privacy policy for QRBuild. Learn how we handle your data.",
+  alternates: {
+    canonical: "/privacy-policy",
+  },
+};
+
 export default function PrivacyPolicy() {
   return (
     <div className="py-20 max-w-4xl mx-auto px-4">

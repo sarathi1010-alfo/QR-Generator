@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Syne, DM_Sans, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
@@ -23,6 +23,12 @@ const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
   display: "swap",
 });
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#ffffff",
+};
 
 export const metadata: Metadata = {
   title: "QRBuild - Free QR Code Generator",
@@ -49,9 +55,7 @@ export const metadata: Metadata = {
     description: "Generate QR codes for URLs, WiFi, text, and more. Free, instant, no sign-up. Download as PNG or SVG.",
     images: [`${SITE_URL}/og-image.jpg`],
   },
-  alternates: {
-    canonical: SITE_URL,
-  },
+  metadataBase: new URL(SITE_URL),
 
   verification: {
     google: "Y94cBgBDh-ApjaS4Xfym1S2i2fNXeDpkGNpyfVZoCo",
