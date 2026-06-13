@@ -6,6 +6,9 @@ import AdUnit from "@/components/layout/AdUnit";
 export const metadata = {
   title: "QR Code Guides & Tutorials - QRBuild Blog",
   description: "Learn how to use QR codes effectively for your business, events, and personal use with our expert guides.",
+  alternates: {
+    canonical: "/blog",
+  },
 };
 
 export default function BlogIndex() {

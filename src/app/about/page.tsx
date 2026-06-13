@@ -1,3 +1,13 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About QRBuild",
+  description: "Learn more about QRBuild, our mission, and the technology behind our fast, free QR code generator.",
+  alternates: {
+    canonical: "/about",
+  },
+};
+
 export default function AboutPage() {
   return (
     <div className="py-20 max-w-4xl mx-auto px-4 text-center">
