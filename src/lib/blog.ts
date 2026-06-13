@@ -11,6 +11,8 @@ export interface BlogPost {
   publishedAt: string;
   category: string;
   content: string;
+  author?: string;
+  updatedAt?: string;
 }
 
 export function getBlogPosts(): BlogPost[] {
@@ -30,6 +32,8 @@ export function getBlogPosts(): BlogPost[] {
       description: data.description,
       publishedAt: data.publishedAt,
       category: data.category,
+      author: data.author,
+      updatedAt: data.updatedAt,
     } as BlogPost;
   });
 
@@ -49,6 +53,8 @@ export function getBlogPostBySlug(slug: string): BlogPost | null {
       description: data.description,
       publishedAt: data.publishedAt,
       category: data.category,
+      author: data.author,
+      updatedAt: data.updatedAt,
     } as BlogPost;
   } catch (e) {
     return null;

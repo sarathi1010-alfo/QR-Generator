@@ -2,14 +2,16 @@ import { getBlogPosts } from "@/lib/blog";
 import Link from "next/link";
 import { ArrowRight, Calendar, Tag } from "lucide-react";
 import AdUnit from "@/components/layout/AdUnit";
+import { resolveMetadata } from "@/lib/seo/resolveMetadata";
+import { buildLandingMeta } from "@/lib/seo/metaFactories";
 
-export const metadata = {
-  title: "QR Code Guides & Tutorials - QRBuild Blog",
-  description: "Learn how to use QR codes effectively for your business, events, and personal use with our expert guides.",
-  alternates: {
-    canonical: "/blog",
-  },
-};
+export const metadata = resolveMetadata(
+  buildLandingMeta({
+    slug: "blog",
+    title: "QR Code Guides & Tutorials - QRBuild Blog",
+    description: "Learn how to use QR codes effectively for your business, events, and personal use with our expert guides.",
+  })
+);
 
 export default function BlogIndex() {
   const posts = getBlogPosts();
