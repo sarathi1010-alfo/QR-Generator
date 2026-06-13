@@ -1,5 +1,3 @@
-fix-sitemap-site-url-436246357213907439
-export const SITE_URL = process.env.SITE_URL || process.env.NEXT_PUBLIC_SITE_URL || "https://qrbuild.app";
 let baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://qrbuild.app";
 if (!baseUrl.startsWith("http")) {
   baseUrl = `https://${baseUrl}`;
@@ -11,7 +9,6 @@ if (baseUrl.endsWith("/")) {
   baseUrl = baseUrl.slice(0, -1);
 }
 export const SITE_URL = baseUrl;
- feature/qr-generator-production-ready-3847120602456323442
 
 export interface SEOPageConfig {
   slug: string;
@@ -182,6 +179,42 @@ export const businessUseCases: SEOPageConfig[] = [
       { q: "Are QR codes safe for children to use?", a: "Yes, as long as they link to curated, safe content. Teachers should always verify the links before distributing codes." }
     ]
   }
+,
+  {
+    slug: "retail",
+    title: "Retail",
+    headline: "QR Codes for Retail Stores",
+    description: "Connect your physical store with your online presence. Use QR codes on product tags, receipts, and window displays to drive engagement.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Product information & reviews",
+      "Loyalty program sign-ups",
+      "Digital receipts and warranties",
+      "In-store navigation"
+    ],
+    faqs: [
+      { q: "Can QR codes help with inventory management?", a: "Yes, while our generator focuses on customer-facing URLs, QR codes are widely used for tracking inventory when paired with a management system." }
+    ]
+  },
+  {
+    slug: "healthcare",
+    title: "Healthcare",
+    headline: "QR Codes for Clinics and Hospitals",
+    description: "Streamline patient check-ins, share health information securely, and provide easy access to patient portals.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Contactless patient check-in",
+      "Digital health brochures",
+      "Appointment scheduling links",
+      "Wayfinding in large facilities"
+    ],
+    faqs: [
+      { q: "Are QR codes HIPAA compliant?", a: "QR codes themselves are just links. As long as the URL they point to is a secure, HIPAA-compliant platform, the QR code is safe to use." }
+    ]
+  }
+
 ];
 
 export const platformUseCases: SEOPageConfig[] = [
@@ -261,6 +294,46 @@ export const platformUseCases: SEOPageConfig[] = [
       { q: "How do I find my Google Review link?", a: "Search for your business on Google, click 'Get more reviews', and copy the short link provided by Google." }
     ]
   }
+,
+  {
+    slug: "tiktok",
+    title: "TikTok",
+    name: "TikTok",
+    headline: "TikTok Profile QR Codes",
+    description: "Grow your TikTok following by creating a scannable link to your profile or latest viral video.",
+    category: "platform",
+    primaryUse: "url",
+    color: "#000000",
+    features: [
+      "Direct link to TikTok profile",
+      "Share specific videos easily",
+      "Great for physical merchandise",
+      "Drive offline traffic online"
+    ],
+    faqs: [
+      { q: "Does TikTok have its own QR codes?", a: "Yes, but using a custom generator allows you to brand the code and use it outside of the app's ecosystem more easily." }
+    ]
+  },
+  {
+    slug: "linkedin",
+    title: "LinkedIn",
+    name: "LinkedIn",
+    headline: "LinkedIn Profile QR Codes for Networking",
+    description: "Make networking effortless. Generate a QR code for your LinkedIn profile to add to your resume or business card.",
+    category: "platform",
+    primaryUse: "url",
+    color: "#0A66C2",
+    features: [
+      "Instant connection requests",
+      "Perfect for conferences",
+      "Resume & CV integration",
+      "Professional networking made easy"
+    ],
+    faqs: [
+      { q: "Where can I find my LinkedIn profile URL?", a: "Go to your profile page on LinkedIn, and copy the URL from your browser's address bar. It usually looks like linkedin.com/in/yourname." }
+    ]
+  }
+
 ];
 
 export const formatUseCases: SEOPageConfig[] = [
@@ -293,6 +366,8 @@ export const competitors = [
   { slug: "canva", name: "Canva" },
   { slug: "qrcode-monkey", name: "QRCode Monkey" },
   { slug: "qr-code-generator-pro", name: "QR Code Generator Pro" },
+  { slug: "bitly", name: "Bitly" },
+  { slug: "uniqode", name: "Uniqode" },
 ];
 
 export function getCompetitorBySlug(slug: string) {
