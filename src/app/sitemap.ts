@@ -1,6 +1,9 @@
 import { MetadataRoute } from 'next';
 import { SITE_URL, allSEOConfigs, competitors, templateCategories } from '@/lib/seo-config';
 import { getBlogPosts } from '@/lib/blog';
+import { buildCanonical } from '@/lib/seo/buildCanonical';
+
+export const revalidate = 3600; // Cache for 1 hour
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
@@ -15,10 +18,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog',
     '/qr-code-scanner',
   ].map((route) => ({
-    url: `${SITE_URL}${route}`,
+    url: buildCanonical(route),
     lastModified,
-    changeFrequency: 'daily' as const,
-    priority: route === '' ? 1 : 0.8,
+    changeFrequency: 'monthly' as const,
+    priority: route === '' ? 1.0 : 0.8,
   }));
 
   // Generator routes
@@ -27,18 +30,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
   for (const config of allSEOConfigs) {
     // Main generator route
     generatorRoutes.push({
-      url: `${SITE_URL}/generator/${config.slug}`,
+      url: buildCanonical(`/generator/${config.slug}`),
       lastModified,
-      changeFrequency: 'daily' as const,
+      changeFrequency: 'weekly' as const,
       priority: 0.9,
     });
 
     // Competitor vs routes
     for (const comp of competitors) {
       generatorRoutes.push({
-        url: `${SITE_URL}/generator/${config.slug}/vs/${comp.slug}`,
+        url: buildCanonical(`/generator/${config.slug}/vs/${comp.slug}`),
         lastModified,
-        changeFrequency: 'weekly' as const,
+        changeFrequency: 'monthly' as const,
         priority: 0.8,
       });
     }
@@ -46,9 +49,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Template category routes
     for (const cat of templateCategories) {
       generatorRoutes.push({
-        url: `${SITE_URL}/generator/${config.slug}/templates/${cat.slug}`,
+        url: buildCanonical(`/generator/${config.slug}/templates/${cat.slug}`),
         lastModified,
-        changeFrequency: 'weekly' as const,
+        changeFrequency: 'monthly' as const,
         priority: 0.8,
       });
     }
@@ -57,8 +60,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Blog routes
   const blogPosts = getBlogPosts();
   const blogRoutes = blogPosts.map((post) => ({
-    url: `${SITE_URL}/blog/${post.slug}`,
-    lastModified,
+    url: buildCanonical(`/blog/${post.slug}`),
+    lastModified: post.updatedAt ? new Date(post.updatedAt) : new Date(post.publishedAt || lastModified),
     changeFrequency: 'weekly' as const,
     priority: 0.7,
   }));

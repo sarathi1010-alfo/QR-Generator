@@ -19,26 +19,17 @@ export async function generateStaticParams() {
   }));
 }
 
-import { SITE_URL } from "@/lib/seo-config";
+import { resolveMetadata } from "@/lib/seo/resolveMetadata";
+import { buildGeneratorMeta } from "@/lib/seo/metaFactories";
+import { JsonLd } from "@/components/JsonLd";
+import { buildFaqSchema } from "@/lib/seo/buildSchema";
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const config = getSEOConfigBySlug(slug);
   if (!config) return {};
 
-  return {
-    title: `${config.title} QR Code Generator - Free & Instant | QRBuild`,
-    description: config.description,
-    alternates: {
-      canonical: `${SITE_URL}/generator/${config.slug}`,
-    },
-    openGraph: {
-      title: `${config.title} QR Code Generator`,
-      description: config.description,
-      type: "website",
-      url: `${SITE_URL}/generator/${config.slug}`,
-    }
-  };
+  return resolveMetadata(buildGeneratorMeta(config));
 }
 
 export default async function GeneratorPage({ params }: Props) {
@@ -49,30 +40,11 @@ export default async function GeneratorPage({ params }: Props) {
     notFound();
   }
 
-  const faqSchema = generateFAQSchema(config.faqs);
-  const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: "Home", item: SITE_URL },
-    { name: config.title, item: `${SITE_URL}/generator/${config.slug}` },
-  ]);
-  const appSchema = generateSoftwareAppSchema();
+  const meta = buildGeneratorMeta(config);
 
   return (
     <div className="py-12">
-      <Script
-        id="faq-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <Script
-        id="breadcrumb-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <Script
-        id="app-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }}
-      />
+      {meta.faqItems && <JsonLd schema={buildFaqSchema(meta.faqItems)} />}
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Link href="/" className="inline-flex items-center gap-2 text-sm font-bold mb-8 hover:text-cta transition-colors">

@@ -22,7 +22,9 @@ export async function generateStaticParams() {
   return params;
 }
 
-import { SITE_URL } from "@/lib/seo-config";
+import { resolveMetadata } from "@/lib/seo/resolveMetadata";
+import { buildComparisonMeta } from "@/lib/seo/metaFactories";
+import { JsonLd } from "@/components/JsonLd";
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug, competitor } = await params;
@@ -31,13 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!config || !comp) return {};
 
-  return {
-    title: `QRBuild vs ${comp.name} for ${config.title} QR Codes`,
-    description: `Compare QRBuild and ${comp.name} for creating ${config.title} QR codes. Find out why QRBuild is the best free, instant alternative.`,
-    alternates: {
-      canonical: `${SITE_URL}/generator/${config.slug}/vs/${comp.slug}`,
-    },
-  };
+  return resolveMetadata(buildComparisonMeta(config, comp));
 }
 
 export default async function ComparisonPage({ params }: Props) {
@@ -58,11 +54,7 @@ export default async function ComparisonPage({ params }: Props) {
 
   return (
     <div className="py-12">
-      <Script
-        id="comparison-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(comparisonSchema) }}
-      />
+      <JsonLd schema={comparisonSchema} />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Link href={`/generator/${config.slug}`} className="inline-flex items-center gap-2 text-sm font-bold mb-8 hover:text-cta transition-colors">

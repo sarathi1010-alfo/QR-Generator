@@ -1,12 +1,23 @@
 import HomePage from "./HomePage";
-import { Metadata } from "next";
+import { resolveMetadata } from "@/lib/seo/resolveMetadata";
+import { buildLandingMeta } from "@/lib/seo/metaFactories";
+import { JsonLd } from "@/components/JsonLd";
+import { buildWebsiteSchema } from "@/lib/seo/buildSchema";
 
-export const metadata: Metadata = {
-  alternates: {
-    canonical: "/",
-  },
-};
+export const metadata = resolveMetadata(
+  buildLandingMeta({
+    slug: "home",
+    title: "QRBuild - Free QR Code Generator",
+    description: "Generate QR codes for URLs, WiFi, text, and more. Free, instant, no sign-up. Download as PNG or SVG."
+  }),
+  true
+);
 
 export default function Page() {
-  return <HomePage />;
+  return (
+    <>
+      <JsonLd schema={buildWebsiteSchema()} />
+      <HomePage />
+    </>
+  );
 }
