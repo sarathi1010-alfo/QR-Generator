@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Us | QRBuild",
-  description: "Get in touch with the QRBuild team for support, feedback, or inquiries.",
+  title: "Contact the QRBuild Team - Support & Feature Requests",
+  description: "Get in touch with the QRBuild team for support, feature requests, or general inquiries about our free, fast, and reliable QR code generator tool.",
   alternates: {
     canonical: "/contact",
   },

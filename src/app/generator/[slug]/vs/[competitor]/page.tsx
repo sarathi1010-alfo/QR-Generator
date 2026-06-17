@@ -13,13 +13,7 @@ interface Props {
 }
 
 export async function generateStaticParams() {
-  const params: { slug: string; competitor: string }[] = [];
-  for (const config of allSEOConfigs) {
-    for (const competitor of competitors) {
-      params.push({ slug: config.slug, competitor: competitor.slug });
-    }
-  }
-  return params;
+  return [];
 }
 
 import { resolveMetadata } from "@/lib/seo/resolveMetadata";
