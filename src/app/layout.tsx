@@ -31,12 +31,12 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "QRBuild - Free QR Code Generator",
+  title: "QRBuild - The Ultimate Free QR Code Generator Tool",
   description:
-    "Generate QR codes for URLs, WiFi, text, and more. Free, instant, no sign-up. Download as PNG or SVG.",
+    "Generate high-quality custom QR codes instantly with QRBuild. Create scannable codes for URLs, WiFi, VCards, and more. Free, fast, and no sign-up required.",
   openGraph: {
-    title: "QRBuild - Free QR Code Generator",
-    description: "Generate QR codes for URLs, WiFi, text, and more. Free, instant, no sign-up. Download as PNG or SVG.",
+    title: "QRBuild - The Ultimate Free QR Code Generator Tool",
+    description: "Generate high-quality custom QR codes instantly with QRBuild. Create scannable codes for URLs, WiFi, VCards, and more. Free, fast, and no sign-up required.",
     url: SITE_URL,
     siteName: "QRBuild",
     type: "website",
@@ -51,8 +51,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "QRBuild - Free QR Code Generator",
-    description: "Generate QR codes for URLs, WiFi, text, and more. Free, instant, no sign-up. Download as PNG or SVG.",
+    title: "QRBuild - The Ultimate Free QR Code Generator Tool",
+    description: "Generate high-quality custom QR codes instantly with QRBuild. Create scannable codes for URLs, WiFi, VCards, and more. Free, fast, and no sign-up required.",
     images: [`${SITE_URL}/og-image.jpg`],
   },
   metadataBase: new URL(SITE_URL),

@@ -36,18 +36,9 @@ export default function Footer() {
             <h4 className="font-display font-bold mb-4">Legal</h4>
             <ul className="space-y-2 text-sm opacity-80">
               <li><Link href="/privacy-policy" className="hover:text-cta transition-colors">Privacy Policy</Link></li>
-              <li><Link href="/terms" className="hover:text-cta transition-colors">Terms of Service</Link></li>
+              <li><Link href="/terms-of-service" className="hover:text-cta transition-colors">Terms of Service</Link></li>
               <li><Link href="/contact" className="hover:text-cta transition-colors">Contact</Link></li>
               <li><Link href="/about" className="hover:text-cta transition-colors">About</Link></li>
-            </ul>
-          </div>
-
-          <div>
-             <h4 className="font-display font-bold mb-4">Social</h4>
-            <ul className="space-y-2 text-sm opacity-80">
-              <li><a href="https://twitter.com/alfo_online" target="_blank" rel="noopener noreferrer" className="hover:text-cta transition-colors">Twitter</a></li>
-              <li><a href="https://github.com/alfo-online" target="_blank" rel="noopener noreferrer" className="hover:text-cta transition-colors">GitHub</a></li>
-              <li><a href="https://linkedin.com/company/alfo-online" target="_blank" rel="noopener noreferrer" className="hover:text-cta transition-colors">LinkedIn</a></li>
             </ul>
           </div>
         </div>

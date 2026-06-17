@@ -12,13 +12,7 @@ interface Props {
 }
 
 export async function generateStaticParams() {
-  const params: { slug: string; category: string }[] = [];
-  for (const config of allSEOConfigs) {
-    for (const category of templateCategories) {
-      params.push({ slug: config.slug, category: category.slug });
-    }
-  }
-  return params;
+  return [];
 }
 
 import { resolveMetadata } from "@/lib/seo/resolveMetadata";

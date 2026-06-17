@@ -69,6 +69,11 @@ export default function Home() {
               description="We don't collect your data or track your links. Your QR codes are generated entirely in your browser."
             />
           </div>
+          <div className="mt-8 text-center">
+            <Link href="/contact" className="text-cta font-bold hover:underline">
+              Need help? Contact us -&gt;
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -85,9 +90,17 @@ export default function Home() {
               <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">QR Codes for Every Need</h2>
               <p className="text-muted">Explore specialized generators for different use cases.</p>
             </div>
-            <Link href="/blog" className="text-cta font-bold flex items-center gap-2 hover:underline">
-              View all guides <ArrowRight className="w-4 h-4" />
-            </Link>
+            <div className="flex flex-col items-end gap-2 mt-2">
+              <Link href="/blog" className="text-cta font-bold flex items-center gap-2 hover:underline">
+                View all guides <ArrowRight className="w-4 h-4" />
+              </Link>
+              <Link href="/blog/qr-code-size-guide" className="text-sm font-medium hover:text-cta transition-colors text-right mt-2">
+                Size Guide
+              </Link>
+              <Link href="/blog/wifi-qr-code-guide" className="text-sm font-medium hover:text-cta transition-colors text-right">
+                WiFi Guide
+              </Link>
+            </div>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

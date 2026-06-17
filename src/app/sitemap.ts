@@ -35,26 +35,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly' as const,
       priority: 0.9,
     });
-
-    // Competitor vs routes
-    for (const comp of competitors) {
-      generatorRoutes.push({
-        url: buildCanonical(`/generator/${config.slug}/vs/${comp.slug}`),
-        lastModified,
-        changeFrequency: 'monthly' as const,
-        priority: 0.8,
-      });
-    }
-
-    // Template category routes
-    for (const cat of templateCategories) {
-      generatorRoutes.push({
-        url: buildCanonical(`/generator/${config.slug}/templates/${cat.slug}`),
-        lastModified,
-        changeFrequency: 'monthly' as const,
-        priority: 0.8,
-      });
-    }
   }
 
   // Blog routes
