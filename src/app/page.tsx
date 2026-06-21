@@ -7,8 +7,8 @@ import { buildWebsiteSchema } from "@/lib/seo/buildSchema";
 export const metadata = resolveMetadata(
   buildLandingMeta({
     slug: "home",
-    title: "QRBuild - Free QR Code Generator",
-    description: "Generate QR codes for URLs, WiFi, text, and more. Free, instant, no sign-up. Download as PNG or SVG."
+    title: "QRBuild - Free QR Code Generator Online | Create Custom QR Codes Instantly",
+    description: "Create free, customizable QR codes for URLs, WiFi, vCards, social media, and more. No registration required. Download as PNG or SVG instantly."
   }),
   true
 );

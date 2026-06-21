@@ -8,17 +8,21 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       {
         userAgent: '*',
-        allow: '/',
+        allow: [
+          '/',
+          '/_next/static/',
+          '/_next/static/css/',
+          '/_next/static/chunks/',
+        ],
         disallow: [
           '/api/',
           '/admin/',
           '/dashboard/',
-          '/_next/',
           '/checkout/',
           '/thank-you/',
           '/cart/',
-          '/*?*', // block all query-string variants
           '/search',
+          '/_next/static/media/',
         ],
         crawlDelay: 2,
       },
