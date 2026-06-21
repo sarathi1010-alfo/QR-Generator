@@ -37,6 +37,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm opacity-80">
               <li><Link href="/privacy-policy" className="hover:text-cta transition-colors">Privacy Policy</Link></li>
               <li><Link href="/terms-of-service" className="hover:text-cta transition-colors">Terms of Service</Link></li>
+              <li><Link href="/disclaimer" className="hover:text-cta transition-colors">Disclaimer</Link></li>
               <li><Link href="/contact" className="hover:text-cta transition-colors">Contact</Link></li>
               <li><Link href="/about" className="hover:text-cta transition-colors">About</Link></li>
             </ul>
@@ -44,7 +45,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/10 mt-12 pt-8 flex flex-col justify-center items-center gap-4 text-sm opacity-60">
-          <p>© {currentYear} alfo.online — All rights reserved</p>
+          <p>© {currentYear} QRBuild — All rights reserved</p>
         </div>
       </div>
     </footer>
