@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { QRHistoryItem } from "@/types/qr.types";
 
-const STORAGE_KEY = "qrbuild_history";
+const STORAGE_KEY = "qralfo_history";
 const MAX_HISTORY = 5;
 
 export const useQRHistory = () => {

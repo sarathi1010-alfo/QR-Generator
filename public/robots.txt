@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://qrbuild.app
+Host: https://qr.alfo.online
 
 # Sitemaps
-Sitemap: https://qrbuild.app/sitemap.xml
+Sitemap: https://qr.alfo.online/sitemap.xml
