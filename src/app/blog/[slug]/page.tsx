@@ -4,6 +4,7 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import AdUnit from "@/components/layout/AdUnit";
 import { ArrowLeft, Calendar, Tag, Clock } from "lucide-react";
 import Link from "next/link";
+import Script from "next/script";
 
 interface Props {
   params: { slug: string };
@@ -23,6 +24,21 @@ export async function generateMetadata({ params }: Props) {
   return {
     title: `${post.title} | QRBuild`,
     description: post.description,
+    alternates: {
+      canonical: `https://qr.alfo.online/blog/${params.slug}`,
+    },
+    openGraph: {
+      title: `${post.title} | QRBuild`,
+      description: post.description,
+      url: `https://qr.alfo.online/blog/${params.slug}`,
+      type: "article",
+      publishedTime: post.publishedAt,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${post.title} | QRBuild`,
+      description: post.description,
+    },
   };
 }
 
@@ -33,9 +49,65 @@ export default async function BlogPostPage({ params }: Props) {
     notFound();
   }
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": post.title,
+    "description": post.description,
+    "datePublished": post.publishedAt,
+    "author": {
+      "@type": "Organization",
+      "name": "QRBuild Team"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "QRBuild",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://qr.alfo.online/logo.png"
+      }
+    }
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://qr.alfo.online"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://qr.alfo.online/blog"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": post.title,
+        "item": `https://qr.alfo.online/blog/${params.slug}`
+      }
+    ]
+  };
+
   return (
     <article className="py-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <Script
+          id="article-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+        <Script
+          id="breadcrumb-schema-blog"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
+        
         <Link href="/blog" className="inline-flex items-center gap-2 text-sm font-bold mb-8 hover:text-cta transition-colors">
           <ArrowLeft className="w-4 h-4" />
           Back to Blog

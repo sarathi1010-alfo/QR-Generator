@@ -19,3 +19,19 @@ export default function AboutPage() {
     </div>
   );
 }
+
+export async function generateMetadata() {
+  return {
+    title: "About QRBuild - Free QR Code Generator",
+    description: "QRBuild creates the fastest, cleanest, and most reliable QR code generator on the web. Free, instant, no sign-up required.",
+    alternates: {
+      canonical: "https://qr.alfo.online/about",
+    },
+    openGraph: {
+      title: "About QRBuild",
+      description: "Free, instant, beautiful QR code generator. No sign-up required.",
+      type: "website",
+      url: "https://qr.alfo.online/about",
+    },
+  };
+}

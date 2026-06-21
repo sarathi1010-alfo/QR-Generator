@@ -2,10 +2,25 @@ import { getBlogPosts } from "@/lib/blog";
 import Link from "next/link";
 import { ArrowRight, Calendar, Tag } from "lucide-react";
 import AdUnit from "@/components/layout/AdUnit";
+import { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "QR Code Guides & Tutorials - QRBuild Blog",
-  description: "Learn how to use QR codes effectively for your business, events, and personal use with our expert guides.",
+  description: "Learn how to use QR codes effectively for your business, events, and personal use with our expert guides and tutorials.",
+  alternates: {
+    canonical: "https://qr.alfo.online/blog",
+  },
+  openGraph: {
+    title: "QR Code Guides & Tutorials - QRBuild Blog",
+    description: "Expert guides on creating, using, and optimizing QR codes for any purpose.",
+    url: "https://qr.alfo.online/blog",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "QR Code Guides - QRBuild Blog",
+    description: "Learn how to use QR codes effectively with our expert guides.",
+  },
 };
 
 export default function BlogIndex() {

@@ -32,6 +32,22 @@ export const metadata: Metadata = {
   other: {
     "google-adsense-account": "ca-pub-6393936268623951",
   },
+  alternates: {
+    canonical: "https://qr.alfo.online",
+  },
+  openGraph: {
+    title: "QRBuild - Free QR Code Generator",
+    description: "Generate QR codes for URLs, WiFi, text, and more. Free, instant, no sign-up.",
+    url: "https://qr.alfo.online",
+    type: "website",
+    locale: "en_US",
+    siteName: "QRBuild",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "QRBuild - Free QR Code Generator",
+    description: "Generate QR codes for URLs, WiFi, text, and more. Free, instant, no sign-up.",
+  },
 };
 
 export default function RootLayout({
@@ -39,6 +55,21 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "QRBuild",
+    "url": "https://qr.alfo.online",
+    "logo": "https://qr.alfo.online/logo.png",
+  };
+
+  const webSiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "QRBuild",
+    "url": "https://qr.alfo.online",
+  };
+
   return (
     <html lang="en">
       <head>
@@ -47,6 +78,16 @@ export default function RootLayout({
           src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_ADSENSE_CLIENT}`}
           crossOrigin="anonymous"
           strategy="lazyOnload"
+        />
+        <Script
+          id="organization-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <Script
+          id="website-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }}
         />
       </head>
       <body
