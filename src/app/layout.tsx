@@ -31,12 +31,15 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "QRBuild - The Ultimate Free QR Code Generator Tool",
+  title: {
+    default: "QRBuild - Free QR Code Generator Online | Create Custom QR Codes Instantly",
+    template: "%s | QRBuild"
+  },
   description:
-    "Generate high-quality custom QR codes instantly with QRBuild. Create scannable codes for URLs, WiFi, VCards, and more. Free, fast, and no sign-up required.",
+    "Create free, customizable QR codes for URLs, WiFi, vCards, social media, and more. No registration required. Download as PNG or SVG instantly.",
   openGraph: {
-    title: "QRBuild - The Ultimate Free QR Code Generator Tool",
-    description: "Generate high-quality custom QR codes instantly with QRBuild. Create scannable codes for URLs, WiFi, VCards, and more. Free, fast, and no sign-up required.",
+    title: "QRBuild - Free QR Code Generator Online | Create Custom QR Codes Instantly",
+    description: "Create free, customizable QR codes for URLs, WiFi, vCards, social media, and more. No registration required. Download as PNG or SVG instantly.",
     url: SITE_URL,
     siteName: "QRBuild",
     type: "website",
@@ -51,8 +54,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "QRBuild - The Ultimate Free QR Code Generator Tool",
-    description: "Generate high-quality custom QR codes instantly with QRBuild. Create scannable codes for URLs, WiFi, VCards, and more. Free, fast, and no sign-up required.",
+    title: "QRBuild - Free QR Code Generator Online | Create Custom QR Codes Instantly",
+    description: "Create free, customizable QR codes for URLs, WiFi, vCards, social media, and more. No registration required. Download as PNG or SVG instantly.",
     images: [`${SITE_URL}/og-image.jpg`],
   },
   metadataBase: new URL(SITE_URL),

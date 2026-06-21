@@ -1,4 +1,4 @@
-let baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://qrbuild.app";
+let baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://qr.alfo.online";
 if (!baseUrl.startsWith("http")) {
   baseUrl = `https://${baseUrl}`;
 }
