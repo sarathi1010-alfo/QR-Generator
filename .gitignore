@@ -13,32 +13,23 @@ out/
 .env.local
 *.env.*
 
-# IDE files
+# Logs
+*.log
+
+# Editor/IDE
 .vscode/
 .idea/
 *.swp
 *.swo
+*.tmp
 
-# Python cache
+# Python (if applicable)
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-
-# Logs
-*.log
-
-# Coverage reports
-coverage/
-htmlcov/
-.coverage
-
-# Temporary files
-*.tmp
-.DS_Store
-Thumbs.db
-
-# System files
-.DS_Store
-Thumbs.db
+.Python
+venv/
+.venv/
+.env
 ```
