@@ -13,6 +13,7 @@ export interface BlogPost {
   content: string;
   author?: string;
   updatedAt?: string;
+  faqItems?: { question: string; answer: string }[];
 }
 
 export function getBlogPosts(): BlogPost[] {
@@ -34,6 +35,7 @@ export function getBlogPosts(): BlogPost[] {
       category: data.category,
       author: data.author,
       updatedAt: data.updatedAt,
+      faqItems: data.faqItems,
     } as BlogPost;
   });
 
@@ -55,8 +57,14 @@ export function getBlogPostBySlug(slug: string): BlogPost | null {
       category: data.category,
       author: data.author,
       updatedAt: data.updatedAt,
+      faqItems: data.faqItems,
     } as BlogPost;
   } catch (e) {
     return null;
   }
+}
+
+export function getBlogPostsByCategory(category: string): BlogPost[] {
+  const allPosts = getBlogPosts();
+  return allPosts.filter((post) => post.category.toLowerCase() === category.toLowerCase());
 }
