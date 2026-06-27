@@ -7,9 +7,12 @@ export interface QROptions {
   errorLevel: QRErrorCorrectionLevel;
   margin?: number;
   transparent?: boolean;
+  dotStyle?: 'square' | 'rounded' | 'diamond' | 'leaf';
+  eyeStyle?: 'square' | 'rounded' | 'circle';
+  centerText?: string;
 }
 
-export type QRType = 'url' | 'text' | 'wifi' | 'email' | 'phone' | 'vcard';
+export type QRType = 'url' | 'text' | 'wifi' | 'email' | 'phone' | 'vcard' | 'batch';
 
 export interface QRHistoryItem {
   id: string;

@@ -10,7 +10,12 @@ interface QRControlsProps {
 
 export default function QRControls({ options, setOptions }: QRControlsProps) {
   const updateOption = (key: keyof QROptions, value: any) => {
-    setOptions({ ...options, [key]: value });
+    let newOptions = { ...options, [key]: value };
+    // Automatically set error correction to 'H' when center text is provided
+    if (key === 'centerText' && value) {
+        newOptions.errorLevel = 'H';
+    }
+    setOptions(newOptions);
   };
 
   return (
@@ -71,12 +76,53 @@ export default function QRControls({ options, setOptions }: QRControlsProps) {
           value={options.errorLevel}
           onChange={(e) => updateOption("errorLevel", e.target.value as QRErrorCorrectionLevel)}
           className="input-field appearance-none"
+          disabled={!!options.centerText}
         >
           <option value="L">Low (7%)</option>
           <option value="M">Medium (15%)</option>
           <option value="Q">Quartile (25%)</option>
           <option value="H">High (30%)</option>
         </select>
+      </div>
+
+      <div>
+        <label className="label">Dot Style</label>
+        <select
+          value={options.dotStyle || 'square'}
+          onChange={(e) => updateOption("dotStyle", e.target.value)}
+          className="input-field appearance-none"
+        >
+          <option value="square">Square</option>
+          <option value="rounded">Rounded</option>
+          <option value="diamond">Diamond</option>
+          <option value="leaf">Leaf</option>
+        </select>
+      </div>
+
+      <div>
+        <label className="label">Eye Style</label>
+        <select
+          value={options.eyeStyle || 'square'}
+          onChange={(e) => updateOption("eyeStyle", e.target.value)}
+          className="input-field appearance-none"
+        >
+          <option value="square">Square</option>
+          <option value="rounded">Rounded</option>
+          <option value="circle">Circle</option>
+        </select>
+      </div>
+
+      <div className="sm:col-span-2">
+        <label className="label">Center Monogram (Max 3 chars)</label>
+        <input
+          type="text"
+          maxLength={3}
+          placeholder="e.g. AF"
+          value={options.centerText || ''}
+          onChange={(e) => updateOption("centerText", e.target.value.toUpperCase())}
+          className="input-field uppercase"
+        />
+        <p className="text-xs text-text/60 mt-1">Automatically sets Error Correction to High (30%) for scannability.</p>
       </div>
     </div>
   );

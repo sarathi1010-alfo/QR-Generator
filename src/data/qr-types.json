@@ -34,5 +34,11 @@
     "label": "VCard",
     "icon": "User",
     "placeholder": ""
+  },
+  {
+    "id": "batch",
+    "label": "Batch URL",
+    "icon": "Layers",
+    "placeholder": "https://example.com/1\nhttps://example.com/2\n..."
   }
 ]
