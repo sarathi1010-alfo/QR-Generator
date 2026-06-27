@@ -8,6 +8,8 @@ import { resolveMetadata } from "@/lib/seo/resolveMetadata";
 import { buildBlogPostMeta } from "@/lib/seo/metaFactories";
 import { JsonLd } from "@/components/JsonLd";
 import { buildArticleSchema, buildBreadcrumbSchema } from "@/lib/seo/buildSchema";
+import { generateFAQSchema } from "@/lib/schema";
+import RelatedPosts from "@/components/blog/RelatedPosts";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -43,6 +45,9 @@ export default async function BlogPostPage({ params }: Props) {
     <>
       <JsonLd schema={buildArticleSchema(meta)} />
       {meta.breadcrumbs && <JsonLd schema={buildBreadcrumbSchema(meta.breadcrumbs)} />}
+      {post.faqItems && post.faqItems.length > 0 && (
+        <JsonLd schema={generateFAQSchema(post.faqItems.map(item => ({ q: item.question, a: item.answer })))} />
+      )}
       <article className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link href="/blog" className="inline-flex items-center gap-2 text-sm font-bold mb-8 hover:text-cta transition-colors">
@@ -86,6 +91,8 @@ export default async function BlogPostPage({ params }: Props) {
           </div>
 
           <AdUnit slot="blog-bottom" />
+
+          <RelatedPosts currentSlug={post.slug} category={post.category} />
 
           <div className="mt-20 p-12 bg-accent text-white rounded-3xl text-center">
             <h2 className="font-display text-3xl font-bold mb-4">Ready to create your own?</h2>
