@@ -2,9 +2,12 @@
 
 import { useState, useEffect, useRef } from "react";
 import * as Tabs from "@radix-ui/react-tabs";
-import { Link, Type, Wifi, Mail, Phone, User, Download, Copy, History, Check } from "lucide-react";
+import { Link, Type, Wifi, Mail, Phone, User, Download, Copy, History, Check, Layers } from "lucide-react";
 import { useQRGenerator } from "@/hooks/useQRGenerator";
 import { useQRHistory } from "@/hooks/useQRHistory";
+import JSZip from "jszip";
+import { saveAs } from "file-saver";
+import { generateQRCodeToDataURL, generateQRCodeToSVG } from "@/lib/qr-generator";
 import QRCanvas from "./QRCanvas";
 import QRControls from "./QRControls";
 import WiFiTab from "./tabs/WiFiTab";
@@ -16,11 +19,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import { downloadPNG, downloadSVG, copyCanvasToClipboard } from "@/lib/download";
 import * as Toast from "@radix-ui/react-toast";
 
-const ICONS: Record<string, any> = { Link, Type, Wifi, Mail, Phone, User };
+const ICONS: Record<string, any> = { Link, Type, Wifi, Mail, Phone, User, Layers };
 
 export default function QRGeneratorRoot({ initialTab = "url" }: { initialTab?: string }) {
   const [activeTab, setActiveTab] = useState(initialTab);
   const [copied, setCopied] = useState(false);
+  const [isBatchGenerating, setIsBatchGenerating] = useState(false);
   const { text, setText, options, setOptions, canvasRef } = useQRGenerator("", {
     size: 256,
     foreground: "#1A1A2E",
@@ -68,6 +72,38 @@ export default function QRGeneratorRoot({ initialTab = "url" }: { initialTab?: s
       } catch (err) {
         console.error("Failed to copy", err);
       }
+    }
+  };
+
+  const handleBatchDownload = async (format: "png" | "svg") => {
+    if (!text) return;
+    const urls = text.split('\n').map(l => l.trim()).filter(l => l.length > 0);
+    if (urls.length === 0) return;
+
+    setIsBatchGenerating(true);
+    const zip = new JSZip();
+    const folder = zip.folder(`qrcodes_${format}`);
+
+    try {
+      for (let i = 0; i < urls.length; i++) {
+        const url = urls[i];
+        if (format === "png") {
+          const dataUrl = await generateQRCodeToDataURL(url, options);
+          const base64Data = dataUrl.split(',')[1];
+          folder?.file(`qrcode_${i + 1}.png`, base64Data, { base64: true });
+        } else {
+          const svgContent = await generateQRCodeToSVG(url, options);
+          folder?.file(`qrcode_${i + 1}.svg`, svgContent);
+        }
+      }
+
+      const content = await zip.generateAsync({ type: "blob" });
+      saveAs(content, `qrcodes_${format}.zip`);
+      addToHistory({ type: activeTab as any, data: `${urls.length} Batch URLs` });
+    } catch (err) {
+      console.error("Batch generation failed:", err);
+    } finally {
+      setIsBatchGenerating(false);
     }
   };
 
@@ -152,6 +188,23 @@ export default function QRGeneratorRoot({ initialTab = "url" }: { initialTab?: s
                   <Tabs.Content value="vcard">
                     <VCardTab onUpdate={setText} />
                   </Tabs.Content>
+
+                  <Tabs.Content value="batch">
+                    <div className="space-y-4">
+                      <label className="label flex justify-between">
+                        <span>Batch URLs (One per line, Max 20)</span>
+                        <span className="text-xs text-text/60">
+                          {text.split('\n').filter(l => l.trim().length > 0).length} / 20
+                        </span>
+                      </label>
+                      <textarea
+                        placeholder="https://example.com/1&#10;https://example.com/2&#10;..."
+                        className="input-field min-h-[160px]"
+                        onChange={handleInputChange}
+                        value={activeTab === 'batch' ? text : ""}
+                      />
+                    </div>
+                  </Tabs.Content>
                 </motion.div>
               </AnimatePresence>
 
@@ -164,35 +217,58 @@ export default function QRGeneratorRoot({ initialTab = "url" }: { initialTab?: s
             <div className="sticky top-24">
               <QRCanvas canvasRef={canvasRef} size={options.size} />
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
-                <button
-                  onClick={handleDownloadPNG}
-                  disabled={!text}
-                  className="btn-primary flex items-center justify-center gap-2"
-                >
-                  <Download className="w-5 h-5" />
-                  Download PNG
-                </button>
-                <button
-                  onClick={handleCopy}
-                  disabled={!text}
-                  className="btn-secondary flex items-center justify-center gap-2"
-                >
-                  {copied ? <Check className="w-5 h-5 text-green-500" /> : <Copy className="w-5 h-5" />}
-                  {copied ? "Copied!" : "Copy Image"}
-                </button>
-              </div>
+              {activeTab === "batch" ? (
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+                  <button
+                    onClick={() => handleBatchDownload("png")}
+                    disabled={!text || isBatchGenerating}
+                    className="btn-primary flex items-center justify-center gap-2"
+                  >
+                    <Download className="w-5 h-5" />
+                    {isBatchGenerating ? "Generating..." : "Download PNG ZIP"}
+                  </button>
+                  <button
+                    onClick={() => handleBatchDownload("svg")}
+                    disabled={!text || isBatchGenerating}
+                    className="btn-secondary flex items-center justify-center gap-2 border-dashed"
+                  >
+                    <Download className="w-5 h-5" />
+                    {isBatchGenerating ? "Generating..." : "Download SVG ZIP"}
+                  </button>
+                </div>
+              ) : (
+                <>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+                    <button
+                      onClick={handleDownloadPNG}
+                      disabled={!text}
+                      className="btn-primary flex items-center justify-center gap-2"
+                    >
+                      <Download className="w-5 h-5" />
+                      Download PNG
+                    </button>
+                    <button
+                      onClick={handleCopy}
+                      disabled={!text}
+                      className="btn-secondary flex items-center justify-center gap-2"
+                    >
+                      {copied ? <Check className="w-5 h-5 text-green-500" /> : <Copy className="w-5 h-5" />}
+                      {copied ? "Copied!" : "Copy Image"}
+                    </button>
+                  </div>
 
-              <div className="mt-4">
-                <button
-                  onClick={handleDownloadSVG}
-                  disabled={!text}
-                  className="w-full btn-secondary flex items-center justify-center gap-2 border-dashed"
-                >
-                  <Download className="w-5 h-5" />
-                  Download SVG
-                </button>
-              </div>
+                  <div className="mt-4">
+                    <button
+                      onClick={handleDownloadSVG}
+                      disabled={!text}
+                      className="w-full btn-secondary flex items-center justify-center gap-2 border-dashed"
+                    >
+                      <Download className="w-5 h-5" />
+                      Download SVG
+                    </button>
+                  </div>
+                </>
+              )}
 
               <div className="mt-12 card p-6 bg-accent text-white">
                 <div className="flex items-center gap-2 mb-4">

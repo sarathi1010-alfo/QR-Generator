@@ -12,7 +12,17 @@ export const useQRGenerator = (initialText: string, initialOptions: QROptions) =
   const updateQR = useCallback(async () => {
     if (canvasRef.current && text) {
       try {
-        await generateQRCodeToCanvas(canvasRef.current, text, options);
+        // If text has multiple lines (e.g. batch mode), only render the first valid line for preview
+        let previewText = text;
+        if (text.includes('\n')) {
+          const lines = text.split('\n').map(l => l.trim()).filter(l => l.length > 0);
+          if (lines.length > 0) {
+            previewText = lines[0];
+          } else {
+            return; // No valid text to render
+          }
+        }
+        await generateQRCodeToCanvas(canvasRef.current, previewText, options);
       } catch (err) {
         console.error("Failed to generate QR code:", err);
       }
