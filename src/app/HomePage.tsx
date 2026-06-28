@@ -100,6 +100,10 @@ export default function Home() {
               <Link href="/blog/wifi-qr-code-guide" className="text-sm font-medium hover:text-cta transition-colors text-right">
                 WiFi Guide
               </Link>
+
+              <Link href="/about" className="text-sm font-medium hover:text-cta transition-colors text-right mt-2">
+                About QRBuild
+              </Link>
             </div>
           </div>
 
@@ -116,7 +120,7 @@ export default function Home() {
             {formatUseCases.map((fc) => (
               <UseCaseLink key={fc.slug} href={`/generator/${fc.slug}`} title={fc.title} />
             ))}
-            <UseCaseLink href="/qr-code-scanner" title="QR Code Scanner" />
+            <UseCaseLink href="/scanner" title="QR Code Scanner" />
           </div>
         </div>
       </section>

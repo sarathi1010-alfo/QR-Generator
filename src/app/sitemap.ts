@@ -16,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/privacy-policy',
     '/terms-of-service',
     '/blog',
-    '/qr-code-scanner',
+    '/scanner',
   ].map((route) => ({
     url: buildCanonical(route),
     lastModified,

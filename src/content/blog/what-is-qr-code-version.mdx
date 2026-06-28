@@ -1,0 +1,43 @@
+---
+title: "What is a QR Code Version? | QRBuild Guide"
+description: "A QR code version defines the overall size and grid dimensions of the code, ranging from Version 1 to Version 40."
+publishedAt: "2024-06-28"
+category: "Glossary"
+faqItems:
+  - question: "How many QR code versions are there?"
+    answer: "There are 40 versions of QR codes, ranging from Version 1 (21x21 modules) to Version 40 (177x177 modules)."
+---
+
+# What is a QR Code Version?
+
+> **Definition:** A QR code version defines the overall dimensions and data capacity of the symbol. There are 40 versions, starting at Version 1 (21x21 grid) and growing in increments of 4 modules per side up to Version 40 (177x177 grid).
+
+## How Does QR Code Version Work?
+
+As you input more data into a QR code generator, the software automatically upgrades the version to a larger grid size to accommodate the extra information. A higher version number means a denser QR code with more small squares (modules).
+
+## Real-World Example in Data Encoding
+
+A short URL like `qr.alfo.online` easily fits into a Version 1 or 2 QR code. However, a complete vCard with a name, phone number, address, and email might require a Version 10 code, making the resulting image look much more complex and dense.
+
+## Why is the Version Important?
+
+Understanding versions is crucial for print design. A Version 40 QR code is extremely dense and requires a much larger physical print size for standard smartphone cameras to resolve the tiny modules compared to a Version 1 code.
+
+## Version vs. Data Capacity
+
+| Aspect | Version 1 | Version 40 |
+|--------|-----------|------------|
+| Grid Size | 21x21 modules | 177x177 modules |
+| Density | Very low | Very high |
+| Typical Use | Short URLs, simple text | Large documents, vCards |
+
+---
+
+**Core Principles:**
+- 🔑 Ranges from Version 1 to 40
+- 🔑 Each version grows by 4x4 modules
+- 🔑 Higher versions require larger print sizes
+- 🔑 Auto-adjusts based on data input
+
+**Related:** [vCard QR Code Generator](/generator/vcard) • [About QRBuild](/about)
