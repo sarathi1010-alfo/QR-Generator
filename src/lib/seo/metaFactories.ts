@@ -140,12 +140,12 @@ export function buildFaqMeta(page: any): SeoMeta {
 }
 
 // Custom factories for QRBuild specific pages
-export function buildGeneratorMeta(config: any): SeoMeta {
+export function buildGeneratorMeta(config: any, overrideSlug?: string): SeoMeta {
   return {
     pageType: 'website',
-    title: `Free ${config.title} QR Code Generator | QRBuild`,
+    title: config.title.includes('in') ? config.title : `Free ${config.title} QR Code Generator | QRBuild`,
     description: config.description ? config.description.substring(0, 160) : '',
-    slug: `/generator/${config.slug}`,
+    slug: overrideSlug ? `/${overrideSlug}` : `/generator/${config.slug}`,
     faqItems: config.faqs?.map((f: any) => ({ question: f.q, answer: f.a })),
     ogImage: {
       url: `${BASE_URL}/og?title=${encodeURIComponent(`Free ${config.title} QR Code Generator`)}&type=generator`,
