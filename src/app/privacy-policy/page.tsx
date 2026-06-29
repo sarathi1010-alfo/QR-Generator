@@ -72,7 +72,7 @@ export default function PrivacyPolicy() {
           Google's use of advertising cookies enables it and its partners to serve ads based on your visit to QRBuild and other sites. You may opt out of personalized advertising by visiting <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer" className="text-cta hover:underline">Google Ads Settings</a>.
         </p>
         <p>
-          For more information about how Google uses your data, please visit <a href="https://policies.google.com/technologies/ads/" target="_blank" rel="noopener noreferrer" className="text-cta hover:underline">Google's Privacy & Terms page</a>.
+          For more information about how Google uses your data, please visit <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer" className="text-cta hover:underline">Google's Privacy & Terms page</a>.
         </p>
 
         <h3>3.3 Google Analytics (if applicable)</h3>
