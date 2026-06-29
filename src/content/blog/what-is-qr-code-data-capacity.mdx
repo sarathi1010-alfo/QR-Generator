@@ -1,0 +1,44 @@
+---
+title: "What is QR Code Data Capacity? | QRBuild Guide"
+description: "QR code data capacity refers to the maximum amount of information that can be encoded in a single QR code."
+publishedAt: "2024-06-28"
+category: "Glossary"
+faqItems:
+  - question: "How much data can a QR code hold?"
+    answer: "A standard QR code can hold up to 7,089 numeric characters, 4,296 alphanumeric characters, or 2,953 bytes of binary data."
+---
+
+# What is QR Code Data Capacity?
+
+> **Definition:** QR code data capacity determines the maximum amount of information you can store in a single code. A maximum-size QR code (Version 40, Low error correction) can hold 7,089 numeric characters or 4,296 alphanumeric characters.
+
+## How Does Data Capacity Work?
+
+Data capacity is determined by three factors: the QR code's version (size/grid), the error correction level chosen, and the type of data being encoded (numeric, alphanumeric, binary, or Kanji). Higher error correction reduces the available space for raw data.
+
+## Real-World Example of Data Capacity Limits
+
+If you want to encode a 500-word text document directly into a QR code without hosting it online, the QR code will be very dense. A scanner might struggle to read it quickly compared to a QR code containing just a short web link.
+
+## Why is Data Capacity Important?
+
+Knowing the capacity helps in deciding whether to use static or dynamic QR codes. For large amounts of data, it is often better to host the data online and encode the short URL, ensuring the QR code remains simple, small, and fast to scan.
+
+## Data Type Capacities (Max Version 40)
+
+| Data Type | Max Characters | Description |
+|-----------|----------------|-------------|
+| Numeric | 7,089 | Numbers (0-9) only |
+| Alphanumeric | 4,296 | Letters, numbers, basic symbols |
+| Binary/Byte | 2,953 | 8-bit data (e.g., standard text) |
+| Kanji | 1,817 | Japanese characters |
+
+---
+
+**Core Principles:**
+- 🔑 Inverse relationship with error correction
+- 🔑 Different capacities for different character sets
+- 🔑 Dense codes take longer to scan
+- 🔑 Keep data minimal for best performance
+
+**Related:** [URL QR Code Generator](/generator/url) • [About QRBuild](/about)

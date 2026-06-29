@@ -1,0 +1,43 @@
+---
+title: "What is a QR Code Quiet Zone? | QRBuild Guide"
+description: "A QR code's quiet zone is the blank margin surrounding the code. It helps scanners distinguish the code from its background."
+publishedAt: "2024-06-28"
+category: "Glossary"
+faqItems:
+  - question: "How large should the quiet zone be?"
+    answer: "The quiet zone must be at least 4 modules wide (about 15% of the code's size) around the entire QR code."
+---
+
+# What is a QR Code Quiet Zone?
+
+> **Definition:** A QR code's quiet zone is the blank margin surrounding the code. It must be at least 4 modules wide (about 15% of the code's size) to help scanners distinguish the code from its background. Without it, scanning reliability drops significantly.
+
+## How Does a Quiet Zone Work?
+
+QR code scanners detect the quiet zone to identify the boundaries of the code. The contrast between the blank space and the dark pixels of the code's finder patterns tells the scanner exactly where the QR code starts and ends, ensuring accurate data retrieval.
+
+## Real-World Example of a Quiet Zone in Print Media
+
+Business cards should have at least 4mm of white space around the QR code. If the design bleeds into the quiet zone with text, colors, or graphics, the QR code might become unscannable for most devices.
+
+## Why is the Quiet Zone Important?
+
+The quiet zone ensures scanning reliability; without it, scanners may fail to read the code entirely. It protects the integrity of the data points and finder patterns near the edge.
+
+## Quiet Zone vs. Error Correction
+
+| Aspect | Quiet Zone | Error Correction |
+|--------|------------|------------------|
+| Purpose | Boundary identification | Data recovery |
+| Location | Outer margin | Embedded in code |
+| Effect of missing it | Scanner cannot find the code | Code is vulnerable to damage |
+
+---
+
+**Core Principles:**
+- 🔑 Minimum 4 modules wide
+- 🔑 ~15% of total code size
+- 🔑 No text or graphics in this area
+- 🔑 Must contrast with the code elements
+
+**Related:** [URL QR Code Generator](/generator/url) • [About QRBuild](/about)

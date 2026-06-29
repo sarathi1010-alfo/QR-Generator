@@ -1,0 +1,44 @@
+---
+title: "What is Error Correction in QR Codes? | QRBuild Guide"
+description: "Error correction allows a QR code to be scanned even if it is partially damaged, dirty, or obscured."
+publishedAt: "2024-06-28"
+category: "Glossary"
+faqItems:
+  - question: "What are the four levels of QR code error correction?"
+    answer: "The four levels are L (Low, 7%), M (Medium, 15%), Q (Quartile, 25%), and H (High, 30%)."
+---
+
+# What is Error Correction in QR Codes?
+
+> **Definition:** Error correction is a feature of QR codes that allows them to remain scannable even if they are partially damaged, dirty, or covered. It uses the Reed-Solomon error correction algorithm to restore missing data.
+
+## How Does Error Correction Work?
+
+QR codes embed mathematical backup data alongside the actual information. When a scanner reads the code, it uses this backup data (Reed-Solomon codes) to reconstruct any missing or unreadable modules, ensuring the original message is correctly interpreted.
+
+## Real-World Example of Error Correction
+
+If you print a QR code on a poster outdoors and a corner gets torn or covered in dirt, a QR code with High (H) error correction can still be perfectly scanned, recovering up to 30% of the damaged data.
+
+## Why is Error Correction Important?
+
+Error correction ensures the longevity and reliability of QR codes in physical environments where wear and tear are common. It also allows for creative implementations, like placing a logo in the center of the QR code (which obscures some data but is recovered by error correction).
+
+## Error Correction Levels
+
+| Level | Recovery Capacity | Best Use Case |
+|-------|-------------------|---------------|
+| Level L (Low) | ~7% | Clean environments, dense data |
+| Level M (Medium) | ~15% | Standard print media, digital screens |
+| Level Q (Quartile)| ~25% | Industrial environments |
+| Level H (High) | ~30% | QR codes with central logos, harsh conditions |
+
+---
+
+**Core Principles:**
+- 🔑 Higher error correction increases code density
+- 🔑 Essential for codes printed in physical spaces
+- 🔑 Enables placing logos over QR codes
+- 🔑 Level M is standard for most general uses
+
+**Related:** [WiFi QR Code Generator](/generator/wifi) • [About QRBuild](/about)

@@ -33,7 +33,9 @@ export const coreUseCases: SEOPageConfig[] = [
     primaryUse: "url",
     features: ["Instant link sharing", "Custom brand colors", "High-res SVG/PNG", "No registration required"],
     faqs: [
-      { q: "Can I change the URL later?", a: "This tool generates static QR codes. To change the link later, you would need a dynamic QR service or use a URL shortener like Bitly." }
+      { q: "Can I change the URL later?", a: "This tool generates static QR codes. To change the link later, you would need a dynamic QR service or use a URL shortener like Bitly." },
+      { q: "Do URL QR codes expire?", a: "No, static URL QR codes never expire. However, the link will stop working if you take down the destination website." },
+      { q: "How small can I print a URL QR code?", a: "The absolute minimum size is 2x2 cm (0.8x0.8 inches) to ensure most smartphone cameras can reliably scan it." }
     ]
   },
   {
@@ -80,6 +82,8 @@ export const coreUseCases: SEOPageConfig[] = [
       "Always up-to-date info"
     ],
     faqs: [
+      { q: "How do I create a vCard QR code?", a: "Enter your contact details in our generator (Name, Phone, Email, Company, etc.) and it will automatically generate a vCard format code." },
+      { q: "Can a vCard QR code contain an image?", a: "Standard static vCard QR codes do not contain profile images due to data size limits. You would need a dynamic vCard landing page for that." },
       { q: "What is a VCard?", a: "A VCard is a file format for electronic business cards. It contains your name, address, phone numbers, and email." }
     ]
   },

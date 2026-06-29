@@ -27,7 +27,7 @@ export default function Navbar() {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             <Link href="/generator/url" className="text-sm font-medium hover:text-cta transition-colors">Generator</Link>
-            <Link href="/qr-code-scanner" className="text-sm font-medium hover:text-cta transition-colors">Scanner</Link>
+            <Link href="/scanner" className="text-sm font-medium hover:text-cta transition-colors">Scanner</Link>
 
             <div className="relative" onMouseEnter={() => setIsToolsOpen(true)} onMouseLeave={() => setIsToolsOpen(false)}>
               <button className="flex items-center gap-1 text-sm font-medium hover:text-cta transition-colors py-2">
@@ -74,7 +74,7 @@ export default function Navbar() {
               Generator
             </Link>
             <Link
-              href="/qr-code-scanner"
+              href="/scanner"
               className="block px-3 py-2 text-base font-medium hover:bg-bg rounded-md"
               onClick={() => setIsOpen(false)}
             >
