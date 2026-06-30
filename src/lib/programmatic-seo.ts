@@ -98,8 +98,8 @@ export const longTailUseCases: SEOPageConfig[] = [
   }
 ];
 
-export const downloadFormats = [];
-export const learnTopics = [];
-export const industryUseCases = [];
-export const useCasesExtra = [];
-export const qrTypesExtra = [];
+export const downloadFormats: SEOPageConfig[] = [];
+export const learnTopics: SEOPageConfig[] = [];
+export const industryUseCases: SEOPageConfig[] = [];
+export const useCasesExtra: SEOPageConfig[] = [];
+export const qrTypesExtra: SEOPageConfig[] = [];
