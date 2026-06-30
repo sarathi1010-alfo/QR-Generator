@@ -360,7 +360,9 @@ export const formatUseCases: SEOPageConfig[] = [
   }
 ];
 
-export const allSEOConfigs = [...coreUseCases, ...businessUseCases, ...platformUseCases, ...formatUseCases];
+import { longTailUseCases } from "./programmatic-seo";
+
+export const allSEOConfigs = [...coreUseCases, ...businessUseCases, ...platformUseCases, ...formatUseCases, ...longTailUseCases];
 
 export function getSEOConfigBySlug(slug: string) {
   return allSEOConfigs.find(c => c.slug === slug);
