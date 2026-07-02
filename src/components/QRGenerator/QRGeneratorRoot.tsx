@@ -270,7 +270,7 @@ export default function QRGeneratorRoot({ initialTab = "url" }: { initialTab?: s
                 </>
               )}
 
-              <div className="mt-12 card p-6 bg-accent text-white">
+              <div id="history" className="mt-12 card p-6 bg-accent text-white">
                 <div className="flex items-center gap-2 mb-4">
                   <History className="w-5 h-5 text-cta" />
                   <h3 className="font-display font-bold">Recent History</h3>

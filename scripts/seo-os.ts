@@ -80,6 +80,11 @@ function runQc() {
     runCommand('npx ts-node --project tsconfig.json scripts/seo-qc.ts');
 }
 
+function pingEngines() {
+    console.log("Pinging Search Engines and Triggering IndexNow...");
+    runCommand('npm run ping');
+}
+
 function generateReport() {
     console.log("Generating daily report...");
     const date = new Date().toISOString().split('T')[0];
@@ -114,6 +119,7 @@ switch (COMMAND) {
         console.log("Starting Daily Pipeline...");
         scaffoldBlog();
         runQc();
+        pingEngines();
         generateReport();
         console.log("Daily Pipeline Complete.");
         break;
