@@ -22,7 +22,7 @@ export default function UseCasesIndex() {
         {businessUseCases.map((uc) => (
           <Link
             key={uc.slug}
-            href={`/generator/${uc.slug}`}
+            href={`/qr-codes/${uc.slug}`}
             className="card p-6 hover:shadow-md transition-shadow group flex flex-col h-full"
           >
             <h2 className="font-display font-bold text-xl mb-3 group-hover:text-cta transition-colors">
