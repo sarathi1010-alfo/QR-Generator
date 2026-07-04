@@ -145,7 +145,7 @@ export function buildGeneratorMeta(config: any, overrideSlug?: string): SeoMeta 
     pageType: 'website',
     title: config.title.includes('in') ? config.title : `Free ${config.title} QR Code Generator | QRBuild`,
     description: config.description ? config.description.substring(0, 160) : '',
-    slug: overrideSlug ? `/${overrideSlug}` : `/generator/${config.slug}`,
+    slug: overrideSlug ? `/${overrideSlug}` : `/qr-codes/${config.slug}`,
     faqItems: config.faqs?.map((f: any) => ({ question: f.q, answer: f.a })),
     ogImage: {
       url: `${BASE_URL}/og?title=${encodeURIComponent(`Free ${config.title} QR Code Generator`)}&type=generator`,
@@ -159,7 +159,7 @@ export function buildTemplateMeta(config: any, cat: any): SeoMeta {
     pageType: 'website',
     title: `Free ${cat.name} Templates for ${config.title} QR Codes`,
     description: `Browse our collection of free ${cat.name.toLowerCase()} templates using ${config.title} QR codes. Generate, customize, and download instantly.`.substring(0, 160),
-    slug: `/generator/${config.slug}/templates/${cat.slug}`,
+    slug: `/qr-codes/${config.slug}/templates/${cat.slug}`,
     ogImage: {
       url: `${BASE_URL}/og?title=${encodeURIComponent(`${cat.name} Templates`)}&type=template`,
       alt: `${cat.name} Templates for ${config.title}`
@@ -172,7 +172,7 @@ export function buildComparisonMeta(config: any, comp: any): SeoMeta {
     pageType: 'website',
     title: `QRBuild vs ${comp.name} for ${config.title} QR Codes`,
     description: `Compare QRBuild and ${comp.name} for creating ${config.title} QR codes. Find out why QRBuild is the best free, instant alternative.`.substring(0, 160),
-    slug: `/generator/${config.slug}/vs/${comp.slug}`,
+    slug: `/qr-codes/${config.slug}/vs/${comp.slug}`,
     ogImage: {
       url: `${BASE_URL}/og?title=${encodeURIComponent(`QRBuild vs ${comp.name}`)}&type=vs`,
       alt: `QRBuild vs ${comp.name}`

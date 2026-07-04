@@ -10,7 +10,7 @@ export async function GET() {
     .map(
       (config) => `
   <url>
-    <loc>${buildCanonical(`/generator/${config.slug}`)}</loc>
+    <loc>${buildCanonical(`/qr-codes/${config.slug}`)}</loc>
     <lastmod>${lastModified}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>

@@ -19,7 +19,7 @@ function generateDummyContent(wordCount: number, internalLinksCount: number) {
 
   // Add some internal links
   for (let i = 0; i < internalLinksCount; i++) {
-    content += ` [Link ${i}](/generator/url) `;
+    content += ` [Link ${i}](/qr-codes/url) `;
   }
 
   return content;

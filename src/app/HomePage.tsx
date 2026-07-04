@@ -49,7 +49,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Why use QRBuild?</h2>
-            <p className="text-muted max-w-xl mx-auto">Everything you need to create professional QR codes in seconds. Looking for business tips? Read our <Link href="/blog/business-qr-code-guide" className="text-cta hover:underline">guide on creating business QR codes</Link>.</p>
+            <p className="text-muted max-w-xl mx-auto">Everything you need to create professional QR codes in seconds. Looking for business tips? Read our <Link href="/blog/business-qr-code-guide" className="text-cta hover:underline">guide on creating business QR codes</Link>. (Last updated: July 1, 2026)</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -109,16 +109,16 @@ export default function Home() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {coreUseCases.map((uc) => (
-              <UseCaseLink key={uc.slug} href={`/generator/${uc.slug}`} title={`${uc.title} Generator`} />
+              <UseCaseLink key={uc.slug} href={`/qr-codes/${uc.slug}`} title={`${uc.title} Generator`} />
             ))}
             {businessUseCases.map((uc) => (
-              <UseCaseLink key={uc.slug} href={`/generator/${uc.slug}`} title={uc.title} />
+              <UseCaseLink key={uc.slug} href={`/qr-codes/${uc.slug}`} title={uc.title} />
             ))}
             {platformUseCases.map((pc) => (
-              <UseCaseLink key={pc.slug} href={`/generator/${pc.slug}`} title={pc.name || pc.title} />
+              <UseCaseLink key={pc.slug} href={`/qr-codes/${pc.slug}`} title={pc.name || pc.title} />
             ))}
             {formatUseCases.map((fc) => (
-              <UseCaseLink key={fc.slug} href={`/generator/${fc.slug}`} title={fc.title} />
+              <UseCaseLink key={fc.slug} href={`/qr-codes/${fc.slug}`} title={fc.title} />
             ))}
             <UseCaseLink href="/scanner" title="QR Code Scanner" />
           </div>
