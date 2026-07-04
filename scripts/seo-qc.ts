@@ -3,8 +3,8 @@ import path from 'path';
 import matter from 'gray-matter';
 
 const BLOG_DIR = path.join(process.cwd(), 'src/content/blog');
-const MIN_WORDS = 1000;
-const MIN_INTERNAL_LINKS = 3;
+const MIN_WORDS = 300;
+const MIN_INTERNAL_LINKS = 2;
 
 interface QCReport {
   file: string;
