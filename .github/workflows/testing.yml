@@ -254,7 +254,15 @@ jobs:
                         && git config user.email "jules-bot@users.noreply.github.com" \
                         && git add -A && git commit -m "$commit_msg" \
                         && git push origin "HEAD:$headref"); then
-                      mergeable=$(gh pr view "$pr" --repo "$GITHUB_REPOSITORY" --json mergeable --jq .mergeable)
+                      # mergeable is computed async by GitHub -- poll until it's fresh
+                      # (not UNKNOWN) instead of trusting the first read after a push.
+                      mergeable="UNKNOWN"
+                      for j in $(seq 1 10); do
+                        mergeable=$(gh pr view "$pr" --repo "$GITHUB_REPOSITORY" --json mergeable --jq .mergeable)
+                        echo "  mergeable recheck $j: $mergeable"
+                        [ "$mergeable" != "UNKNOWN" ] && break
+                        sleep 5
+                      done
                     else
                       echo "PR #$pr: failed to apply/push Jules's patch -> skipping"
                       mergeable="CONFLICTING"
