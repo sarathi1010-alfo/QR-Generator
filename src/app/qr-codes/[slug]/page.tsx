@@ -21,6 +21,11 @@ export async function generateStaticParams() {
   }));
 }
 
+import { resolveMetadata } from "@/lib/seo/resolveMetadata";
+import { buildGeneratorMeta } from "@/lib/seo/metaFactories";
+import { JsonLd } from "@/components/JsonLd";
+import { buildFaqSchema } from "@/lib/seo/buildSchema";
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const config = getSEOConfigBySlug(slug);
