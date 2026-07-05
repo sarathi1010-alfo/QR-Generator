@@ -26,7 +26,7 @@ export default function Navbar() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/generator/url" className="text-sm font-medium hover:text-cta transition-colors">Generator</Link>
+            <Link href="/qr-codes/url" className="text-sm font-medium hover:text-cta transition-colors">Generator</Link>
             <Link href="/scanner" className="text-sm font-medium hover:text-cta transition-colors">Scanner</Link>
 
             <div className="relative" onMouseEnter={() => setIsToolsOpen(true)} onMouseLeave={() => setIsToolsOpen(false)}>
@@ -67,7 +67,7 @@ export default function Navbar() {
         <div className="md:hidden bg-surface border-b border-border animate-in fade-in slide-in-from-top-4">
           <div className="px-2 pt-2 pb-3 space-y-1">
             <Link
-              href="/generator/url"
+              href="/qr-codes/url"
               className="block px-3 py-2 text-base font-medium hover:bg-bg rounded-md"
               onClick={() => setIsOpen(false)}
             >

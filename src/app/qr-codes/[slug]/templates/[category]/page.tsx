@@ -40,7 +40,7 @@ export default async function TemplatePage({ params }: Props) {
   return (
     <div className="py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <Link href={`/generator/${config.slug}`} className="inline-flex items-center gap-2 text-sm font-bold mb-8 hover:text-cta transition-colors">
+        <Link href={`/qr-codes/${config.slug}`} className="inline-flex items-center gap-2 text-sm font-bold mb-8 hover:text-cta transition-colors">
           <ArrowLeft className="w-4 h-4" />
           Back to {config.title} Generator
         </Link>

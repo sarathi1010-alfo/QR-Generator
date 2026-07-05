@@ -24,7 +24,7 @@ export default function GeneratorsIndex() {
         {allGenerators.map((gen) => (
           <Link
             key={gen.slug}
-            href={`/generator/${gen.slug}`}
+            href={`/qr-codes/${gen.slug}`}
             className="card p-6 hover:shadow-md transition-shadow group flex flex-col h-full"
           >
             <div className="flex items-center gap-4 mb-4">

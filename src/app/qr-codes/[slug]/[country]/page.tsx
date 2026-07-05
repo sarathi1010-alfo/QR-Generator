@@ -84,7 +84,7 @@ export default async function LocalizedGeneratorPage({ params }: Props) {
     "@type": "LocalBusiness",
     "name": `QRBuild ${countryName}`,
     "image": "https://qr.alfo.online/og-image.jpg",
-    "url": `https://qr.alfo.online/generator/${slug}/${country}`,
+    "url": `https://qr.alfo.online/qr-codes/${slug}/${country}`,
     "telephone": "",
     "address": {
       "@type": "PostalAddress",
