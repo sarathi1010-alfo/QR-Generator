@@ -1,537 +1,174 @@
-name: Advanced Automation Engine
+name: Auto Commit on PR
+
+# WHEN THIS RUNS
+#   - pull_request: opened/synchronize/reopened/edited -> fires on every incoming PR and every
+#     push to an open PR (event-driven, no fixed-time cron)
+#   - workflow_dispatch                                 -> on-demand sweep for PRs that already
+#     existed before this workflow was added (pull_request events don't fire retroactively)
+#
+# SECRETS USED (repo Settings -> Secrets and variables -> Actions)
+#   PAT         - GitHub Personal Access Token (repo scope). Used instead of the default
+#                 GITHUB_TOKEN so pushes/merges/branch deletes aren't blocked by the default
+#                 token's restrictions.
+#   GCP_SA_KEY  - GCP service account JSON key, used to auth for the Google Indexing API step.
+#   VERCEL_TOKEN - present in the repo but not wired into this workflow.
+#
+# WHAT TO CUSTOMIZE (marked inline)
+#   1. The "Run auto-fix" command in both jobs (currently a no-op placeholder)
+#   2. The changed-file -> URL mapping in the indexing step
 
 on:
-  push:
-    branches: [main, master]
-    paths-ignore:
-      - '.github/workflows/**'
-      - 'README.md'
-      - '.gitignore'
-      - '*.md'
-  schedule:
-    - cron: '0 */4 * * *'  # Every 4 hours
-    - cron: '0 8,12,16,20 * * *'  # 8AM, 12PM, 4PM, 8PM UTC
+  pull_request:
+    types: [opened, synchronize, reopened, edited]
   workflow_dispatch:
     inputs:
-      force_reindex:
-        description: 'Force full reindex of all content'
+      pr_number:
+        description: 'Specific PR number (blank = sweep every open PR)'
         required: false
-        default: false
-        type: boolean
+        default: ''
 
 permissions:
   contents: write
   pull-requests: write
-  checks: write
-  statuses: write
-  deployments: write
-  id-token: write
-
-concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
 
 env:
-  NODE_VERSION: '20'
-  PYTHON_VERSION: '3.11'
-  SITE_URL: 'https://qr-generator-topaz-nine.vercel.app'
-  MAX_SITEMAP_ENTRIES: 45000
-  GOOGLE_INDEXING_ENDPOINT: 'https://indexing.googleapis.com/v3/urlNotifications:publish'
+  GH_TOKEN: ${{ secrets.PAT }}
 
 jobs:
-  # JOB 1: Content Audit & Duplicate Detection
-  content-audit:
-    name: Content Audit & Deduplication
+  # ── Incoming / upcoming: fires live on open, push, reopen ──
+  direct:
+    if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
-    outputs:
-      unique_content: ${{ steps.audit.outputs.unique_content }}
-      duplicate_count: ${{ steps.audit.outputs.duplicate_count }}
-      content_hash: ${{ steps.audit.outputs.content_hash }}
-    
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
+          ref: ${{ github.head_ref }}
           token: ${{ secrets.PAT }}
-          fetch-depth: 0
-      
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: ${{ env.PYTHON_VERSION }}
-      
-      - name: Audit Content & Detect Duplicates
-        id: audit
-        run: |
-          python - << 'EOF'
-          import os
-          import hashlib
-          import json
-          from pathlib import Path
-          
-          content_hashes = {}
-          duplicates = []
-          unique_files = []
-          
-          # Scan all content files
-          content_dirs = ['public', 'src', 'content', 'blog', 'posts']
-          
-          for dir_path in content_dirs:
-              if os.path.exists(dir_path):
-                  for file_path in Path(dir_path).rglob('*'):
-                      if file_path.suffix in ['.md', '.mdx', '.txt', '.html', '.xml']:
-                          try:
-                              with open(file_path, 'r', encoding='utf-8') as f:
-                                  content = f.read()
-                              
-                              # Generate content hash (ignoring metadata)
-                              content_hash = hashlib.sha256(content.encode()).hexdigest()
-                              
-                              if content_hash in content_hashes:
-                                  duplicates.append(str(file_path))
-                                  # Delete duplicate
-                                  os.remove(file_path)
-                                  print(f"REMOVED DUPLICATE: {file_path}")
-                              else:
-                                  content_hashes[content_hash] = str(file_path)
-                                  unique_files.append(str(file_path))
-                          except Exception as e:
-                              print(f"Error processing {file_path}: {e}")
-          
-          # Save results
-          with open('content_audit.json', 'w') as f:
-              json.dump({
-                  'unique_files': unique_files,
-                  'duplicates': duplicates,
-                  'total_unique': len(unique_files),
-                  'total_duplicates': len(duplicates)
-              }, f)
-          
-          print(f"UNIQUE_CONTENT={len(unique_files)}")
-          print(f"DUPLICATE_COUNT={len(duplicates)}")
-          EOF
-          
-          # Set outputs
-          echo "unique_content=$(python -c "import json; print(json.load(open('content_audit.json'))['total_unique'])")" >> $GITHUB_OUTPUT
-          echo "duplicate_count=$(python -c "import json; print(json.load(open('content_audit.json'))['total_duplicates'])")" >> $GITHUB_OUTPUT
-          echo "content_hash=$(sha256sum content_audit.json | cut -d' ' -f1)" >> $GITHUB_OUTPUT
-      
-      - name: Upload Audit Report
-        uses: actions/upload-artifact@v4
-        with:
-          name: content-audit-report
-          path: content_audit.json
+          fetch-depth: 2
 
-  # JOB 2: Smart Sitemap Generator
-  sitemap-generator:
-    name: Sitemap Generator (5 Files)
-    runs-on: ubuntu-latest
-    needs: [content-audit]
-    outputs:
-      sitemap_count: ${{ steps.generate.outputs.sitemap_count }}
-      urls_indexed: ${{ steps.generate.outputs.urls_indexed }}
-    
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.PAT }}
-          fetch-depth: 0
-      
-      - name: Download Audit Report
-        uses: actions/download-artifact@v4
-        with:
-          name: content-audit-report
-      
-      - name: Generate 5 Sitemaps
-        id: generate
+      - name: Run auto-fix
         run: |
-          python - << 'EOF'
-          import os
-          import json
-          import xml.etree.ElementTree as ET
-          from datetime import datetime
-          from urllib.parse import urljoin
-          
-          BASE_URL = os.environ.get('SITE_URL', 'https://qr-generator-topaz-nine.vercel.app')
-          MAX_URLS = 45000  # Max per sitemap
-          
-          # Load audit results
-          with open('content_audit.json', 'r') as f:
-              audit_data = json.load(f)
-          
-          unique_files = audit_data.get('unique_files', [])
-          
-          # Create sitemap index
-          sitemap_index = ET.Element('sitemapindex', xmlns='http://www.sitemaps.org/schemas/sitemap/0.9')
-          
-          # Distribute URLs across 5 sitemaps
-          total_urls = len(unique_files)
-          urls_per_sitemap = max(1, total_urls // 5)
-          
-          sitemap_urls = []
-          for i in range(5):
-              start_idx = i * urls_per_sitemap
-              end_idx = start_idx + urls_per_sitemap if i < 4 else total_urls
-              
-              if start_idx >= total_urls:
-                  break
-              
-              sitemap_urls.append(unique_files[start_idx:end_idx])
-          
-          # Generate each sitemap
-          sitemap_count = 0
-          total_urls_indexed = 0
-          
-          for i, urls in enumerate(sitemap_urls, 1):
-              if not urls:
-                  continue
-              
-              urlset = ET.Element('urlset', xmlns='http://www.sitemaps.org/schemas/sitemap/0.9')
-              
-              for file_path in urls:
-                  url = ET.SubElement(urlset, 'url')
-                  
-                  # Generate URL from file path
-                  if file_path.startswith('public/'):
-                      url_path = file_path.replace('public/', '').replace('index.html', '').replace('.html', '')
-                  else:
-                      url_path = file_path
-                  
-                  loc = ET.SubElement(url, 'loc')
-                  loc.text = urljoin(BASE_URL, url_path)
-                  
-                  lastmod = ET.SubElement(url, 'lastmod')
-                  lastmod.text = datetime.now().strftime('%Y-%m-%d')
-                  
-                  changefreq = ET.SubElement(url, 'changefreq')
-                  changefreq.text = 'daily' if 'blog' in file_path or 'post' in file_path else 'weekly'
-                  
-                  priority = ET.SubElement(url, 'priority')
-                  priority.text = '0.9' if 'index' in file_path or 'home' in file_path else '0.8'
-                  
-                  total_urls_indexed += 1
-              
-              # Write sitemap file
-              tree = ET.ElementTree(urlset)
-              ET.indent(tree, space='  ')
-              sitemap_filename = f'public/sitemap_{i}.xml'
-              tree.write(sitemap_filename, encoding='utf-8', xml_declaration=True)
-              sitemap_count += 1
-              
-              # Add to sitemap index
-              sitemap = ET.SubElement(sitemap_index, 'sitemap')
-              loc = ET.SubElement(sitemap, 'loc')
-              loc.text = urljoin(BASE_URL, f'/sitemap_{i}.xml')
-              lastmod = ET.SubElement(sitemap, 'lastmod')
-              lastmod.text = datetime.now().strftime('%Y-%m-%d')
-          
-          # Write sitemap index
-          tree = ET.ElementTree(sitemap_index)
-          ET.indent(tree, space='  ')
-          tree.write('public/sitemap.xml', encoding='utf-8', xml_declaration=True)
-          
-          # Create sitemap summary
-          with open('sitemap_summary.json', 'w') as f:
-              json.dump({
-                  'sitemap_count': sitemap_count,
-                  'urls_indexed': total_urls_indexed,
-                  'timestamp': datetime.now().isoformat()
-              }, f)
-          
-          print(f"Generated {sitemap_count} sitemaps with {total_urls_indexed} URLs")
-          EOF
-          
-          echo "sitemap_count=$(python -c "import json; print(json.load(open('sitemap_summary.json'))['sitemap_count'])")" >> $GITHUB_OUTPUT
-          echo "urls_indexed=$(python -c "import json; print(json.load(open('sitemap_summary.json'))['urls_indexed'])")" >> $GITHUB_OUTPUT
-      
-      - name: Upload Sitemaps
-        uses: actions/upload-artifact@v4
-        with:
-          name: sitemaps
-          path: |
-            public/sitemap*.xml
-            sitemap_summary.json
+          # >>> CUSTOMIZE THIS <<<
+          echo "no-op placeholder"
 
-  # JOB 3: Google Indexing API
-  google-indexing:
-    name: Google Indexing API
-    runs-on: ubuntu-latest
-    needs: [sitemap-generator]
-    if: success()
-    
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          token: ${{ secrets.PAT }}
-          fetch-depth: 0
-      
-      - name: Download Sitemaps
-        uses: actions/download-artifact@v4
-        with:
-          name: sitemaps
-      
-      - name: Setup Google Cloud Authentication
+          commit_message: "chore: automated update [skip ci]"
+
+      - name: Authenticate to Google Cloud
+        id: gauth
         uses: google-github-actions/auth@v2
         with:
           credentials_json: ${{ secrets.GCP_SA_KEY }}
-      
-      - name: Install Google API Client
-        run: |
-          pip install google-api-python-client google-auth-httplib2 google-auth-oauthlib
-      
-      - name: Index URLs with Google
-        run: |
-          python - << 'EOF'
-          import json
-          import os
-          from google.oauth2 import service_account
-          from googleapiclient.discovery import build
-          import xml.etree.ElementTree as ET
-          
-          # Load sitemap summary
-          with open('sitemap_summary.json', 'r') as f:
-              summary = json.load(f)
-          
-          # Extract URLs from sitemaps
-          urls_to_index = []
-          for i in range(1, summary['sitemap_count'] + 1):
-              try:
-                  tree = ET.parse(f'public/sitemap_{i}.xml')
-                  root = tree.getroot()
-                  for url_elem in root.findall('{http://www.sitemaps.org/schemas/sitemap/0.9}url'):
-                      loc = url_elem.find('{http://www.sitemaps.org/schemas/sitemap/0.9}loc')
-                      if loc is not None and loc.text:
-                          urls_to_index.append(loc.text)
-              except Exception as e:
-                  print(f"Error reading sitemap_{i}.xml: {e}")
-          
-          # Initialize Google Indexing API
-          credentials = service_account.Credentials.from_service_account_file(
-              os.environ['GOOGLE_APPLICATION_CREDENTIALS'],
-              scopes=['https://www.googleapis.com/auth/indexing']
-          )
-          
-          service = build('indexing', 'v3', credentials=credentials)
-          
-          # Submit URLs in batches (max 200 per day free tier)
-          indexed_count = 0
-          failed_count = 0
-          
-          for url in urls_to_index[:200]:  # Respect free tier limits
-              try:
-                  body = {
-                      'url': url,
-                      'type': 'URL_UPDATED'
-                  }
-                  result = service.urlNotifications().publish(body=body).execute()
-                  indexed_count += 1
-                  print(f"INDEXED: {url}")
-              except Exception as e:
-                  failed_count += 1
-                  print(f"FAILED: {url} - {str(e)}")
-          
-          # Save indexing results
-          with open('indexing_results.json', 'w') as f:
-              json.dump({
-                  'total_urls': len(urls_to_index),
-                  'indexed': indexed_count,
-                  'failed': failed_count,
-                  'timestamp': summary['timestamp']
-              }, f)
-          
-          print(f"Indexed {indexed_count} URLs, {failed_count} failed")
-          EOF
-        
-      - name: Upload Indexing Results
-        uses: actions/upload-artifact@v4
-        with:
-          name: indexing-results
-          path: indexing_results.json
+          token_format: 'access_token'
 
-  # JOB 4: Smart Commit Manager (Ascending Order)
-  smart-commit:
-    name: Smart Commit Manager
+      - name: Submit changed URLs to Google Indexing API
+        run: |
+          # >>> CUSTOMIZE THIS: map changed files to real URLs for your site <<<
+          for f in $(git diff --name-only HEAD~1 HEAD); do
+            url="https://example.com/${f%.md}"
+            curl -s -X POST \
+              -H "Authorization: Bearer ${{ steps.gauth.outputs.access_token }}" \
+              -H "Content-Type: application/json" \
+              -d "{\"url\": \"$url\", \"type\": \"URL_UPDATED\"}" \
+              "https://indexing.googleapis.com/v3/urlNotifications:publish"
+          done
+
+      - name: Resolve default branch and PR base
+        id: branchcheck
+        run: |
+          default_branch=$(gh repo view "$GITHUB_REPOSITORY" --json defaultBranchRef --jq .defaultBranchRef.name)
+          base_branch=$(gh pr view ${{ github.event.pull_request.number }} --repo "$GITHUB_REPOSITORY" --json baseRefName --jq .baseRefName)
+          echo "default=$default_branch" >> "$GITHUB_OUTPUT"
+          echo "base=$base_branch" >> "$GITHUB_OUTPUT"
+
+      - name: Auto-merge into default branch
+        if: steps.branchcheck.outputs.base == steps.branchcheck.outputs.default
+        run: |
+          gh pr merge ${{ github.event.pull_request.number }} \
+            --merge --auto --delete-branch \
+            --repo "$GITHUB_REPOSITORY" \
+            || echo "auto-merge could not be enabled (branch protection / required checks may still be pending)"
+
+  # ── Already-existing PRs: discover targets on manual dispatch ──
+  discover:
+    if: github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
-    needs: [content-audit, sitemap-generator, google-indexing]
-    if: success() || failure()
-    
+    outputs:
+      prs: ${{ steps.list.outputs.prs }}
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.PAT }}
-          fetch-depth: 0
-      
-      - name: Download All Artifacts
-        uses: actions/download-artifact@v4
-        with:
-          path: .
-      
-      - name: Configure Git
+      - id: list
         run: |
-          git config --global user.name "automation-bot"
-          git config --global user.email "automation@github-actions.com"
-          git config --global pull.rebase false
-          git config --global core.autocrlf input
-      
-      - name: Pull Latest Changes
-        run: git pull origin main --rebase || git pull origin master --rebase || true
-      
-      - name: Stage Changes (Ascending Order)
-        run: |
-          # Stage files in ascending order (oldest to newest)
-          git ls-files --others --modified --exclude-standard | sort -V | while read file; do
-            git add "$file"
-            echo "Staged: $file"
-          done
-          
-          # Add all new files sorted by creation time
-          find . -type f -not -path "./.git/*" -not -path "./node_modules/*" -newer .git/index 2>/dev/null | sort -V | while read file; do
-            git add "$file"
-            echo "Added new file: $file"
-          done
-      
-      - name: Generate Commit Message
-        id: commit_msg
-        run: |
-          TIMESTAMP=$(date +'%Y-%m-%d %H:%M:%S UTC')
-          COMMIT_MSG="chore(automation): comprehensive content update ${TIMESTAMP}
-          
-          Automated commit generated by CI pipeline with strict governance
-          
-          Changes Summary:
-          - Unique Content: ${{ needs.content-audit.outputs.unique_content }}
-          - Duplicates Removed: ${{ needs.content-audit.outputs.duplicate_count }}
-          - Sitemaps Generated: ${{ needs.sitemap-generator.outputs.sitemap_count }}
-          - URLs Indexed: ${{ needs.sitemap-generator.outputs.urls_indexed }}
-          - Google Indexing: Completed
-          
-          Trigger: ${{ github.event_name }}
-          Workflow: ${{ github.workflow }}
-          Run ID: ${{ github.run_id }}
-          
-          This commit includes:
-          - Deduplicated content
-          - 5 sitemap.xml files
-          - Google indexing updates
-          - Content audit results"
-          
-          echo "message<<EOF" >> $GITHUB_OUTPUT
-          echo "$COMMIT_MSG" >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
-      
-      - name: Create Commit
-        id: commit
-        run: |
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-            echo "changes=false" >> $GITHUB_OUTPUT
+          if [ -n "${{ github.event.inputs.pr_number }}" ]; then
+            echo "prs=[${{ github.event.inputs.pr_number }}]" >> "$GITHUB_OUTPUT"
           else
-            if git commit -m "${{ steps.commit_msg.outputs.message }}"; then
-              echo "Commit created successfully"
-              echo "changes=true" >> $GITHUB_OUTPUT
-              echo "hash=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
-            else
-              echo "Commit creation failed"
-              exit 1
-            fi
+            prs=$(gh pr list --repo "$GITHUB_REPOSITORY" --state open --json number --jq '[.[].number]')
+            echo "prs=$prs" >> "$GITHUB_OUTPUT"
           fi
-      
-      - name: Push Changes
-        if: steps.commit.outputs.changes == 'true'
+
+  sweep:
+    needs: discover
+    if: needs.discover.outputs.prs != '[]'
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        pr: ${{ fromJson(needs.discover.outputs.prs) }}
+    steps:
+      - id: ref
         run: |
-          for i in {1..5}; do
-            if git push origin main || git push origin master; then
-              echo "Push successful"
-              exit 0
-            else
-              echo "Push attempt $i failed, retrying..."
-              git pull origin main --rebase || git pull origin master --rebase
-              sleep 5
-            fi
+          headref=$(gh pr view ${{ matrix.pr }} --repo "$GITHUB_REPOSITORY" --json headRefName --jq .headRefName)
+          echo "headref=$headref" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ steps.ref.outputs.headref }}
+          token: ${{ secrets.PAT }}
+          fetch-depth: 2
+
+      - name: Run auto-fix
+        run: |
+          # >>> CUSTOMIZE THIS (keep in sync with the `direct` job) <<<
+          echo "no-op placeholder"
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: automated update [skip ci]"
+          branch: ${{ steps.ref.outputs.headref }}
+
+      - name: Authenticate to Google Cloud
+        id: gauth
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCP_SA_KEY }}
+          token_format: 'access_token'
+
+      - name: Submit changed URLs to Google Indexing API
+        run: |
+          # >>> CUSTOMIZE THIS: map changed files to real URLs for your site <<<
+          for f in $(git diff --name-only HEAD~1 HEAD); do
+            url="https://example.com/${f%.md}"
+            curl -s -X POST \
+              -H "Authorization: Bearer ${{ steps.gauth.outputs.access_token }}" \
+              -H "Content-Type: application/json" \
+              -d "{\"url\": \"$url\", \"type\": \"URL_UPDATED\"}" \
+              "https://indexing.googleapis.com/v3/urlNotifications:publish"
           done
-          echo "All push attempts failed"
-          exit 1
 
-  # JOB 5: Comprehensive Report
-  final-report:
-    name: Governance Report
-    runs-on: ubuntu-latest
-    needs: [content-audit, sitemap-generator, google-indexing, smart-commit]
-    if: always()
-    
-    steps:
-      - name: Generate Final Report
+      - name: Resolve default branch and PR base
+        id: branchcheck
         run: |
-          cat << 'EOF' >> $GITHUB_STEP_SUMMARY
-          # WORKFLOW EXECUTION REPORT
-          
-          ## Execution Details
-          - Repository: ${{ github.repository }}
-          - Branch: ${{ github.ref_name }}
-          - Event: ${{ github.event_name }}
-          - Run ID: ${{ github.run_id }}
-          - Timestamp: $(date -u +'%Y-%m-%d %H:%M:%S UTC')
-          - Status: ${{ job.status }}
-          
-          ## Content Audit Results
-          - Unique Content Files: ${{ needs.content-audit.outputs.unique_content }}
-          - Duplicates Removed: ${{ needs.content-audit.outputs.duplicate_count }}
-          - Content Hash: ${{ needs.content-audit.outputs.content_hash }}
-          
-          ## Sitemap Generation
-          - Sitemaps Generated: ${{ needs.sitemap-generator.outputs.sitemap_count }}
-          - URLs Indexed in Sitemaps: ${{ needs.sitemap-generator.outputs.urls_indexed }}
-          - Sitemap Format: XML 1.0
-          - Compliance: Google Sitemap Protocol
-          
-          ## Google Indexing
-          - Status: ${{ needs.google-indexing.result }}
-          - Indexing Method: Google Indexing API v3
-          - Authentication: GCP Service Account (GCP_SA_KEY)
-          
-          ## Commit Details
-          - Changes Detected: ${{ needs.smart-commit.outputs.changes || 'false' }}
-          - Commit Hash: ${{ needs.smart-commit.outputs.hash || 'N/A' }}
-          - Order: Ascending (oldest to newest)
-          
-          ## Governance Compliance
-          - Duplicate Detection: PASSED
-          - Sitemap Validation: PASSED
-          - Google Indexing: ${{ needs.google-indexing.result == 'success' && 'PASSED' || 'FAILED' }}
-          - Commit Integrity: ${{ needs.smart-commit.result == 'success' && 'PASSED' || 'FAILED' }}
-          
-          ## Links
-          - [Workflow Run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
-          - [Repository](${{ github.server_url }}/${{ github.repository }})
-          - [Sitemap](${{ env.SITE_URL }}/sitemap.xml)
-          
-          ## Next Steps
-          1. Verify sitemaps are accessible at /sitemap.xml
-          2. Check Google Search Console for indexing status
-          3. Monitor content quality metrics
-          4. Review duplicate detection accuracy
-          EOF
+          default_branch=$(gh repo view "$GITHUB_REPOSITORY" --json defaultBranchRef --jq .defaultBranchRef.name)
+          base_branch=$(gh pr view ${{ matrix.pr }} --repo "$GITHUB_REPOSITORY" --json baseRefName --jq .baseRefName)
+          echo "default=$default_branch" >> "$GITHUB_OUTPUT"
+          echo "base=$base_branch" >> "$GITHUB_OUTPUT"
 
-  # JOB 6: Error Recovery
-  error-recovery:
-    name: Error Recovery
-    runs-on: ubuntu-latest
-    needs: [smart-commit]
-    if: failure() && github.event_name == 'workflow_dispatch'
-    
-    steps:
-      - name: Emergency Rollback
+      - name: Auto-merge into default branch
+        if: steps.branchcheck.outputs.base == steps.branchcheck.outputs.default
         run: |
-          echo "# Error Recovery Report" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "## Failed Workflow: ${{ github.run_id }}" >> $GITHUB_STEP_SUMMARY
-          echo "Error detected in: ${{ needs.smart-commit.result }}" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "### Recovery Actions:" >> $GITHUB_STEP_SUMMARY
-          echo "1. Check workflow logs for details" >> $GITHUB_STEP_SUMMARY
-          echo "2. Verify repository secrets (PAT, GCP_SA_KEY, VERCEL_TOKEN)" >> $GITHUB_STEP_SUMMARY
-          echo "3. Review content for corruption" >> $GITHUB_STEP_SUMMARY
-          echo "4. Manual intervention may be required" >> $GITHUB_STEP_SUMMARY
+          gh pr merge ${{ matrix.pr }} \
+            --merge --auto --delete-branch \
+            --repo "$GITHUB_REPOSITORY" \
+            || echo "auto-merge could not be enabled (branch protection / required checks may still be pending)"
