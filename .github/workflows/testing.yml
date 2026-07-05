@@ -170,49 +170,102 @@ jobs:
       - name: Merge PRs ascending, resolving conflicts via Jules
         env:
           JULES_API_KEY: ${{ secrets.JULES_API_KEY }}
+          PAT: ${{ secrets.PAT }}
         run: |
           prs='${{ needs.discover.outputs.prs }}'
+          owner="${GITHUB_REPOSITORY%%/*}"
+          repo="${GITHUB_REPOSITORY##*/}"
+
+          # Look up this repo's Jules "source" name once (format varies, so ask the API
+          # rather than guessing the string -- per Jules docs' own recommended flow).
+          sources_resp=$(curl -s "https://jules.googleapis.com/v1alpha/sources?pageSize=100" \
+            -H "X-Goog-Api-Key: $JULES_API_KEY")
+          source_name=$(echo "$sources_resp" | jq -r --arg o "$owner" --arg r "$repo" \
+            '.sources[] | select(.githubRepo.owner==$o and .githubRepo.repo==$r) | .name')
+
+          if [ -z "$source_name" ]; then
+            echo "WARNING: no Jules source found for $owner/$repo -- conflict resolution will be skipped for all PRs"
+          fi
 
           for pr in $(echo "$prs" | jq -r '.[]'); do
             echo "=== PR #$pr ==="
 
             mergeable=$(gh pr view "$pr" --repo "$GITHUB_REPOSITORY" --json mergeable --jq .mergeable)
 
-            if [ "$mergeable" = "CONFLICTING" ]; then
+            if [ "$mergeable" = "CONFLICTING" ] && [ -n "$source_name" ]; then
               echo "PR #$pr has conflicts -> requesting Jules to resolve"
               headref=$(gh pr view "$pr" --repo "$GITHUB_REPOSITORY" --json headRefName --jq .headRefName)
 
-              # >>> VERIFY current request schema at https://jules.google/docs/api/reference <<<
-              session=$(curl -s -X POST "https://jules.googleapis.com/v1alpha/sessions" \
+              create_resp=$(curl -s -X POST "https://jules.googleapis.com/v1alpha/sessions" \
                 -H "X-Goog-Api-Key: $JULES_API_KEY" \
                 -H "Content-Type: application/json" \
                 -d "{
-                      \"prompt\": \"Resolve all merge conflicts on branch $headref against the repository default branch. For each conflicted file, accept a correct resolution, then commit and push the result to $headref.\",
-                      \"source\": {
-                        \"githubRepo\": {
-                          \"owner\": \"${GITHUB_REPOSITORY%%/*}\",
-                          \"repo\": \"${GITHUB_REPOSITORY##*/}\",
-                          \"branch\": \"$headref\"
-                        }
+                      \"prompt\": \"Resolve all merge conflicts on this branch against the repository's default branch. For each conflicted file, pick the correct resolution.\",
+                      \"title\": \"Resolve conflicts on ${headref}\",
+                      \"sourceContext\": {
+                        \"source\": \"${source_name}\",
+                        \"githubRepoContext\": { \"startingBranch\": \"${headref}\" }
                       }
                     }")
-              session_name=$(echo "$session" | jq -r '.name')
-              echo "Jules session: $session_name"
+              echo "Jules create response: $create_resp"
+              session_name=$(echo "$create_resp" | jq -r '.name // empty')
 
-              # Poll for completion (adjust attempts/interval as needed)
-              for i in $(seq 1 30); do
-                state=$(curl -s "https://jules.googleapis.com/v1alpha/$session_name" \
-                  -H "X-Goog-Api-Key: $JULES_API_KEY" | jq -r '.state')
-                echo "  poll $i: $state"
-                [ "$state" = "COMPLETED" ] && break
-                sleep 20
-              done
+              if [ -z "$session_name" ]; then
+                echo "PR #$pr: Jules session creation failed -> skipping"
+                mergeable="CONFLICTING"
+              else
+                state=""
+                for i in $(seq 1 30); do
+                  poll_resp=$(curl -s "https://jules.googleapis.com/v1alpha/${session_name}" \
+                    -H "X-Goog-Api-Key: $JULES_API_KEY")
+                  state=$(echo "$poll_resp" | jq -r '.state // empty')
+                  echo "  poll $i: $state"
+                  if [ "$state" = "COMPLETED" ] || [ "$state" = "FAILED" ]; then
+                    break
+                  fi
+                  sleep 20
+                done
 
-              mergeable=$(gh pr view "$pr" --repo "$GITHUB_REPOSITORY" --json mergeable --jq .mergeable)
+                if [ "$state" != "COMPLETED" ]; then
+                  echo "PR #$pr: Jules session ended in state '$state' -> skipping"
+                  mergeable="CONFLICTING"
+                else
+                  # Jules doesn't push back to the branch itself -- pull the patch out of
+                  # the session's activities and apply/push it ourselves. This is the
+                  # "accept and continue to corresponding files" step.
+                  activities=$(curl -s "https://jules.googleapis.com/v1alpha/${session_name}/activities?pageSize=50" \
+                    -H "X-Goog-Api-Key: $JULES_API_KEY")
+                  patch=$(echo "$activities" | jq -r \
+                    '[.activities[]? | select(.artifacts != null) | .artifacts[] | select(.changeSet != null) | .changeSet.gitPatch.unidiffPatch] | last // empty')
+                  commit_msg=$(echo "$activities" | jq -r \
+                    '[.activities[]? | select(.artifacts != null) | .artifacts[] | select(.changeSet != null) | .changeSet.gitPatch.suggestedCommitMessage] | last // "fix: resolve merge conflicts via Jules"')
+
+                  if [ -z "$patch" ]; then
+                    echo "PR #$pr: no patch found in Jules session output -> skipping"
+                    mergeable="CONFLICTING"
+                  else
+                    work_dir="/tmp/pr-$pr"
+                    rm -rf "$work_dir"
+                    git clone --branch "$headref" "https://x-access-token:${PAT}@github.com/${GITHUB_REPOSITORY}.git" "$work_dir"
+                    echo "$patch" > "$work_dir.patch"
+
+                    if (cd "$work_dir" && git apply "../pr-$pr.patch" \
+                        && git config user.name "jules-conflict-bot" \
+                        && git config user.email "jules-bot@users.noreply.github.com" \
+                        && git add -A && git commit -m "$commit_msg" \
+                        && git push origin "HEAD:$headref"); then
+                      mergeable=$(gh pr view "$pr" --repo "$GITHUB_REPOSITORY" --json mergeable --jq .mergeable)
+                    else
+                      echo "PR #$pr: failed to apply/push Jules's patch -> skipping"
+                      mergeable="CONFLICTING"
+                    fi
+                  fi
+                fi
+              fi
             fi
 
             if [ "$mergeable" = "CONFLICTING" ]; then
-              echo "PR #$pr: still conflicting after Jules -> skipping, needs manual review"
+              echo "PR #$pr: still conflicting -> skipping, needs manual review"
               continue
             fi
 
