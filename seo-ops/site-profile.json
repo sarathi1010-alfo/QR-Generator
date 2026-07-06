@@ -1,0 +1,13 @@
+{
+  "domain": "https://alfo.online",
+  "tone": "authoritative, clear, helpful",
+  "primary_entity": "alfo.online",
+  "pillars": [
+    "QR Code Generation",
+    "QR Code Best Practices",
+    "QR Code Uses Cases",
+    "QR Code Analytics"
+  ],
+  "min_word_count_guide": 1200,
+  "min_word_count_article": 1500
+}
