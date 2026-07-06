@@ -193,6 +193,16 @@ jobs:
             echo "=== PR #$pr ==="
 
             mergeable=$(gh pr view "$pr" --repo "$GITHUB_REPOSITORY" --json mergeable --jq .mergeable)
+            echo "PR #$pr initial mergeable: '$mergeable'"
+
+            # mergeable is computed async by GitHub -- if it's still UNKNOWN, poll
+            # briefly instead of trusting a value that hasn't been computed yet.
+            for k in $(seq 1 6); do
+              [ "$mergeable" != "UNKNOWN" ] && break
+              sleep 5
+              mergeable=$(gh pr view "$pr" --repo "$GITHUB_REPOSITORY" --json mergeable --jq .mergeable)
+              echo "PR #$pr mergeable recheck $k: '$mergeable'"
+            done
 
             if [ "$mergeable" = "CONFLICTING" ] && [ -z "$source_name" ]; then
               echo "PR #$pr has conflicts but no Jules source was found for $owner/$repo -> cannot resolve, will attempt merge as-is and likely fail"
