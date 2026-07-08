@@ -49,7 +49,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Why use QRBuild?</h2>
-            <p className="text-muted max-w-xl mx-auto">Everything you need to create professional QR codes in seconds. Looking for business tips? Read our <Link href="/blog/business-qr-code-guide" className="text-cta hover:underline">guide on creating business QR codes</Link>. (Updated: July 07, 2026)</p>
+            <p className="text-muted max-w-xl mx-auto">Everything you need to create professional QR codes in seconds. Looking for business tips? Read our <Link href="/blog/business-qr-code-guide" className="text-cta hover:underline">guide on creating business QR codes</Link>. (Updated: July 08, 2026)</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
