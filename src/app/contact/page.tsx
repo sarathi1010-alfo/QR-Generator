@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Contact the QRBuild Team - Support & Feature Requests",
@@ -13,7 +14,7 @@ export default function ContactPage() {
     <div className="py-20 px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto">
       <h1 className="font-display text-4xl md:text-5xl font-bold mb-6 text-center">Contact Us</h1>
       <p className="text-muted text-lg text-center mb-12">
-        Have a question, suggestion, or need support? We&apos;d love to hear from you. Fill out the form below and we&apos;ll get back to you as soon as possible.
+        Have a question, suggestion, or need support? We&apos;d love to hear from you. For business inquiries, you might also find our <Link href="/blog/business-qr-code-guide" className="text-cta hover:underline">business QR code guide</Link> helpful. Fill out the form below and we&apos;ll get back to you as soon as possible.
       </p>
 
       <div className="bg-surface border border-border p-8 rounded-2xl shadow-sm mb-12">

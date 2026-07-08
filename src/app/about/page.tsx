@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "About QRBuild - The Fastest Free QR Code Generator",
@@ -19,7 +20,7 @@ export default function AboutPage() {
       <div className="text-left mb-12">
         <h2 className="font-display text-3xl font-bold mb-6">Our Story & Mission</h2>
         <p className="text-muted leading-relaxed mb-6">
-          In today's digital-first world, QR codes have become an essential bridge between physical and online experiences. From restaurant menus to marketing campaigns, event tickets to contactless payments, QR codes are everywhere. However, we noticed that many QR code generators were cluttered with ads, required sign-ups, tracked user data, or simply didn't work reliably across all devices.
+          In today's digital-first world, QR codes have become an essential bridge between physical and online experiences. From restaurant menus to marketing campaigns, event tickets to contactless payments, QR codes are everywhere. For more information on how companies can benefit, see our <Link href="/blog/business-qr-code-guide" className="text-cta hover:underline">business QR code guide</Link>. However, we noticed that many QR code generators were cluttered with ads, required sign-ups, tracked user data, or simply didn't work reliably across all devices.
         </p>
         <p className="text-muted leading-relaxed mb-6">
           QRBuild was created to solve this problem. Our mission is straightforward: provide a free, fast, and privacy-respecting QR code generation tool that anyone can use without barriers. We believe that basic digital utilities should be accessible to everyone—whether you're a small business owner creating your first QR code, a marketer running a large campaign, a teacher sharing resources with students, or an individual who just needs a quick solution.
