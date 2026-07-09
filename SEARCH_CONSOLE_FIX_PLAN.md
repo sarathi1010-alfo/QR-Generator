@@ -1,30 +1,34 @@
 # Search Console & SEO Fix Plan
 
-Based on the latest SEO audit, the following actions are planned to improve site coverage and technical hygiene:
+Based on the latest SEO audit (SEO_AUDIT.md), the following actions are being implemented to improve site coverage, semantic density, and technical hygiene:
 
-## 1. Addressing Content Thinness
-- **Issue:** The site is currently "thin" with minimal informational content.
-- **Fix:** Continue the "Authority Engine" 4-week content queue defined in `WEEKLY_CONTENT_ENGINE.md`.
-- **Target:** Publish 3-5 daily clusters and 5-10 programmatic comparisons to build semantic density.
+## 1. Accelerating Topical Authority (Addressing Content Thinness)
+- **Strategy:** Execute the "Authority Engine" 4-week content queue to transform the site from a single-tool landing page into a comprehensive QR education ecosystem.
+- **Action:** Prioritize missing use-case categories (e.g., Education, Healthcare, Logistics) as identified in `WEEKLY_CONTENT_ENGINE.md`.
+- **Target:** Maintain a publishing velocity of 3-5 daily clusters and 5-10 programmatic pages until the topical map is 80% saturated.
 
-## 2. Improving Internal Linking
-- **Issue:** High risk of orphan pages due to poor cross-linking.
-- **Fix:**
-    - Ensure all new articles include at least 2 links to pillar pages (Home/Recent History).
-    - Implement a "Related Posts" component (already in `src/components/blog/RelatedPosts.tsx`) on all blog pages to automate discovery.
-    - Retroactively link older guides (e.g., Size Guide, WiFi Guide) to new authoritative content.
+## 2. Structural Internal Linking & Orphan Prevention
+- **Strategy:** Move beyond manual linking to a systematic "Hub and Spoke" architecture.
+- **Action:**
+    - Implement Category Hubs at `/blog/category/[slug]` to consolidate cluster authority.
+    - Audit all pages for "orphan" status; every new article must have >=2 inbound links from existing content.
+    - Leverage the `RelatedPosts` component on all MDX pages to automate discovery within the same category.
+    - Link the "Why use QRBuild?" section on the Home Page to the latest Tier 1 authority guides.
 
-## 3. AEO Optimization
-- **Issue:** Missing systematic AI Engine Optimization (AEO) answer blocks.
-- **Fix:**
-    - Strictly enforce the "AI Snapshot" block (30-40 words) below the main H2 for all Tier 1 articles.
-    - Ensure FAQ schema is injected for all programmatic and blog pages via the `faqItems` frontmatter.
+## 3. Systematic AEO (AI Engine Optimization)
+- **Strategy:** Optimize for LLM-based discovery and featured snippets.
+- **Action:**
+    - **AI Snapshot:** Every Tier 1 article must include a 30-40 word direct answer block immediately below the main H2 question.
+    - **FAQ Schema:** Automatically inject FAQPage JSON-LD for all blog posts and programmatic pages using the `faqItems` frontmatter and `src/lib/seo/buildSchema.ts`.
+    - **Breadcrumbs:** Ensure BreadcrumbList schema is active on all sub-pages for improved crawl depth and SERP appearance.
 
-## 4. Technical Hygiene (404s and Redirects)
-- **Issue:** Potential for 404s during route migration.
-- **Fix:**
-    - Regularly monitor Search Console for "Excluded" or "Not Found (404)" pages.
-    - Maintain 301 redirects in `next.config.mjs` for any legacy `/generator/` paths migrating to `/qr-codes/`.
+## 4. Technical Hygiene & Route Integrity
+- **Strategy:** Zero-error policy for all new and migrated routes.
+- **Action:**
+    - Monitor GSC for "Discovered - currently not indexed" and "Excluded" status.
+    - Enforce 301 redirects for legacy `/generator/` paths in `next.config.mjs`.
+    - Use `verify_final_proof.py` (Playwright) to verify 200 OK status and functional integrity before every deployment.
 
-## 5. Structured Data Validation
-- **Fix:** Use the Google Rich Results Test to validate Article and FAQ schema on new URLs.
+## 5. Quality Control Automation
+- **Strategy:** Automate the audit process for new content.
+- **Action:** Develop and run `scripts/seo-qc.ts` to validate word counts, internal link presence, and heading structure (Single H1) before publishing.
