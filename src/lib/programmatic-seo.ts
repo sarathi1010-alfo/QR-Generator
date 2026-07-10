@@ -1,3 +1,4 @@
+// Tier 2 Programmatic SEO Configuration
 import { SEOPageConfig } from "./seo-config";
 
 export const longTailUseCases: SEOPageConfig[] = [
