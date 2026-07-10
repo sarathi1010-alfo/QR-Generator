@@ -1,4 +1,4 @@
-# Social Media Distribution Posts
+# Social Media Distribution Posts - Published July 10, 2026
 **Topic:** How to Create a QR Code for a Business
 **Core Angle:** Free, fast, and Privacy-First QR codes for modern businesses.
 
