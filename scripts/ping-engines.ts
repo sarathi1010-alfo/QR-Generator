@@ -6,7 +6,13 @@ const NEW_URLS = [
   `${SITE_URL}/qr-codes/business-card`,
   `${SITE_URL}/qr-codes/product-packaging`,
   `${SITE_URL}/qr-codes/event-tickets`,
-  `${SITE_URL}/qr-codes/wifi-login`
+  `${SITE_URL}/qr-codes/wifi-login`,
+  `${SITE_URL}/blog/how-to-create-qr-code-consulting-business`,
+  `${SITE_URL}/qr-codes/freelance-portfolio`,
+  `${SITE_URL}/qr-codes/law-office`,
+  `${SITE_URL}/qr-codes/plumbing-services`,
+  `${SITE_URL}/qr-codes/dental-clinic`,
+  `${SITE_URL}/qr-codes/accounting-firm`
 ];
 
 const INDEXNOW_KEY = '550e8400e29b41d4a716446655440000';
