@@ -9,6 +9,7 @@ This document defines the repeatable content system for QRBuild (https://qr.alfo
 ### Template A – Cluster Article (700-1000 words)
 *Target: Daily educational depth.*
 - **H1:** `[PRIMARY_KEYWORD]`: Complete Guide for `[TARGET_AUDIENCE]` in 2026
+- **Example:** *What is a QR Code? The Ultimate 2026 Guide*
 - **AI Snapshot:** 30-word intro definition (AEO optimized).
 - **H2:** Why `[PRIMARY_KEYWORD]` Matters for `[INDUSTRY/USE_CASE]`
 - **H2:** How to `[ACTION]` with `[PRIMARY_KEYWORD]` (step-by-step)
@@ -21,18 +22,20 @@ This document defines the repeatable content system for QRBuild (https://qr.alfo
 
 ### Template B – Programmatic Comparison Page (300-500 words)
 *Target: Infinite scaling against competitors.*
-- **H1:** `[ENTITY_A]` vs `[ENTITY_B]`: Which QR Code Generator is Better for `[USE_CASE]`?
+- **H1:** QRBuild vs `[COMPETITOR]`: Which QR Code Generator is Better for `[USE_CASE]`?
+- **Example:** *QRBuild vs QR Code Monkey: Which is Better for Business?*
 - **Quick Verdict:** 1-sentence AI summary.
-- **Comparison Table:** (Feature | `[ENTITY_A]` | `[ENTITY_B]` | Winner)
-- **Deep Dive `[ENTITY_A]`:** (Pros/Cons)
-- **Deep Dive `[ENTITY_B]`:** (Pros/Cons)
+- **Comparison Table:** (Feature | QRBuild | `[COMPETITOR]` | Winner)
+- **Deep Dive QRBuild:** (Pros: Privacy, Free SVG, No Account | Cons: No Dynamic Tracking)
+- **Deep Dive `[COMPETITOR]`:** (e.g., Beaconstac, QRCodeChimp, Flowcode)
 - **When to choose each:** Final recommendation.
 - **AEO Box:** "Best Pick for [Scenario]"
 - **Internal Links:** Pillar + Tool Page
 
 ### Template C – Micro-Answer Page (300-500 words)
 *Target: Featured snippets and voice search.*
-- **H1:** What is `[QR_TERM]`? (e.g., What is a QR Code Quiet Zone?)
+- **H1:** What is `[QR_TERM]`?
+- **Example:** *What is a QR Code Quiet Zone?*
 - **AI Snapshot:** 40-60 word direct definition.
 - **H2:** How Does `[TERM]` Work?
 - **H2:** Real-World Example of `[TERM]` in `[INDUSTRY]`
@@ -54,8 +57,9 @@ This document defines the repeatable content system for QRBuild (https://qr.alfo
 ### Template E – Industry Use-Case Page (600-800 words)
 *Target: High commercial intent.*
 - **H1:** QR Codes for `[INDUSTRY]`: The Complete 2026 Guide
+- **Example:** *QR Codes for Restaurants: The Complete 2026 Guide*
 - **Intro:** Why QR codes matter in `[INDUSTRY]` (with 2-3 statistics).
-- **Use Cases:** 5 specific use cases for `[INDUSTRY]` (e.g., QR Codes for Real Estate Property Signs).
+- **Use Cases:** 5 specific use cases for `[INDUSTRY]` (e.g., Digital Menus, Feedback, Payments).
 - **Implementation:** How to implement in `[INDUSTRY]` (step-by-step).
 - **AEO Box:** Quick Reference Table (Use Case → QR Type → Best Practice).
 - **Internal Links:** Pillar + Tool + Generator.
@@ -114,34 +118,36 @@ faqItems:
 
 ## 3. PROGRAMMATIC CSV MAPPING
 
-For Template B (Comparisons) and Template C (Micro-Answers), use these headers:
+To scale Template B (Comparisons) and Template C (Micro-Answers) via automated tools, use the following spreadsheet headers:
 
-| Header | Description |
-|---|---|
-| `slug` | URL-friendly slug |
-| `title` | Page H1 |
-| `entity_a` | QRBuild (usually) |
-| `entity_b` | Competitor (e.g., QR Code Monkey, Beaconstac) |
-| `use_case` | Main use case being compared |
-| `verdict` | 1-sentence winner declaration |
-| `feature_1_name` | e.g., Pricing |
-| `feature_1_a` | QRBuild feature value |
-| `feature_1_b` | Competitor feature value |
-| `pros_a` | Bullet list of pros for Entity A |
-| `cons_a` | Bullet list of cons for Entity A |
-| `internal_link_url` | Target tool page (e.g., /qr-codes/url) |
+| Header | Description | Example Value |
+|---|---|---|
+| `slug` | URL-friendly slug | `qrbuild-vs-beaconstac` |
+| `title` | Page H1 | `QRBuild vs Beaconstac` |
+| `entity_a` | Primary entity | `QRBuild` |
+| `entity_b` | Competitor entity | `Beaconstac` |
+| `use_case` | Main use case context | `Business Marketing` |
+| `verdict` | 1-sentence winner declaration | `QRBuild is the clear winner for free, high-res exports.` |
+| `feature_1_name` | Feature category | `Pricing` |
+| `feature_1_a` | Value for Entity A | `100% Free` |
+| `feature_1_b` | Value for Entity B | `$15+/mo` |
+| `pros_a` | Pros for Entity A | `No account, Privacy-first, SVG included` |
+| `cons_a` | Cons for Entity A | `Static codes only` |
+| `internal_link_url` | Internal anchor target | `/qr-codes/url` |
 
 ---
 
 ## 4. THE ETERNAL WEEKLY RHYTHM
 
-- **Weekly Pillar:** 1 per week
-- **Weekly Industry Use-Case:** 1 per week
-- **Weekly Data/Report:** 1 per month
-- **Daily Clusters:** 3–5 per day
-- **Daily Programmatic Comparisons:** 5–10 per day
-- **Daily Micro-Answers:** 5 per day
-- **Indexed Pages Target:** 50–100 new pages per week
+Maintain this production cadence to dominate the 2026 QR search landscape:
+
+- **Weekly Pillar Articles:** 1 per week (Target: 3,000+ words)
+- **Weekly Industry Use-Case:** 1 per week (Target: 800+ words)
+- **Weekly Data/Report:** 1 per month (Target: Statistical authority)
+- **Daily Clusters:** 3–5 per day (Education & Technical)
+- **Daily Programmatic Comparisons:** 5–10 per day (Competitor analysis)
+- **Daily Micro-Answers:** 5 per day (Featured snippets/Voice search)
+- **Weekly Target:** 50–100 new high-quality pages indexed.
 
 ---
 
