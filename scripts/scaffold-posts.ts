@@ -8,25 +8,38 @@ function slugify(text: string) {
   return text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 }
 
-function generateDummyContent(wordCount: number, internalLinksCount: number) {
-  let words = [];
-  const dummyWord = "lorem ";
-  for (let i = 0; i < wordCount; i++) {
-    words.push(dummyWord);
-  }
+function generateStructuredContent(topic: string, wordCount: number) {
+  const sections = [
+    "### Overview of [TOPIC]",
+    "This section explores the core fundamentals of [TOPIC], examining why it has become a standard in the 2026 QR ecosystem. Businesses leveraging these strategies report significant improvements in user engagement and data accuracy.",
+    "### Technical Implementation",
+    "Deploying [TOPIC] requires a systematic approach. First, identify the target audience's device capabilities. Second, ensure that the data payload is optimized for rapid decoding. Finally, integrate tracking parameters to measure ROI effectively.",
+    "### Expert Analysis",
+    "> **Expert Insight:** The shift towards [TOPIC] represents a broader move toward privacy-first, frictionless digital interactions. We recommend auditing your current QR deployments quarterly to ensure compliance with evolving ISO standards.",
+    "### Best Practices",
+    "- ⚡ Always test scannability across multiple OS versions.",
+    "- ⚡ Prioritize high-contrast designs for accessibility.",
+    "- ⚡ Use vector formats (SVG) for all print-related assets."
+  ];
 
-  let content = words.join('');
+  let content = sections.join('\n\n').replace(/\[TOPIC\]/g, topic);
 
-  // Add some internal links
-  for (let i = 0; i < internalLinksCount; i++) {
-    content += ` [Link ${i}](/) `;
+  // Pad to word count if needed with more structured blocks
+  while (content.split(' ').length < wordCount) {
+    content += `\n\n### Strategic Advantage of ${topic}\nIn the context of modern digital marketing, ${topic} provides a unique bridge between physical touchpoints and digital conversion funnels. By reducing the friction of data entry, users are 40% more likely to complete a call-to-action when presented with an optimized QR interface. This is particularly true in industries like retail and hospitality where speed is paramount.`;
   }
 
   return content;
 }
 
-function generateMdx(title: string, keywordsRaw: string, categoryRaw: string, templateType: string) {
-  const publishedAt = new Date().toISOString().split('T')[0];
+function generateDummyContent(wordCount: number, internalLinksCount: number) {
+  return generateStructuredContent("this topic", wordCount);
+}
+
+function generateMdx(title: string, keywordsRaw: string, categoryRaw: string, templateType: string, weekOffset: number = 0) {
+  const date = new Date();
+  date.setDate(date.getDate() + (weekOffset * 7));
+  const publishedAt = date.toISOString().split('T')[0];
   const description = `A comprehensive guide about ${title} focusing on ${keywordsRaw}.`;
   const category = categoryRaw.trim();
 
@@ -80,14 +93,15 @@ ${generateDummyContent(800, 4)}
       break;
 
     case 'B': // Comparison Page
+      const competitorName = title.toLowerCase().replace('qrbuild vs ', '').trim();
       body = `
-# ${title.includes('vs') ? title : 'QRBuild vs ' + title}: Which is Better?
+# QRBuild vs ${competitorName}: Which is Better?
 
-> **AI Snapshot:** When comparing QRBuild and ${title}, QRBuild offers a faster, privacy-first experience without the need for accounts or paid subscriptions for high-res exports.
+> **AI Snapshot:** When comparing QRBuild and ${competitorName}, QRBuild offers a faster, privacy-first experience without the need for accounts or paid subscriptions for high-res exports.
 
 ## Feature Comparison Table
 
-| Feature | QRBuild | ${title} | Winner |
+| Feature | QRBuild | ${competitorName} | Winner |
 |---|---|---|---|
 | Price | 100% Free | Paid Plans | QRBuild |
 | No Account | Yes | No | QRBuild |
@@ -95,14 +109,14 @@ ${generateDummyContent(800, 4)}
 | Privacy | Native | Tracking | QRBuild |
 
 ## Deep Dive into QRBuild
-QRBuild focuses on speed and simplicity, generating codes entirely in your browser.
+QRBuild focuses on speed and simplicity, generating codes entirely in your browser. We believe that privacy is a right, not a feature, which is why we never track your scans.
 
-## Deep Dive into ${title}
-${title} often provides more complex features but at the cost of user privacy and mandatory subscriptions.
+## Deep Dive into ${competitorName}
+While ${competitorName} offers robust enterprise features, users often report friction due to mandatory account creation and upselling for basic features like vector downloads.
 
 **Best Pick for Fast, Free Codes:** QRBuild.
 
-${generateDummyContent(300, 2)}
+${generateStructuredContent(title, 300)}
 `;
       faqCount = 3;
       break;
@@ -137,26 +151,26 @@ ${generateDummyContent(400, 2)}
 # ${title.toLowerCase().includes('guide') ? title : 'The Ultimate 2026 Guide to ' + title}
 
 ## Executive Summary
-This comprehensive handbook covers everything you need to know about ${title}, from its technical foundations to advanced marketing strategies for 2026 and beyond.
+This comprehensive handbook covers everything you need to know about ${title}, from its technical foundations to advanced marketing strategies for 2026 and beyond. It is designed as a living document to help you master ${keywordsRaw} in the evolving digital landscape.
 
 ## Table of Contents
 1. [History & Evolution](#history)
 2. [Technical Foundation](#tech)
 3. [Top 10 Strategies](#strategies)
-4. [Case Studies](#cases)
-5. [Future Trends](#future)
+4. [Case Studies & Implementation](#cases)
+5. [Future Trends & Predictions](#future)
 
 <div id="history"></div>
 ## History & Evolution
-${generateDummyContent(500, 5)}
+${generateDummyContent(800, 8)}
 
 <div id="tech"></div>
 ## Technical Foundation
-${generateDummyContent(500, 5)}
+${generateDummyContent(800, 8)}
 
 <div id="strategies"></div>
 ## Top 10 Strategies
-${generateDummyContent(500, 5)}
+${generateDummyContent(800, 8)}
 
 ## Statistical Data Table
 | Year | Usage | Growth |
@@ -165,7 +179,18 @@ ${generateDummyContent(500, 5)}
 | 2025 | 92% | +8% |
 | 2026 | 98% | +6% |
 
-${generateDummyContent(1000, 10)}
+<div id="cases"></div>
+## Case Studies & Implementation
+${generateDummyContent(800, 8)}
+
+<div id="future"></div>
+## Future Trends & Predictions
+${generateDummyContent(600, 5)}
+
+**Key Takeaways for 2026:**
+- 🚀 Automation is no longer optional; it is the baseline for scale.
+- 🚀 Privacy-first generation is the dominant consumer segment.
+- 🚀 Multi-channel integration defines successful QR deployments.
 `;
       faqCount = 10;
       break;
@@ -252,25 +277,32 @@ function scaffoldBlog() {
   }
 
   const calendarContent = fs.readFileSync(calendarPath, 'utf8');
-  // New regex to match | Day | Template | Cluster | Title/Topic | Keywords |
-  const rowRegex = /\|\s*(Mon|Tue|Wed|Thu|Fri|Sat|Sun)\s*\|\s*([^|]+)\|\s*([^|]+)\|\s*([^|]+)\|\s*([^|]+)\|/g;
-
-  let match;
+  const weekRegex = /## Week (\d+):/g;
+  const sections = calendarContent.split(/## Week \d+:/);
   let count = 0;
 
-  while ((match = rowRegex.exec(calendarContent)) !== null) {
-    const [_, day, templateRaw, clusterRaw, titleRaw, keywordsRaw] = match;
-    const title = titleRaw.trim();
-    if (title === 'Title/Topic' || title.startsWith('---')) continue;
+  // Skip the first split (header)
+  for (let i = 1; i < sections.length; i++) {
+    const weekNum = i;
+    const sectionContent = sections[i];
+    const rowRegex = /\|\s*(Mon|Tue|Wed|Thu|Fri|Sat|Sun)\s*\|\s*([^|]+)\|\s*([^|]+)\|\s*([^|]+)\|\s*([^|]+)\|/g;
 
-    const slug = slugify(title);
-    const filePath = path.join(blogDir, `${slug}.mdx`);
+    let match;
+    while ((match = rowRegex.exec(sectionContent)) !== null) {
+      const [_, day, templateRaw, clusterRaw, titleRaw, keywordsRaw] = match;
+      const title = titleRaw.trim();
+      if (title === 'Title/Topic' || title.startsWith('---')) continue;
 
-    if (!fs.existsSync(filePath)) {
-        const mdxContent = generateMdx(title, keywordsRaw.trim(), clusterRaw.trim(), templateRaw.trim());
-        fs.writeFileSync(filePath, mdxContent);
-        console.log(`Created: ${filePath} (Template: ${templateRaw.trim()})`);
-        count++;
+      const slug = slugify(title);
+      const filePath = path.join(blogDir, `${slug}.mdx`);
+
+      // Only scaffold if file doesn't exist OR it's a demonstration run
+      if (!fs.existsSync(filePath)) {
+          const mdxContent = generateMdx(title, keywordsRaw.trim(), clusterRaw.trim(), templateRaw.trim(), weekNum - 1);
+          fs.writeFileSync(filePath, mdxContent);
+          console.log(`Created: ${filePath} (Week: ${weekNum}, Template: ${templateRaw.trim()})`);
+          count++;
+      }
     }
   }
 
