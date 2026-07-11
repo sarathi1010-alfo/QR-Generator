@@ -2,6 +2,108 @@
 import { SEOPageConfig } from "./seo-config";
 
 export const longTailUseCases: SEOPageConfig[] = [
+
+  {
+    slug: "freelance-portfolio",
+    title: "Freelance Portfolio",
+    headline: "QR Codes for Freelance Portfolios",
+    description: "Instantly share your creative portfolio with prospective clients. Generate a high-quality QR code that links directly to your digital work.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Direct links to digital portfolios",
+      "Easy integration on business cards",
+      "High-contrast vector downloads",
+      "No expiration on static links",
+      "Privacy-first generation"
+    ],
+    faqs: [
+      { q: "How can freelancers use QR codes?", a: "Freelancers can place QR codes on resumes, business cards, or temporary physical installations to instantly route prospects to their digital portfolios or Behance profiles." },
+      { q: "Is SVG format better for my resume?", a: "Yes, downloading your QR code in SVG format ensures it remains perfectly crisp when printed on your resume, regardless of scale." },
+      { q: "Do these portfolio links expire?", a: "No, our static QR codes do not expire. As long as your portfolio website remains active, the QR code will function perfectly." }
+    ]
+  },
+  {
+    slug: "law-office",
+    title: "Law Office",
+    headline: "Secure QR Codes for Law Firms",
+    description: "Streamline client intake and provide secure access to legal resources with professional QR codes tailored for law offices.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Secure links to client portals",
+      "Automated consultation scheduling",
+      "Digital vCards for attorneys",
+      "Link to public legal resources",
+      "Clean, professional aesthetic"
+    ],
+    faqs: [
+      { q: "Are QR codes safe for law firms?", a: "Yes, static QR codes simply direct users to a URL. As long as the destination URL (e.g., a secure client portal) is encrypted and safe, the QR code itself is secure." },
+      { q: "Can I use QR codes for client scheduling?", a: "Absolutely. Law firms frequently use QR codes on printed brochures to direct prospective clients to an automated scheduling calendar for initial consultations." },
+      { q: "What is the best color for a legal QR code?", a: "For maximum professionalism and scannability, we recommend standard black dots on a white background, ensuring a high contrast ratio." }
+    ]
+  },
+  {
+    slug: "plumbing-services",
+    title: "Plumbing Services",
+    headline: "QR Codes for Plumbers & Contractors",
+    description: "Make it easy for clients to rebook or leave reviews. Generate durable QR codes for invoices, service stickers, and business cards.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Stickers for water heaters/boilers",
+      "Direct links to Google Reviews",
+      "Instant emergency call routing",
+      "Digital invoice payments",
+      "Durable high-error correction"
+    ],
+    faqs: [
+      { q: "Where should plumbers place QR codes?", a: "Plumbers should place QR code stickers directly on serviced equipment (like boilers) so customers can easily scan to request maintenance or emergency repairs." },
+      { q: "How do I get more Google Reviews?", a: "Generate a QR code that links directly to your Google My Business review page, and print it on the bottom of every customer invoice." },
+      { q: "Can a QR code start a phone call?", a: "Yes, by selecting the 'Phone' option in our generator, you can create a code that automatically dials your dispatch number when scanned." }
+    ]
+  },
+  {
+    slug: "dental-clinic",
+    title: "Dental Clinic",
+    headline: "QR Codes for Dental Clinics",
+    description: "Enhance the patient experience with QR codes for contactless check-ins, post-op care instructions, and appointment scheduling.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Contactless patient check-in",
+      "Digital post-op care videos",
+      "Appointment booking links",
+      "Patient portal access",
+      "Review generation on checkout"
+    ],
+    faqs: [
+      { q: "How can dentists use QR codes in the waiting room?", a: "Dentists can display QR codes in waiting areas to allow patients to complete digital intake forms or connect to the clinic's guest WiFi instantly." },
+      { q: "Can I link to post-op care videos?", a: "Yes, placing a QR code on a post-op care sheet that links to an instructional YouTube video dramatically improves patient compliance and understanding." },
+      { q: "Are QR codes HIPAA compliant?", a: "The QR code is just a link. As long as it directs the patient to a HIPAA-compliant portal or secure form, the process remains compliant." }
+    ]
+  },
+  {
+    slug: "accounting-firm",
+    title: "Accounting Firm",
+    headline: "QR Codes for CPAs & Accounting Firms",
+    description: "Provide clients with secure access to tax portals and document upload centers using professional, reliable QR codes.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Links to secure tax portals",
+      "VCF digital business cards",
+      "Tax season checklist downloads",
+      "Client onboarding forms",
+      "Professional, track-free generation"
+    ],
+    faqs: [
+      { q: "Why should CPAs use QR codes?", a: "CPAs can use QR codes on tax organizers or physical mailers to securely route clients to document upload portals, saving time and reducing email clutter." },
+      { q: "Do your QR codes track my clients?", a: "No. QRBuild provides privacy-first, static QR codes. We do not inject tracking cookies or use intermediate redirects, ensuring your clients' privacy." },
+      { q: "How do I share a digital tax checklist?", a: "Host your PDF checklist on a secure server or cloud drive, and paste the sharing link into our URL generator to create a scannable access point." }
+    ]
+  }
+,
   {
     slug: "restaurant-menu",
     title: "Restaurant Menu",
