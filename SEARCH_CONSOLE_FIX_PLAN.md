@@ -39,3 +39,17 @@ Based on the latest SEO audit (SEO_AUDIT.md), the following actions are being im
 - **Internal Linking:** Updated 3 older guides and homepage with contextual links.
 - **Verification:** Headless browser test passed (Status 200).
 - **Indexing:** Triggered IndexNow for all new URLs.
+
+## Simulated GSC Audit Plan (July 12, 2026)
+
+### Issue: "Crawled - currently not indexed"
+We simulated checking Google Search Console for `alfo.online` and identified a batch of programmatic URLs tagged as "Crawled - currently not indexed".
+
+**Root Cause Hypothesis:**
+Google is finding the pages but determining they lack sufficient unique value compared to existing index entries, or the crawl budget is exhausted on lower-tier parameters.
+
+**Action Plan:**
+1. **Internal Linking Infusion:** Immediately inject at least 2 internal links to the affected URLs from high-authority Tier 1 blog posts.
+2. **Content Enrichment:** Expand the AI Snapshot on those programmatic templates to add 50-70 words of unique, non-templated text using data specific to that route's subject.
+3. **IndexNow Ping:** Force a manual submission via `npm run ping` after the updates are live to signal significant content shifts to search engines.
+4. **Sitemap Verification:** Confirm that the URLs are present in `sitemap-products.xml` and there are no conflicting `noindex` directives or canonical issues.

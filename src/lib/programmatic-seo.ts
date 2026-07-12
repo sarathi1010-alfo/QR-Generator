@@ -2,6 +2,102 @@
 import { SEOPageConfig } from "./seo-config";
 
 export const longTailUseCases: SEOPageConfig[] = [
+  {
+    slug: "software-docs",
+    title: "Software Documentation",
+    headline: "QR Codes for Instant API & Software Docs",
+    description: "Generate QR codes linking directly to your software documentation or developer portals. Perfect for conferences and developer meetups.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant access to API keys & docs",
+      "Streamline developer onboarding",
+      "Include on technical whitepapers",
+      "Perfect for developer relations teams"
+    ],
+    faqs: [
+      { q: "How do I link a QR code to my API documentation?", a: "Copy the public URL of your developer portal or specific API endpoint and paste it into our URL QR code generator." },
+      { q: "Are QR codes useful at developer conferences?", a: "Yes, developers appreciate quickly scanning a code from a presentation slide to access the code repository or technical documentation instantly." },
+      { q: "Can I track scans on my software documentation QR codes?", a: "To track scans, we recommend using a UTM-tagged URL from your analytics provider before generating the static QR code on our platform." }
+    ]
+  },
+  {
+    slug: "beta-testing",
+    title: "Beta Testing Invites",
+    headline: "QR Codes for Exclusive Beta Testing Access",
+    description: "Create scannable invites for your SaaS beta programs. Distribute physical cards at events that link securely to your opt-in page.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Create exclusive physical invites",
+      "Seamless mobile opt-in flows",
+      "Reduce friction for early adopters",
+      "Bridge offline events to online programs"
+    ],
+    faqs: [
+      { q: "How do I distribute beta testing QR codes?", a: "Print the QR codes on high-quality postcards, event badges, or direct mailers, and include a clear call-to-action like 'Scan to Join the Beta'." },
+      { q: "Can I restrict access via the QR code?", a: "The QR code itself is just a link. To restrict access, ensure the destination URL requires an invite code or uses a gated signup form." },
+      { q: "Are static QR codes good for beta testing?", a: "Yes, as long as your beta landing page URL remains constant, a static QR code is perfectly suited for long-running beta campaigns." }
+    ]
+  },
+  {
+    slug: "customer-success",
+    title: "Customer Success Portals",
+    headline: "QR Codes for Instant Customer Support",
+    description: "Link directly to your helpdesk, knowledge base, or ticketing system. Provide frictionless support to your users anywhere.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Frictionless access to support",
+      "Link to live chat interfaces",
+      "Include on invoices & physical kits",
+      "Reduce customer support response times"
+    ],
+    faqs: [
+      { q: "Where should I place a customer success QR code?", a: "Include the QR code on onboarding materials, welcome letters, physical product packaging, or monthly invoices." },
+      { q: "Can the QR code link to a specific help article?", a: "Absolutely. You can generate a QR code for the specific URL of a knowledge base article detailing the most common setup issues." },
+      { q: "Does the QR code work on all smartphones?", a: "Yes, all modern iOS and Android devices natively support scanning URL QR codes directly from their built-in camera apps." }
+    ]
+  },
+  {
+    slug: "feature-requests",
+    title: "Feature Request Boards",
+    headline: "QR Codes for Product Feedback & Ideas",
+    description: "Make it easy for users to submit feature requests. A direct QR code link to your feedback board encourages continuous product improvement.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Capture feedback at live events",
+      "Link to public roadmaps",
+      "Encourage community engagement",
+      "Easy access to upvoting platforms"
+    ],
+    faqs: [
+      { q: "Why use a QR code for a feature request board?", a: "It allows you to capture spontaneous feedback from users during live demos, presentations, or trade shows without them needing to search for the link." },
+      { q: "Can I link to a specific feature idea?", a: "Yes, if your feedback platform supports direct linking to specific requests or upvote pages, you can generate a QR code for that exact URL." },
+      { q: "Is the generated QR code permanent?", a: "Yes, we provide static QR codes that never expire, so your feature request links will continue to work indefinitely." }
+    ]
+  },
+  {
+    slug: "api-keys",
+    title: "API Key Portals",
+    headline: "QR Codes for Secure Developer Portals",
+    description: "Provide quick routing to your developer dashboard where users can generate and manage their API keys.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Quick access to developer settings",
+      "Streamline the developer journey",
+      "Ideal for hackathons and tech events",
+      "High-contrast codes for easy scanning"
+    ],
+    faqs: [
+      { q: "Should I encode an actual API key in a QR code?", a: "No, for security reasons, you should never encode sensitive API keys directly in a QR code. Instead, link to the secure portal where users can log in and view them." },
+      { q: "How do I use this for a hackathon?", a: "Display the QR code prominently on sponsor tables or presentation screens so hackers can instantly navigate to your platform's API registration page." },
+      { q: "What error correction level should I use for display screens?", a: "For digital screens, standard Level M or Q is usually sufficient, but choosing Level H ensures scannability even from angled viewing positions." }
+    ]
+  }
+,
 
   {
     slug: "freelance-portfolio",
