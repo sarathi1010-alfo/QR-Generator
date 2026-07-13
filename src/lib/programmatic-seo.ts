@@ -302,7 +302,106 @@ export const longTailUseCases: SEOPageConfig[] = [
       { q: "Is it safe to share my WiFi via a QR code?", a: "Yes, the QR code simply encodes your network's SSID and password in a standardized format. It is just as safe as giving the password on a piece of paper, but much more convenient for your guests." },
       { q: "Does the WiFi QR code work on all modern phones?", a: "Yes, both modern iOS (iPhone) and Android devices have native support for WiFi QR codes in their built-in camera apps. When scanned, the device will automatically prompt the user to join the network." },
       { q: "How do I create a WiFi QR code for my business?", a: "Select the 'WiFi' tab in our generator, enter your Network Name (SSID) and Password, and choose your encryption type (most common is WPA/WPA2). You can then download and print the code for your guests." },
-      { q: "What happens if I change my WiFi password?", a: "Since these are static QR codes, if you change your network password or SSID, you will need to generate and print a new QR code to reflect the updated credentials." }
+      { q: "What happens if I change my WiFi password?", a: "Since these are static QR codes, if you change your network password or SSID, you will need to generate and print a new QR code to reflect the updated credentials." }    ]
+  },
+  {
+    slug: "eco-friendly-packaging",
+    title: "Eco-Friendly Packaging",
+    headline: "QR Codes for Sustainable & Eco-Friendly Packaging",
+    description: "Enhance your eco-friendly product packaging with a QR code. Share recycling instructions, carbon footprint data, and supply chain transparency without wasting extra paper.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Provide detailed recycling and composting instructions",
+      "Share transparent supply chain and sourcing data",
+      "Reduce the physical size of printed packaging labels",
+      "Update sustainability metrics without reprinting boxes",
+      "Demonstrate commitment to the environment"
+    ],
+    faqs: [
+      { q: "How do QR codes make packaging more eco-friendly?", a: "By moving extensive product information, manuals, and sustainability reports online via a QR code, you can significantly reduce the size of your physical packaging and the amount of ink required, saving resources." },
+      { q: "Can I print a QR code on biodegradable materials?", a: "Yes. QR codes can be printed on biodegradable paper, recycled cardboard, and even directly onto certain organic materials using soy-based inks, provided there is enough contrast for the scanner to read the code." },
+      { q: "What should an eco-friendly packaging QR code link to?", a: "It should ideally link to specific information about that product's environmental impact, detailed disposal/recycling instructions, or your company's broader sustainability initiatives." }
+    ]
+  },
+  {
+    slug: "carbon-offset-certificates",
+    title: "Carbon Offset Certificates",
+    headline: "Verify Carbon Offsets instantly with QR Codes",
+    description: "Provide transparent, instant verification of carbon offset certificates using QR codes. Allow stakeholders to scan and view real-time data on your environmental contributions.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant verification of carbon offset claims",
+      "Link directly to verified third-party audit reports",
+      "Showcase real-time environmental impact data",
+      "Enhance corporate transparency and trust",
+      "Easy integration into digital and physical reports"
+    ],
+    faqs: [
+      { q: "How can QR codes prove carbon offsets?", a: "A QR code can link directly to a verified, immutable ledger or a third-party auditor's report detailing the exact amount of carbon offset, the project supported, and the date of verification." },
+      { q: "Where should I display my carbon offset QR code?", a: "Display it on your company's 'About Us' page, annual reports, product packaging, and corporate marketing materials to visibly demonstrate your commitment to net-zero goals." },
+      { q: "Is the data linked by the QR code updatable?", a: "If you link the QR code to a dynamic URL (like a specific page on your website that you update regularly), you can continually provide the most recent carbon offset metrics without changing the printed code." }
+    ]
+  },
+  {
+    slug: "sustainable-fashion-tags",
+    title: "Sustainable Fashion Tags",
+    headline: "QR Codes for Ethical & Sustainable Fashion",
+    description: "Give your sustainable fashion brand an edge. Use QR codes on clothing tags to share the garment's ethical journey, from raw material sourcing to fair trade manufacturing.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Trace the garment's journey from farm to closet",
+      "Highlight fair trade and ethical manufacturing practices",
+      "Provide care instructions to extend garment life",
+      "Connect buyers with the artisans who made their clothes",
+      "Replace bulky, multi-page paper clothing tags"
+    ],
+    faqs: [
+      { q: "Why use QR codes on sustainable clothing tags?", a: "Sustainable fashion relies on transparency. A QR code allows you to share the complete story of a garment—materials, labor, and transport—which is too much information to fit on a traditional small paper tag." },
+      { q: "Can a QR code survive being washed?", a: "While standard printed paper tags won't survive the wash, QR codes can be printed on durable fabric care labels, embroidered, or even laser-engraved onto buttons to remain scannable for the life of the garment." },
+      { q: "How does this help reduce fashion waste?", a: "By providing detailed, easily accessible care and repair instructions via the QR code, brands can help consumers extend the lifespan of their clothing, directly combating the fast fashion waste cycle." }
+    ]
+  },
+  {
+    slug: "zero-waste-events",
+    title: "Zero-Waste Events",
+    headline: "QR Codes for Zero-Waste Event Management",
+    description: "Eliminate paper waste at your next conference or event. Use QR codes for digital ticketing, paperless schedules, and virtual exhibitor booths to achieve your zero-waste goals.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Replace printed tickets with digital scan-to-enter codes",
+      "Provide digital venue maps and real-time schedules",
+      "Allow exhibitors to share digital brochures instantly",
+      "Dramatically reduce post-event paper and plastic waste",
+      "Track attendee engagement digitally"
+    ],
+    faqs: [
+      { q: "How do QR codes enable zero-waste events?", a: "They act as digital gateways. Instead of printing thousands of schedules, maps, and promotional flyers that get thrown away, a single QR code displayed on a screen can provide all attendees with digital access to that same information." },
+      { q: "Can exhibitors use QR codes instead of business cards?", a: "Absolutely. Exhibitors can display a vCard QR code at their booth. Attendees simply scan the code to instantly save the contact information directly to their phones, eliminating the need for paper business cards." },
+      { q: "Do attendees need a special app to scan event QR codes?", a: "No. The vast majority of modern smartphones have built-in QR code scanners within their native camera apps, making digital access frictionless for almost all attendees." }
+    ]
+  },
+  {
+    slug: "green-energy-bills",
+    title: "Green Energy Bills",
+    headline: "Paperless Green Energy Billing with QR Codes",
+    description: "Encourage customers to switch to paperless billing and view their green energy usage. Use QR codes on statements to link to digital dashboards and energy-saving tips.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Frictionless transition to paperless digital billing",
+      "Instant access to detailed energy consumption dashboards",
+      "Share personalized tips for reducing energy usage",
+      "Demonstrate the impact of renewable energy choices",
+      "Lower operational costs for utility providers"
+    ],
+    faqs: [
+      { q: "How can QR codes encourage paperless billing?", a: "By placing a QR code on a physical bill with a clear call-to-action (e.g., 'Scan to go paperless'), utility companies make it incredibly easy for customers to opt-in to digital statements with just one tap." },
+      { q: "Can a QR code link to a secure billing portal?", a: "Yes. The QR code can route the user to the login page of their secure billing portal. The QR code itself doesn't contain sensitive data, it merely provides a convenient shortcut to the secure platform." },
+      { q: "How does this benefit green energy consumers?", a: "Beyond reducing paper waste, the QR code can link consumers directly to interactive charts showing exactly how much of their energy came from renewable sources (solar, wind) that month, reinforcing their eco-friendly choices." }
     ]
   }
 ];
