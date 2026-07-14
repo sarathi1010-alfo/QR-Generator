@@ -404,6 +404,152 @@ export const longTailUseCases: SEOPageConfig[] = [
       { q: "How does this benefit green energy consumers?", a: "Beyond reducing paper waste, the QR code can link consumers directly to interactive charts showing exactly how much of their energy came from renewable sources (solar, wind) that month, reinforcing their eco-friendly choices." }
     ]
   }
+,
+  {
+    "slug": "warehouse-racks",
+    "title": "Warehouse Racks",
+    "headline": "QR Codes for Warehouse Rack Organization",
+    "description": "Optimize your storage facility by applying scannable QR codes to warehouse racks, instantly connecting staff to real-time inventory levels.",
+    "category": "business",
+    "primaryUse": "url",
+    "features": [
+        "Instant access to rack inventory details",
+        "Reduce misplacement of physical stock",
+        "Seamless integration with WMS software",
+        "Accelerate the picking and packing process",
+        "Easily update rack locations dynamically"
+    ],
+    "faqs": [
+        {
+            "q": "How do QR codes improve rack organization?",
+            "a": "By scanning a rack's QR code, workers can instantly see a digital list of all items supposed to be stored there, ensuring accurate placement."
+        },
+        {
+            "q": "Are they durable enough for a warehouse?",
+            "a": "Yes, when printed on industrial-grade vinyl labels, QR codes can withstand extreme temperatures, moisture, and general wear and tear."
+        },
+        {
+            "q": "Can I link multiple racks to one zone?",
+            "a": "Absolutely, QR codes can link to a specific zone dashboard within your database, grouping multiple racks together logically."
+        }
+    ]
+},
+  {
+    "slug": "fleet-vehicles",
+    "title": "Fleet Vehicles",
+    "headline": "QR Codes for Fleet Vehicle Maintenance",
+    "description": "Keep your logistics fleet running smoothly. Use QR codes on vehicles to access maintenance logs, inspection reports, and dispatch instructions.",
+    "category": "business",
+    "primaryUse": "url",
+    "features": [
+        "Quick access to digital vehicle service history",
+        "Streamline daily driver inspection routines",
+        "Easily report mechanical issues via scan",
+        "Centralize fleet management data",
+        "Ensure compliance with safety regulations"
+    ],
+    "faqs": [
+        {
+            "q": "Where should I place the QR code on a vehicle?",
+            "a": "It's best placed on the inside of the driver's side door jamb or on the dashboard for easy access during daily inspections."
+        },
+        {
+            "q": "What data should the QR code link to?",
+            "a": "It should link to the specific vehicle's profile in your fleet management software, showing past service dates and upcoming maintenance needs."
+        },
+        {
+            "q": "Can drivers use their personal phones to scan?",
+            "a": "Yes, any standard smartphone camera can read the QR code, directing the driver to a secure, mobile-friendly reporting form."
+        }
+    ]
+},
+  {
+    "slug": "pallet-tracking",
+    "title": "Pallet Tracking",
+    "headline": "QR Codes for Seamless Pallet Tracking",
+    "description": "Ensure accurate shipment routing and inventory control by tagging shipping pallets with high-visibility QR codes.",
+    "category": "business",
+    "primaryUse": "url",
+    "features": [
+        "Trace pallets through the entire supply chain",
+        "Consolidate multiple item records into one scan",
+        "Prevent misrouting of bulk shipments",
+        "Update location status dynamically upon arrival",
+        "Simplify the receiving process at the loading dock"
+    ],
+    "faqs": [
+        {
+            "q": "How does a pallet QR code differ from individual item codes?",
+            "a": "A pallet code acts as a master record, linking to a manifest that lists all individual items contained within that specific pallet."
+        },
+        {
+            "q": "What happens if a pallet is split during transit?",
+            "a": "The digital manifest linked to the QR code can be updated in real-time by staff to reflect the new, split inventory status."
+        },
+        {
+            "q": "Are these codes readable from a forklift?",
+            "a": "Yes, if printed large enough and with high contrast, modern scanners can read the QR code from several feet away."
+        }
+    ]
+},
+  {
+    "slug": "cold-storage",
+    "title": "Cold Storage",
+    "headline": "QR Codes for Cold Storage Facilities",
+    "description": "Maintain rigorous temperature compliance and inventory accuracy in cold storage environments using specialized QR code labels.",
+    "category": "business",
+    "primaryUse": "url",
+    "features": [
+        "Track expiration dates of perishable goods instantly",
+        "Verify temperature logs and compliance certificates",
+        "Reduce time spent inside freezing environments",
+        "Ensure First-In, First-Out (FIFO) inventory rotation",
+        "Link to specific handling and thawing instructions"
+    ],
+    "faqs": [
+        {
+            "q": "Will QR codes work in sub-zero temperatures?",
+            "a": "The codes themselves will always work, but they must be printed on specialized freezer-grade adhesive labels to prevent them from falling off."
+        },
+        {
+            "q": "How do QR codes help with FIFO?",
+            "a": "Scanning the code immediately shows the batch date and expiration, guiding workers to pick the oldest stock first to prevent spoilage."
+        },
+        {
+            "q": "Can they link to live temperature sensors?",
+            "a": "Yes, advanced setups can link a QR code to an IoT dashboard displaying the real-time temperature telemetry of that specific storage unit."
+        }
+    ]
+},
+  {
+    "slug": "tool-cribs",
+    "title": "Tool Cribs",
+    "headline": "QR Codes for Tool Crib Inventory",
+    "description": "Prevent loss and manage the checkout process for expensive equipment with a scannable QR code system for your tool crib.",
+    "category": "business",
+    "primaryUse": "url",
+    "features": [
+        "Automate the equipment check-in/check-out process",
+        "Track who currently possesses specific tools",
+        "Schedule and monitor tool calibration dates",
+        "Reduce equipment loss and theft significantly",
+        "Access digital user manuals for complex machinery"
+    ],
+    "faqs": [
+        {
+            "q": "How does the tool checkout process work with QR codes?",
+            "a": "A worker scans the tool's QR code and enters their employee ID on the resulting web form, logging the tool as checked out under their name."
+        },
+        {
+            "q": "Can I see a history of tool usage?",
+            "a": "Yes, the database linked to the QR code maintains a complete audit trail of every user who has checked the tool in or out over its lifespan."
+        },
+        {
+            "q": "What if a tool needs repair?",
+            "a": "Upon scanning, the worker can select a 'report damage' option, instantly notifying the maintenance team and changing the tool's status to unavailable."
+        }
+    ]
+}
 ];
 
 export const downloadFormats: SEOPageConfig[] = [];
