@@ -13,6 +13,13 @@ const NEW_URLS = [
   `${SITE_URL}/qr-codes/plumbing-services`,
   `${SITE_URL}/qr-codes/dental-clinic`,
   `${SITE_URL}/qr-codes/accounting-firm`
+,
+  `${SITE_URL}/blog/qr-code-inventory-management-guide`,
+  `${SITE_URL}/qr-codes/warehouse-racks`,
+  `${SITE_URL}/qr-codes/fleet-vehicles`,
+  `${SITE_URL}/qr-codes/pallet-tracking`,
+  `${SITE_URL}/qr-codes/cold-storage`,
+  `${SITE_URL}/qr-codes/tool-cribs`
 ];
 
 const INDEXNOW_KEY = '550e8400e29b41d4a716446655440000';
