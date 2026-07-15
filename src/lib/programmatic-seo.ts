@@ -550,6 +550,152 @@ export const longTailUseCases: SEOPageConfig[] = [
         }
     ]
 }
+,
+  {
+    "slug": "site-safety-protocols",
+    "title": "Site Safety Protocols",
+    "headline": "QR Codes for Immediate Safety Protocol Access",
+    "description": "Ensure every worker has instant access to the latest hazard reports, safety data sheets, and emergency procedures right from their smartphone.",
+    "category": "business",
+    "primaryUse": "url",
+    "features": [
+        "Instant link to the latest OSHA guidelines",
+        "Streamlined access to emergency contacts",
+        "Digital hazard reporting forms",
+        "Replace bulky paper safety manuals",
+        "Track safety training completion"
+    ],
+    "faqs": [
+        {
+            "q": "How can QR codes improve site safety?",
+            "a": "Placing QR codes near hazardous zones gives workers immediate access to safety guidelines specific to that area, reducing response times during incidents."
+        },
+        {
+            "q": "Are the safety codes accessible offline?",
+            "a": "While standard URLs require internet, you can create vCard or Text QR codes containing essential emergency contacts or basic first-aid instructions for offline use."
+        },
+        {
+            "q": "Can I update the safety manual without changing the QR code?",
+            "a": "Yes, by using a dynamic QR code, you can update the destination URL or the digital PDF it points to without needing to reprint the physical code on-site."
+        }
+    ]
+},
+  {
+    "slug": "digital-blueprints",
+    "title": "Digital Blueprints",
+    "headline": "QR Codes for Instant Blueprint Revisions",
+    "description": "Never build from outdated plans again. Use QR codes on-site to link directly to the most current architectural revisions and digital blueprints in the cloud.",
+    "category": "business",
+    "primaryUse": "url",
+    "features": [
+        "Guarantee access to the latest plan revisions",
+        "Reduce costly rework from outdated blueprints",
+        "Easily share complex 3D models",
+        "Collaborate instantly between site and office",
+        "Eliminate massive paper plan sets"
+    ],
+    "faqs": [
+        {
+            "q": "How do QR codes prevent using outdated blueprints?",
+            "a": "A QR code printed on the physical plans or posted at the workstation links to the master digital file. Workers scan it to confirm they are looking at the most recent revision before starting work."
+        },
+        {
+            "q": "Can a QR code open a CAD file?",
+            "a": "The QR code will typically open a web-based viewer or prompt the user to open a specific app (like AutoCAD mobile) that can render the CAD file on their device."
+        },
+        {
+            "q": "What happens if a revision is made?",
+            "a": "The project manager updates the file at the URL linked to the QR code. The next time a worker scans the existing code, they instantly see the new revision."
+        }
+    ]
+},
+  {
+    "slug": "heavy-machinery-manuals",
+    "title": "Heavy Machinery Manuals",
+    "headline": "QR Codes for Equipment Manuals & Maintenance",
+    "description": "Affix durable QR code tags to excavators, cranes, and tools for immediate access to operation manuals, maintenance logs, and troubleshooting guides.",
+    "category": "business",
+    "primaryUse": "url",
+    "features": [
+        "Immediate access to complex operation manuals",
+        "Log and review equipment maintenance history",
+        "Troubleshoot mechanical issues on the spot",
+        "Verify operator certification requirements",
+        "Order replacement parts directly from the field"
+    ],
+    "faqs": [
+        {
+            "q": "Will QR codes survive on heavy machinery?",
+            "a": "Yes, standard paper won't work, but QR codes engraved on anodized aluminum or printed on industrial-grade vinyl are highly resistant to weather, oil, and abrasion."
+        },
+        {
+            "q": "What information should the machinery QR code link to?",
+            "a": "It should link to a centralized dashboard for that specific machine, including its digital manual, latest inspection report, and a form to log new maintenance requests."
+        },
+        {
+            "q": "Can it prevent unauthorized use?",
+            "a": "While the QR code itself can't stop the machine from starting, it can link to a mandatory pre-operation checklist that verifies the operator's credentials before they are authorized to begin work."
+        }
+    ]
+},
+  {
+    "slug": "worker-sign-in",
+    "title": "Worker Sign-In",
+    "headline": "QR Codes for Contactless Site Check-In",
+    "description": "Streamline the morning rush with a contactless QR code check-in system. Log arrival times, trades, and site inductions automatically.",
+    "category": "business",
+    "primaryUse": "url",
+    "features": [
+        "Eliminate physical sign-in sheet bottlenecks",
+        "Automatically log exact arrival and departure times",
+        "Track which contractors are currently on-site",
+        "Verify daily health and safety inductions",
+        "Export accurate data for payroll processing"
+    ],
+    "faqs": [
+        {
+            "q": "How does a QR code sign-in system work?",
+            "a": "Workers scan a large QR code posted at the site entrance using their personal smartphones. This opens a secure digital form where they log their details and confirm their attendance."
+        },
+        {
+            "q": "Do workers need a special app to sign in?",
+            "a": "No, the QR code simply uses the native camera app on their phone to open a standard web browser, making it a frictionless process for everyone."
+        },
+        {
+            "q": "Can I use this for visitor management too?",
+            "a": "Absolutely. You can have a separate QR code or an option within the main form for visitors, requiring them to acknowledge site safety rules before entry."
+        }
+    ]
+},
+  {
+    "slug": "hazard-reporting",
+    "title": "Hazard Reporting",
+    "headline": "QR Codes for Instant Hazard Reporting",
+    "description": "Empower every worker to report near-misses and safety hazards instantly by scanning dedicated QR codes located throughout the construction site.",
+    "category": "business",
+    "primaryUse": "url",
+    "features": [
+        "Encourage proactive safety culture",
+        "Remove the friction of paper reporting forms",
+        "Capture precise location data for the hazard",
+        "Allow photo uploads of the issue directly from the phone",
+        "Notify site managers immediately of critical risks"
+    ],
+    "faqs": [
+        {
+            "q": "Why use QR codes for hazard reporting?",
+            "a": "It significantly increases reporting rates. If a worker has to walk to the site office to find a paper form, they often won't bother. A quick scan removes that barrier."
+        },
+        {
+            "q": "Can workers attach photos to the report?",
+            "a": "Yes, if the QR code links to a modern digital form (like Google Forms or specialized safety software), workers can easily snap a photo of the hazard and upload it instantly."
+        },
+        {
+            "q": "Where should hazard reporting QR codes be placed?",
+            "a": "They should be placed prominently in high-traffic areas, near known hazard zones, and on general safety notice boards across the entire site."
+        }
+    ]
+}
 ];
 
 export const downloadFormats: SEOPageConfig[] = [];
