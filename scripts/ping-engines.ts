@@ -19,7 +19,13 @@ const NEW_URLS = [
   `${SITE_URL}/qr-codes/fleet-vehicles`,
   `${SITE_URL}/qr-codes/pallet-tracking`,
   `${SITE_URL}/qr-codes/cold-storage`,
-  `${SITE_URL}/qr-codes/tool-cribs`
+  `${SITE_URL}/qr-codes/tool-cribs`,
+  `${SITE_URL}/blog/how-to-create-qr-code-construction-site`,
+  `${SITE_URL}/qr-codes/site-safety-protocols`,
+  `${SITE_URL}/qr-codes/digital-blueprints`,
+  `${SITE_URL}/qr-codes/heavy-machinery-manuals`,
+  `${SITE_URL}/qr-codes/worker-sign-in`,
+  `${SITE_URL}/qr-codes/hazard-reporting`
 ];
 
 const INDEXNOW_KEY = '550e8400e29b41d4a716446655440000';
