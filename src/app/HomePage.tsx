@@ -49,7 +49,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Why use QRBuild?</h2>
-            <p className="text-muted max-w-xl mx-auto">Everything you need to create professional QR codes in seconds. Modernizing your operations is crucial, particularly in complex environments like construction. Replacing outdated paper blueprints and safety manuals with instantaneous digital access represents a massive leap in efficiency. Read our comprehensive guide on <Link href="/blog/how-to-create-qr-code-construction-site" className="text-cta hover:underline">how to create a QR code for a construction site</Link> to discover strategies that enhance site safety and streamline worker sign-ins. (Updated: July 15, 2026)</p>
+            <p className="text-muted max-w-xl mx-auto">Everything you need to create professional QR codes in seconds. Modernizing your operations is crucial, particularly in complex environments like construction. Replacing outdated paper blueprints and safety manuals with instantaneous digital access represents a massive leap in efficiency. Read our latest guide on <Link href="/blog/how-to-create-qr-code-pop-up-shop" className="text-cta hover:underline">how to create a QR code for a pop-up shop</Link> to discover innovative ways to streamline operations and boost sales in temporary retail spaces. (Updated: July 20, 2026)</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
