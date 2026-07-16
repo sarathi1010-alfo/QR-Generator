@@ -3,6 +3,151 @@ import { SEOPageConfig } from "./seo-config";
 
 export const longTailUseCases: SEOPageConfig[] = [
   {
+    "slug": "pop-up-checkout",
+    "title": "Pop-Up Self Checkout",
+    "headline": "QR Codes for Frictionless Pop-Up Checkout",
+    "description": "Eliminate lines at your temporary retail space by letting customers scan and pay directly from their smartphones.",
+    "category": "business",
+    "primaryUse": "url",
+    "features": [
+        "Reduce wait times during peak hours",
+        "Avoid expensive POS hardware rentals",
+        "Support Apple Pay and Google Wallet",
+        "Instantly email digital receipts",
+        "Capture customer emails post-purchase"
+    ],
+    "faqs": [
+        {
+            "q": "How does a QR code self-checkout work?",
+            "a": "Customers scan a code next to the item, which opens a secure payment page on their phone where they can complete the transaction instantly."
+        },
+        {
+            "q": "Do I need a special app to process payments?",
+            "a": "No, you just need a standard payment gateway like Stripe or Square. You link the QR code directly to the checkout URL provided by your payment processor."
+        },
+        {
+            "q": "Is it secure for customers to pay via QR code?",
+            "a": "Yes, as long as the QR code directs to a secure HTTPS payment portal, the transaction is protected by the same encryption used for any standard online purchase."
+        }
+    ]
+},
+  {
+    "slug": "digital-lookbooks",
+    "title": "Digital Lookbooks",
+    "headline": "QR Codes for Endless Aisle Lookbooks",
+    "description": "Expand your physical pop-up inventory digitally by linking shoppers to your complete online catalog and seasonal lookbooks.",
+    "category": "business",
+    "primaryUse": "url",
+    "features": [
+        "Showcase alternate colors and sizes instantly",
+        "Enable home delivery for out-of-stock items",
+        "Display high-quality video demonstrations",
+        "Reduce the physical footprint needed for stock",
+        "Track which items generate the most scans"
+    ],
+    "faqs": [
+        {
+            "q": "How do digital lookbooks help pop-up shops?",
+            "a": "They allow you to display a small, curated selection of items physically while giving customers instant access to your entire inventory to purchase online."
+        },
+        {
+            "q": "Can I update the lookbook during the event?",
+            "a": "Yes, if you use a dynamic QR code or update the webpage the static code points to, customers will always see the most current version of your catalog."
+        },
+        {
+            "q": "Where should I place the QR codes for lookbooks?",
+            "a": "Print them on product tags, display them prominently on tables next to sample items, and include them on your window displays."
+        }
+    ]
+},
+  {
+    "slug": "pop-up-loyalty",
+    "title": "Pop-Up Loyalty Signups",
+    "headline": "QR Codes for Instant Loyalty Program Enrollment",
+    "description": "Convert fleeting pop-up traffic into long-term brand advocates by capturing sign-ups with a simple, incentivized scan.",
+    "category": "business",
+    "primaryUse": "url",
+    "features": [
+        "Capture customer data before they leave",
+        "Offer instant discounts for joining",
+        "Build a retargeting audience easily",
+        "Avoid manual data entry errors",
+        "Seamlessly integrate with your CRM"
+    ],
+    "faqs": [
+        {
+            "q": "How can I encourage people to scan my loyalty QR code?",
+            "a": "Incentivize the scan by offering an immediate perk, such as 'Scan to get 15% off your purchase today' or 'Join to enter our daily giveaway.'"
+        },
+        {
+            "q": "What happens after they scan the code?",
+            "a": "The code should direct them to a mobile-optimized landing page with a very short form (usually just name and email) to minimize friction."
+        },
+        {
+            "q": "Can I track how many sign-ups came from the pop-up?",
+            "a": "Yes, by adding a specific UTM parameter to the URL in your QR code, you can track exactly how many conversions originated from that specific event."
+        }
+    ]
+},
+  {
+    "slug": "immersive-brand-story",
+    "title": "Immersive Brand Stories",
+    "headline": "QR Codes for Product Transparency & Storytelling",
+    "description": "Connect customers with the artisans, sustainable practices, and unique origins behind your products right on the showroom floor.",
+    "category": "business",
+    "primaryUse": "url",
+    "features": [
+        "Link to behind-the-scenes production videos",
+        "Highlight eco-friendly material sourcing",
+        "Introduce the founders or craftspeople",
+        "Build deeper emotional connections with buyers",
+        "Differentiate from mass-market competitors"
+    ],
+    "faqs": [
+        {
+            "q": "Why use QR codes for brand storytelling?",
+            "a": "Pop-up spaces are often crowded and noisy. A QR code lets the customer engage with your brand's narrative on their own device at their own pace."
+        },
+        {
+            "q": "What type of content works best for this?",
+            "a": "Short, high-quality videos showing the manufacturing process or an interview with the founder are highly engaging and build immediate trust."
+        },
+        {
+            "q": "Do I need a separate app to show a video?",
+            "a": "No, you can simply link the QR code to a YouTube, Vimeo, or TikTok video, which will play natively on the user's smartphone."
+        }
+    ]
+},
+  {
+    "slug": "pop-up-feedback",
+    "title": "Real-Time Pop-Up Feedback",
+    "headline": "QR Codes for Instant Customer Insights",
+    "description": "Gather critical data on your temporary retail experiment by prompting shoppers to complete a quick survey before they exit.",
+    "category": "business",
+    "primaryUse": "url",
+    "features": [
+        "Measure overall customer satisfaction instantly",
+        "Identify which products generated the most interest",
+        "Optimize future pop-up locations and layouts",
+        "Collect qualitative feedback on pricing",
+        "Incentivize participation with future discounts"
+    ],
+    "faqs": [
+        {
+            "q": "How can I get customers to fill out a feedback survey?",
+            "a": "Keep the survey extremely short (under 3 questions) and offer a tangible reward, such as a promo code for your online store upon completion."
+        },
+        {
+            "q": "Where is the best place to put a feedback QR code?",
+            "a": "Place it near the exit or on the digital receipt. You want to capture their impressions immediately after their experience in the shop."
+        },
+        {
+            "q": "Which tool should I use to build the survey?",
+            "a": "Any web-based form builder like Typeform, Google Forms, or SurveyMonkey works perfectly. Just generate a URL QR code that links to the form."
+        }
+    ]
+},
+  {
     slug: "software-docs",
     title: "Software Documentation",
     headline: "QR Codes for Instant API & Software Docs",
