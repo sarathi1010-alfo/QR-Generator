@@ -841,6 +841,104 @@ export const longTailUseCases: SEOPageConfig[] = [
         }
     ]
 }
+,
+
+  {
+    slug: "concert-ticketing",
+    title: "Concert Ticketing",
+    headline: "QR Codes for Concert Tickets & Fast Entry",
+    description: "Streamline entry to your music venue with highly secure, scannable QR code tickets that prevent fraud and speed up lines.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Eliminate paper ticket waste",
+      "Prevent counterfeit ticket fraud",
+      "Speed up venue entry lines",
+      "Dynamic updates if seat changes occur"
+    ],
+    faqs: [
+      { q: "How do QR codes prevent concert ticket fraud?", a: "By using dynamic QR codes linked to a secure backend database, event staff can scan the code and instantly verify if that unique ticket has already been used, stopping duplicates at the door." },
+      { q: "Can attendees scan concert tickets from their phones?", a: "Yes, our high-contrast QR codes are designed to be easily read from mobile screens, even in the low-light conditions often found outside music venues." },
+      { q: "What happens if a concert attendee loses their phone?", a: "The QR code is just a digital representation of their ticket. The venue's box office can always look up the ticket in the backend system using the attendee's ID and booking reference." }
+    ]
+  },
+  {
+    slug: "conference-check-in",
+    title: "Conference Check-In",
+    headline: "QR Codes for Seamless Conference Check-In",
+    description: "Eliminate morning registration bottlenecks at your conference. Let attendees scan a QR code to print their badges instantly.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Automated badge printing on arrival",
+      "Real-time attendance tracking",
+      "Contactless registration process",
+      "Reduce staffing needs at the front desk"
+    ],
+    faqs: [
+      { q: "How does QR code conference check-in work?", a: "Attendees receive a QR code via email before the event. Upon arrival, they scan it at a kiosk, which instantly verifies their registration and prints their name badge." },
+      { q: "Can I use QR codes for individual conference sessions?", a: "Absolutely. You can place QR codes outside each breakout room to track attendance for specific sessions, helping you gauge topic popularity and manage capacity." },
+      { q: "Do I need special hardware to scan conference QR codes?", a: "While dedicated kiosks are great for large events, you can also use standard iPads or smartphones with a scanning app to check attendees in quickly." }
+    ]
+  },
+  {
+    slug: "trade-show-booths",
+    title: "Trade Show Booths",
+    headline: "QR Codes for Trade Show Lead Generation",
+    description: "Maximize your trade show ROI. Use QR codes at your booth to capture leads, share digital brochures, and schedule follow-ups.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Frictionless lead capture",
+      "Share massive digital catalogs instantly",
+      "Direct link to sales calendar booking",
+      "Stand out in a crowded exhibition hall"
+    ],
+    faqs: [
+      { q: "How do QR codes improve trade show lead generation?", a: "Instead of collecting paper business cards that often get lost, you can present a vCard QR code. When an attendee scans it, your contact info is saved directly to their phone, and a return form captures their details." },
+      { q: "Where is the best place to put a QR code on a trade show booth?", a: "Place large QR codes on your main backdrop for general traffic, and smaller, specific codes next to individual product displays linking to detailed digital spec sheets." },
+      { q: "How large should a trade show QR code be?", a: "If you want people to scan it while walking past the aisle (about 10 feet away), the QR code should be at least 12x12 inches to ensure reliable scanning." }
+    ]
+  },
+  {
+    slug: "music-festival-maps",
+    title: "Music Festival Maps",
+    headline: "QR Codes for Digital Festival Maps & Schedules",
+    description: "Keep festival-goers informed and on time. Link QR codes to interactive digital maps and live-updating stage schedules.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Live updates for stage delays",
+      "Interactive GPS-enabled venue maps",
+      "Reduce massive printing costs",
+      "Emergency broadcast capabilities"
+    ],
+    faqs: [
+      { q: "Why use QR codes instead of a festival app?", a: "Apps require significant bandwidth to download, which is often a problem at crowded festivals. A QR code linking to a lightweight mobile webpage provides instant access without the download barrier." },
+      { q: "What happens if a band cancels or changes stages?", a: "If you use a dynamic QR code linked to a digital schedule, you simply update the schedule on your backend. Everyone who scans the code around the festival grounds will instantly see the new information." },
+      { q: "Where should festival QR codes be displayed?", a: "Place them on entry wristbands, large totems near crossroads, at the main gates, and next to all food and beverage vendor stations." }
+    ]
+  },
+  {
+    slug: "wedding-rsvp",
+    title: "Wedding RSVP",
+    headline: "QR Codes for Wedding RSVPs & Details",
+    description: "Modernize your wedding invitations. Include a beautifully designed QR code that links directly to your wedding website for instant RSVPs.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant, hassle-free RSVPs",
+      "Link to digital gift registries",
+      "Share complex venue directions easily",
+      "Save money on return postage"
+    ],
+    faqs: [
+      { q: "Is it tacky to put a QR code on a wedding invitation?", a: "Not anymore! Modern couples frequently include a small, elegantly designed QR code on an insert card. It is widely accepted as a convenient and eco-friendly way to manage RSVPs and share details." },
+      { q: "What should my wedding QR code link to?", a: "It should link directly to your wedding website, where guests can find the RSVP form, accommodation details, the gift registry, and the weekend itinerary." },
+      { q: "Can I customize the color of the wedding QR code?", a: "Yes, using our generator, you can customize the foreground and background colors to perfectly match your wedding theme and invitation suite." }
+    ]
+  }
+
 ];
 
 export const downloadFormats: SEOPageConfig[] = [];
