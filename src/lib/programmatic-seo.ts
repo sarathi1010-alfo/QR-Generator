@@ -937,8 +937,102 @@ export const longTailUseCases: SEOPageConfig[] = [
       { q: "What should my wedding QR code link to?", a: "It should link directly to your wedding website, where guests can find the RSVP form, accommodation details, the gift registry, and the weekend itinerary." },
       { q: "Can I customize the color of the wedding QR code?", a: "Yes, using our generator, you can customize the foreground and background colors to perfectly match your wedding theme and invitation suite." }
     ]
+},
+{
+    slug: "patient-wristbands",
+    title: "Patient Wristbands",
+    headline: "QR Codes for Patient Wristbands & Identification",
+    description: "Enhance patient safety and streamline care with scannable QR code wristbands. Reduce medication errors and provide instant access to critical EHR data.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant access to patient Electronic Health Records (EHR)",
+      "Verify 'five rights' of medication administration",
+      "Reduce clinical errors caused by misidentification",
+      "High error correction for durability against fluids and wear"
+    ],
+    faqs: [
+      { q: "How do QR codes on patient wristbands improve safety?", a: "By replacing 1D barcodes with QR codes, nurses can scan wristbands faster and from any angle. The code links to the EHR, verifying the patient's identity before any medication is administered, drastically reducing adverse drug events." },
+      { q: "What happens if a QR code wristband gets wet or wrinkled?", a: "Healthcare QR codes should be generated with High (H) error correction. This allows the code to be read accurately even if up to 30% of the matrix is damaged, smudged, or obscured." },
+      { q: "Are QR code patient wristbands HIPAA compliant?", a: "The QR code itself must not contain Protected Health Information (PHI). Instead, it should contain a secure URL that requires the scanning device (a clinical smartphone or scanner) to authenticate with the hospital's secure network before displaying any data." }
+    ]
+  },
+  {
+    slug: "telehealth-access",
+    title: "Telehealth Access",
+    headline: "QR Codes for Frictionless Telehealth Access",
+    description: "Eliminate the confusion of complex meeting URLs. Let patients join their virtual appointments instantly with a single smartphone scan.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "One-scan entry into secure virtual waiting rooms",
+      "Reduce technical support calls from patients",
+      "Embed codes in appointment reminder emails or physical cards",
+      "Dynamic links allow instant updates to meeting IDs"
+    ],
+    faqs: [
+      { q: "How do QR codes work for telehealth appointments?", a: "A unique QR code is generated for the patient's specific virtual session. When the time comes, they scan the code on their appointment card or reminder email, and their phone automatically launches the telehealth app and inputs the correct meeting ID." },
+      { q: "Can elderly patients use QR codes for virtual care?", a: "Yes, because modern smartphones have QR scanners built into the native camera app, there is no need to download third-party software. It is often much easier for elderly patients to point their camera at a code than to manually type a 12-digit URL." },
+      { q: "Are dynamic QR codes required for telehealth?", a: "They are highly recommended. If a provider's meeting link changes or a session needs to be quickly rescheduled, a dynamic QR code allows the backend URL to be updated without needing to send the patient a new physical or digital code." }
+    ]
+  },
+  {
+    slug: "clinic-scheduling",
+    title: "Clinic Scheduling",
+    headline: "QR Codes for Instant Clinic Scheduling",
+    description: "Reduce front desk bottlenecks and phone tag. Allow patients to book appointments securely by scanning QR codes placed in waiting rooms, on business cards, or outdoor signage.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Direct link to HIPAA-compliant patient scheduling portals",
+      "Decrease administrative burden on reception staff",
+      "Allow 24/7 appointment booking",
+      "Track scan locations to measure marketing ROI"
+    ],
+    faqs: [
+      { q: "Where is the best place to put scheduling QR codes?", a: "Place them on physical appointment cards, clinic window decals, local community bulletin boards, and direct mail campaigns. Any physical touchpoint can become a booking channel." },
+      { q: "Does the patient need an account to book an appointment?", a: "That depends on your scheduling software. The QR code simply acts as a frictionless bridge to your existing online portal. If your portal allows guest booking, the process is instantaneous." },
+      { q: "Can we track how many appointments come from the QR code?", a: "Yes, by appending UTM parameters to the destination URL before generating the QR code, your marketing team can track exactly how many scans resulted in a confirmed booking in Google Analytics." }
+    ]
+  },
+  {
+    slug: "medical-equipment-tracking",
+    title: "Medical Equipment Tracking",
+    headline: "QR Codes for Medical Equipment Tracking",
+    description: "Streamline hospital logistics and biomedical maintenance. Track mobile medical devices, view service manuals, and log repair tickets instantly.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant access to equipment calibration and service history",
+      "Log rapid repair tickets to minimize downtime",
+      "Track the physical location of expensive mobile assets",
+      "Durable tracking solution compared to RFID"
+    ],
+    faqs: [
+      { q: "How do QR codes help with medical equipment maintenance?", a: "By affixing a durable QR code tag to a device (like an infusion pump), biomedical engineers can scan it to instantly pull up the device's exact service manual, past work orders, and next scheduled preventative maintenance date." },
+      { q: "Can nurses report broken equipment using QR codes?", a: "Absolutely. If a nurse finds a malfunctioning device, they can scan the QR code to open a rapid ticketing form, immediately alerting the clinical engineering team and ensuring the device is pulled from patient care." },
+      { q: "What kind of QR codes should be used on medical equipment?", a: "Use high-contrast QR codes printed on durable, fluid-resistant, and tamper-evident synthetic labels. Ensure the codes are exported in a vector format (like SVG) before printing for maximum clarity." }
+    ]
+  },
+  {
+    slug: "hospital-wayfinding",
+    title: "Hospital Wayfinding",
+    headline: "QR Codes for Hospital Wayfinding & Navigation",
+    description: "Reduce patient stress and staff interruptions. Turn static maps into interactive, turn-by-turn indoor navigation systems.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Provide step-by-step directions to specific clinics or wards",
+      "Reduce the time staff spend giving verbal directions",
+      "Update routes instantly if corridors are closed for cleaning",
+      "Offer navigation in multiple languages automatically"
+    ],
+    faqs: [
+      { q: "How does QR code indoor navigation work in a hospital?", a: "Strategic 'You Are Here' QR codes are placed throughout the facility. When a visitor scans one, it opens a mobile web app showing their exact location and allows them to search for their destination, providing a digital route." },
+      { q: "Do hospital visitors need to download a special app for wayfinding?", a: "No, the best modern hospital wayfinding systems use Progressive Web Apps (PWAs). The QR code opens the navigation tool directly in the user's mobile browser, removing the friction of an app download." },
+      { q: "What happens if a hospital wing is temporarily closed?", a: "If you use dynamic QR codes linked to a centralized digital map, you can update the routes in the backend. All physical QR codes will instantly route visitors around the closure without needing to be replaced." }
+    ]
   }
-
 ];
 
 export const downloadFormats: SEOPageConfig[] = [];
