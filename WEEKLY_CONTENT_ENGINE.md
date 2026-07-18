@@ -1,182 +1,238 @@
-# QRBuild Weekly Content Engine Strategy
+# WEEKLY CONTENT ENGINE: QRBUILD EDITION
+Target Domain: https://qr.alfo.online/
+Immutable GA4 ID: G-HZQ3QT11QC
+Niche: Productivity & Developer Tools (QR Code Generation)
+Execution Mode: Weekly
 
-This document defines the repeatable content system for QRBuild (https://qr.alfo.online/) to build massive semantic surface area and dominate QR code search intent.
+## IMMUTABLE EXECUTION LAWS (HARD-CODED)
+The Append-Only Rule: Strictly forbidden from deleting, overwriting, or removing any previously created content, pages, URLs, or assets. Only CREATE (new pages) and UPDATE (refresh/expand/improve existing pages).
 
----
+Tracking Integrity: Preserve G-HZQ3QT11QC and all existing Google Tag Manager scripts in the <head> exactly as they are. Never remove or alter these IDs.
 
-## 1. THE REPEATABLE TEMPLATE SYSTEM
+Zero Hallucination: Do not invent fake metrics, broken links, or non-existent features.
 
-### Template A – Cluster Article (700-1000 words)
-*Target: Daily educational depth.*
-- **H1:** `[PRIMARY_KEYWORD]`: Complete Guide for `[TARGET_AUDIENCE]` in 2026
-- **Example:** *What is a QR Code? The Ultimate 2026 Guide*
-- **AI Snapshot:** 30-word intro definition (AEO optimized).
-- **H2:** Why `[PRIMARY_KEYWORD]` Matters for `[INDUSTRY/USE_CASE]`
-- **H2:** How to `[ACTION]` with `[PRIMARY_KEYWORD]` (step-by-step)
-- **H2:** Top `[NUMBER]` `[TOOLS/STRATEGIES]` for `[PRIMARY_KEYWORD]`
-- **H3:** Detailed breakdown of each (with real QR code examples)
-- **H2:** Common Mistakes to Avoid (with table)
-- **AEO Box:** 5 Key Takeaways (bullets)
-- **AEO Box:** FAQ Section with 5 questions + FAQPage Schema
-- **Internal Links:** 1 Pillar + 2 Clusters + Tool Page
+Social Media is Banned: Generate zero social media posts, tweets, or distribution plans. Focus 100% on high-converting, indexable website content.
 
-### Template B – Programmatic Comparison Page (300-500 words)
-*Target: Infinite scaling against competitors.*
-- **H1:** QRBuild vs `[COMPETITOR]`: Which QR Code Generator is Better for `[USE_CASE]`?
-- **Example:** *QRBuild vs QR Code Monkey: Which is Better for Business?*
-- **Quick Verdict:** 1-sentence AI summary.
-- **Comparison Table:** (Feature | QRBuild | `[COMPETITOR]` | Winner)
-- **Deep Dive QRBuild:** (Pros: Privacy, Free SVG, No Account | Cons: No Dynamic Tracking)
-- **Deep Dive `[COMPETITOR]`:** (e.g., Beaconstac, QRCodeChimp, Flowcode)
-- **When to choose each:** Final recommendation.
-- **AEO Box:** "Best Pick for [Scenario]"
-- **Internal Links:** Pillar + Tool Page
+## DELIVERABLE 1: THE 6 REPEATABLE AEO TEMPLATES (QRBUILD EDITION)
+Template A – Cluster Article (700-1000 words) – Daily educational depth.
 
-### Template C – Micro-Answer Page (300-500 words)
-*Target: Featured snippets and voice search.*
-- **H1:** What is `[QR_TERM]`?
-- **Example:** *What is a QR Code Quiet Zone?*
-- **AI Snapshot:** 40-60 word direct definition.
-- **H2:** How Does `[TERM]` Work?
-- **H2:** Real-World Example of `[TERM]` in `[INDUSTRY]`
-- **H2:** Why is `[TERM]` Important?
-- **H2:** `[TERM]` vs `[RELATED_TERM]` (comparison table)
-- **AEO Box:** Core Principles (bullets)
-- **Internal Links:** 1 Cluster + Tool Page
+H1: [PRIMARY_KEYWORD]: Complete Guide for [TARGET_AUDIENCE] in 2026
+Intro (30 words): Define the QR concept. State why it's critical for [TARGET_AUDIENCE]'s workflow.
+H2: Why [PRIMARY_KEYWORD] Matters for [AUDIENCE]
+H2: How to [ACTION] with [PRIMARY_KEYWORD] (Step-by-Step)
+H2: Top [NUMBER] Strategies for [PRIMARY_KEYWORD] (H3s for each with real QR examples)
+AEO Box (5 Key Takeaways): Bulleted list.
+AEO FAQ (5 Qs): Inject FAQPage Schema JSON-LD.
+Internal Links: 1 Pillar + 2 Clusters + Tool (/).
 
-### Template D – Pillar Page (3000-7000 words)
-*Target: Weekly topical hub.*
-- **H1:** The Ultimate 2026 Guide to `[BROAD_TOPIC]` (e.g., Ultimate Guide to QR Code Marketing)
-- **Executive Summary:** 200 words for AI Overviews.
-- **Table of Contents:** with jump links.
-- **Chapters:** Introduction/Evolution, Technical Foundation, Top 10 Strategies, Case Study, Future Trends.
-- **AEO Box:** Statistical Data Table.
-- **AEO Box:** 10+ FAQ with Schema.
-- **Internal Links:** 15+ Cluster Articles + Tool Pages.
+Template B – Programmatic Comparison (500-700 words) – Infinite scaling.
 
-### Template E – Industry Use-Case Page (600-800 words)
-*Target: High commercial intent.*
-- **H1:** QR Codes for `[INDUSTRY]`: The Complete 2026 Guide
-- **Example:** *QR Codes for Restaurants: The Complete 2026 Guide*
-- **Intro:** Why QR codes matter in `[INDUSTRY]` (with 2-3 statistics).
-- **Use Cases:** 5 specific use cases for `[INDUSTRY]` (e.g., Digital Menus, Feedback, Payments).
-- **Implementation:** How to implement in `[INDUSTRY]` (step-by-step).
-- **AEO Box:** Quick Reference Table (Use Case → QR Type → Best Practice).
-- **Internal Links:** Pillar + Tool + Generator.
+H1: [ENTITY_A] vs [ENTITY_B]: Which QR Code Generator is Better for [USE_CASE]?
+Quick Verdict (1 sentence): "For [USE_CASE], [WINNER] wins due to [KEY_FEATURE]."
+Table: Feature | [A] | [B] | Winner.
+Pros/Cons: Bulleted lists for both.
+AEO Box: "Best Pick for [Scenario]".
+Schema: Product or FAQPage Schema.
 
-### Template F – Data/Statistics Article
-*Target: Authority and backlink magnet.*
-- **H1:** `[YEAR]` QR Code `[INDUSTRY/TREND]` Statistics: The Data You Need
-- **The Bottom Line:** 3-sentence AI citation.
-- **Key Statistics:** Tables with year-over-year data.
-- **Trends:** 3 Trend breakdowns.
-- **Methodology & Sources.**
-- **Visual Data Summary Table.**
+Template C – Micro-Answer (300-500 words) – Featured snippets & voice search.
 
----
+H1: What is [QR_TERM]? (Direct Question)
+Definition (40-60 words): Concise, jargon-free.
+H2: How Does [TERM] Work?
+H2: Real-World Example in [INDUSTRY]
+H2: [TERM] vs [RELATED_TERM] (Table).
+Schema: FAQPage Schema.
 
-## SCHEMA & AEO IMPLEMENTATION
+Template D – Pillar Page (3000-7000 words) – Weekly hub.
 
-All templates are designed to work with our existing `faqItems` frontmatter. This frontmatter is automatically converted into `FAQPage` JSON-LD schema by the application.
+H1: The Ultimate 2026 Guide to [BROAD_TOPIC]
+Executive Summary (200 words): AI Overview targeting.
+TOC: Jump links.
+Chapters: Evolution, Technical Foundation, Top 10 Strategies, Case Study, Future Trends.
+AEO Box: Statistical Data Table.
+FAQ: 10+ questions with FAQPage Schema.
+Internal Links: 15+ links to clusters, type pages, and /.
 
-### Frontmatter Example (All Templates):
-```yaml
----
-title: "What is a QR Code Quiet Zone?"
-description: "Learn about the essential margin required for QR code scannability."
-publishedAt: "2026-06-28"
-category: "Technical"
-faqItems:
-  - question: "How large should the quiet zone be?"
-    answer: "The quiet zone should be at least 4 modules wide on all sides of the QR code."
-  - question: "Can I use a colored quiet zone?"
-    answer: "The quiet zone must have high contrast against the QR modules, typically white."
----
-```
+Template E – Industry Use-Case Guide (600-800 words) – Commercial intent.
 
-### Automation Workflow:
-1. **Scaffold:** Use `npm run scaffold-blog` to create placeholders.
-2. **Write:** Replace "lorem ipsum" with high-quality content using the structure in the templates.
-3. **Validate:** Run `npm run qc` to ensure all SEO/AEO requirements are met.
-4. **Publish:** Push to GitHub to trigger the automatic build and IndexNow ping.
+H1: QR Codes for [INDUSTRY]: The Complete 2026 Guide
+Intro: 2-3 stats specific to that industry.
+5 Specific Use Cases: With QR type recommendations.
+How to Implement: Step-by-step using QRBuild.
+AEO Box: Quick Ref Table (Use Case → QR Type → Best Practice).
+Internal Links: Pillar + Tool + QR Type Guide.
 
----
+Template F – QR Type Deep-Dive (600-800 words) – Educational & commercial intent.
 
-## 2. THE REPEATABLE WEEKLY CALENDAR
+H1: The Complete Guide to [QR_TYPE] QR Codes
+Definition: What [QR_TYPE] QR codes are and when to use them.
+How to Create: Step-by-step with QRBuild.
+Best Practices: Size, error correction, design tips.
+Industries That Benefit Most.
+AEO Box: Quick Ref Table (QR Type → Best For → Key Features → Industries).
+Internal Links: Pillar + Tool + Industry Guide.
 
-| Day | Focus Theme | Content Type |
-|---|---|---|
-| **Monday** | **Technical Concepts** | 3x Micro-Answers (Template C) + 1x Cluster (Template A) |
-| **Tuesday** | **Comparisons** | 5x Comparisons (Template B) |
-| **Wednesday** | **Industry Use-Cases** | 1x Industry Page (Template E) + 2x Clusters (Template A) |
-| **Thursday** | **QR Code Types** | 3x Micro-Answers (Template C) + 1x Cluster (Template A) |
-| **Friday** | **Design & Print Guides** | 2x Clusters (Template A) |
-| **Saturday** | **Pillar & Audit** | **1x Weekly Pillar (Template D)** + Internal Linking Audit |
-| **Sunday** | **Maintenance** | Content Pruning + Refreshing + **Monthly Report (Template F)** |
+## DELIVERABLE 2: THE REPEATABLE WEEKLY CALENDAR (MON-SUN)
+Monday (Fundamentals): 1 Pillar (Weekly Hub). 5 Micro-Answers. 3 Clusters on QR basics, types, and best practices.
+Tuesday (Comparisons): 2 Comparison Pages (QRBuild vs Competitor X/Y). 5 Micros. 3 Programmatic Industry pages.
+Wednesday (Use Cases): 2 Industry Use-Case Guides. 5 Micros. 3 Programmatic pages.
+Thursday (QR Type Deep-Dives): 2 QR Type Deep-Dives. 5 Micros. 3 Programmatic pages.
+Friday (Technical & Advanced): 2 Clusters on error correction, data capacity, versions. 5 Micros. 3 Programmatic pages.
+Saturday (Planning & Audit): Interlinking Audit. Schema Validation. 4xx Zombie Scan.
+Sunday (Pruning & Refreshing): Update 1 legacy section. Refresh lastmod dates. Regenerate sitemap & Ping Google/IndexNow.
 
----
+## DELIVERABLE 3: PROGRAMMATIC CSV MAPPING
+Comparison Pages (Template B):
+URL_Slug, H1_Title, Entity_A, Entity_B, Use_Case, Feature_1_Bool...Feature_5_Bool, Pros_A_Array, Cons_A_Array, Pros_B_Array, Cons_B_Array, Verdict_Winner, Best_For_Scenario, Internal_Link_1, Internal_Link_2
 
-## 3. PROGRAMMATIC CSV MAPPING
+Industry Use-Case Pages (Template E):
+URL_Slug, H1_Title, Industry, Stat_1, Stat_2, Use_Case_1...Use_Case_5, QR_Type_Recommended, Step_1...Step_4, Best_Practice_Table_JSON, Tags
 
-To scale Template B (Comparisons) and Template C (Micro-Answers) via automated tools, use the following spreadsheet headers:
+QR Type Pages (Template F):
+URL_Slug, H1_Title, QR_Type, Best_For, Key_Features_Array, Industries_Array, Error_Correction_Level, Generator_Slug
 
-| Header | Description | Example Value |
-|---|---|---|
-| `slug` | URL-friendly slug | `qrbuild-vs-beaconstac` |
-| `title` | Page H1 | `QRBuild vs Beaconstac` |
-| `entity_a` | Primary entity | `QRBuild` |
-| `entity_b` | Competitor entity | `Beaconstac` |
-| `use_case` | Main use case context | `Business Marketing` |
-| `verdict` | 1-sentence winner declaration | `QRBuild is the clear winner for free, high-res exports.` |
-| `feature_1_name` | Feature category | `Pricing` |
-| `feature_1_a` | Value for Entity A | `100% Free` |
-| `feature_1_b` | Value for Entity B | `$15+/mo` |
-| `pros_a` | Pros for Entity A | `No account, Privacy-first, SVG included` |
-| `cons_a` | Cons for Entity A | `Static codes only` |
-| `internal_link_url` | Internal anchor target | `/qr-codes/url` |
+## DELIVERABLE 4: THE ETERNAL WEEKLY RHYTHM (CADENCE)
+Metric	Weekly Target
+Pillar Pages	1
+Industry Use-Case Guides	2–3
+QR Type Deep-Dives	2–3
+Comparison Pages	1–2
+Cluster Articles	15–25 (3-5/day)
+Programmatic Pages	25–50 (5-10/day)
+Micro-Answer Pages	~35 (5/day)
+Total New Pages/Week	80–120
+New Indexed Pages (Est.)	50–100
 
----
+## DELIVERABLE 5: PRIORITY TOPIC QUEUE (WEEK 1)
+Monday (Fundamentals):
+Pillar: "The Ultimate Guide to QR Codes in 2026"
+Micro: What is a QR Code?, What is a URL QR Code?, What is a WiFi QR Code?, What is a vCard QR Code?, How Does a QR Code Work?
+Clusters: QR Code Basics, Types of QR Codes, Best Practices for QR Codes
 
-## 4. THE ETERNAL WEEKLY RHYTHM
+Tuesday (Comparisons):
+Comparisons: QRBuild vs QR Code Monkey, QRBuild vs Beaconstac
+Micro: What is a QR Code Scanner?, How to Scan a QR Code?, What is Error Correction in QR Codes?, What is QR Code Capacity?, What is a Dynamic QR Code?
+Programmatic: QR Codes for Restaurants, QR Codes for Retail
 
-Maintain this production cadence to dominate the 2026 QR search landscape:
+Wednesday (Use Cases):
+Use Cases: QR Codes for Real Estate, QR Codes for Education
+Micro: What is QR Code Customization?, What is QR Code with Logo?, What is QR Code Size?, What is QR Code Color?, What is QR Code Quiet Zone?
+Programmatic: QR Codes for Healthcare, QR Codes for Events
 
-- **Weekly Pillar Articles:** 1 per week (Target: 3,000+ words)
-- **Weekly Industry Use-Case:** 1 per week (Target: 800+ words)
-- **Weekly Data/Report:** 1 per month (Target: Statistical authority)
-- **Daily Clusters:** 3–5 per day (Education & Technical)
-- **Daily Programmatic Comparisons:** 5–10 per day (Competitor analysis)
-- **Daily Micro-Answers:** 5 per day (Featured snippets/Voice search)
-- **Weekly Target:** 50–100 new high-quality pages indexed.
+Thursday (QR Type Deep-Dives):
+QR Types: URL QR Code Deep-Dive, WiFi QR Code Deep-Dive
+Micro: What is a Static QR Code?, What is a QR Code API?, What is QR Code Analytics?, What is QR Code Tracking?, What is UTM in QR Code?
+Programmatic: QR Codes for Logistics, QR Codes for Marketing
 
----
+Friday (Technical & Advanced):
+Clusters: Error Correction Levels Explained, QR Code Versions 1-40, Data Capacity Guide
+Micro: What is a Text QR Code?, What is an Email QR Code?, What is an SMS QR Code?, What is a Phone QR Code?, What is a Location QR Code?
+Programmatic: QR Codes for Nonprofits, QR Codes for Fitness
 
-## 5. PRIORITY TOPIC QUEUE (FIRST 4 WEEKS)
+Saturday:
+Planning + Internal Linking Audit
 
-### Week 1: Authority Engine - Fundamentals
-- **Pillar:** The Ultimate Guide to QR Codes in 2026
-- **Comparisons:** QRBuild vs QR Code Monkey, QRBuild vs Beaconstac
-- **Industry:** Restaurants, Retail
-- **Technical:** Error Correction Levels Explained, QR Code Versions Explained
-- **Micro:** What is a QR Code Quiet Zone?, QR Code Data Capacity, What is a QR Code Scanner?
+Sunday:
+Content Pruning & Refreshing + Sitemap Regeneration
 
-### Week 2: Use Cases & Types
-- **Pillar:** QR Codes for Business: The Complete Guide
-- **Comparisons:** QRBuild vs The QR Code Generator, QRBuild vs QRCodeChimp
-- **Industry:** Real Estate, Education, Healthcare
-- **Technical:** Static vs Dynamic QR Codes: Which Should You Choose?
-- **Micro:** What is a vCard QR Code?, What is a WiFi QR Code?
+## DELIVERABLE 6: QR TYPE DEEP-DIVE QUEUE (12 WEEKS)
+W1-2: URL, WiFi
+W3-4: vCard, Text
+W5-6: Email, SMS
+W7-8: Phone, Location
+W9-10: Event, Bitcoin
+W11-12: Social Media (Instagram, Facebook, LinkedIn)
 
-### Week 3: Design & Print
-- **Pillar:** QR Code Design & Customization: The 2026 Handbook
-- **Comparisons:** QRBuild vs Canva QR, QRBuild vs Adobe Express
-- **Industry:** Events, Logistics, Marketing
-- **Technical:** QR Code Sizing for Print, Color Contrast Requirements for Scannability
-- **Micro:** Can I Add a Logo to a QR Code?, SVG vs PNG for QR Codes
+## DELIVERABLE 7: INDUSTRY USE-CASE QUEUE (12 WEEKS)
+W1: Restaurants, Retail
+W2: Real Estate, Education
+W3: Healthcare, Events
+W4: Logistics, Marketing
+W5: Hospitality (Hotels, Travel), Nonprofits
+W6: Fitness/Wellness, E-commerce
+W7: Financial Services, Government/Public Services
+W8: Manufacturing, Agriculture
+W9: Construction, Beauty & Cosmetics
+W10: Technology, Entertainment
+W11: Music/Concerts, Museums/Arts
+W12: Legal Services, Automotive
 
-### Week 4: Advanced & Integration
-- **Pillar:** QR Code Analytics & Tracking: Measuring ROI
-- **Comparisons:** QRBuild vs Bitly QR, QRBuild vs Flowcode
-- **Industry:** Hospitality, E-commerce, Nonprofits
-- **Technical:** QR Code API Integration Guide, How to Generate QR Codes with Python
-- **Micro:** What is a Dynamic QR Code?, How to Use UTM Parameters with QR Codes
+## DELIVERABLE 8: COMPARISON TARGETS TO GENERATE (12 WEEKS)
+W1-2: QR Code Monkey, Beaconstac
+W3-4: The QR Code Generator, QRCodeChimp
+W5-6: QRStuff, QRCodeGenerator
+W7-8: GoQR, QRCodeDynamic
+W9-10: QR.io, QR Code Scanner
+W11-12: Free vs Premium, QRBuild vs All-in-One
+
+Comparison Use Cases:
+Best for free QR codes
+Best for dynamic QR codes
+Best for analytics/tracking
+Best for design/customization
+Best for business/marketing
+Best for developers/API
+
+## DELIVERABLE 9: MICRO-ANSWER TOPIC QUEUE (WEEKS 1-4)
+Week 1:
+What is a QR code?
+What is a URL QR code?
+What is a WiFi QR code?
+What is a vCard QR code?
+How does a QR code work?
+What is a QR code scanner?
+How to scan a QR code?
+What is error correction in QR codes?
+What is QR code capacity?
+What is a dynamic QR code?
+
+Week 2:
+What is QR code customization?
+What is QR code with logo?
+What is QR code size?
+What is QR code color?
+What is QR code quiet zone?
+What is a static QR code?
+What is a QR code API?
+What is QR code analytics?
+What is QR code tracking?
+What is UTM in QR code?
+
+Week 3:
+What is a text QR code?
+What is an email QR code?
+What is an SMS QR code?
+What is a phone QR code?
+What is a location QR code?
+What is an event QR code?
+What is a Bitcoin QR code?
+What is a social media QR code?
+How to create a QR code for free?
+How to download a QR code?
+
+Week 4:
+What is QR code error correction?
+What is QR code version?
+What is QR code encoding?
+What is QR code masking?
+What is QR code vs barcode?
+What is QR code security?
+What is QR code phishing prevention?
+What is QR code for business?
+What is QR code marketing?
+What is QR code tracking?
+
+## DELIVERABLE 10: ALOF.IO ECOSYSTEM INTEGRATION CONTENT (12 WEEKS)
+W1: Introduction to Alfo ecosystem + QRBuild overview
+W2: QRBuild + BrandCard (QR code on digital business cards)
+W3: QRBuild + PaletteFlow (QR code colors matching brand palette)
+W4: QRBuild + FontFusion (QR code internal links matching brand palette)
+W5: QRBuild + MockBrand (QR code mockups for presentations)
+W6: Complete Alfo ecosystem workflow for QR code marketing
+
+## FINAL EXECUTION STATUS
+Append-Only Rule enforced.
+GA4 (G-HZQ3QT11QC) preserved globally.
+4xx Zombie Audit scheduled for Saturdays.
+Sitemap/IndexNow Automation scripted.
+All 10 Deliverables generated with specific examples from the QRBuild niche.

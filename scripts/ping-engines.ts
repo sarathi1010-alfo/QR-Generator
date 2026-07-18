@@ -1,6 +1,12 @@
 const SITE_URL = "https://qr.alfo.online";
 
 const NEW_URLS = [
+  `${SITE_URL}/blog/the-ultimate-guide-to-qr-codes-in-2026`,
+  `${SITE_URL}/blog/what-is-a-qr-code-the-ultimate-2026-guide`,
+  `${SITE_URL}/blog/what-is-a-url-qr-code`,
+  `${SITE_URL}/blog/what-is-a-wifi-qr-code`,
+  `${SITE_URL}/blog/what-is-a-vcard-qr-code`,
+  `${SITE_URL}/blog/how-does-a-qr-code-work`,
   `${SITE_URL}/blog/business-qr-code-guide`,
   `${SITE_URL}/qr-codes/restaurant-menu`,
   `${SITE_URL}/qr-codes/business-card`,
@@ -12,8 +18,7 @@ const NEW_URLS = [
   `${SITE_URL}/qr-codes/law-office`,
   `${SITE_URL}/qr-codes/plumbing-services`,
   `${SITE_URL}/qr-codes/dental-clinic`,
-  `${SITE_URL}/qr-codes/accounting-firm`
-,
+  `${SITE_URL}/qr-codes/accounting-firm`,
   `${SITE_URL}/blog/qr-code-inventory-management-guide`,
   `${SITE_URL}/qr-codes/warehouse-racks`,
   `${SITE_URL}/qr-codes/fleet-vehicles`,
