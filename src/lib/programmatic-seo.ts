@@ -3,6 +3,101 @@ import { SEOPageConfig } from "./seo-config";
 
 export const longTailUseCases: SEOPageConfig[] = [
   {
+    slug: "classroom-attendance-tracking",
+    title: "Classroom Attendance Tracking",
+    headline: "QR Codes for Classroom Attendance Tracking",
+    description: "Modernize your classroom with QR codes for attendance tracking. Allow students to scan and check in instantly, saving valuable instructional time.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant student check-ins",
+      "Eliminate manual roll calls",
+      "Real-time attendance dashboards",
+      "Dynamic codes prevent out-of-class scanning"
+    ],
+    faqs: [
+      { q: "How do QR codes for classroom attendance work?", a: "Instructors project a dynamic QR code on the board. Students scan the code with their smartphones to access a secure check-in portal tied to the school's information system." },
+      { q: "Can students scan the attendance QR code from home?", a: "By using dynamic QR codes that expire after a few minutes, educators can ensure students must be physically present in the room to successfully register their attendance." },
+      { q: "Do students need a special app to scan attendance codes?", a: "No, the native camera app on modern iOS and Android smartphones has a built-in QR scanner that can quickly and accurately decode the URL." }
+    ]
+  },
+  {
+    slug: "library-book-checkout",
+    title: "Library Book Checkout",
+    headline: "QR Codes for Seamless Library Book Checkout",
+    description: "Transform your library management system. Use QR codes on book spines for instant digital checkouts and self-service kiosks.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Self-service book checkout",
+      "Link to digital book summaries and reviews",
+      "Reduce lines at the librarian's desk",
+      "Easy tracking for overdue materials"
+    ],
+    faqs: [
+      { q: "Where should QR codes be placed on library books?", a: "QR codes should be placed on the spine or the inside front cover, using durable, high-contrast stickers that won't peel or fade over time." },
+      { q: "Can a QR code link to a book's digital copy?", a: "Yes, you can generate a QR code that directly links students to a library's digital catalog where they can borrow the eBook or audiobook version." },
+      { q: "Are QR codes better than barcodes for libraries?", a: "QR codes can store significantly more data and can be scanned from any angle using standard smartphone cameras, making them highly versatile for self-service systems." }
+    ]
+  },
+  {
+    slug: "student-id-badges",
+    title: "Student ID Badges",
+    headline: "QR Codes on Student ID Badges",
+    description: "Enhance campus security and convenience. Add QR codes to student ID badges for access control, cafeteria payments, and event check-ins.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Frictionless campus access control",
+      "Integration with cashless cafeteria systems",
+      "Quick check-in for school dances and events",
+      "Emergency contact information access"
+    ],
+    faqs: [
+      { q: "Is it safe to put a QR code on a student ID badge?", a: "Yes, as long as the QR code does not contain Personally Identifiable Information (PII) directly. It should link to a secure system requiring authentication to view any sensitive data." },
+      { q: "What happens if a student loses their QR code ID badge?", a: "Because the QR code links to a centralized digital system, administrators can instantly deactivate the unique identifier associated with that code, rendering the lost badge useless." },
+      { q: "Can student ID QR codes be used for payments?", a: "Many schools integrate QR codes on badges with their secure payment gateways, allowing students to pay for meals and school store items simply by scanning." }
+    ]
+  },
+  {
+    slug: "university-campus-tour",
+    title: "University Campus Tour",
+    headline: "QR Codes for Interactive University Campus Tours",
+    description: "Create engaging, self-guided campus tours for prospective students. Place QR codes outside buildings to provide instant access to maps, history, and videos.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Self-guided, interactive walking tours",
+      "Multimedia presentations of dorms and labs",
+      "Multilingual audio guide integration",
+      "Analytics tracking for popular tour stops"
+    ],
+    faqs: [
+      { q: "How do QR code campus tours work?", a: "Universities place signs with QR codes outside notable buildings. Visitors scan the code to watch video tours, read historical facts, or listen to audio guides on their own devices." },
+      { q: "What are the benefits of self-guided QR tours?", a: "They allow prospective students and families to explore the campus at their own pace, outside of scheduled tour times, and in multiple languages without needing a physical guide." },
+      { q: "What is the best material for outdoor campus tour QR codes?", a: "Outdoor codes should be printed on weather-resistant materials like anodized aluminum or durable acrylic, and generated with High (H) error correction to withstand scratching and fading." }
+    ]
+  },
+  {
+    slug: "parent-teacher-conference-booking",
+    title: "Parent-Teacher Conference Booking",
+    headline: "QR Codes for Parent-Teacher Conference Booking",
+    description: "Simplify scheduling for busy parents. Add a QR code to school newsletters to link directly to digital parent-teacher conference booking portals.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant access to digital scheduling portals",
+      "Reduce lost paper permission slips",
+      "Sync automatically with teacher calendars",
+      "Increase parent participation rates"
+    ],
+    faqs: [
+      { q: "How can QR codes improve parent-teacher communication?", a: "By adding a QR code to printed newsletters or flyers, schools remove the friction of typing long URLs, allowing parents to instantly access digital forms and scheduling tools." },
+      { q: "Do parents need an account to book a conference via QR code?", a: "This depends on the school's software, but the QR code simply acts as a fast link to the existing portal. If the portal supports guest checkout or simple email verification, it's seamless." },
+      { q: "Can a QR code automatically add the conference to a parent's calendar?", a: "Yes, you can generate a vCard or event-specific QR code that, when scanned, prompts the user to save the date and time directly to their phone's native calendar app." }
+    ]
+  },
+  {
     "slug": "pop-up-checkout",
     "title": "Pop-Up Self Checkout",
     "headline": "QR Codes for Frictionless Pop-Up Checkout",
