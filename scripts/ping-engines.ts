@@ -30,7 +30,13 @@ const NEW_URLS = [
   `${SITE_URL}/qr-codes/digital-blueprints`,
   `${SITE_URL}/qr-codes/heavy-machinery-manuals`,
   `${SITE_URL}/qr-codes/worker-sign-in`,
-  `${SITE_URL}/qr-codes/hazard-reporting`
+  `${SITE_URL}/qr-codes/hazard-reporting`,
+  `${SITE_URL}/blog/qr-codes-for-event-management-guide`,
+  `${SITE_URL}/qr-codes/event-registration`,
+  `${SITE_URL}/qr-codes/conference-schedules`,
+  `${SITE_URL}/qr-codes/trade-show-lead-capture`,
+  `${SITE_URL}/qr-codes/concert-merchandise`,
+  `${SITE_URL}/qr-codes/vip-access-passes`
 ];
 
 const INDEXNOW_KEY = '550e8400e29b41d4a716446655440000';
