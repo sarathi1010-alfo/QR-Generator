@@ -1127,6 +1127,101 @@ export const longTailUseCases: SEOPageConfig[] = [
       { q: "Do hospital visitors need to download a special app for wayfinding?", a: "No, the best modern hospital wayfinding systems use Progressive Web Apps (PWAs). The QR code opens the navigation tool directly in the user's mobile browser, removing the friction of an app download." },
       { q: "What happens if a hospital wing is temporarily closed?", a: "If you use dynamic QR codes linked to a centralized digital map, you can update the routes in the backend. All physical QR codes will instantly route visitors around the closure without needing to be replaced." }
     ]
+  },
+  {
+    slug: "event-registration",
+    title: "Event Registration",
+    headline: "QR Codes for Fast Event Registration",
+    description: "Streamline the attendee onboarding experience with QR codes for fast event registration. Allow guests to bypass long lines and secure their credentials in seconds.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant access to digital registration forms",
+      "Bypass long queues at the venue entrance",
+      "Seamless integration with CRM and ticketing platforms",
+      "Pre-fill attendee data for returning guests"
+    ],
+    faqs: [
+      { q: "How does a QR code for event registration work?", a: "By placing a QR code on promotional materials or at the venue entrance, attendees can scan it to instantly open a mobile registration form, fill in their details, and receive their digital pass without waiting in line." },
+      { q: "Can I link the QR code directly to my ticketing platform?", a: "Yes, you can generate a URL QR code that links directly to Eventbrite, Cvent, or any custom registration portal your organization uses." },
+      { q: "Is it secure to collect registration data this way?", a: "The QR code simply redirects the user to your secure web form. As long as the destination URL uses HTTPS and follows standard data protection protocols, the process is completely secure." }
+    ]
+  },
+  {
+    slug: "conference-schedules",
+    title: "Conference Schedules",
+    headline: "Digital Conference Schedules via QR Code",
+    description: "Replace expensive, outdated printed programs with dynamic digital conference schedules accessible via a quick QR code scan.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Always up-to-date speaker and session information",
+      "Eliminate the cost and waste of printed programs",
+      "Send real-time alerts for room changes or delays",
+      "Allow attendees to bookmark favorite sessions"
+    ],
+    faqs: [
+      { q: "Why are digital schedules better than printed ones?", a: "Printed schedules are obsolete the moment a speaker cancels or a room changes. A dynamic QR code linking to a digital schedule ensures attendees always have the most current information." },
+      { q: "Where should we place the schedule QR codes?", a: "Print the codes in high contrast on large signage in the main lobby, near elevator banks, and outside every breakout room for maximum visibility." },
+      { q: "Can the schedule be viewed without an internet connection?", a: "While the initial scan requires an internet connection to load the webpage, you can link the QR code to a Progressive Web App (PWA) that caches the schedule for offline viewing." }
+    ]
+  },
+  {
+    slug: "trade-show-lead-capture",
+    title: "Trade Show Lead Capture",
+    headline: "QR Codes for Trade Show Lead Capture",
+    description: "Maximize your trade show ROI by using QR codes for frictionless lead capture. Eliminate business cards and instantly sync prospect data to your CRM.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Frictionless contact exchange without physical cards",
+      "Direct integration into Salesforce, HubSpot, or other CRMs",
+      "Instantly deliver whitepapers or product brochures",
+      "Qualify leads on the spot with short digital surveys"
+    ],
+    faqs: [
+      { q: "How do exhibitors capture leads with QR codes?", a: "Exhibitors can display a QR code at their booth. When an attendee scans it, they are taken to a landing page where they can request more information, automatically capturing their contact details." },
+      { q: "Do I need to rent an expensive lead scanner?", a: "No, that is the main advantage. By using QR codes, the attendee's own smartphone becomes the scanner, saving exhibitors hundreds of dollars in hardware rental fees." },
+      { q: "Can I track how many leads a specific QR code generated?", a: "Yes, by generating a dynamic QR code or appending UTM parameters to your destination URL, you can track exactly how many scans and form submissions resulted from a specific booth or banner." }
+    ]
+  },
+  {
+    slug: "concert-merchandise",
+    title: "Concert Merchandise",
+    headline: "QR Codes for Cashless Concert Merchandise",
+    description: "Reduce lines and increase sales at concert merchandise stands by allowing fans to browse inventory, select sizes, and pay via QR code.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Browse merch inventory while waiting in line",
+      "Secure, cashless payments via Apple Pay or Google Pay",
+      "Reduce transaction times at the counter",
+      "Manage inventory in real-time to prevent overselling"
+    ],
+    faqs: [
+      { q: "How do QR codes speed up merchandise sales?", a: "Fans can scan a code while in line, view the available items and sizes, and complete the checkout process on their phone. They then simply show a digital receipt at the counter to collect their items." },
+      { q: "Is it safe to use QR codes for payments?", a: "The QR code itself doesn't process the payment; it links to a secure, encrypted payment gateway. As long as the linked store uses standard e-commerce security, it is highly secure." },
+      { q: "What if the cellular network at the concert is overloaded?", a: "This is a common challenge. To mitigate this, ensure the mobile store is extremely lightweight, or encourage fans to connect to a dedicated, high-bandwidth venue WiFi network before scanning." }
+    ]
+  },
+  {
+    slug: "vip-access-passes",
+    title: "VIP Access Passes",
+    headline: "QR Codes for Secure VIP Access Passes",
+    description: "Enhance event security and elevate the guest experience with scannable QR codes for exclusive VIP access areas and lounges.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Secure, non-transferable digital VIP credentials",
+      "Instant verification by security personnel",
+      "Track VIP movement to optimize staffing and catering",
+      "Easily revoke access dynamically if a pass is compromised"
+    ],
+    faqs: [
+      { q: "How do QR codes prevent VIP pass forgery?", a: "Unlike a simple printed badge, a QR code can link to a dynamic database. When security scans the code, it validates the credential in real-time, displaying the guest's photo and access level." },
+      { q: "Can a VIP share their QR code with someone else?", a: "To prevent screenshot sharing, use dynamic QR codes that refresh every few seconds (similar to authenticator apps), or use systems that require the scanning device to match the registered user's device." },
+      { q: "Do security guards need special scanners for VIP areas?", a: "No, standard smartphones or tablets equipped with a scanning app linked to the event's backend database are perfectly sufficient for rapid, secure verification." }
+    ]
   }
 ];
 
