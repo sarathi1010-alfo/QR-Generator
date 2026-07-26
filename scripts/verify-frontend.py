@@ -41,6 +41,12 @@ def test_qr_generation(page):
 
 def run_verification():
     urls_to_check = [
+        "/blog/qr-codes-for-healthcare",
+        "/qr-codes/patient-wristbands",
+        "/qr-codes/telehealth-portal",
+        "/qr-codes/medical-equipment-tracking",
+        "/qr-codes/hospital-navigation",
+        "/qr-codes/prescription-labels",
         "/blog/business-qr-code-guide",
         "/qr-codes/restaurant-menu",
         "/qr-codes/business-card",

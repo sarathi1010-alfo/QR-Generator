@@ -3,6 +3,101 @@ import { SEOPageConfig } from "./seo-config";
 
 export const longTailUseCases: SEOPageConfig[] = [
   {
+    slug: "patient-wristbands",
+    title: "Patient Wristbands",
+    headline: "QR Codes for Patient Wristbands",
+    description: "Enhance clinical safety by replacing traditional barcodes with high-capacity QR codes on patient wristbands for instant record retrieval.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant access to patient records",
+      "High error correction for damaged wristbands",
+      "Secure, encrypted URL redirection",
+      "Reduces medical errors"
+    ],
+    faqs: [
+      { q: "How do QR codes improve wristband scanning?", a: "QR codes scan faster from any angle and can sustain up to 30% damage while remaining readable, outperforming 1D barcodes in clinical settings." },
+      { q: "Are QR code wristbands secure?", a: "Yes. The QR code contains a secure URL, not raw health data. Access requires staff authentication via the clinical system." },
+      { q: "Can we use QR codes for medication administration?", a: "Absolutely. Scanning both the wristband and medication QR code cross-references the EHR to verify the five rights of administration." }
+    ]
+  },
+  {
+    slug: "telehealth-portal",
+    title: "Telehealth Portal Access",
+    headline: "QR Codes for Telehealth Portal Access",
+    description: "Simplify the virtual care experience. Allow patients to join their telehealth appointments with a single smartphone scan.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "One-scan telehealth entry",
+      "Eliminates manual meeting ID typing",
+      "Compatible with major EHRs",
+      "Reduces technical support calls"
+    ],
+    faqs: [
+      { q: "How does a telehealth QR code work?", a: "It encodes the complex meeting URL. When the patient scans it from their appointment card, it instantly launches the secure telehealth session." },
+      { q: "Can elderly patients easily use QR codes for telehealth?", a: "Yes, because modern smartphones have built-in scanners in their cameras, it removes the friction of typing complex URLs." },
+      { q: "Is scanning a QR code for telehealth secure?", a: "Yes, it redirects the patient to your secure portal, where they must pass standard authentication to enter the waiting room." }
+    ]
+  },
+  {
+    slug: "medical-equipment-tracking",
+    title: "Medical Equipment Tracking",
+    headline: "QR Codes for Medical Equipment Tracking",
+    description: "Streamline hospital logistics by tagging medical equipment with QR codes for real-time location and maintenance tracking.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Real-time location updates",
+      "Instant access to maintenance logs",
+      "Quick repair ticket generation",
+      "Durable vector-format printing"
+    ],
+    faqs: [
+      { q: "How does QR tracking help nursing staff?", a: "Nurses can quickly scan an infusion pump to view its last calibration date or instantly submit a repair ticket if it malfunctions." },
+      { q: "Are QR tags durable enough for medical equipment?", a: "Yes, when printed on synthetic, fluid-resistant labels and generated with high error correction, they survive rigorous cleaning protocols." },
+      { q: "Do we need proprietary scanners?", a: "No, standard clinical smartphones or tablets can read these codes and interface directly with your inventory management software." }
+    ]
+  },
+  {
+    slug: "hospital-navigation",
+    title: "Hospital Navigation",
+    headline: "QR Codes for Hospital Wayfinding",
+    description: "Reduce patient stress with interactive QR codes that provide turn-by-turn indoor navigation across complex medical campuses.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Turn-by-turn indoor directions",
+      "Reduces staff interruptions",
+      "Easily updatable routing",
+      "Multi-language support via landing page"
+    ],
+    faqs: [
+      { q: "How does a hospital navigation QR code work?", a: "Placed at key junctions, scanning the code opens a digital map or wayfinding app, showing the patient exactly where they are and how to reach their clinic." },
+      { q: "Can we change the map if a department moves?", a: "Yes, by using dynamic QR codes, you update the destination URL in your dashboard without needing to reprint physical signs." },
+      { q: "Does this require patients to download an app?", a: "Not necessarily. Many wayfinding systems use mobile-optimized web apps that load instantly upon scanning." }
+    ]
+  },
+  {
+    slug: "prescription-labels",
+    title: "Prescription Labels",
+    headline: "QR Codes for Prescription Labels",
+    description: "Enhance patient education by linking prescription labels directly to digital medication guides and dosage instructions via QR code.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant access to digital drug guides",
+      "Multimedia dosage instructions",
+      "Audio playback for visually impaired",
+      "Easily updatable safety warnings"
+    ],
+    faqs: [
+      { q: "Why add QR codes to prescription bottles?", a: "It connects patients to comprehensive, easy-to-read digital medication guides instead of relying on tiny printed text." },
+      { q: "Can the QR code trigger refill requests?", a: "Yes, you can configure the destination URL to open your pharmacy's secure portal to quickly initiate a refill." },
+      { q: "Is patient information safe?", a: "The QR code links to a general medication guide or a secure portal requiring login, ensuring no PHI is exposed directly on the label." }
+    ]
+  },
+  {
     slug: "classroom-attendance-tracking",
     title: "Classroom Attendance Tracking",
     headline: "QR Codes for Classroom Attendance Tracking",

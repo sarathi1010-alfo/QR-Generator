@@ -1,6 +1,12 @@
 const SITE_URL = "https://qr.alfo.online";
 
 const NEW_URLS = [
+  `${SITE_URL}/blog/qr-codes-for-healthcare`,
+  `${SITE_URL}/qr-codes/patient-wristbands`,
+  `${SITE_URL}/qr-codes/telehealth-portal`,
+  `${SITE_URL}/qr-codes/medical-equipment-tracking`,
+  `${SITE_URL}/qr-codes/hospital-navigation`,
+  `${SITE_URL}/qr-codes/prescription-labels`,
   `${SITE_URL}/blog/the-ultimate-guide-to-qr-codes-in-2026`,
   `${SITE_URL}/blog/what-is-a-qr-code-the-ultimate-2026-guide`,
   `${SITE_URL}/blog/what-is-a-url-qr-code`,
