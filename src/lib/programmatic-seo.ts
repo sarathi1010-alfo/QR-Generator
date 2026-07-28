@@ -3,6 +3,101 @@ import { SEOPageConfig } from "./seo-config";
 
 export const longTailUseCases: SEOPageConfig[] = [
   {
+    slug: "bank-branch-appointment-booking",
+    title: "Bank Branch Appointment Booking",
+    headline: "QR Codes for Bank Branch Appointments",
+    description: "Eliminate wait times in your branch. Allow customers to scan a QR code at the entrance to instantly book an appointment or join a digital queue.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instantly join digital queues upon arrival",
+      "Book specific time slots with financial advisors",
+      "Reduce physical congestion in branch waiting areas",
+      "Seamlessly integrate with branch scheduling software"
+    ],
+    faqs: [
+      { q: "How do QR codes help with bank appointments?", a: "By placing a QR code at the branch entrance, walk-in customers can scan it to access a mobile scheduling portal, allowing them to join a digital queue without waiting in line." },
+      { q: "Do customers need to download an app to book an appointment?", a: "No, the QR code can link to a secure, mobile-optimized webpage where they can quickly enter their details and receive an SMS notification when it's their turn." },
+      { q: "Can we track how many customers use the QR code?", a: "Yes, by utilizing dynamic QR codes with analytics, branch managers can track scan volumes and optimize staffing levels during peak hours." }
+    ]
+  },
+  {
+    slug: "contactless-atm-withdrawals",
+    title: "Contactless ATM Withdrawals",
+    headline: "QR Codes for Contactless ATM Access",
+    description: "Enhance security and hygiene with cardless ATM withdrawals. Enable customers to scan a dynamic QR code on the screen using their mobile banking app.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Withdraw cash securely without inserting a physical card",
+      "Mitigate the risk of card skimming devices",
+      "Pre-stage withdrawal amounts in the mobile app",
+      "Improve transaction speed and physical hygiene"
+    ],
+    faqs: [
+      { q: "How does a contactless ATM withdrawal work?", a: "The customer selects the cardless cash option, generating a dynamic QR code on the ATM screen. They then log into their bank's mobile app and scan the code to authorize the dispensing of cash." },
+      { q: "Are QR code ATM withdrawals secure?", a: "Yes, they are highly secure. They require the user to authenticate via their mobile banking app (often using biometrics) and the QR code is dynamic, expiring after a few seconds." },
+      { q: "Do I need a specific type of ATM to offer this?", a: "The ATM must have software capable of generating dynamic QR codes on its display and communicating with the bank's mobile app infrastructure." }
+    ]
+  },
+  {
+    slug: "mobile-banking-app-downloads",
+    title: "Mobile Banking App Downloads",
+    headline: "QR Codes for Mobile Banking App Adoption",
+    description: "Accelerate mobile app adoption by placing direct-download QR codes on ATM receipts, monthly statements, and direct mailers.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Direct customers to the official iOS or Android app store",
+      "Prevent customers from downloading fraudulent copycat apps",
+      "Track the success of app-download marketing campaigns",
+      "Reduce friction by eliminating the need to search the app store"
+    ],
+    faqs: [
+      { q: "How can QR codes increase app downloads?", a: "By printing a QR code on physical touchpoints like statements or ATM receipts, you provide a frictionless, one-click path directly to the app store, removing the effort of manual searching." },
+      { q: "Can one QR code link to both Apple and Google app stores?", a: "Yes, you can use a smart URL routing service. The QR code links to a single URL that automatically detects the user's operating system and redirects them to the appropriate app store." },
+      { q: "Where is the best place to put an app download QR code?", a: "High-visibility areas such as printed account statements, direct mail offers, in-branch digital signage, and on the ATM screen immediately after a transaction." }
+    ]
+  },
+  {
+    slug: "mortgage-application-tracking",
+    title: "Mortgage Application Tracking",
+    headline: "QR Codes for Mortgage Status Tracking",
+    description: "Provide transparency and reduce customer support calls. Give applicants a secure QR code to instantly check the real-time status of their mortgage application.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instantly view mortgage application progress",
+      "Securely upload missing documents via mobile device",
+      "Reduce the volume of status-inquiry calls to loan officers",
+      "Receive automated updates and next steps"
+    ],
+    faqs: [
+      { q: "How does a QR code help track a mortgage application?", a: "Loan officers can provide applicants with a unique, secure QR code on their initial paperwork. Scanning it directs the applicant to an authenticated portal showing their current loan status." },
+      { q: "Is it secure to track financial applications via QR code?", a: "Yes, as long as the QR code directs to a secure portal that requires the applicant to log in or authenticate before displaying any sensitive information." },
+      { q: "Can applicants upload documents using the QR code?", a: "Yes, the secure portal linked to the QR code can include an upload feature, allowing applicants to quickly snap a photo of a requested document and submit it directly from their phone." }
+    ]
+  },
+  {
+    slug: "credit-card-activation",
+    title: "Credit Card Activation",
+    headline: "QR Codes for Fast Credit Card Activation",
+    description: "Streamline the onboarding process. Place a unique QR code on the credit card mailer to guide customers straight to the secure activation screen in their banking app.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Eliminate the need to call automated phone lines",
+      "Direct customers to the exact activation screen in the app",
+      "Create a frictionless, modern onboarding experience",
+      "Encourage customers to log into the mobile app immediately"
+    ],
+    faqs: [
+      { q: "How do customers activate a credit card with a QR code?", a: "The customer scans the QR code printed on the card carrier. This opens their bank's mobile app directly to the activation screen, where they can confirm receipt with a single tap." },
+      { q: "What if the customer doesn't have the mobile banking app?", a: "The QR code can be configured to first check if the app is installed. If not, it can securely direct them to the app store to download it, or to a secure mobile web page for activation." },
+      { q: "Is this faster than calling to activate?", a: "Yes, scanning a QR code is significantly faster than dialing an automated number, entering the card details, and answering security questions via a phone keypad." }
+    ]
+  },
+  {
     slug: "patient-wristbands",
     title: "Patient Wristbands",
     headline: "QR Codes for Patient Wristbands",

@@ -52,7 +52,13 @@ def run_verification():
         "/qr-codes/business-card",
         "/qr-codes/product-packaging",
         "/qr-codes/event-tickets",
-        "/qr-codes/wifi-login"
+        "/qr-codes/wifi-login",
+        "/blog/qr-codes-for-financial-services-guide",
+        "/qr-codes/bank-branch-appointment-booking",
+        "/qr-codes/contactless-atm-withdrawals",
+        "/qr-codes/mobile-banking-app-downloads",
+        "/qr-codes/mortgage-application-tracking",
+        "/qr-codes/credit-card-activation"
     ]
 
     os.makedirs(VIDEOS_DIR, exist_ok=True)
