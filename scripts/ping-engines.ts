@@ -42,7 +42,13 @@ const NEW_URLS = [
   `${SITE_URL}/qr-codes/conference-schedules`,
   `${SITE_URL}/qr-codes/trade-show-lead-capture`,
   `${SITE_URL}/qr-codes/concert-merchandise`,
-  `${SITE_URL}/qr-codes/vip-access-passes`
+  `${SITE_URL}/qr-codes/vip-access-passes`,
+  `${SITE_URL}/blog/qr-codes-for-financial-services-guide`,
+  `${SITE_URL}/qr-codes/bank-branch-appointment-booking`,
+  `${SITE_URL}/qr-codes/contactless-atm-withdrawals`,
+  `${SITE_URL}/qr-codes/mobile-banking-app-downloads`,
+  `${SITE_URL}/qr-codes/mortgage-application-tracking`,
+  `${SITE_URL}/qr-codes/credit-card-activation`
 ];
 
 const INDEXNOW_KEY = '550e8400e29b41d4a716446655440000';
