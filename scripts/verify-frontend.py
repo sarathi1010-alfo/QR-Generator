@@ -41,6 +41,12 @@ def test_qr_generation(page):
 
 def run_verification():
     urls_to_check = [
+        "/blog/the-ultimate-guide-to-qr-codes-in-2026",
+        "/blog/what-is-a-qr-code-the-ultimate-2026-guide",
+        "/blog/what-is-a-url-qr-code",
+        "/blog/what-is-a-wifi-qr-code",
+        "/blog/what-is-a-vcard-qr-code",
+        "/blog/how-does-a-qr-code-work",
         "/blog/qr-codes-for-healthcare",
         "/qr-codes/patient-wristbands",
         "/qr-codes/telehealth-portal",
