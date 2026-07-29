@@ -3,6 +3,101 @@ import { SEOPageConfig } from "./seo-config";
 
 export const longTailUseCases: SEOPageConfig[] = [
   {
+    slug: "car-dealership-inventory",
+    title: "Car Dealership Inventory",
+    headline: "QR Codes for Car Dealership Inventory",
+    description: "Modernize your car dealership lot. Place QR codes on vehicle window stickers to provide buyers with instant access to history reports, specs, and test drive bookings.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant access to vehicle history reports",
+      "Display 360-degree interior/exterior galleries",
+      "Real-time pricing and financing calculators",
+      "Direct communication links to sales representatives"
+    ],
+    faqs: [
+      { q: "How do QR codes work on car windows?", a: "By placing a durable QR code next to the Monroney sticker, prospective buyers can scan it with their phone to instantly view a dynamic digital profile of that specific vehicle, even if the dealership is closed." },
+      { q: "Can buyers book a test drive via QR code?", a: "Yes, you can link the QR code directly to a scheduling application, allowing customers to book a test drive for that exact vehicle seamlessly from their smartphone." },
+      { q: "What happens when a car is sold?", a: "If you use dynamic QR codes, you can instantly redirect the code to a 'Vehicle Sold - View Similar Inventory' page, keeping the customer engaged without needing to immediately remove the physical sticker." }
+    ]
+  },
+  {
+    slug: "auto-repair-service-history",
+    title: "Auto Repair Service History",
+    headline: "Digital Auto Repair Service History via QR Code",
+    description: "Enhance transparency and trust in your auto repair shop. Use QR codes to provide customers with instant access to their digital service history and maintenance schedules.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant access to digital service history records",
+      "View upcoming maintenance schedules and reminders",
+      "Link to detailed, itemized digital repair invoices",
+      "Easy tracking for mechanics via door jamb stickers"
+    ],
+    faqs: [
+      { q: "Where should repair shops place the QR code?", a: "The most effective placement is a durable sticker on the inside of the driver's side door jamb or under the hood, making it easily accessible for both mechanics and vehicle owners." },
+      { q: "How does this benefit the customer?", a: "Customers no longer need to keep track of paper records. A quick scan provides them with full transparency on what was repaired, when, and when their next service is due." },
+      { q: "Can mechanics use these codes for internal tracking?", a: "Absolutely. Mechanics can scan the code to instantly pull up the vehicle's profile on their shop tablet, ensuring they know the exact history before beginning any work." }
+    ]
+  },
+  {
+    slug: "test-drive-booking",
+    title: "Test Drive Booking",
+    headline: "Frictionless Test Drive Bookings with QR Codes",
+    description: "Capture leads instantly while customers are on the lot. Use QR codes to allow frictionless test drive bookings directly from a smartphone.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant lead capture on the dealership lot",
+      "Direct integration with dealership CRM systems",
+      "Frictionless booking without waiting for a salesperson",
+      "Ability to select specific time slots and vehicle models"
+    ],
+    faqs: [
+      { q: "How do QR codes increase test drive bookings?", a: "They remove friction. A customer browsing the lot can scan a code, choose a time, and enter their details immediately, rather than waiting around or leaving and meaning to call later." },
+      { q: "Where is the best place to put a test drive QR code?", a: "Place them prominently on the vehicle's window, on display stands next to featured models, and in the dealership waiting area." },
+      { q: "Can the QR code link to my existing scheduling software?", a: "Yes, you can generate a URL QR code that links directly to Calendly, your custom CRM booking portal, or any other scheduling tool your dealership uses." }
+    ]
+  },
+  {
+    slug: "car-wash-loyalty-program",
+    title: "Car Wash Loyalty Program",
+    headline: "QR Codes for Car Wash Loyalty Programs",
+    description: "Modernize your car wash loyalty program. Replace easily lost punch cards with scannable digital QR codes that track points and apply discounts automatically.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Digital loyalty tracking replacing paper punch cards",
+      "Store codes easily in Apple Wallet or Google Wallet",
+      "Automatic application of discounts at payment kiosks",
+      "Seamless subscription management for unlimited wash clubs"
+    ],
+    faqs: [
+      { q: "How does a QR code loyalty program work at a car wash?", a: "Customers receive a unique QR code (often saved to their phone's digital wallet). They scan this code at the payment kiosk before their wash, which automatically logs their visit and applies any earned rewards." },
+      { q: "Why are digital QR codes better than physical cards?", a: "Physical cards are often lost or forgotten, leading to frustration. A digital QR code is always on the customer's phone, improving participation rates and providing you with better data." },
+      { q: "Can I use QR codes to sell monthly wash subscriptions?", a: "Yes, you can place a QR code at the vacuum stations or exit lane that links directly to a sign-up page for your unlimited monthly wash club." }
+    ]
+  },
+  {
+    slug: "vehicle-window-stickers",
+    title: "Vehicle Window Stickers",
+    headline: "Interactive Vehicle Window Stickers with QR Codes",
+    description: "Upgrade your static Monroney stickers into interactive digital showrooms using durable, scannable QR codes for car dealerships.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Provide vastly more information than a paper sticker allows",
+      "Offer interactive elements like 360-degree vehicle tours",
+      "Capture customer analytics on which cars get scanned most",
+      "Update vehicle pricing and incentives dynamically"
+    ],
+    faqs: [
+      { q: "Are QR codes on windows hard to scan due to glare?", a: "Glare can be an issue. To mitigate this, print the QR codes in high contrast (black on white), make them reasonably large, and place them on windows that are less prone to direct reflections." },
+      { q: "Do I need a special printer for window sticker QR codes?", a: "You don't need a special printer, but you should use weather-resistant, UV-coated labels to ensure the codes don't fade in the sun or get damaged during car washes." },
+      { q: "What should the QR code on a window sticker link to?", a: "It should link to a mobile-optimized landing page dedicated specifically to that VIN, showing a gallery, the Carfax report, and a 'Contact Sales' button." }
+    ]
+  },
+  {
     slug: "bank-branch-appointment-booking",
     title: "Bank Branch Appointment Booking",
     headline: "QR Codes for Bank Branch Appointments",
