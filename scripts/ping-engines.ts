@@ -48,7 +48,13 @@ const NEW_URLS = [
   `${SITE_URL}/qr-codes/contactless-atm-withdrawals`,
   `${SITE_URL}/qr-codes/mobile-banking-app-downloads`,
   `${SITE_URL}/qr-codes/mortgage-application-tracking`,
-  `${SITE_URL}/qr-codes/credit-card-activation`
+  `${SITE_URL}/qr-codes/credit-card-activation`,
+  `${SITE_URL}/blog/qr-codes-for-automotive-industry-guide`,
+  `${SITE_URL}/qr-codes/car-dealership-inventory`,
+  `${SITE_URL}/qr-codes/auto-repair-service-history`,
+  `${SITE_URL}/qr-codes/test-drive-booking`,
+  `${SITE_URL}/qr-codes/car-wash-loyalty-program`,
+  `${SITE_URL}/qr-codes/vehicle-window-stickers`
 ];
 
 const INDEXNOW_KEY = '550e8400e29b41d4a716446655440000';

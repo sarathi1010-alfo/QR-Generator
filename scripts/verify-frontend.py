@@ -58,7 +58,13 @@ def run_verification():
         "/qr-codes/contactless-atm-withdrawals",
         "/qr-codes/mobile-banking-app-downloads",
         "/qr-codes/mortgage-application-tracking",
-        "/qr-codes/credit-card-activation"
+        "/qr-codes/credit-card-activation",
+        "/blog/qr-codes-for-automotive-industry-guide",
+        "/qr-codes/car-dealership-inventory",
+        "/qr-codes/auto-repair-service-history",
+        "/qr-codes/test-drive-booking",
+        "/qr-codes/car-wash-loyalty-program",
+        "/qr-codes/vehicle-window-stickers"
     ]
 
     os.makedirs(VIDEOS_DIR, exist_ok=True)
