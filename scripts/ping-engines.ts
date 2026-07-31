@@ -54,7 +54,14 @@ const NEW_URLS = [
   `${SITE_URL}/qr-codes/auto-repair-service-history`,
   `${SITE_URL}/qr-codes/test-drive-booking`,
   `${SITE_URL}/qr-codes/car-wash-loyalty-program`,
-  `${SITE_URL}/qr-codes/vehicle-window-stickers`
+  `${SITE_URL}/qr-codes/vehicle-window-stickers`,
+  `${SITE_URL}/blog/qr-codes-for-real-estate-virtual-tours-listings`,
+  `${SITE_URL}/blog/qr-codes-for-real-estate-agents`,
+  `${SITE_URL}/qr-codes/real-estate-virtual-tours`,
+  `${SITE_URL}/qr-codes/open-house-sign-ins`,
+  `${SITE_URL}/qr-codes/property-listing-flyers`,
+  `${SITE_URL}/qr-codes/real-estate-agent-vcard`,
+  `${SITE_URL}/qr-codes/for-sale-sign-riders`
 ];
 
 const INDEXNOW_KEY = '550e8400e29b41d4a716446655440000';
