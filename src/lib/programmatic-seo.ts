@@ -1224,6 +1224,101 @@ export const longTailUseCases: SEOPageConfig[] = [
 ,
 
   {
+    slug: "real-estate-virtual-tours",
+    title: "Real Estate Virtual Tours",
+    headline: "QR Codes for Real Estate Virtual Tours",
+    description: "Transport prospective buyers inside the property instantly. Link a QR code on your 'For Sale' sign directly to a 3D Matterport or video walkthrough.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant access to immersive 3D property tours",
+      "Qualify leads before they request a physical showing",
+      "Keep buyers engaged while they are parked at the curb",
+      "Reduce unnecessary foot traffic through the home"
+    ],
+    faqs: [
+      { q: "How do QR codes launch virtual real estate tours?", a: "By pointing your smartphone camera at a QR code printed on a sign rider, it instantly opens a web link to a hosted 3D tour, allowing you to walk through the property digitally." },
+      { q: "Are QR codes on yard signs easy to scan?", a: "Yes, provided they are printed large enough (at least 10x10 inches) and in high contrast, they can easily be scanned from a car window." },
+      { q: "Can I update the tour without changing the sign?", a: "By using a dynamic QR code, you can update the destination link at any time, pointing the code to a different tour or a 'Just Sold' page without reprinting." }
+    ]
+  },
+  {
+    slug: "open-house-sign-ins",
+    title: "Open House Sign-Ins",
+    headline: "Contactless Open House Sign-Ins via QR Code",
+    description: "Ditch the clipboard. Let open house visitors scan a QR code to fill out a digital sign-in sheet, automatically syncing their details to your real estate CRM.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Frictionless, hygienic digital sign-in process",
+      "Eliminate illegible handwriting and manual data entry",
+      "Instantly sync new leads directly to your CRM",
+      "Trigger automated welcome emails upon registration"
+    ],
+    faqs: [
+      { q: "How does a QR code open house sign-in work?", a: "The agent displays a QR code on a standee in the foyer. Visitors scan it with their phones to access a short mobile form where they enter their contact info and feedback." },
+      { q: "Is this better than a paper sign-in sheet?", a: "Absolutely. It prevents visitors from seeing who else has attended, protects their privacy, and saves the agent hours of manual data entry after the event." },
+      { q: "Do visitors need an app to sign in?", a: "No, the QR code simply opens a standard web browser on their phone, directing them to a mobile-friendly form you create (like a Google Form or CRM landing page)." }
+    ]
+  },
+  {
+    slug: "property-listing-flyers",
+    title: "Property Listing Flyers",
+    headline: "Interactive Property Listing Flyers with QR Codes",
+    description: "Expand the space on your printed flyers. Use a QR code to link to massive photo galleries, floor plans, and school district data that won't fit on paper.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Keep printed flyers clean and uncluttered",
+      "Provide infinite space for high-res property photos",
+      "Link to dynamic mortgage calculators and neighborhood stats",
+      "Track exactly how many people engage with your printed materials"
+    ],
+    faqs: [
+      { q: "Why add a QR code to a real estate flyer?", a: "A single piece of paper can only hold a few photos. A QR code acts as a portal, allowing the buyer to view an extensive gallery and detailed specs online instantly." },
+      { q: "What should the flyer QR code link to?", a: "It should link to a dedicated, mobile-optimized landing page for that specific property, often called a single-property website." },
+      { q: "Can I track the ROI of my printed flyers?", a: "Yes, by using a unique QR code with UTM tracking parameters for each batch of flyers, you can see exactly which print campaign generated the most online views." }
+    ]
+  },
+  {
+    slug: "real-estate-agent-vcard",
+    title: "Real Estate Agent vCard",
+    headline: "Digital vCard QR Codes for Real Estate Agents",
+    description: "Never lose a contact again. Place a vCard QR code on your business cards so clients can save your name, number, and website directly to their phone with one tap.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instantly save contact info to client smartphones",
+      "Include links to your active listings and social profiles",
+      "Modernize your traditional paper business cards",
+      "Ensure clients always have your most up-to-date number"
+    ],
+    faqs: [
+      { q: "What is a vCard QR code?", a: "It is a QR code that contains a digital business card file (.vcf). When scanned, the phone prompts the user to save the contact information directly to their address book." },
+      { q: "Where should real estate agents use vCard QR codes?", a: "Print them on the back of your business cards, on the bottom of property flyers, and on direct mail postcards sent to your farming area." },
+      { q: "What happens if I change brokerages or my phone number?", a: "If you use a dynamic vCard QR code, you can update your contact information in the backend, and the QR code on your existing printed cards will instantly reflect the new data." }
+    ]
+  },
+  {
+    slug: "for-sale-sign-riders",
+    title: "For Sale Sign Riders",
+    headline: "QR Codes for Real Estate Sign Riders",
+    description: "Turn drive-by traffic into captured leads. Add a QR code sign rider below your main 'For Sale' sign to offer instant property details and immediate agent contact.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Capture leads from drive-by and foot traffic 24/7",
+      "Provide immediate gratification for curious neighbors",
+      "Link to a 'Contact Agent' SMS or WhatsApp chat",
+      "Easily attach to standard real estate sign posts"
+    ],
+    faqs: [
+      { q: "What is a QR code sign rider?", a: "It is a smaller, supplemental sign panel that attaches above or below your main 'For Sale' yard sign, featuring a large, scannable QR code and a call to action." },
+      { q: "How big should a QR code be on a real estate sign?", a: "To be easily scannable from a car stopped on the street, the QR code on a yard sign should be a minimum of 8 to 12 inches wide." },
+      { q: "What if it rains or snows on the sign?", a: "Always generate your outdoor QR codes with a High (H) error correction level. This ensures they remain readable even if splashed with mud, rain, or partially covered in snow." }
+    ]
+  },
+  {
     slug: "concert-ticketing",
     title: "Concert Ticketing",
     headline: "QR Codes for Concert Tickets & Fast Entry",

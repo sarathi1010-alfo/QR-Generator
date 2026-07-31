@@ -70,7 +70,14 @@ def run_verification():
         "/qr-codes/auto-repair-service-history",
         "/qr-codes/test-drive-booking",
         "/qr-codes/car-wash-loyalty-program",
-        "/qr-codes/vehicle-window-stickers"
+        "/qr-codes/vehicle-window-stickers",
+        "/blog/qr-codes-for-real-estate-virtual-tours-listings",
+        "/blog/qr-codes-for-real-estate-agents",
+        "/qr-codes/real-estate-virtual-tours",
+        "/qr-codes/open-house-sign-ins",
+        "/qr-codes/property-listing-flyers",
+        "/qr-codes/real-estate-agent-vcard",
+        "/qr-codes/for-sale-sign-riders"
     ]
 
     os.makedirs(VIDEOS_DIR, exist_ok=True)
