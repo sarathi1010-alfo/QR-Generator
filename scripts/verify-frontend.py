@@ -41,7 +41,13 @@ def test_qr_generation(page):
 
 def run_verification():
     urls_to_check = [
-        "/blog/the-ultimate-guide-to-qr-codes-in-2026",
+                "/blog/how-to-create-qr-code-for-event-management",
+        "/qr-codes/corporate-event-badges",
+        "/qr-codes/music-festival-wristbands",
+        "/qr-codes/charity-gala-auctions",
+        "/qr-codes/esports-tournament-schedules",
+        "/qr-codes/food-festival-menus",
+"/blog/the-ultimate-guide-to-qr-codes-in-2026",
         "/blog/what-is-a-qr-code-the-ultimate-2026-guide",
         "/blog/what-is-a-url-qr-code",
         "/blog/what-is-a-wifi-qr-code",

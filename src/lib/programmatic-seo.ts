@@ -2,7 +2,103 @@
 import { SEOPageConfig } from "./seo-config";
 
 export const longTailUseCases: SEOPageConfig[] = [
+
   {
+    slug: "corporate-event-badges",
+    title: "Corporate Event Badges",
+    headline: "QR Codes for Corporate Event Badges",
+    description: "Enhance networking and lead retrieval with scannable QR codes on corporate event badges. Instantly share contact details and track attendance.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instantly exchange digital business cards (vCards) with a single scan",
+      "Streamline session check-ins and track attendee movement",
+      "Allow exhibitors to capture leads effortlessly",
+      "Reduce printing costs by linking to digital schedules"
+    ],
+    faqs: [
+      { q: "How do QR codes on event badges work?", a: "A unique QR code is printed on each attendee's badge. When scanned, it can link to their digital vCard, a specific event schedule, or act as a digital ticket for specific sessions." },
+      { q: "Can I use QR codes for lead retrieval?", a: "Yes, exhibitors can scan attendee badges using standard smartphones to instantly capture contact information and sync it with their CRM." },
+      { q: "What is the best QR code type for event badges?", a: "Dynamic URL QR codes are best because they allow the destination URL to be updated even after the badges are printed, providing maximum flexibility." }
+    ]
+  },
+  {
+    slug: "music-festival-wristbands",
+    title: "Music Festival Wristbands",
+    headline: "QR Codes for Music Festival Wristbands",
+    description: "Streamline entry, enable cashless payments, and provide interactive maps with QR codes integrated into music festival wristbands.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Fast, contactless entry and ticket validation",
+      "Enable secure, cashless payments at food and merchandise vendors",
+      "Link directly to interactive festival maps and set times",
+      "Enhance security and prevent ticket fraud"
+    ],
+    faqs: [
+      { q: "Are QR codes on wristbands durable enough for a festival?", a: "Yes, if printed on high-quality synthetic materials (like Tyvek or vinyl) with a high error correction level, QR codes remain scannable even if wrinkled or slightly damaged." },
+      { q: "How do cashless payments work with QR wristbands?", a: "The QR code links to a secure digital wallet or payment gateway. Attendees load funds beforehand and vendors scan the wristband to deduct the purchase amount." },
+      { q: "Can attendees use the QR code to find stages?", a: "Absolutely. Scanning the wristband can instantly launch a mobile-optimized, interactive map showing the user's location and turn-by-turn directions to stages." }
+    ]
+  },
+  {
+    slug: "charity-gala-auctions",
+    title: "Charity Gala Auctions",
+    headline: "QR Codes for Charity Gala Auctions",
+    description: "Increase fundraising revenue with QR codes for seamless silent auctions and instant donations at charity galas.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Link directly to mobile bidding platforms for silent auctions",
+      "Enable instant, frictionless donations via secure payment gateways",
+      "Display dynamic leaderboards to encourage higher bids",
+      "Share stories and videos about the charity's impact"
+    ],
+    faqs: [
+      { q: "How do QR codes improve silent auctions?", a: "Instead of paper bid sheets, attendees scan a QR code next to an item to view details and place bids directly from their smartphones, eliminating crowding around tables." },
+      { q: "Are QR code donations secure?", a: "Yes, as long as the QR code links to a secure, HTTPS-encrypted payment gateway (like PayPal or Stripe), the transaction is completely secure." },
+      { q: "Can we track which QR codes generated the most donations?", a: "Yes, by using dynamic QR codes with UTM parameters, you can track exactly which tables or auction items drove the highest volume of scans and donations." }
+    ]
+  },
+  {
+    slug: "esports-tournament-schedules",
+    title: "Esports Tournament Schedules",
+    headline: "QR Codes for Esports Tournament Schedules",
+    description: "Keep players and fans updated with dynamic digital schedules for esports tournaments. Ensure everyone knows when and where to compete.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Provide real-time updates on match times and brackets",
+      "Eliminate confusion caused by delayed or rescheduled matches",
+      "Link directly to live streams for remote viewing",
+      "Share player stats and team profiles instantly"
+    ],
+    faqs: [
+      { q: "Why use digital schedules for esports?", a: "Esports tournaments often experience delays or bracket changes. A dynamic QR code linking to a digital schedule ensures players always have the most current information." },
+      { q: "Where should we place the schedule QR codes?", a: "Display them prominently on digital signage around the venue, on player lanyards, and on the backs of seats in the spectator areas." },
+      { q: "Can the QR code link to the Twitch stream?", a: "Yes, a URL QR code can link directly to your tournament's Twitch or YouTube live stream, allowing attendees to watch matches happening on other stages." }
+    ]
+  },
+  {
+    slug: "food-festival-menus",
+    title: "Food Festival Menus",
+    headline: "QR Codes for Food Festival Menus",
+    description: "Enhance the culinary experience with digital menus and contactless ordering at food festivals and food truck rallies.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Allow attendees to browse menus while waiting in line",
+      "Enable contactless ordering to reduce wait times",
+      "Highlight dietary information (vegan, gluten-free) clearly",
+      "Link to vendor social media profiles and websites"
+    ],
+    faqs: [
+      { q: "How do digital menus benefit food festivals?", a: "They reduce printing costs, allow vendors to update sold-out items in real-time, and speed up the ordering process by letting attendees decide before reaching the window." },
+      { q: "Can attendees order and pay via the QR code?", a: "Yes, if the QR code links to a mobile ordering system, attendees can select their items and pay via Apple Pay or Google Pay, significantly reducing lines." },
+      { q: "Do attendees need an app to view the menu?", a: "No, a standard URL QR code will open the digital menu directly in the attendee's native smartphone web browser." }
+    ]
+  },
+{
     slug: "car-dealership-inventory",
     title: "Car Dealership Inventory",
     headline: "QR Codes for Car Dealership Inventory",

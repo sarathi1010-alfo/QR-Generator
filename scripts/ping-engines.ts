@@ -1,7 +1,13 @@
 const SITE_URL = "https://qr.alfo.online";
 
 const NEW_URLS = [
-  `${SITE_URL}/blog/the-ultimate-guide-to-qr-codes-in-2026`,
+    `${SITE_URL}/blog/how-to-create-qr-code-for-event-management`,
+  `${SITE_URL}/qr-codes/corporate-event-badges`,
+  `${SITE_URL}/qr-codes/music-festival-wristbands`,
+  `${SITE_URL}/qr-codes/charity-gala-auctions`,
+  `${SITE_URL}/qr-codes/esports-tournament-schedules`,
+  `${SITE_URL}/qr-codes/food-festival-menus`,
+`${SITE_URL}/blog/the-ultimate-guide-to-qr-codes-in-2026`,
   `${SITE_URL}/blog/what-is-a-qr-code-the-ultimate-2026-guide`,
   `${SITE_URL}/blog/what-is-a-url-qr-code`,
   `${SITE_URL}/blog/what-is-a-wifi-qr-code`,
