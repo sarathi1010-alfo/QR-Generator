@@ -7,7 +7,13 @@ def run_verification():
     os.makedirs("/home/jules/verification/screenshots", exist_ok=True)
 
     urls_to_test = [
-                "/blog/how-to-create-qr-code-for-event-management",
+        "/blog/how-to-create-qr-code-for-healthcare-facilities-guide",
+        "/qr-codes/hospital-cafeteria-menus",
+        "/qr-codes/mri-safety-instructions",
+        "/qr-codes/maternity-ward-visitor-access",
+        "/qr-codes/physical-therapy-exercises",
+        "/qr-codes/blood-donation-scheduling",
+        "/blog/how-to-create-qr-code-for-event-management",
         "/qr-codes/corporate-event-badges",
         "/qr-codes/music-festival-wristbands",
         "/qr-codes/charity-gala-auctions",
