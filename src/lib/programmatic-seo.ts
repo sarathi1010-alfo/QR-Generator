@@ -4,6 +4,103 @@ import { SEOPageConfig } from "./seo-config";
 export const longTailUseCases: SEOPageConfig[] = [
 
   {
+    slug: "hospital-cafeteria-menus",
+    title: "Hospital Cafeteria Menus",
+    headline: "QR Codes for Hospital Cafeteria Menus",
+    description: "Provide contactless, updated daily menus for staff and visitors in your hospital cafeteria using dynamic QR codes.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Contactless daily menu access for staff and visitors",
+      "Easily update dietary restrictions and allergen info",
+      "Reduce printing costs for daily specials",
+      "Allow pre-ordering for busy clinical staff"
+    ],
+    faqs: [
+      { q: "How do QR codes work in a hospital cafeteria?", a: "QR codes are placed on tables or at the entrance. Visitors scan the code to instantly view the day's digital menu, complete with nutritional information." },
+      { q: "Can staff order ahead using the QR code?", a: "Yes, the QR code can link to an internal pre-ordering system, allowing busy doctors and nurses to order ahead and skip the line." },
+      { q: "Is it easy to update the menu?", a: "By using a dynamic QR code, cafeteria managers can update the linked digital menu daily without ever needing to reprint the physical codes on the tables." }
+    ]
+  },
+  {
+    slug: "mri-safety-instructions",
+    title: "MRI Safety Instructions",
+    headline: "QR Codes for MRI Safety Instructions",
+    description: "Enhance patient safety by providing instant access to MRI preparation guidelines and safety questionnaires via a simple QR code scan.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Provide detailed digital MRI safety videos",
+      "Link to secure pre-screening questionnaires",
+      "Reduce patient anxiety with visual preparation guides",
+      "Ensure multilingual accessibility"
+    ],
+    faqs: [
+      { q: "Why use QR codes for MRI safety?", a: "Patients often lose paper instructions or forget them on the day of the scan. A QR code on their appointment card ensures they can access the safety guidelines anytime on their phone." },
+      { q: "Can the QR code link to a video?", a: "Yes, linking the QR code to an instructional video about the MRI process can significantly reduce patient claustrophobia and anxiety." },
+      { q: "Is the pre-screening questionnaire secure?", a: "As long as the QR code directs to a secure, HIPAA-compliant patient portal, the data submitted in the questionnaire is fully protected." }
+    ]
+  },
+  {
+    slug: "maternity-ward-visitor-access",
+    title: "Maternity Ward Visitor Access",
+    headline: "QR Codes for Secure Maternity Ward Visitor Access",
+    description: "Streamline and secure visitor entry to the maternity ward. Issue temporary, dynamic QR code passes to approved family members.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Issue temporary, scannable visitor passes to family",
+      "Enhance ward security and prevent unauthorized entry",
+      "Track exact times visitors enter and exit",
+      "Easily revoke access digitally when visiting hours end"
+    ],
+    faqs: [
+      { q: "How do QR code visitor passes work?", a: "Approved visitors are sent a unique QR code to their smartphone. They scan this code at the maternity ward entrance to gain access, ensuring only registered guests can enter." },
+      { q: "Can visitor passes expire automatically?", a: "Yes, digital QR code passes can be set to automatically expire at the end of visiting hours or on the patient's discharge date." },
+      { q: "Is it secure enough for a maternity ward?", a: "Yes, digital QR passes tied to a specific visitor's ID and managed through a centralized security system are significantly more secure than traditional paper visitor badges." }
+    ]
+  },
+  {
+    slug: "physical-therapy-exercises",
+    title: "Physical Therapy Exercises",
+    headline: "QR Codes for Physical Therapy Exercise Plans",
+    description: "Improve patient adherence by adding QR codes to physical therapy discharge sheets, linking directly to instructional video demonstrations.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Link directly to high-quality exercise demonstration videos",
+      "Ensure patients perform movements with correct form at home",
+      "Easily update the patient's routine digitally",
+      "Track whether the patient accessed the resources"
+    ],
+    faqs: [
+      { q: "How do QR codes help physical therapy patients?", a: "Written descriptions of exercises can be confusing. A QR code links the patient directly to a video showing exactly how to perform the movement safely." },
+      { q: "Where should the therapist put the QR code?", a: "The QR code should be printed on the patient's home exercise program (HEP) handout next to the specific exercise it demonstrates." },
+      { q: "Do patients need a special app to view the videos?", a: "No, the QR code simply opens the video in the patient's standard mobile web browser or YouTube app, requiring no specialized software." }
+    ]
+  },
+  {
+    slug: "blood-donation-scheduling",
+    title: "Blood Donation Scheduling",
+    headline: "QR Codes for Fast Blood Donation Scheduling",
+    description: "Encourage recurring donors by placing QR codes on post-donation materials and community flyers, linking directly to booking portals.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Frictionless booking for future blood donations",
+      "Link to real-time blood supply shortage alerts",
+      "Provide post-donation care instructions digitally",
+      "Easy integration with community outreach flyers"
+    ],
+    faqs: [
+      { q: "How can QR codes increase blood donations?", a: "By making the scheduling process frictionless. A quick scan of a flyer or a sticker handed out after a donation takes the donor instantly to the booking calendar." },
+      { q: "Can the QR code link to a health history questionnaire?", a: "Yes, donors can scan the code to complete their required health history reading and questionnaire securely on their phone before arriving at the drive." },
+      { q: "Where is the best place to advertise blood drives with QR codes?", a: "Community bulletin boards, college campuses, and local business windows are excellent places to put high-contrast QR codes directing to your booking portal." }
+    ]
+  },
+
+
+  {
     slug: "corporate-event-badges",
     title: "Corporate Event Badges",
     headline: "QR Codes for Corporate Event Badges",
