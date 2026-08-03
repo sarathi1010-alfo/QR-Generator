@@ -89,7 +89,13 @@ def run_verification():
         "/qr-codes/open-house-sign-ins",
         "/qr-codes/property-listing-flyers",
         "/qr-codes/real-estate-agent-vcard",
-        "/qr-codes/for-sale-sign-riders"
+        "/qr-codes/for-sale-sign-riders",
+        "/blog/create-qr-code-for-museums-guide",
+        "/qr-codes/museum-exhibit-audio-guides",
+        "/qr-codes/museum-ticket-booking",
+        "/qr-codes/museum-gift-shop-payments",
+        "/qr-codes/museum-interactive-maps",
+        "/qr-codes/museum-donation-portals"
     ]
 
     os.makedirs(VIDEOS_DIR, exist_ok=True)

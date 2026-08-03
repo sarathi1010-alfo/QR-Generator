@@ -24,7 +24,13 @@ def run_verification():
         "/qr-codes/business-card",
         "/qr-codes/product-packaging",
         "/qr-codes/event-tickets",
-        "/qr-codes/wifi-login"
+        "/qr-codes/wifi-login",
+        "/blog/create-qr-code-for-museums-guide",
+        "/qr-codes/museum-exhibit-audio-guides",
+        "/qr-codes/museum-ticket-booking",
+        "/qr-codes/museum-gift-shop-payments",
+        "/qr-codes/museum-interactive-maps",
+        "/qr-codes/museum-donation-portals"
     ]
 
     base_url = "http://localhost:3000"
