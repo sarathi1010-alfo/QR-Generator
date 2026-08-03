@@ -73,7 +73,13 @@ const NEW_URLS = [
   `${SITE_URL}/qr-codes/open-house-sign-ins`,
   `${SITE_URL}/qr-codes/property-listing-flyers`,
   `${SITE_URL}/qr-codes/real-estate-agent-vcard`,
-  `${SITE_URL}/qr-codes/for-sale-sign-riders`
+  `${SITE_URL}/qr-codes/for-sale-sign-riders`,
+  `${SITE_URL}/blog/create-qr-code-for-museums-guide`,
+  `${SITE_URL}/qr-codes/museum-exhibit-audio-guides`,
+  `${SITE_URL}/qr-codes/museum-ticket-booking`,
+  `${SITE_URL}/qr-codes/museum-gift-shop-payments`,
+  `${SITE_URL}/qr-codes/museum-interactive-maps`,
+  `${SITE_URL}/qr-codes/museum-donation-portals`
 ];
 
 const INDEXNOW_KEY = '550e8400e29b41d4a716446655440000';
