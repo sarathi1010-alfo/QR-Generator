@@ -1890,6 +1890,101 @@ export const longTailUseCases: SEOPageConfig[] = [
       { q: "Where is the best place for donation QR codes?", a: "Place them near the exit, alongside highly impactful exhibits, and in printed programs or brochures." },
       { q: "Can I track which QR codes are scanned most?", a: "Yes, by using dynamic QR codes with UTM tracking parameters, you can see exactly which locations drive the most donations." }
     ]
+  },
+  {
+    slug: "agriculture-equipment-tracking",
+    title: "Agriculture Equipment Tracking",
+    headline: "QR Codes for Agriculture Equipment Tracking",
+    description: "Streamline tracking and maintenance of your farm machinery with durable QR code tags.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instantly access digital repair tickets and service manuals",
+      "Track equipment location and usage history",
+      "Log maintenance activities in real-time",
+      "Reduce downtime caused by misplaced machinery"
+    ],
+    faqs: [
+      { q: "How can QR codes improve farm equipment maintenance?", a: "By affixing QR codes to equipment, operators can scan them to immediately log repair tickets or view maintenance schedules." },
+      { q: "Are QR codes durable enough for farm equipment?", a: "Yes, when printed on anodized aluminum or outdoor-rated vinyl, they are highly weather-resistant." },
+      { q: "Can QR codes help locate farm machinery?", a: "Dynamic QR codes can be used to update equipment location logs every time they are scanned by field workers." }
+    ]
+  },
+  {
+    slug: "farm-to-table-traceability",
+    title: "Farm-to-Table Traceability",
+    headline: "QR Codes for Farm-to-Table Traceability",
+    description: "Build consumer trust by providing transparent, end-to-end crop tracking via QR codes on product packaging.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Display exact farm of origin and harvest dates",
+      "Showcase organic and sustainability certifications",
+      "Educate consumers about farming practices",
+      "Enhance brand loyalty through transparency"
+    ],
+    faqs: [
+      { q: "What is farm-to-table traceability?", a: "It's the process of tracking agricultural products from their origin on the farm all the way to the consumer." },
+      { q: "How do QR codes assist in crop traceability?", a: "Consumers can scan a QR code on the packaging to instantly view the entire history of the product." },
+      { q: "Are consumers actually scanning these codes?", a: "Yes, modern consumers are highly interested in food origins and actively seek out transparency via QR codes." }
+    ]
+  },
+  {
+    slug: "crop-management-logs",
+    title: "Crop Management Logs",
+    headline: "QR Codes for Crop Management Logs",
+    description: "Enable quick access to vital crop management data and field logs using strategically placed QR codes.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instantly log pesticide and fertilizer applications",
+      "Access soil testing and moisture data",
+      "Track planting and harvesting schedules",
+      "Simplify regulatory compliance reporting"
+    ],
+    faqs: [
+      { q: "Where should crop management QR codes be placed?", a: "They can be placed on field markers, irrigation control panels, or greenhouse entrances." },
+      { q: "Do field workers need special devices to scan them?", a: "No, standard smartphones with a camera and internet connection are sufficient for accessing the logs." },
+      { q: "Can QR codes link to IoT soil sensors?", a: "Yes, a QR code can serve as a quick link to a dashboard displaying real-time data from nearby IoT sensors." }
+    ]
+  },
+  {
+    slug: "livestock-health-records",
+    title: "Livestock Health Records",
+    headline: "QR Codes for Livestock Health Records",
+    description: "Access and update individual livestock health histories instantly by scanning QR codes on ear tags or collars.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Quickly view vaccination and medical histories",
+      "Track lineage and breeding information",
+      "Log veterinary treatments in real-time",
+      "Improve overall herd health management"
+    ],
+    faqs: [
+      { q: "How do QR codes work on livestock ear tags?", a: "The QR code links to a digital database where the specific animal's records are stored securely." },
+      { q: "Can veterinarians update the records after scanning?", a: "Yes, if the destination URL is a secure portal, authorized personnel can update the records instantly." },
+      { q: "What if the ear tag gets muddy?", a: "Using High (H) error correction when generating the QR code ensures it remains readable even if partially obscured by mud." }
+    ]
+  },
+  {
+    slug: "farmers-market-payments",
+    title: "Farmers Market Payments",
+    headline: "QR Codes for Farmers Market Payments",
+    description: "Facilitate quick, contactless payments for your agricultural goods at busy farmers markets using QR codes.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Accept contactless payments without expensive hardware",
+      "Speed up checkout lines during peak market hours",
+      "Link directly to mobile wallets or payment gateways",
+      "Provide digital receipts to customers"
+    ],
+    faqs: [
+      { q: "How do QR code payments work at a farmers market?", a: "Customers scan a printed QR code at your stall, which opens a secure payment page on their phone to complete the transaction." },
+      { q: "Do I need a special card reader?", a: "No, the customer uses their own smartphone to process the payment, eliminating the need for you to rent a card reader." },
+      { q: "Is it safe to accept payments this way?", a: "Yes, as long as the QR code directs to a recognized and encrypted payment gateway like Stripe, Square, or PayPal." }
+    ]
   }
 ];
 

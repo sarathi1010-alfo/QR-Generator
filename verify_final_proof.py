@@ -30,7 +30,13 @@ def run_verification():
         "/qr-codes/museum-ticket-booking",
         "/qr-codes/museum-gift-shop-payments",
         "/qr-codes/museum-interactive-maps",
-        "/qr-codes/museum-donation-portals"
+        "/qr-codes/museum-donation-portals",
+        "/blog/create-qr-code-for-agriculture-guide",
+        "/qr-codes/agriculture-equipment-tracking",
+        "/qr-codes/farm-to-table-traceability",
+        "/qr-codes/crop-management-logs",
+        "/qr-codes/livestock-health-records",
+        "/qr-codes/farmers-market-payments"
     ]
 
     base_url = "http://localhost:3000"

@@ -79,7 +79,13 @@ const NEW_URLS = [
   `${SITE_URL}/qr-codes/museum-ticket-booking`,
   `${SITE_URL}/qr-codes/museum-gift-shop-payments`,
   `${SITE_URL}/qr-codes/museum-interactive-maps`,
-  `${SITE_URL}/qr-codes/museum-donation-portals`
+  `${SITE_URL}/qr-codes/museum-donation-portals`,
+  `${SITE_URL}/blog/create-qr-code-for-agriculture-guide`,
+  `${SITE_URL}/qr-codes/agriculture-equipment-tracking`,
+  `${SITE_URL}/qr-codes/farm-to-table-traceability`,
+  `${SITE_URL}/qr-codes/crop-management-logs`,
+  `${SITE_URL}/qr-codes/livestock-health-records`,
+  `${SITE_URL}/qr-codes/farmers-market-payments`
 ];
 
 const INDEXNOW_KEY = '550e8400e29b41d4a716446655440000';
