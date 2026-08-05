@@ -2,6 +2,101 @@
 import { SEOPageConfig } from "./seo-config";
 
 export const longTailUseCases: SEOPageConfig[] = [
+  {
+    slug: "warehouse-inventory-tracking",
+    title: "Warehouse Inventory Tracking",
+    headline: "QR Codes for Warehouse Inventory Tracking",
+    description: "Streamline your warehouse operations. Link a QR code to your cloud-based inventory system for real-time tracking and effortless stock checks.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Real-time inventory updates",
+      "Reduce manual data entry errors",
+      "Seamless integration with cloud databases",
+      "High-contrast scanning for low-light warehouses"
+    ],
+    faqs: [
+      { q: "How do QR codes improve warehouse tracking?", a: "By allowing workers to instantly scan a code and access the digital record, QR codes eliminate manual data entry and provide real-time updates to the central inventory system." },
+      { q: "Can a QR code handle complex database links?", a: "Yes, a single QR code can hold a complex URL containing specific parameters (like a SKU or location ID) that seamlessly triggers an update in your warehouse management software." },
+      { q: "Are QR codes durable enough for warehouses?", a: "Absolutely. When printed on industrial-grade vinyl or metal tags, QR codes can withstand extreme temperatures, moisture, and rough handling while remaining highly scannable." }
+    ]
+  },
+  {
+    slug: "delivery-driver-check-ins",
+    title: "Delivery Driver Check-Ins",
+    headline: "Contactless Delivery Driver Check-Ins via QR Code",
+    description: "Eliminate long queues at the security gate. Allow delivery drivers to check in instantly using their smartphones.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Contactless driver check-in",
+      "Reduce wait times at the loading dock",
+      "Automatically log arrival times",
+      "Improve yard management efficiency"
+    ],
+    faqs: [
+      { q: "How does the contactless check-in work?", a: "Drivers scan a large QR code posted at the facility entrance using their phone. This opens a secure digital form where they enter their shipment details, automatically notifying the receiving team." },
+      { q: "Do drivers need to download an app?", a: "No, the QR code simply opens a web page in their phone's native browser, making the process frictionless and accessible to all drivers." },
+      { q: "Can we track arrival times with this method?", a: "Yes, the digital form automatically timestamps the submission, providing accurate data for yard management and performance tracking." }
+    ]
+  },
+  {
+    slug: "supply-chain-authentication",
+    title: "Supply Chain Authentication",
+    headline: "QR Codes for Supply Chain Authentication",
+    description: "Protect your brand and ensure product integrity. Use secure QR codes to track items from manufacturing to the end consumer.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "End-to-end product tracking",
+      "Prevent counterfeiting",
+      "Enhance consumer trust",
+      "Secure, encrypted data access"
+    ],
+    faqs: [
+      { q: "How do QR codes prevent counterfeiting?", a: "By embedding a unique, trackable QR code on each product, manufacturers can create a digital fingerprint. If a code is scanned in an unexpected location, it flags a potential counterfeit." },
+      { q: "Can consumers verify the product's authenticity?", a: "Yes, consumers can scan the QR code to view the product's journey and verify that it originated from an authorized manufacturer." },
+      { q: "Is the tracking data secure?", a: "The QR code links to a secure, encrypted database. Only authorized personnel can update the tracking information, while consumers are granted read-only access to specific verification details." }
+    ]
+  },
+  {
+    slug: "forklift-maintenance-logs",
+    title: "Forklift Maintenance Logs",
+    headline: "Digital Forklift Maintenance Logs via QR Code",
+    description: "Keep your warehouse equipment safe and operational. Replace paper logs with instant digital access to maintenance records.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant access to service history",
+      "Digital pre-shift safety inspections",
+      "Quick issue reporting",
+      "Ensure compliance with safety regulations"
+    ],
+    faqs: [
+      { q: "How do operators use the QR code for inspections?", a: "Before their shift, operators scan the QR code affixed to the forklift. This opens a digital checklist they must complete before operating the machinery." },
+      { q: "Can technicians see past maintenance records?", a: "Yes, the QR code provides technicians with the complete digital service history, allowing them to diagnose issues faster and track parts replacements." },
+      { q: "What happens if a defect is found?", a: "Operators can use the digital form linked to the QR code to instantly report a defect, automatically notifying the maintenance team and taking the equipment out of service if necessary." }
+    ]
+  },
+  {
+    slug: "shipping-container-manifests",
+    title: "Shipping Container Manifests",
+    headline: "Digital Shipping Container Manifests via QR Code",
+    description: "Streamline port operations and customs clearance. Link a single QR code to all necessary container documentation.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant access to complex manifests",
+      "Reduce lost paperwork",
+      "Speed up customs processing",
+      "Secure, cloud-based document storage"
+    ],
+    faqs: [
+      { q: "Why use a QR code instead of paper manifests?", a: "Paper manifests can be hundreds of pages long and are easily lost or damaged. A QR code provides instant, secure access to the digital equivalent, ensuring the information is always available and up-to-date." },
+      { q: "Can customs officials easily access the documents?", a: "Yes, authorized officials can scan the QR code and use their credentials to securely access the necessary documentation directly from the cloud." },
+      { q: "How large should a shipping container QR code be?", a: "Given the distance from which it might be scanned, a QR code on a shipping container should be at least 15x15 cm (6x6 inches) and printed with high contrast." }
+    ]
+  },
 
   {
     slug: "hospital-cafeteria-menus",
