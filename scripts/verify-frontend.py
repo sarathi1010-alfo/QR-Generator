@@ -41,6 +41,12 @@ def test_qr_generation(page):
 
 def run_verification():
     urls_to_check = [
+        "/blog/create-qr-code-for-logistics-guide",
+        "/qr-codes/warehouse-inventory-tracking",
+        "/qr-codes/delivery-driver-check-ins",
+        "/qr-codes/supply-chain-authentication",
+        "/qr-codes/forklift-maintenance-logs",
+        "/qr-codes/shipping-container-manifests",
         "/blog/how-to-create-qr-code-for-healthcare-facilities-guide",
         "/qr-codes/hospital-cafeteria-menus",
         "/qr-codes/mri-safety-instructions",
