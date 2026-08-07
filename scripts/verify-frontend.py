@@ -107,7 +107,13 @@ def run_verification():
         "/qr-codes/farm-to-table-traceability",
         "/qr-codes/crop-management-logs",
         "/qr-codes/livestock-health-records",
-        "/qr-codes/farmers-market-payments"
+        "/qr-codes/farmers-market-payments",
+        "/blog/qr-codes-for-nonprofits-donations",
+        "/qr-codes/nonprofit-gala-auctions",
+        "/qr-codes/food-bank-donations",
+        "/qr-codes/animal-shelter-adoptions",
+        "/qr-codes/disaster-relief-funds",
+        "/qr-codes/volunteer-sign-up-forms"
     ]
 
     os.makedirs(VIDEOS_DIR, exist_ok=True)

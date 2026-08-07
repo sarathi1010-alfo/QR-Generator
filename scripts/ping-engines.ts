@@ -91,7 +91,13 @@ const NEW_URLS = [
   `${SITE_URL}/qr-codes/farm-to-table-traceability`,
   `${SITE_URL}/qr-codes/crop-management-logs`,
   `${SITE_URL}/qr-codes/livestock-health-records`,
-  `${SITE_URL}/qr-codes/farmers-market-payments`
+  `${SITE_URL}/qr-codes/farmers-market-payments`,
+  `${SITE_URL}/blog/qr-codes-for-nonprofits-donations`,
+  `${SITE_URL}/qr-codes/nonprofit-gala-auctions`,
+  `${SITE_URL}/qr-codes/food-bank-donations`,
+  `${SITE_URL}/qr-codes/animal-shelter-adoptions`,
+  `${SITE_URL}/qr-codes/disaster-relief-funds`,
+  `${SITE_URL}/qr-codes/volunteer-sign-up-forms`
 ];
 
 const INDEXNOW_KEY = '550e8400e29b41d4a716446655440000';
