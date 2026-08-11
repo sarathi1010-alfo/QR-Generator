@@ -2175,6 +2175,101 @@ export const longTailUseCases: SEOPageConfig[] = [
       { q: "Can the QR code link to a waiver?", a: "Yes, you can link to an intake form that includes a digital signature field for required liability waivers." },
       { q: "Where should volunteer QR codes be placed?", a: "Place them on recruitment flyers, community boards, university campuses, and on the backs of staff event t-shirts." }
     ]
+  },
+  {
+    slug: "gym-equipment-tutorials",
+    title: "Gym Equipment Tutorials",
+    headline: "QR Codes for Gym Equipment Tutorials",
+    description: "Empower gym members with instant access to instructional videos on how to safely and effectively use fitness equipment.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant access to video demonstrations",
+      "Reduce member injuries from improper form",
+      "Free up floor staff from repetitive questions",
+      "Link to specific workout tracking apps"
+    ],
+    faqs: [
+      { q: "Where should I place the QR codes?", a: "Place them directly on the equipment frame or weight stack in a highly visible location." },
+      { q: "How durable do the QR codes need to be?", a: "Print them on high-quality, waterproof vinyl to withstand sweat and frequent cleaning." },
+      { q: "Should I use a specific error correction level?", a: "Yes, use High (H) error correction to ensure scannability even if the sticker gets scratched." }
+    ]
+  },
+  {
+    slug: "fitness-class-schedules",
+    title: "Fitness Class Schedules",
+    headline: "QR Codes for Dynamic Fitness Class Schedules",
+    description: "Keep members informed with real-time class schedules and instant booking links using dynamic QR codes.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Provide real-time updates for class times",
+      "Allow instant class booking and waitlisting",
+      "Eliminate outdated paper schedules",
+      "Promote special fitness events and workshops"
+    ],
+    faqs: [
+      { q: "Can I update the schedule without changing the QR code?", a: "Yes, by using a dynamic QR code, you can update the destination URL anytime without reprinting." },
+      { q: "Where are the best spots for schedule QR codes?", a: "Locker rooms, the front desk, and group fitness studio doors are optimal locations." },
+      { q: "Does the QR code handle bookings?", a: "The QR code links directly to your gym's existing online booking portal for seamless reservations." }
+    ]
+  },
+  {
+    slug: "personal-trainer-booking",
+    title: "Personal Trainer Booking",
+    headline: "QR Codes for Personal Trainer Booking",
+    description: "Make it effortless for gym members to connect with personal trainers and book sessions instantly using vCard and URL QR codes.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instantly save trainer contact information",
+      "Direct links to trainer booking calendars",
+      "Showcase trainer portfolios and specialties",
+      "Replace outdated paper tear-off boards"
+    ],
+    faqs: [
+      { q: "What is a vCard QR code?", a: "A vCard QR code automatically prompts the scanner to save the trainer's contact details directly to their phone's address book." },
+      { q: "Where should trainers display their QR codes?", a: "On staff profile boards, business cards, and even printed on the back of their uniform shirts." },
+      { q: "Can members book a session right away?", a: "Yes, linking the QR code to a scheduling tool allows members to book sessions instantly." }
+    ]
+  },
+  {
+    slug: "locker-room-maintenance-requests",
+    title: "Locker Room Maintenance Requests",
+    headline: "QR Codes for Facility Maintenance Requests",
+    description: "Ensure a clean and fully operational gym facility by allowing members to report maintenance issues instantly via QR codes.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant reporting of broken equipment or empty supplies",
+      "Rapid response times from facility staff",
+      "Improve overall member satisfaction and hygiene",
+      "Track common maintenance issues digitally"
+    ],
+    faqs: [
+      { q: "Where should maintenance QR codes be placed?", a: "In locker rooms, near soap dispensers, and on the main cardio deck." },
+      { q: "How do the requests get to the staff?", a: "The QR code can link to a simple digital form that immediately alerts the maintenance team via email or SMS." },
+      { q: "Does it improve member experience?", a: "Yes, giving members a direct line to report issues shows that management cares about facility upkeep." }
+    ]
+  },
+  {
+    slug: "supplement-store-payments",
+    title: "Supplement Store Payments",
+    headline: "QR Codes for Contactless Supplement Purchases",
+    description: "Speed up the checkout process at your gym's shake bar or supplement pro shop with instant, contactless QR code payments.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Enable instant mobile payments",
+      "Reduce checkout lines during peak times",
+      "Increase impulse buys post-workout",
+      "Provide digital receipts easily"
+    ],
+    faqs: [
+      { q: "How do QR payments work at the shake bar?", a: "Members scan the code to open a secure payment gateway and pay with Apple Pay, Google Pay, or a card." },
+      { q: "Do members need their physical wallet?", a: "No, as long as they have their smartphone with a digital wallet, they can complete the purchase." },
+      { q: "Is it secure?", a: "Yes, the QR code connects directly to encrypted payment processors like Stripe or Square." }
+    ]
   }
 ];
 
