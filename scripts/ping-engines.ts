@@ -97,7 +97,13 @@ const NEW_URLS = [
   `${SITE_URL}/qr-codes/food-bank-donations`,
   `${SITE_URL}/qr-codes/animal-shelter-adoptions`,
   `${SITE_URL}/qr-codes/disaster-relief-funds`,
-  `${SITE_URL}/qr-codes/volunteer-sign-up-forms`
+  `${SITE_URL}/qr-codes/volunteer-sign-up-forms`,
+  `${SITE_URL}/blog/qr-codes-for-gyms-fitness-studios`,
+  `${SITE_URL}/qr-codes/gym-equipment-tutorials`,
+  `${SITE_URL}/qr-codes/fitness-class-schedules`,
+  `${SITE_URL}/qr-codes/personal-trainer-booking`,
+  `${SITE_URL}/qr-codes/locker-room-maintenance-requests`,
+  `${SITE_URL}/qr-codes/supplement-store-payments`
 ];
 
 const INDEXNOW_KEY = '550e8400e29b41d4a716446655440000';

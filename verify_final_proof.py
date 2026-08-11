@@ -48,7 +48,13 @@ def run_verification():
         "/qr-codes/food-bank-donations",
         "/qr-codes/animal-shelter-adoptions",
         "/qr-codes/disaster-relief-funds",
-        "/qr-codes/volunteer-sign-up-forms"
+        "/qr-codes/volunteer-sign-up-forms",
+        "/blog/qr-codes-for-gyms-fitness-studios",
+        "/qr-codes/gym-equipment-tutorials",
+        "/qr-codes/fitness-class-schedules",
+        "/qr-codes/personal-trainer-booking",
+        "/qr-codes/locker-room-maintenance-requests",
+        "/qr-codes/supplement-store-payments"
     ]
 
     base_url = "http://localhost:3000"
