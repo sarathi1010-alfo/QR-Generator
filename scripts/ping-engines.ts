@@ -1,6 +1,12 @@
 const SITE_URL = "https://qr.alfo.online";
 
 const NEW_URLS = [
+  `${SITE_URL}/blog/create-qr-code-for-business-guide`,
+  `${SITE_URL}/qr-codes/customer-feedback-collection`,
+  `${SITE_URL}/qr-codes/manufacturing-warranty-registration`,
+  `${SITE_URL}/qr-codes/art-gallery-exhibition-guides`,
+  `${SITE_URL}/qr-codes/fitness-club-member-check-ins`,
+  `${SITE_URL}/qr-codes/real-estate-virtual-tours`,
   `${SITE_URL}/blog/create-qr-code-for-logistics-guide`,
   `${SITE_URL}/qr-codes/warehouse-inventory-tracking`,
   `${SITE_URL}/qr-codes/delivery-driver-check-ins`,
