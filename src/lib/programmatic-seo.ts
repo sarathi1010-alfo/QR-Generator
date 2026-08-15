@@ -2,6 +2,103 @@
 import { SEOPageConfig } from "./seo-config";
 
 export const longTailUseCases: SEOPageConfig[] = [
+
+  {
+    slug: "customer-feedback-collection",
+    title: "Customer Feedback Collection",
+    headline: "QR Codes for Customer Feedback - Collect Reviews & Insights Instantly",
+    description: "Simplify feedback collection. Why collecting customer feedback is critical for business growth.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Dynamic URL QR codes with UTM tracking",
+      "Simplify feedback collection",
+      "Instant review prompting",
+      "Customizable feedback form link"
+    ],
+    faqs: [
+      { q: "What QR code is best for customer feedback?", a: "Dynamic URL QR codes are best, allowing you to easily update the destination form and add UTM tracking without reprinting." },
+      { q: "How do I track feedback QR scans?", a: "Using dynamic codes gives you access to a dashboard tracking scan volume, time, and device type, or you can append UTM parameters to track in Google Analytics." },
+      { q: "Can I customize the feedback form link?", a: "Yes, you can link the QR code to any feedback form platform like Google Forms, Typeform, or your custom website." }
+    ]
+  },
+  {
+    slug: "manufacturing-warranty-registration",
+    title: "Manufacturing Warranty Registration",
+    headline: "QR Codes for Manufacturing - Streamline Warranty Registration",
+    description: "Enhance the post-purchase experience with simple warranty registration. Reduce friction for your customers.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Direct link to warranty forms",
+      "Reduce paper manuals",
+      "Capture customer data easily",
+      "Product-specific registration codes"
+    ],
+    faqs: [
+      { q: "Where should we place the warranty QR code?", a: "It's best placed directly on the product itself, or prominently on the first page of the quick start guide." },
+      { q: "Can we track which products generate the most registrations?", a: "Yes, by generating a unique dynamic QR code for different product lines, you can track scan rates by category." },
+      { q: "What if the warranty URL changes?", a: "With dynamic QR codes, you can instantly update the backend URL without needing to alter the QR code printed on the physical products." }
+    ]
+  },
+  {
+    slug: "art-gallery-exhibition-guides",
+    title: "Art Gallery Exhibition Guides",
+    headline: "QR Codes for Art Galleries - Interactive Exhibition Experiences",
+    description: "Provide interactive exhibition experiences. Link artwork directly to audio guides and artist interviews.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant access to audio guides",
+      "Link to artist interviews and biographies",
+      "Digital exhibition maps",
+      "Contactless information sharing"
+    ],
+    faqs: [
+      { q: "How can QR codes enhance an art gallery?", a: "They allow visitors to access rich multimedia content, such as audio guides or artist interviews, directly from their smartphones, deepening their engagement." },
+      { q: "Are QR codes visually distracting in a gallery?", a: "Not if designed well. You can customize the color and shape to complement the gallery's aesthetic, maintaining a minimalist look." },
+      { q: "Can we link to our online store?", a: "Absolutely. You can link codes directly to a page where visitors can purchase prints or exhibition catalogs." }
+    ]
+  },
+  {
+    slug: "fitness-club-member-check-ins",
+    title: "Fitness Club Member Check-Ins",
+    headline: "QR Codes for Fitness Clubs - Streamline Member Check-Ins",
+    description: "Streamline your fitness club member check-ins. Eliminate physical cards and reduce wait times at the front desk.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Contactless member check-ins",
+      "Digital membership cards",
+      "Class schedule access",
+      "Integrated with gym management software"
+    ],
+    faqs: [
+      { q: "How do QR code check-ins work?", a: "Members display a unique QR code on their smartphone app, which is scanned at the front desk to instantly verify their membership status." },
+      { q: "Can members share their check-in QR code?", a: "Most systems use dynamic codes that refresh frequently or tie to the specific device, preventing unauthorized sharing." },
+      { q: "What are the benefits over traditional key fobs?", a: "QR codes are zero-cost to issue, cannot be left at home (since people always carry phones), and reduce physical waste." }
+    ]
+  },
+  {
+    slug: "real-estate-virtual-tours",
+    title: "Real Estate Virtual Tours",
+    headline: "QR Codes for Real Estate - Instant Virtual Property Tours",
+    description: "Instant virtual property tours. Allow buyers to explore listings directly from the yard sign.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant virtual property tours",
+      "Direct link to agent contact info",
+      "Lead capture forms",
+      "Digital property feature sheets"
+    ],
+    faqs: [
+      { q: "How do QR codes help sell real estate?", a: "They provide immediate access to immersive virtual tours, floor plans, and agent contact info directly from a 'For Sale' sign, even when the agent isn't there." },
+      { q: "Where is the best place to put the QR code?", a: "On the main yard sign, specifically on a 'rider' sign that clearly states 'Scan for Virtual Tour', ensuring it's large enough to scan from a car." },
+      { q: "Can I track how many people scan the sign?", a: "Yes, using a dynamic QR code allows you to track exactly how many scans each property sign receives, providing valuable interest metrics." }
+    ]
+  },
+
   {
     slug: "warehouse-inventory-tracking",
     title: "Warehouse Inventory Tracking",
