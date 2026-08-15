@@ -25,7 +25,7 @@ def run_verification():
         "/qr-codes/charity-gala-auctions",
         "/qr-codes/esports-tournament-schedules",
         "/qr-codes/food-festival-menus",
-"/blog/business-qr-code-guide",
+        "/blog/business-qr-code-guide",
         "/qr-codes/restaurant-menu",
         "/qr-codes/business-card",
         "/qr-codes/product-packaging",
@@ -54,7 +54,13 @@ def run_verification():
         "/qr-codes/fitness-class-schedules",
         "/qr-codes/personal-trainer-booking",
         "/qr-codes/locker-room-maintenance-requests",
-        "/qr-codes/supplement-store-payments"
+        "/qr-codes/supplement-store-payments",
+        "/blog/the-ultimate-guide-to-qr-codes-in-2026",
+        "/blog/what-is-a-qr-code-the-ultimate-2026-guide",
+        "/blog/what-is-a-url-qr-code",
+        "/blog/what-is-a-wifi-qr-code",
+        "/blog/what-is-a-vcard-qr-code",
+        "/blog/how-does-a-qr-code-work"
     ]
 
     base_url = "http://localhost:3000"
