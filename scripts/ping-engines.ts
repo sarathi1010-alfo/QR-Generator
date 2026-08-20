@@ -109,7 +109,13 @@ const NEW_URLS = [
   `${SITE_URL}/qr-codes/fitness-class-schedules`,
   `${SITE_URL}/qr-codes/personal-trainer-booking`,
   `${SITE_URL}/qr-codes/locker-room-maintenance-requests`,
-  `${SITE_URL}/qr-codes/supplement-store-payments`
+    `${SITE_URL}/qr-codes/supplement-store-payments`,
+  `${SITE_URL}/blog/qr-codes-for-beauty-cosmetics-guide`,
+  `${SITE_URL}/qr-codes/beauty-salon-booking`,
+  `${SITE_URL}/qr-codes/spa-menu-access`,
+  `${SITE_URL}/qr-codes/hair-stylist-portfolio`,
+  `${SITE_URL}/qr-codes/nail-salon-loyalty`,
+  `${SITE_URL}/qr-codes/cosmetics-product-info`
 ];
 
 const INDEXNOW_KEY = '550e8400e29b41d4a716446655440000';

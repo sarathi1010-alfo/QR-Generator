@@ -2,6 +2,102 @@
 import { SEOPageConfig } from "./seo-config";
 
 export const longTailUseCases: SEOPageConfig[] = [
+  {
+    slug: "beauty-salon-booking",
+    title: "Beauty Salon Booking",
+    headline: "QR Codes for Beauty Salon Booking",
+    description: "Streamline your beauty salon appointments by allowing clients to book instantly via QR codes placed on storefronts or business cards.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant appointment booking",
+      "Reduce front desk phone calls",
+      "After-hours scheduling capability",
+      "Direct link to stylist availability"
+    ],
+    faqs: [
+      { q: "Where should I place the booking QR code?", a: "Place it on your storefront window, on stylist business cards, and at the reception desk for re-booking." },
+      { q: "Does the QR code handle the actual booking?", a: "The QR code links directly to your existing salon management software, such as Vagaro or Mindbody, where clients complete the booking." },
+      { q: "Can each stylist have their own booking code?", a: "Yes, you can generate unique QR codes for each stylist that link directly to their specific calendar." }
+    ]
+  },
+  {
+    slug: "spa-menu-access",
+    title: "Spa Menu Access",
+    headline: "QR Codes for Digital Spa Menus",
+    description: "Provide an elegant, contactless experience with digital spa menus accessed instantly via QR code.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Always up-to-date service lists and pricing",
+      "Eliminate paper menu printing costs",
+      "Contactless and hygienic menu browsing",
+      "Link to detailed treatment descriptions"
+    ],
+    faqs: [
+      { q: "How do I update the digital spa menu?", a: "If you use a dynamic QR code, simply update the file on your website or PDF host, and the same QR code will show the new menu." },
+      { q: "Is a QR code menu suitable for a luxury spa?", a: "Absolutely. You can customize the QR code with your brand colors and place it in a high-quality frame to maintain a premium aesthetic." },
+      { q: "What is the best material to print the QR code on?", a: "For waiting areas, high-quality cardstock or framed prints work best. In treatment rooms, consider waterproof vinyl if it will be exposed to moisture." }
+    ]
+  },
+  {
+    slug: "hair-stylist-portfolio",
+    title: "Hair Stylist Portfolio",
+    headline: "QR Codes for Hair Stylist Portfolios",
+    description: "Help stylists build their clientele by linking their physical business cards to digital portfolios and Instagram feeds.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instantly showcase previous hair transformations",
+      "Link directly to Instagram or TikTok profiles",
+      "Easily attach to business cards or station mirrors",
+      "Increase client trust before booking"
+    ],
+    faqs: [
+      { q: "Should the QR code link to Instagram or a website?", a: "Both work well. Instagram is great for a visual feed, while a website might offer more detailed service information and booking links." },
+      { q: "Can I track how many people view my portfolio?", a: "Yes, if you use a dynamic QR code or append UTM parameters to your URL, you can track scan volume and engagement." },
+      { q: "What color should the QR code be?", a: "Choose a color that matches your brand, but ensure it is dark enough to contrast well with the light background for easy scanning." }
+    ]
+  },
+  {
+    slug: "nail-salon-loyalty",
+    title: "Nail Salon Loyalty",
+    headline: "QR Codes for Nail Salon Loyalty Programs",
+    description: "Increase repeat visits and customer retention by making your nail salon's loyalty program easy to join via QR code.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Frictionless loyalty program enrollment",
+      "Eliminate easily lost paper punch cards",
+      "Quick access to reward balances",
+      "Promote special seasonal offers"
+    ],
+    faqs: [
+      { q: "How does a QR code replace a punch card?", a: "Clients scan the code to open a digital loyalty app or web page where their visits are tracked securely." },
+      { q: "Where is the best place to display the loyalty QR code?", a: "The best location is right at the checkout counter, where clients are already engaged with the transaction." },
+      { q: "Can I use the QR code to offer a sign-up discount?", a: "Yes, you can link the code to a landing page that offers an immediate discount code for joining the program." }
+    ]
+  },
+  {
+    slug: "cosmetics-product-info",
+    title: "Cosmetics Product Info",
+    headline: "QR Codes for Cosmetics Packaging",
+    description: "Enhance cosmetic packaging by linking to video tutorials, full ingredient lists, and brand sustainability stories.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Link to 'how-to-use' video tutorials",
+      "Provide extensive, transparent ingredient lists",
+      "Reduce packaging text and clutter",
+      "Share brand sustainability initiatives"
+    ],
+    faqs: [
+      { q: "What is the minimum size for a QR code on a cosmetic bottle?", a: "We recommend a minimum size of 2cm x 2cm to ensure it can be scanned easily by standard smartphone cameras." },
+      { q: "Can a QR code fit on a small lip gloss tube?", a: "Yes, but be careful with the curvature of the tube. Ensure the code is printed as flat as possible, or use a swing tag instead." },
+      { q: "Should I link to a video or text?", a: "For cosmetics, video tutorials showing application techniques generally drive much higher engagement than plain text." }
+    ]
+  }
+,
 
   {
     slug: "customer-feedback-collection",
