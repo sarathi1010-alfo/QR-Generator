@@ -2463,6 +2463,101 @@ export const longTailUseCases: SEOPageConfig[] = [
       { q: "Do members need their physical wallet?", a: "No, as long as they have their smartphone with a digital wallet, they can complete the purchase." },
       { q: "Is it secure?", a: "Yes, the QR code connects directly to encrypted payment processors like Stripe or Square." }
     ]
+  },
+  {
+    slug: "university-campus-tour-guides",
+    title: "University Campus Tour Guides",
+    headline: "QR Codes for University Campus Tours",
+    description: "Enhance university campus tours with interactive QR codes that link directly to building histories, academic department overviews, and student life videos.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Interactive campus maps and navigation",
+      "Video testimonials from current students",
+      "Links to digital application forms",
+      "Historical facts and trivia about campus landmarks"
+    ],
+    faqs: [
+      { q: "Where should QR codes be placed on campus?", a: "Place them on outdoor signage near prominent buildings, in the admissions office, and on printed campus maps." },
+      { q: "Can they link to audio guides?", a: "Yes, you can link the QR code directly to an audio file or podcast episode detailing the history of a specific location." },
+      { q: "Are QR codes useful for self-guided tours?", a: "Absolutely. They allow prospective students to explore the campus at their own pace while still receiving rich, informative content." }
+    ]
+  },
+  {
+    slug: "classroom-interactive-learning",
+    title: "Classroom Interactive Learning",
+    headline: "QR Codes for Interactive Classroom Learning",
+    description: "Transform traditional learning by using QR codes in the classroom to instantly connect students with multimedia resources, quizzes, and collaborative documents.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant access to supplementary reading materials",
+      "Links to interactive quizzes and polls",
+      "Access to shared collaborative workspaces",
+      "Digital submission portals for assignments"
+    ],
+    faqs: [
+      { q: "How can teachers use QR codes on worksheets?", a: "Teachers can add a QR code to a printed worksheet that links to a video tutorial explaining the concept in more detail." },
+      { q: "Are QR codes safe for younger students?", a: "Yes, as long as teachers ensure the destination URLs are secure and appropriate for the age group." },
+      { q: "Can QR codes help with differentiated instruction?", a: "Yes, by providing different QR codes for various difficulty levels or learning styles on the same topic." }
+    ]
+  },
+  {
+    slug: "school-library-book-checkout",
+    title: "School Library Book Checkout",
+    headline: "QR Codes for School Library Management",
+    description: "Modernize school libraries with QR codes to facilitate easy book checkouts, link to digital catalogs, and share book recommendations.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Self-service digital checkouts",
+      "Links to e-books and audiobooks",
+      "Video reviews from other students",
+      "Quick access to the library's online catalog"
+    ],
+    faqs: [
+      { q: "Can QR codes replace traditional barcodes on books?", a: "While traditional barcodes are standard for inventory, QR codes can be added to the cover to link students to reviews or related titles." },
+      { q: "How can QR codes promote reading?", a: "Place QR codes on shelf talkers that link to a 'book trailer' or a video of the author discussing the book." },
+      { q: "Do students need a special app to scan library QR codes?", a: "No, the built-in camera app on most modern smartphones or school-issued tablets can scan them directly." }
+    ]
+  },
+  {
+    slug: "student-attendance-tracking",
+    title: "Student Attendance Tracking",
+    headline: "QR Codes for Student Attendance Tracking",
+    description: "Streamline the attendance process in large lectures or school events with dynamic QR codes that students scan to check in instantly.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Fast check-ins for large classes",
+      "Digital records synced to the student information system",
+      "Time-stamped attendance logs",
+      "Reduced administrative burden for educators"
+    ],
+    faqs: [
+      { q: "How do you prevent students from sharing the attendance code?", a: "Use a dynamic QR code that refreshes every few seconds, or limit the check-in window to the first 5 minutes of class." },
+      { q: "What if a student's phone battery is dead?", a: "Always have a manual backup option for students who cannot scan the code." },
+      { q: "Does this integrate with Canvas or Blackboard?", a: "Yes, the QR code can link directly to a specific attendance module or form within your learning management system." }
+    ]
+  },
+  {
+    slug: "parent-teacher-communication-forms",
+    title: "Parent-Teacher Communication Forms",
+    headline: "QR Codes for Parent-Teacher Communication",
+    description: "Enhance parent engagement by using QR codes on newsletters and permission slips to link directly to digital communication and feedback forms.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Digital permission slips and waivers",
+      "Instant feedback surveys for school events",
+      "Links to teacher scheduling calendars",
+      "Easy access to school policy updates"
+    ],
+    faqs: [
+      { q: "Why use QR codes on printed newsletters?", a: "It bridges the gap between physical and digital. Parents can instantly access a sign-up form without typing a long URL." },
+      { q: "Can QR codes be used for parent-teacher conferences?", a: "Yes, a QR code can link directly to a scheduling tool like Calendly to book a conference slot." },
+      { q: "Are digital forms secure?", a: "Ensure the QR code links to a secure platform (like Google Forms or a school portal) to protect student and parent information." }
+    ]
   }
 ];
 
