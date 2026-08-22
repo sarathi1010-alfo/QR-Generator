@@ -115,7 +115,13 @@ const NEW_URLS = [
   `${SITE_URL}/qr-codes/spa-menu-access`,
   `${SITE_URL}/qr-codes/hair-stylist-portfolio`,
   `${SITE_URL}/qr-codes/nail-salon-loyalty`,
-  `${SITE_URL}/qr-codes/cosmetics-product-info`
+  `${SITE_URL}/qr-codes/cosmetics-product-info`,
+  `${SITE_URL}/blog/create-qr-code-for-education-guide`,
+  `${SITE_URL}/qr-codes/university-campus-tour-guides`,
+  `${SITE_URL}/qr-codes/classroom-interactive-learning`,
+  `${SITE_URL}/qr-codes/school-library-book-checkout`,
+  `${SITE_URL}/qr-codes/student-attendance-tracking`,
+  `${SITE_URL}/qr-codes/parent-teacher-communication-forms`
 ];
 
 const INDEXNOW_KEY = '550e8400e29b41d4a716446655440000';
