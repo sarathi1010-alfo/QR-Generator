@@ -2558,6 +2558,101 @@ export const longTailUseCases: SEOPageConfig[] = [
       { q: "Can QR codes be used for parent-teacher conferences?", a: "Yes, a QR code can link directly to a scheduling tool like Calendly to book a conference slot." },
       { q: "Are digital forms secure?", a: "Ensure the QR code links to a secure platform (like Google Forms or a school portal) to protect student and parent information." }
     ]
+  },
+  {
+    slug: "law-firm-client-intake",
+    title: "Law Firm Client Intake",
+    headline: "QR Codes for Law Firm Client Intake",
+    description: "Streamline the client onboarding process with secure QR codes that link directly to digital intake forms and preliminary document upload portals.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Secure and contactless digital intake",
+      "Reduce paper waste and administrative overhead",
+      "Ensure accurate data collection",
+      "Instantly sync with legal practice management software"
+    ],
+    faqs: [
+      { q: "Are QR codes secure for client data?", a: "Yes, when they link to an encrypted, HTTPS-secured intake portal." },
+      { q: "Where should we place the intake QR code?", a: "On your firm's business cards, reception desk signage, and initial consultation brochures." },
+      { q: "Can clients upload documents via the QR code?", a: "Yes, if the destination URL is a secure form that supports file uploads." }
+    ]
+  },
+  {
+    slug: "notary-document-verification",
+    title: "Notary Document Verification",
+    headline: "QR Codes for Notary Document Verification",
+    description: "Enhance document security and prevent fraud by embedding unique QR codes on notarized documents that link to secure digital verification ledgers.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instantly verify document authenticity",
+      "Prevent physical document tampering",
+      "Create a clear digital audit trail",
+      "Reassure clients with modern security measures"
+    ],
+    faqs: [
+      { q: "How does QR verification work?", a: "The QR code links the physical document to a secure, unalterable digital copy stored on a remote server or blockchain." },
+      { q: "Can the QR code be copied?", a: "While the image can be copied, any tampering with the physical text won't match the secure digital version the QR code points to." },
+      { q: "Do I need special software to scan it?", a: "No, a standard smartphone camera can scan the code to open the verification page." }
+    ]
+  },
+  {
+    slug: "courtroom-evidence-links",
+    title: "Courtroom Evidence Links",
+    headline: "QR Codes for Courtroom Evidence",
+    description: "Modernize trial presentations by embedding QR codes in printed briefs that instantly link judges and jurors to high-definition digital evidence.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instantly access massive digital files",
+      "Reduce the need for bulky trial binders",
+      "Enhance engagement during presentations",
+      "Easily update dynamic links if evidence is amended"
+    ],
+    faqs: [
+      { q: "Is it allowed in court?", a: "Rules vary by jurisdiction, but many courts are adopting digital workflows that support QR-linked exhibits." },
+      { q: "What if there is no internet in the courtroom?", a: "Ensure critical files are downloaded locally, or use QR codes that point to a secure local network drive." },
+      { q: "What type of evidence can be linked?", a: "Audio recordings, surveillance video, complex financial spreadsheets, and interactive timelines." }
+    ]
+  },
+  {
+    slug: "legal-consultation-booking",
+    title: "Legal Consultation Booking",
+    headline: "QR Codes for Legal Consultation Booking",
+    description: "Make it effortless for prospective clients to schedule an initial consultation by scanning a QR code on your marketing materials.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Frictionless 24/7 appointment scheduling",
+      "Integrates directly with calendars like Calendly",
+      "Capture leads instantly from physical advertisements",
+      "Reduce phone tag and administrative time"
+    ],
+    faqs: [
+      { q: "Can the QR code block off unavailable times?", a: "Yes, it links to your live scheduling software which automatically handles availability." },
+      { q: "Where is the best place to put the booking code?", a: "On direct mailers, billboard ads, and the back of your business cards." },
+      { q: "Does it work for virtual consultations?", a: "Absolutely. The scheduling software can automatically generate a Zoom or Teams link upon booking." }
+    ]
+  },
+  {
+    slug: "contract-signature-links",
+    title: "Contract Signature Links",
+    headline: "QR Codes for Contract Execution",
+    description: "Accelerate the signing process by using QR codes to instantly route all parties to the correct secure digital signature portal.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Rapid execution of complex agreements",
+      "Eliminate confusion over which document to sign",
+      "Track when the portal is accessed in real-time",
+      "Seamless integration with platforms like DocuSign"
+    ],
+    faqs: [
+      { q: "Are e-signatures legally binding?", a: "In most jurisdictions, yes, e-signatures carry the same weight as physical signatures." },
+      { q: "How do QR codes help?", a: "They remove the friction of navigating through emails to find the correct signing link, especially during in-person meetings." },
+      { q: "What if the contract is updated?", a: "Use a dynamic QR code so you can update the destination link without reprinting the instruction sheet." }
+    ]
   }
 ];
 

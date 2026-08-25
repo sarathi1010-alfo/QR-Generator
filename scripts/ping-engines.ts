@@ -121,7 +121,13 @@ const NEW_URLS = [
   `${SITE_URL}/qr-codes/classroom-interactive-learning`,
   `${SITE_URL}/qr-codes/school-library-book-checkout`,
   `${SITE_URL}/qr-codes/student-attendance-tracking`,
-  `${SITE_URL}/qr-codes/parent-teacher-communication-forms`
+  `${SITE_URL}/qr-codes/parent-teacher-communication-forms`,
+  `${SITE_URL}/blog/qr-codes-for-legal-services-guide`,
+  `${SITE_URL}/qr-codes/law-firm-client-intake`,
+  `${SITE_URL}/qr-codes/notary-document-verification`,
+  `${SITE_URL}/qr-codes/courtroom-evidence-links`,
+  `${SITE_URL}/qr-codes/legal-consultation-booking`,
+  `${SITE_URL}/qr-codes/contract-signature-links`
 ];
 
 const INDEXNOW_KEY = '550e8400e29b41d4a716446655440000';
