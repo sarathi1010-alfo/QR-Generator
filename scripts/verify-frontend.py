@@ -137,7 +137,13 @@ def run_verification():
         "/qr-codes/classroom-interactive-learning",
         "/qr-codes/school-library-book-checkout",
         "/qr-codes/student-attendance-tracking",
-        "/qr-codes/parent-teacher-communication-forms"
+        "/qr-codes/parent-teacher-communication-forms",
+        "/blog/qr-codes-for-legal-services-guide",
+        "/qr-codes/law-firm-client-intake",
+        "/qr-codes/notary-document-verification",
+        "/qr-codes/courtroom-evidence-links",
+        "/qr-codes/legal-consultation-booking",
+        "/qr-codes/contract-signature-links"
     ]
 
     os.makedirs(VIDEOS_DIR, exist_ok=True)

@@ -72,7 +72,13 @@ def run_verification():
         "/blog/what-is-a-url-qr-code",
         "/blog/what-is-a-wifi-qr-code",
         "/blog/what-is-a-vcard-qr-code",
-        "/blog/how-does-a-qr-code-work"
+        "/blog/how-does-a-qr-code-work",
+        "/blog/qr-codes-for-legal-services-guide",
+        "/qr-codes/law-firm-client-intake",
+        "/qr-codes/notary-document-verification",
+        "/qr-codes/courtroom-evidence-links",
+        "/qr-codes/legal-consultation-booking",
+        "/qr-codes/contract-signature-links"
     ]
 
     base_url = "http://localhost:3000"
