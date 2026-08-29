@@ -127,7 +127,13 @@ const NEW_URLS = [
   `${SITE_URL}/qr-codes/notary-document-verification`,
   `${SITE_URL}/qr-codes/courtroom-evidence-links`,
   `${SITE_URL}/qr-codes/legal-consultation-booking`,
-  `${SITE_URL}/qr-codes/contract-signature-links`
+  `${SITE_URL}/qr-codes/contract-signature-links`,
+  `${SITE_URL}/blog/qr-codes-for-loyalty-programs-guide`,
+  `${SITE_URL}/qr-codes/coffee-shop-loyalty-cards`,
+  `${SITE_URL}/qr-codes/retail-store-rewards`,
+  `${SITE_URL}/qr-codes/airline-frequent-flyer-points`,
+  `${SITE_URL}/qr-codes/hotel-guest-loyalty`,
+  `${SITE_URL}/qr-codes/restaurant-vip-programs`
 ];
 
 const INDEXNOW_KEY = '550e8400e29b41d4a716446655440000';
