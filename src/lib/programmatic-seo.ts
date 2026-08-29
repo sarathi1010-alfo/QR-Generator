@@ -2653,6 +2653,101 @@ export const longTailUseCases: SEOPageConfig[] = [
       { q: "How do QR codes help?", a: "They remove the friction of navigating through emails to find the correct signing link, especially during in-person meetings." },
       { q: "What if the contract is updated?", a: "Use a dynamic QR code so you can update the destination link without reprinting the instruction sheet." }
     ]
+  },
+  {
+    slug: "coffee-shop-loyalty-cards",
+    title: "Coffee Shop Loyalty Cards",
+    headline: "QR Codes for Coffee Shop Loyalty Cards",
+    description: "Replace easily lost paper punch cards with digital QR code loyalty cards to increase repeat visits and customer retention.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Digital punch cards that customers never lose",
+      "Instant sign-up at the register",
+      "Send push notifications for double point days",
+      "Track customer visit frequency automatically"
+    ],
+    faqs: [
+      { q: "How does a digital coffee shop loyalty card work?", a: "Customers scan a QR code at the register to sign up. After that, they can either scan a code to earn points or have the barista scan their digital wallet card." },
+      { q: "Can I transition from paper cards to digital QR cards easily?", a: "Yes, you can offer a one-time point bonus for customers who migrate their existing paper punches to your new digital system." },
+      { q: "Do customers need to download an app?", a: "No, most modern QR loyalty programs use web-based portals or integrate directly with Apple and Google wallets." }
+    ]
+  },
+  {
+    slug: "retail-store-rewards",
+    title: "Retail Store Rewards Programs",
+    headline: "QR Codes for Retail Store Rewards",
+    description: "Boost customer lifetime value in your retail store by implementing a frictionless QR code-based rewards program.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Quick enrollment at point of sale",
+      "Link points directly to customer accounts",
+      "Offer personalized discounts based on purchase history",
+      "Integrate seamlessly with your existing CRM"
+    ],
+    faqs: [
+      { q: "Where is the best place to put the loyalty QR code in a store?", a: "Place the code directly at the checkout counter, on fitting room mirrors, and on physical receipts." },
+      { q: "Can I use QR codes to offer birthday rewards?", a: "Absolutely. Once they sign up via the QR code, your CRM can automatically email them a special birthday discount." },
+      { q: "How do QR codes help reduce checkout times?", a: "Customers can quickly scan to apply their rewards instead of spelling out their email address or phone number to the cashier." }
+    ]
+  },
+  {
+    slug: "airline-frequent-flyer-points",
+    title: "Airline Frequent Flyer Points",
+    headline: "QR Codes for Airline Loyalty",
+    description: "Enhance the travel experience by allowing passengers to easily access, track, and redeem their frequent flyer miles via QR codes.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant access to miles balance and tier status",
+      "Easy upgrade requests at the gate",
+      "Lounge access verification",
+      "Partner reward redemption"
+    ],
+    faqs: [
+      { q: "Can a QR code be used for airport lounge access?", a: "Yes, a dynamic QR code in the airline's app can serve as a secure, time-sensitive entry pass for premium lounges." },
+      { q: "How do QR codes simplify earning miles?", a: "Passengers can scan QR codes on in-flight duty-free magazines or partner services (like rental cars) to instantly link purchases to their frequent flyer account." },
+      { q: "Are QR loyalty codes secure for airlines?", a: "Yes, airlines use dynamic, encrypted codes that refresh constantly to prevent screenshot sharing and fraud." }
+    ]
+  },
+  {
+    slug: "hotel-guest-loyalty",
+    title: "Hotel Guest Loyalty Programs",
+    headline: "QR Codes for Hotel Guest Loyalty",
+    description: "Elevate your hospitality by offering guests a frictionless way to join your loyalty program and access exclusive VIP amenities.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Frictionless sign-up from the hotel room",
+      "Access to member-only Wi-Fi and amenities",
+      "Digital room keys linked to loyalty status",
+      "Personalized room service discounts"
+    ],
+    faqs: [
+      { q: "Where should hotels place loyalty QR codes?", a: "Place them on key card holders, in-room desk tents, and near the concierge desk." },
+      { q: "Can scanning the code offer immediate perks?", a: "Yes, you can configure the QR code to offer a complimentary drink at the bar or late checkout immediately upon sign-up." },
+      { q: "Does this integrate with hotel management software?", a: "Yes, a properly configured QR program will feed directly into your Property Management System (PMS)." }
+    ]
+  },
+  {
+    slug: "restaurant-vip-programs",
+    title: "Restaurant VIP Programs",
+    headline: "QR Codes for Restaurant VIP Programs",
+    description: "Turn occasional diners into regulars by offering an exclusive VIP rewards program accessed simply by scanning a table tent QR code.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant sign-up while waiting for food",
+      "Unlock secret menu items",
+      "Priority seating for VIP members",
+      "Birthday and anniversary specials"
+    ],
+    faqs: [
+      { q: "How can QR codes replace physical VIP cards?", a: "Instead of carrying a card, diners simply scan a code on their table or receipt to log their visit and earn points toward their next meal." },
+      { q: "Can I link the VIP program to the digital menu?", a: "Yes, the same QR code that brings up your menu can also prompt users to log in to their VIP account for special pricing." },
+      { q: "What's the best incentive for restaurant sign-ups?", a: "Offering a free appetizer or dessert on their current visit is the most effective way to drive immediate QR code scans and sign-ups." }
+    ]
   }
 ];
 

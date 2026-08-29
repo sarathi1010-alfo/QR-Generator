@@ -143,7 +143,13 @@ def run_verification():
         "/qr-codes/notary-document-verification",
         "/qr-codes/courtroom-evidence-links",
         "/qr-codes/legal-consultation-booking",
-        "/qr-codes/contract-signature-links"
+        "/qr-codes/contract-signature-links",
+        "/blog/qr-codes-for-loyalty-programs-guide",
+        "/qr-codes/coffee-shop-loyalty-cards",
+        "/qr-codes/retail-store-rewards",
+        "/qr-codes/airline-frequent-flyer-points",
+        "/qr-codes/hotel-guest-loyalty",
+        "/qr-codes/restaurant-vip-programs"
     ]
 
     os.makedirs(VIDEOS_DIR, exist_ok=True)
