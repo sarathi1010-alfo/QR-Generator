@@ -2749,6 +2749,104 @@ export const longTailUseCases: SEOPageConfig[] = [
       { q: "What's the best incentive for restaurant sign-ups?", a: "Offering a free appetizer or dessert on their current visit is the most effective way to drive immediate QR code scans and sign-ups." }
     ]
   }
+,
+
+  {
+    slug: "manufacturing-inventory-tracking",
+    title: "Manufacturing Inventory Tracking",
+    headline: "QR Codes for Manufacturing Inventory Tracking",
+    description: "Streamline your manufacturing inventory by using robust QR codes to track components and raw materials in real-time.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Real-time tracking of parts and materials",
+      "Integration with existing ERP systems",
+      "Reduce human error in data entry",
+      "Instantly access material safety data sheets (MSDS)"
+    ],
+    faqs: [
+      { q: "Can these QR codes withstand industrial conditions?", a: "Yes, when printed on durable materials like metal or vinyl, and with high error correction, they survive harsh environments." },
+      { q: "How do QR codes improve inventory accuracy?", a: "They eliminate manual data entry; a simple scan updates the central database instantly." },
+      { q: "Do I need special hardware to scan them?", a: "No, most modern smartphones or standard 2D barcode scanners can read them." }
+    ]
+  },
+  {
+    slug: "manufacturing-equipment-maintenance",
+    title: "Equipment Maintenance Logs",
+    headline: "QR Codes for Equipment Maintenance",
+    description: "Attach QR codes to heavy machinery to provide technicians with instant access to digital maintenance logs, schematics, and repair histories.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant access to digital manuals and schematics",
+      "Log repair histories in real-time",
+      "Reduce downtime by accelerating diagnostics",
+      "Link to video tutorials for complex repairs"
+    ],
+    faqs: [
+      { q: "Can I link a QR code to a specific machine's manual?", a: "Absolutely. Each machine can have a unique QR code pointing to its specific documentation." },
+      { q: "Is the data secure?", a: "The QR code simply points to a URL. The security is handled by your internal network or cloud provider hosting the documentation." },
+      { q: "What if the machine is covered in grease?", a: "By using Level H error correction, the code can still be read even if up to 30% of it is obscured." }
+    ]
+  },
+  {
+    slug: "manufacturing-quality-control",
+    title: "Quality Control Checkpoints",
+    headline: "QR Codes for Quality Control",
+    description: "Enhance your quality assurance processes by using QR codes to track inspection results and authenticate finished products.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Digitize inspection checklists",
+      "Track defect rates by batch or component",
+      "Authenticate products to prevent counterfeiting",
+      "Streamline compliance reporting"
+    ],
+    faqs: [
+      { q: "How do QR codes help with compliance?", a: "They provide a verifiable digital audit trail of when and where an inspection occurred." },
+      { q: "Can customers use these to verify authenticity?", a: "Yes, a secure QR code on the final product can link to a verification portal." },
+      { q: "Can inspectors upload photos via the QR link?", a: "Yes, if the QR code links to a dynamic form that supports file uploads." }
+    ]
+  },
+  {
+    slug: "manufacturing-safety-training",
+    title: "Safety Training & Procedures",
+    headline: "QR Codes for Manufacturing Safety",
+    description: "Improve workplace safety by placing QR codes near hazardous equipment, providing instant access to emergency procedures and training videos.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant access to emergency protocols",
+      "Link to mandatory safety training videos",
+      "Digitize incident reporting forms",
+      "Ensure compliance with OSHA guidelines"
+    ],
+    faqs: [
+      { q: "Where should safety QR codes be placed?", a: "They should be placed in highly visible areas near machinery, chemical storage, and emergency exits." },
+      { q: "Can the QR code track who completed the training?", a: "Yes, by linking to a learning management system (LMS) that requires the employee to log in." },
+      { q: "Are these better than printed safety manuals?", a: "Yes, because digital manuals can be updated instantly without replacing the physical QR code (if using a dynamic link)." }
+    ]
+  },
+  {
+    slug: "manufacturing-supply-chain",
+    title: "Supply Chain Traceability",
+    headline: "QR Codes for Supply Chain Traceability",
+    description: "Provide complete transparency into your supply chain by using QR codes to trace the journey of a product from raw materials to final assembly.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "End-to-end visibility of the production lifecycle",
+      "Share ethical sourcing information with consumers",
+      "Track shipments in real-time across partners",
+      "Quickly identify the source of defective batches"
+    ],
+    faqs: [
+      { q: "Can consumers scan these codes?", a: "Yes, many brands use these to share the 'story' of the product with the end consumer." },
+      { q: "Does this integrate with blockchain?", a: "QR codes are often the physical link to blockchain-based traceability ledgers." },
+      { q: "How does this help in a recall?", a: "It allows you to pinpoint exactly which batches are affected, minimizing the scope and cost of the recall." }
+    ]
+  }
+
 ];
 
 export const downloadFormats: SEOPageConfig[] = [];

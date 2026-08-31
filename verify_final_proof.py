@@ -85,6 +85,13 @@ def run_verification():
         "/qr-codes/airline-frequent-flyer-points",
         "/qr-codes/hotel-guest-loyalty",
         "/qr-codes/restaurant-vip-programs"
+,
+        "/blog/create-qr-code-for-manufacturing-guide",
+        "/qr-codes/manufacturing-inventory-tracking",
+        "/qr-codes/manufacturing-equipment-maintenance",
+        "/qr-codes/manufacturing-quality-control",
+        "/qr-codes/manufacturing-safety-training",
+        "/qr-codes/manufacturing-supply-chain",
     ]
 
     base_url = "http://localhost:3000"
