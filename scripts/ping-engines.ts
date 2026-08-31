@@ -134,6 +134,14 @@ const NEW_URLS = [
   `${SITE_URL}/qr-codes/airline-frequent-flyer-points`,
   `${SITE_URL}/qr-codes/hotel-guest-loyalty`,
   `${SITE_URL}/qr-codes/restaurant-vip-programs`
+,
+
+  `${SITE_URL}/blog/create-qr-code-for-manufacturing-guide`,
+  `${SITE_URL}/qr-codes/manufacturing-inventory-tracking`,
+  `${SITE_URL}/qr-codes/manufacturing-equipment-maintenance`,
+  `${SITE_URL}/qr-codes/manufacturing-quality-control`,
+  `${SITE_URL}/qr-codes/manufacturing-safety-training`,
+  `${SITE_URL}/qr-codes/manufacturing-supply-chain`,
 ];
 
 const INDEXNOW_KEY = '550e8400e29b41d4a716446655440000';
