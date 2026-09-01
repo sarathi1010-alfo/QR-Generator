@@ -2845,6 +2845,101 @@ export const longTailUseCases: SEOPageConfig[] = [
       { q: "Does this integrate with blockchain?", a: "QR codes are often the physical link to blockchain-based traceability ledgers." },
       { q: "How does this help in a recall?", a: "It allows you to pinpoint exactly which batches are affected, minimizing the scope and cost of the recall." }
     ]
+  },
+  {
+    slug: "telemedicine-appointments",
+    title: "Telemedicine Appointments",
+    headline: "QR Codes for Telemedicine Appointments",
+    description: "Streamline patient access to virtual care with dynamic QR codes linking directly to secure telehealth sessions.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant access to video consultations",
+      "No long meeting IDs to type",
+      "Secure, encrypted destination links",
+      "Easily embed in appointment reminders"
+    ],
+    faqs: [
+      { q: "Are QR codes for telehealth HIPAA compliant?", a: "The QR code itself is just a link. Compliance depends on the telehealth platform it points to being secure." },
+      { q: "Can I use dynamic QR codes for this?", a: "Yes, dynamic codes allow you to change the meeting link if the provider's schedule or room changes." },
+      { q: "Do patients need a special app?", a: "Most modern smartphones can scan QR codes using their native camera app, opening the link directly in the browser." }
+    ]
+  },
+  {
+    slug: "hospital-wayfinding",
+    title: "Hospital Wayfinding",
+    headline: "QR Codes for Hospital Wayfinding",
+    description: "Help patients and visitors navigate complex hospital layouts easily using QR codes that launch interactive indoor maps.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Interactive 3D indoor mapping",
+      "Turn-by-turn directions",
+      "Easily update routes when departments move",
+      "Reduce missed appointments due to lost patients"
+    ],
+    faqs: [
+      { q: "Where should wayfinding QR codes be placed?", a: "At main entrances, elevator banks, hallway intersections, and on appointment letters." },
+      { q: "Can the maps integrate with GPS?", a: "Indoor navigation typically relies on specific indoor mapping software that the QR code links to, rather than standard GPS." },
+      { q: "Are these codes difficult to maintain?", a: "No, by using dynamic QR codes, the destination URL for the map can be updated without reprinting the physical sign." }
+    ]
+  },
+  {
+    slug: "medication-tracking",
+    title: "Medication Tracking",
+    headline: "QR Codes for Medication Tracking",
+    description: "Ensure patient safety and precise administration with QR codes on prescription labels and IV bags.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Verify the Five Rights of medication administration",
+      "Reduce adverse drug events",
+      "Track inventory securely",
+      "Integrate directly with EHR systems"
+    ],
+    faqs: [
+      { q: "How do nurses scan these codes?", a: "Nurses typically use specialized mobile devices or scanners integrated with the hospital's electronic health record system." },
+      { q: "Can a QR code hold all prescription data?", a: "Typically, the QR code contains a unique identifier that retrieves the full prescription details securely from the database." },
+      { q: "What error correction level is best here?", a: "Level H is recommended to ensure the code remains readable even if the label is slightly damaged or curved." }
+    ]
+  },
+  {
+    slug: "blood-donation-registration",
+    title: "Blood Donation Registration",
+    headline: "QR Codes for Blood Donation Registration",
+    description: "Accelerate the blood donation process by allowing donors to pre-register and complete health questionnaires via QR code.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Contactless registration process",
+      "Pre-screening health questionnaires",
+      "Reduce wait times at mobile blood drives",
+      "Easily shareable on promotional flyers"
+    ],
+    faqs: [
+      { q: "Is the health questionnaire data secure?", a: "Yes, as long as the QR code directs the donor to a secure, encrypted form hosted by the healthcare provider." },
+      { q: "Can donors scan this from a poster?", a: "Absolutely. Ensuring the QR code is printed with high contrast and appropriate sizing makes it easily scannable from promotional materials." },
+      { q: "How does this speed up the donation process?", a: "Donors complete the necessary paperwork on their own devices while waiting, rather than tying up staff and physical clipboards." }
+    ]
+  },
+  {
+    slug: "digital-health-records",
+    title: "Digital Health Records",
+    headline: "QR Codes for Digital Health Records",
+    description: "Provide patients with secure, instant access to their personal health information and test results through secure QR code links.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant access to patient portals",
+      "Secure retrieval of lab results",
+      "Easily share medical history with specialists",
+      "Empower patients to manage their care"
+    ],
+    faqs: [
+      { q: "Are these QR codes safe to use?", a: "Yes, the QR code acts as a secure gateway. The patient must still authenticate (e.g., log in) to access their records." },
+      { q: "Can I put a QR code on a discharge summary?", a: "Yes, placing a code on discharge paperwork allows patients to quickly access follow-up care instructions and their updated records." },
+      { q: "Does the QR code expire?", a: "Dynamic QR codes can be set to expire or deactivate, adding an extra layer of security to temporary access links." }
+    ]
   }
 
 ];

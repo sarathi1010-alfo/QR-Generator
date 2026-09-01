@@ -157,6 +157,12 @@ def run_verification():
         "/qr-codes/manufacturing-quality-control",
         "/qr-codes/manufacturing-safety-training",
         "/qr-codes/manufacturing-supply-chain",
+        "/blog/how-to-use-qr-codes-in-healthcare-guide",
+        "/qr-codes/telemedicine-appointments",
+        "/qr-codes/hospital-wayfinding",
+        "/qr-codes/medication-tracking",
+        "/qr-codes/blood-donation-registration",
+        "/qr-codes/digital-health-records",
     ]
 
     os.makedirs(VIDEOS_DIR, exist_ok=True)
