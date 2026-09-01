@@ -142,6 +142,12 @@ const NEW_URLS = [
   `${SITE_URL}/qr-codes/manufacturing-quality-control`,
   `${SITE_URL}/qr-codes/manufacturing-safety-training`,
   `${SITE_URL}/qr-codes/manufacturing-supply-chain`,
+  `${SITE_URL}/blog/how-to-use-qr-codes-in-healthcare-guide`,
+  `${SITE_URL}/qr-codes/telemedicine-appointments`,
+  `${SITE_URL}/qr-codes/hospital-wayfinding`,
+  `${SITE_URL}/qr-codes/medication-tracking`,
+  `${SITE_URL}/qr-codes/blood-donation-registration`,
+  `${SITE_URL}/qr-codes/digital-health-records`,
 ];
 
 const INDEXNOW_KEY = '550e8400e29b41d4a716446655440000';
