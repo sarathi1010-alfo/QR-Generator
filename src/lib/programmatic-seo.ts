@@ -3,6 +3,101 @@ import { SEOPageConfig } from "./seo-config";
 
 export const longTailUseCases: SEOPageConfig[] = [
   {
+    slug: "clinic-patient-intake",
+    title: "Clinic Patient Intake",
+    headline: "QR Codes for Patient Intake Forms",
+    description: "Streamline patient registration with QR codes that link directly to secure digital intake forms. Reduce waiting room bottlenecks instantly.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Contactless digital registration",
+      "Eliminate clipboard sharing",
+      "Secure data entry directly to EHR",
+      "Expedite the waiting room experience"
+    ],
+    faqs: [
+      { q: "Are QR code intake forms secure?", a: "Yes, the QR code simply links to your secure, HIPAA-compliant patient portal or intake form." },
+      { q: "Where is the best place to put intake QR codes?", a: "Place them near the reception desk, on waiting room tables, or in appointment confirmation emails." },
+      { q: "Can we use QR codes for returning patients?", a: "Absolutely. Returning patients can scan a code to confirm their details and check-in instantly." }
+    ]
+  },
+  {
+    slug: "clinic-prescription-refills",
+    title: "Clinic Prescription Refills",
+    headline: "QR Codes for Rapid Prescription Refills",
+    description: "Enable patients to request prescription refills quickly by scanning a QR code linked directly to your clinic's pharmacy portal.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Reduce phone call volume",
+      "24/7 access to refill requests",
+      "Fewer errors than manual entry",
+      "Increase patient adherence"
+    ],
+    faqs: [
+      { q: "How do QR codes help with prescription refills?", a: "Patients scan the QR code to open a digital form, securely inputting their details and Rx number to request a refill without waiting on hold." },
+      { q: "Can we print the QR code on the prescription bottle?", a: "Yes, high-contrast QR codes can be printed on pharmacy labels to make future refills effortless for the patient." },
+      { q: "Is patient data safe during the transfer?", a: "The QR code securely routes the user to an encrypted portal, ensuring all health information remains protected." }
+    ]
+  },
+  {
+    slug: "clinic-staff-directory",
+    title: "Clinic Staff Directory",
+    headline: "QR Codes for Clinic Staff Directories",
+    description: "Provide patients with instant access to physician credentials, clinic departments, and contact information via a single scannable code.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Digital access to doctor profiles",
+      "Easily update staff changes",
+      "Improve patient trust and transparency",
+      "Reduce front desk inquiries"
+    ],
+    faqs: [
+      { q: "Can we update the directory without changing the QR code?", a: "Yes, by using a dynamic QR code, you can update the underlying directory link anytime staff changes occur without reprinting signage." },
+      { q: "Where should the directory QR code be displayed?", a: "It is highly effective when placed on clinic entrance signs, waiting room displays, and welcome brochures." },
+      { q: "Does this integrate with our hospital website?", a: "The QR code functions as a direct link to the staff directory page already hosted on your main website." }
+    ]
+  },
+  {
+    slug: "clinic-feedback-forms",
+    title: "Clinic Feedback Forms",
+    headline: "QR Codes for Instant Patient Feedback",
+    description: "Gather valuable insights on patient satisfaction instantly. QR codes make it effortless for patients to leave feedback post-visit.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Capture feedback while it's fresh",
+      "Increase survey completion rates",
+      "Identify areas for clinical improvement",
+      "Simple integration with Google Forms or SurveyMonkey"
+    ],
+    faqs: [
+      { q: "Why use a QR code for patient feedback?", a: "It removes the friction of typing a long URL or waiting for a follow-up email. Patients can scan and review before they even leave the parking lot." },
+      { q: "Can we incentivize the feedback?", a: "While clinical regulations vary, many clinics offer a small token of appreciation upon completion of a post-visit survey accessed via QR code." },
+      { q: "Where is the optimal placement for feedback codes?", a: "The best locations include the checkout desk, on the back of appointment reminder cards, or inside the examination room." }
+    ]
+  },
+  {
+    slug: "clinic-discharge-instructions",
+    title: "Clinic Discharge Instructions",
+    headline: "QR Codes for Digital Discharge Instructions",
+    description: "Ensure patients have continuous access to their specific care instructions. A single QR code replaces lost paperwork with a secure digital guide.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Reduce lost paperwork",
+      "Include instructional videos",
+      "Ensure access to the latest care protocols",
+      "Improve post-visit compliance"
+    ],
+    faqs: [
+      { q: "How does a digital discharge instruction work?", a: "The QR code links the patient to a secure page or video explaining their specific post-visit care, medication schedule, and follow-up requirements." },
+      { q: "Can the QR code link to a video?", a: "Yes, many clinics link discharge QR codes to instructional YouTube videos for physical therapy or wound care, vastly improving comprehension." },
+      { q: "What if the patient doesn't have a smartphone?", a: "QR codes should complement, not entirely replace, physical instructions for those who prefer or require paper documentation." }
+    ]
+  },
+  {
     slug: "beauty-salon-booking",
     title: "Beauty Salon Booking",
     headline: "QR Codes for Beauty Salon Booking",

@@ -41,6 +41,14 @@ def test_qr_generation(page):
 
 def run_verification():
     urls_to_check = [
+
+    "/blog/qr-codes-for-clinics-the-complete-2026-guide",
+    "/qr-codes/clinic-patient-intake",
+    "/qr-codes/clinic-prescription-refills",
+    "/qr-codes/clinic-staff-directory",
+    "/qr-codes/clinic-feedback-forms",
+    "/qr-codes/clinic-discharge-instructions",
+
         "/blog/create-qr-code-for-business-guide",
         "/qr-codes/customer-feedback-collection",
         "/qr-codes/manufacturing-warranty-registration",
