@@ -7,6 +7,14 @@ def run_verification():
     os.makedirs("/home/jules/verification/screenshots", exist_ok=True)
 
     urls_to_test = [
+
+    "/blog/qr-codes-for-clinics-the-complete-2026-guide",
+    "/qr-codes/clinic-patient-intake",
+    "/qr-codes/clinic-prescription-refills",
+    "/qr-codes/clinic-staff-directory",
+    "/qr-codes/clinic-feedback-forms",
+    "/qr-codes/clinic-discharge-instructions",
+
         "/blog/create-qr-code-for-business-guide",
         "/qr-codes/customer-feedback-collection",
         "/qr-codes/manufacturing-warranty-registration",

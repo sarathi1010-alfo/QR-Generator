@@ -1,6 +1,13 @@
 const SITE_URL = "https://qr.alfo.online";
 
 const NEW_URLS = [
+  `${SITE_URL}/blog/qr-codes-for-clinics-the-complete-2026-guide`,
+  `${SITE_URL}/qr-codes/clinic-patient-intake`,
+  `${SITE_URL}/qr-codes/clinic-prescription-refills`,
+  `${SITE_URL}/qr-codes/clinic-staff-directory`,
+  `${SITE_URL}/qr-codes/clinic-feedback-forms`,
+  `${SITE_URL}/qr-codes/clinic-discharge-instructions`,
+
   `${SITE_URL}/blog/create-qr-code-for-business-guide`,
   `${SITE_URL}/qr-codes/customer-feedback-collection`,
   `${SITE_URL}/qr-codes/manufacturing-warranty-registration`,
