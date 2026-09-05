@@ -3035,6 +3035,101 @@ export const longTailUseCases: SEOPageConfig[] = [
       { q: "Can I put a QR code on a discharge summary?", a: "Yes, placing a code on discharge paperwork allows patients to quickly access follow-up care instructions and their updated records." },
       { q: "Does the QR code expire?", a: "Dynamic QR codes can be set to expire or deactivate, adding an extra layer of security to temporary access links." }
     ]
+  },
+  {
+    slug: "event-check-in-systems",
+    title: "Event Check-In Systems",
+    headline: "QR Codes for Event Check-In Systems",
+    description: "Modernize event check-ins by replacing long lines and paper lists with fast, contactless QR code scanning.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant attendee verification",
+      "Eliminate manual name lookups",
+      "Print badges on demand",
+      "Real-time attendance tracking"
+    ],
+    faqs: [
+      { q: "Do attendees need an app to scan their ticket?", a: "No, attendees just show the QR code ticket they received via email, and event staff scan it using their own devices." },
+      { q: "What happens if an attendee loses their QR code?", a: "Event staff can still manually look up the attendee in the registration database as a fallback." },
+      { q: "Is this secure against ticket duplication?", a: "Yes, when paired with a dynamic ticketing system, each QR code can only be scanned once." }
+    ]
+  },
+  {
+    slug: "conference-session-schedules",
+    title: "Conference Session Schedules",
+    headline: "QR Codes for Conference Session Schedules",
+    description: "Provide attendees with always up-to-date digital schedules. Link QR codes placed around the venue to the latest session times and room changes.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Real-time schedule updates",
+      "Reduce printing costs for bulky programs",
+      "Include interactive venue maps",
+      "Allow attendees to bookmark sessions"
+    ],
+    faqs: [
+      { q: "Can I update the schedule after printing the QR code?", a: "Yes, by using a dynamic QR code that points to a live digital schedule webpage." },
+      { q: "Where should these QR codes be placed?", a: "Place them on registration desks, outside meeting rooms, and in dining areas for maximum visibility." },
+      { q: "Do attendees need internet access to see the schedule?", a: "Yes, attendees will need an active Wi-Fi or cellular connection to load the digital schedule after scanning." }
+    ]
+  },
+  {
+    slug: "trade-show-exhibitor-booths",
+    title: "Trade Show Exhibitor Booths",
+    headline: "QR Codes for Trade Show Exhibitor Booths",
+    description: "Maximize lead generation at trade shows. Use QR codes to instantly share digital brochures and capture attendee contact information.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Frictionless lead capture",
+      "Instantly share digital product catalogs",
+      "Link to product demonstration videos",
+      "Automate follow-up email sequences"
+    ],
+    faqs: [
+      { q: "How does a QR code capture a lead?", a: "The QR code links to an opt-in landing page where the attendee can enter their contact details in exchange for a resource." },
+      { q: "Can I track which booth generated the most scans?", a: "Yes, using dynamic QR codes with UTM parameters allows you to track scans from specific booth locations." },
+      { q: "Is this better than collecting business cards?", a: "Yes, it eliminates manual data entry and allows for immediate, automated follow-up." }
+    ]
+  },
+  {
+    slug: "networking-event-vcards",
+    title: "Networking Event vCards",
+    headline: "vCard QR Codes for Networking Events",
+    description: "Facilitate seamless professional connections by printing vCard QR codes on attendee badges for instant contact sharing.",
+    category: "business",
+    primaryUse: "vcard",
+    features: [
+      "Instantly save contact details to a phone",
+      "Include LinkedIn profiles and websites",
+      "Eliminate the need for paper business cards",
+      "Ensure connections are never lost"
+    ],
+    faqs: [
+      { q: "What information can a vCard QR code hold?", a: "It can hold a name, title, company, phone number, email address, website, and social media links." },
+      { q: "Do I need an internet connection to scan a vCard QR code?", a: "No, standard vCard QR codes encode the contact data directly in the image, so no internet is required to scan and save." },
+      { q: "Can attendees create their own vCards before the event?", a: "Yes, organizers can encourage attendees to generate their own vCard QR codes using our free generator." }
+    ]
+  },
+  {
+    slug: "vip-afterparty-access",
+    title: "VIP Afterparty Access",
+    headline: "QR Codes for VIP Afterparty Access",
+    description: "Manage exclusive event access securely. Use dynamic QR codes to verify VIP status and control entry to restricted areas.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Secure access to restricted zones",
+      "Prevent unauthorized entry",
+      "Track VIP attendance in real-time",
+      "Create exclusive digital experiences"
+    ],
+    faqs: [
+      { q: "How do QR codes prevent unauthorized access?", a: "When scanned, the QR code links to a secure database that verifies the attendee's ticket tier and marks them as 'checked in'." },
+      { q: "Can the QR code also serve as a drink ticket?", a: "Yes, dynamic ticketing systems can link a QR code to an attendee's account, allowing them to redeem pre-purchased items." },
+      { q: "Is it safe to print the QR code on a wristband?", a: "Yes, as long as the wristband material is durable and the QR code is printed with high contrast." }
+    ]
   }
 
 ];

@@ -106,6 +106,12 @@ def run_verification():
         "/qr-codes/medication-tracking",
         "/qr-codes/blood-donation-registration",
         "/qr-codes/digital-health-records",
+        "/blog/how-to-use-qr-codes-for-event-management-guide",
+        "/qr-codes/event-check-in-systems",
+        "/qr-codes/conference-session-schedules",
+        "/qr-codes/trade-show-exhibitor-booths",
+        "/qr-codes/networking-event-vcards",
+        "/qr-codes/vip-afterparty-access",
     ]
 
     base_url = "http://localhost:3000"

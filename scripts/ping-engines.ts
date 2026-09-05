@@ -155,6 +155,12 @@ const NEW_URLS = [
   `${SITE_URL}/qr-codes/medication-tracking`,
   `${SITE_URL}/qr-codes/blood-donation-registration`,
   `${SITE_URL}/qr-codes/digital-health-records`,
+  `${SITE_URL}/blog/how-to-use-qr-codes-for-event-management-guide`,
+  `${SITE_URL}/qr-codes/event-check-in-systems`,
+  `${SITE_URL}/qr-codes/conference-session-schedules`,
+  `${SITE_URL}/qr-codes/trade-show-exhibitor-booths`,
+  `${SITE_URL}/qr-codes/networking-event-vcards`,
+  `${SITE_URL}/qr-codes/vip-afterparty-access`,
 ];
 
 const INDEXNOW_KEY = '550e8400e29b41d4a716446655440000';
