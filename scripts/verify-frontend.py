@@ -177,6 +177,12 @@ def run_verification():
         "/qr-codes/trade-show-exhibitor-booths",
         "/qr-codes/networking-event-vcards",
         "/qr-codes/vip-afterparty-access",
+        "/blog/qr-codes-for-travel-tourism-guide",
+        "/qr-codes/hotel-room-service-menus",
+        "/qr-codes/tourist-attraction-audio-guides",
+        "/qr-codes/airport-baggage-tracking",
+        "/qr-codes/rental-car-check-in",
+        "/qr-codes/travel-agency-itineraries",
     ]
 
     os.makedirs(VIDEOS_DIR, exist_ok=True)
