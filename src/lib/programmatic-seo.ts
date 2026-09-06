@@ -3130,6 +3130,101 @@ export const longTailUseCases: SEOPageConfig[] = [
       { q: "Can the QR code also serve as a drink ticket?", a: "Yes, dynamic ticketing systems can link a QR code to an attendee's account, allowing them to redeem pre-purchased items." },
       { q: "Is it safe to print the QR code on a wristband?", a: "Yes, as long as the wristband material is durable and the QR code is printed with high contrast." }
     ]
+  },
+  {
+    slug: "hotel-room-service-menus",
+    title: "Hotel Room Service Menus",
+    headline: "QR Codes for Hotel Room Service Menus",
+    description: "Upgrade the guest experience by placing QR codes in hotel rooms that link directly to digital room service menus and instant ordering systems.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Contactless in-room dining orders",
+      "Easily update daily specials and pricing",
+      "Reduce printing costs for physical menus",
+      "Support multiple languages instantly"
+    ],
+    faqs: [
+      { q: "How do guests place a room service order?", a: "Guests scan the QR code on their nightstand, browse the digital menu, and place the order through the hotel's integrated POS system." },
+      { q: "Can we use static QR codes for this?", a: "Dynamic QR codes are recommended so you can update the menu URL without replacing the printed codes in every room." },
+      { q: "Where should the QR code be placed in the room?", a: "Popular locations include table tents on the desk, stickers on the nightstand, or integrated into the welcome guide." }
+    ]
+  },
+  {
+    slug: "tourist-attraction-audio-guides",
+    title: "Tourist Attraction Audio Guides",
+    headline: "QR Codes for Tourist Attraction Audio Guides",
+    description: "Enhance self-guided tours at museums and landmarks. Provide visitors with instant access to multi-lingual audio guides by simply scanning a QR code.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Provide multi-lingual audio tracks",
+      "Eliminate the need for bulky rental equipment",
+      "Include interactive maps and exhibit details",
+      "Accessible directly from visitors' smartphones"
+    ],
+    faqs: [
+      { q: "Do visitors need an app to listen to the audio?", a: "No, the QR code can link to a mobile-friendly website that plays the audio directly in their browser." },
+      { q: "Can we track which exhibits are most popular?", a: "Yes, using unique dynamic QR codes for each exhibit allows you to track scan data and visitor engagement." },
+      { q: "Are QR codes durable enough for outdoor historical sites?", a: "Yes, if printed on weather-resistant materials like anodized aluminum or outdoor-grade vinyl." }
+    ]
+  },
+  {
+    slug: "airport-baggage-tracking",
+    title: "Airport Baggage Tracking",
+    headline: "QR Codes for Airport Baggage Tracking",
+    description: "Improve transparency and reduce lost luggage anxiety. Airlines use QR codes on baggage tags to let passengers track their bags in real-time.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Real-time baggage status updates",
+      "Reduce passenger anxiety over lost bags",
+      "Streamline baggage handling operations",
+      "Easily integrate with airline mobile apps"
+    ],
+    faqs: [
+      { q: "How does the passenger track their bag?", a: "The passenger scans the QR code on their baggage receipt, which links to the airline's tracking portal showing the bag's current location." },
+      { q: "Are QR codes replacing traditional barcodes?", a: "QR codes are increasingly used alongside traditional 1D barcodes because they can store more data and be scanned more easily by consumers." },
+      { q: "What happens if the tag is damaged?", a: "By using high error correction levels (Level H), the QR code can still be scanned even if up to 30% of it is obscured or damaged." }
+    ]
+  },
+  {
+    slug: "rental-car-check-in",
+    title: "Rental Car Check-In",
+    headline: "QR Codes for Rental Car Check-In",
+    description: "Bypass the rental counter. Customers can scan a QR code at the lot to complete digital inspections, view rental agreements, and unlock their vehicle.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Contactless vehicle pick-up",
+      "Digital pre-rental damage inspections",
+      "Instant access to rental agreements",
+      "Reduce wait times during peak hours"
+    ],
+    faqs: [
+      { q: "How secure is a QR code for unlocking a car?", a: "The QR code itself acts as a link to a secure portal where the customer must authenticate before the vehicle's smart lock is triggered." },
+      { q: "Can customers report damage via the QR code?", a: "Yes, the check-in portal often includes a form where customers can upload photos of pre-existing damage before driving off." },
+      { q: "Do customers need the rental agency's app?", a: "While an app offers the best experience, a web-based portal accessed via the QR code can also facilitate the check-in process." }
+    ]
+  },
+  {
+    slug: "travel-agency-itineraries",
+    title: "Travel Agency Itineraries",
+    headline: "QR Codes for Travel Agency Itineraries",
+    description: "Provide clients with always up-to-date travel plans. A single QR code links to a dynamic digital itinerary covering flights, hotels, and tours.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Real-time itinerary updates",
+      "Centralized location for all booking confirmations",
+      "Interactive destination maps and recommendations",
+      "Reduce the need for printed travel documents"
+    ],
+    faqs: [
+      { q: "What happens if a flight is delayed?", a: "Because the QR code links to a dynamic digital itinerary, the travel agent can update the portal, and the client will see the new flight times instantly." },
+      { q: "Can clients access their itinerary offline?", a: "While the initial scan requires internet, many digital itinerary platforms allow clients to cache or download the page for offline viewing." },
+      { q: "Is it easy for a travel agent to create these codes?", a: "Yes, the agent simply generates a URL QR code pointing to the client's personalized itinerary link." }
+    ]
   }
 
 ];

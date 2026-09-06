@@ -161,6 +161,12 @@ const NEW_URLS = [
   `${SITE_URL}/qr-codes/trade-show-exhibitor-booths`,
   `${SITE_URL}/qr-codes/networking-event-vcards`,
   `${SITE_URL}/qr-codes/vip-afterparty-access`,
+  `${SITE_URL}/blog/qr-codes-for-travel-tourism-guide`,
+  `${SITE_URL}/qr-codes/hotel-room-service-menus`,
+  `${SITE_URL}/qr-codes/tourist-attraction-audio-guides`,
+  `${SITE_URL}/qr-codes/airport-baggage-tracking`,
+  `${SITE_URL}/qr-codes/rental-car-check-in`,
+  `${SITE_URL}/qr-codes/travel-agency-itineraries`,
 ];
 
 const INDEXNOW_KEY = '550e8400e29b41d4a716446655440000';
