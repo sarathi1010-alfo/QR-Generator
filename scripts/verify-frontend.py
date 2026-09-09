@@ -41,6 +41,12 @@ def test_qr_generation(page):
 
 def run_verification():
     urls_to_check = [
+        "/blog/qr-codes-for-government-services-guide",
+        "/qr-codes/city-parking-meters",
+        "/qr-codes/public-transit-schedules",
+        "/qr-codes/voter-registration-forms",
+        "/qr-codes/municipal-tax-payments",
+        "/qr-codes/town-hall-meeting-feedback",
 
     "/blog/qr-codes-for-clinics-the-complete-2026-guide",
     "/qr-codes/clinic-patient-intake",

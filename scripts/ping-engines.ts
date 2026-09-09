@@ -1,6 +1,13 @@
 const SITE_URL = "https://qr.alfo.online";
 
 const NEW_URLS = [
+  `${SITE_URL}/blog/qr-codes-for-government-services-guide`,
+  `${SITE_URL}/qr-codes/city-parking-meters`,
+  `${SITE_URL}/qr-codes/public-transit-schedules`,
+  `${SITE_URL}/qr-codes/voter-registration-forms`,
+  `${SITE_URL}/qr-codes/municipal-tax-payments`,
+  `${SITE_URL}/qr-codes/town-hall-meeting-feedback`,
+
   `${SITE_URL}/blog/qr-codes-for-clinics-the-complete-2026-guide`,
   `${SITE_URL}/qr-codes/clinic-patient-intake`,
   `${SITE_URL}/qr-codes/clinic-prescription-refills`,

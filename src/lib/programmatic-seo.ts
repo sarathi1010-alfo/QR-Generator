@@ -3320,6 +3320,101 @@ export const longTailUseCases: SEOPageConfig[] = [
       { q: "Does this replace mandatory recycling symbols?", a: "No, you must still comply with local laws regarding recycling symbols, but the QR code can provide much more detailed, helpful information." },
       { q: "Can we link to a take-back program?", a: "Yes, this is an excellent use case. You can direct consumers to a page explaining how to ship the empty packaging back to you for reuse." }
     ]
+  },
+  {
+    slug: "city-parking-meters",
+    title: "City Parking Meters",
+    headline: "QR Codes for City Parking Meters",
+    description: "Simplify municipal parking. Citizens can scan a QR code on parking meters to instantly pay for their spot using their smartphone, reducing the need for coins and dedicated apps.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant, app-free parking payments",
+      "Real-time parking session updates",
+      "Reduced municipal maintenance costs",
+      "Seamless integration with city transit databases"
+    ],
+    faqs: [
+      { q: "Do citizens need to download an app?", a: "No, scanning the QR code directs users to a mobile-optimized web portal where they can securely pay via Apple Pay, Google Pay, or credit card without an app." },
+      { q: "Are QR code parking payments secure?", a: "Yes, the QR code links to a government-approved, encrypted payment gateway that complies with federal security standards." },
+      { q: "How does parking enforcement verify payment?", a: "When a citizen pays via the QR portal, their license plate is instantly updated in the enforcement officer's real-time database." }
+    ]
+  },
+  {
+    slug: "public-transit-schedules",
+    title: "Public Transit Schedules",
+    headline: "QR Codes for Public Transit Schedules",
+    description: "Keep commuters informed. Place dynamic QR codes at bus stops and train stations to provide real-time arrival times, service alerts, and route maps.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Live GPS tracking for arriving vehicles",
+      "Instant service delay notifications",
+      "Multi-lingual route information",
+      "Eliminates the cost of reprinting static schedules"
+    ],
+    faqs: [
+      { q: "What happens if a bus route changes?", a: "Because the QR codes are dynamic, transit authorities can update the linked schedule instantly without needing to replace the physical sticker at the bus stop." },
+      { q: "Can visually impaired riders use this?", a: "Yes, high-contrast QR codes placed at accessible heights can link to text-to-speech enabled transit portals." },
+      { q: "Does this require internet access?", a: "Scanning the code requires a cellular connection, but the landing page can allow users to download a PDF map for offline use." }
+    ]
+  },
+  {
+    slug: "voter-registration-forms",
+    title: "Voter Registration Forms",
+    headline: "QR Codes for Voter Registration",
+    description: "Increase civic participation. Direct citizens to official online voter registration portals instantly by scanning a QR code on municipal mailers and community boards.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Frictionless online voter registration",
+      "Interactive polling place locators",
+      "Easy access to sample ballots",
+      "Increased accessibility for younger demographics"
+    ],
+    faqs: [
+      { q: "Can a QR code process voter registration?", a: "The QR code itself acts as a link to your state's secure, official online voter registration portal, streamlining access." },
+      { q: "Where is the best place to put these codes?", a: "Libraries, post offices, high school civics classrooms, and official municipal mailers are highly effective locations." },
+      { q: "How can this help on election day?", a: "Dynamic codes can be updated to link to a polling place locator and live wait-time tracker on election day." }
+    ]
+  },
+  {
+    slug: "municipal-tax-payments",
+    title: "Municipal Tax Payments",
+    headline: "QR Codes for Municipal Tax Payments",
+    description: "Accelerate tax collection and reduce administrative burdens. Print unique QR codes on property tax bills that link directly to encrypted payment portals.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant bill payment from physical mail",
+      "Pre-filled citizen account information",
+      "Reduced wait times at city hall",
+      "Decreased manual data entry errors"
+    ],
+    faqs: [
+      { q: "How does the QR code know my account details?", a: "By using personalized, serialized QR codes printed on individual bills, unique URL parameters pre-fill the citizen's account information." },
+      { q: "Is it safe to pay taxes this way?", a: "Absolutely. The code routes users to the municipality's secure, PCI-compliant payment gateway, ensuring data protection." },
+      { q: "Will older citizens adopt this technology?", a: "Adoption rates among older demographics are rising rapidly, especially when the QR code is accompanied by simple, clear instructions." }
+    ]
+  },
+  {
+    slug: "town-hall-meeting-feedback",
+    title: "Town Hall Meeting Feedback",
+    headline: "QR Codes for Town Hall Feedback",
+    description: "Democratize civic engagement. Use QR codes on public works signs and during municipal broadcasts to instantly collect citizen feedback and survey responses.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Real-time polling during live meetings",
+      "Instant feedback on public works projects",
+      "Broader demographic participation",
+      "Digital submission of community questions"
+    ],
+    faqs: [
+      { q: "How does this improve town hall meetings?", a: "It allows citizens who cannot physically attend to watch a broadcast and participate in polls or submit questions by scanning a code on their screen." },
+      { q: "Can we use this for public construction projects?", a: "Yes, placing a QR code on construction site fencing allows passing citizens to instantly view project details and submit their feedback." },
+      { q: "Are the survey results anonymous?", a: "That depends on how you configure the linked survey form. You can choose to allow anonymous submissions to encourage honest feedback." }
+    ]
   }
 
 ];
