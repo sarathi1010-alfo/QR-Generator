@@ -3,6 +3,101 @@ import { SEOPageConfig } from "./seo-config";
 
 export const longTailUseCases: SEOPageConfig[] = [
   {
+    slug: "music-festival-wristband-qr-codes",
+    title: "Music Festival Wristbands",
+    headline: "QR Codes for Music Festival Wristbands",
+    description: "Enhance music festival security and engagement. Link wristband QR codes to interactive schedules, digital maps, and cashless payments.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Cashless payment integration",
+      "Interactive stage schedules",
+      "VIP access verification",
+      "Lost and found reporting"
+    ],
+    faqs: [
+      { q: "Can QR codes on wristbands handle bad weather?", a: "Yes, when printed on durable, waterproof materials like Tyvek or silicone, they remain scannable regardless of weather conditions." },
+      { q: "Do they require Wi-Fi to scan?", a: "The physical scan does not require Wi-Fi, but loading the destination page (like a live map) will require mobile data." },
+      { q: "How do we handle VIP access?", a: "Dynamic QR codes can be uniquely tied to a ticket tier, allowing scanners to instantly verify VIP status at restricted entry points." }
+    ]
+  },
+  {
+    slug: "corporate-conference-badge-qr-codes",
+    title: "Corporate Conference Badges",
+    headline: "QR Codes for Corporate Conference Badges",
+    description: "Modernize corporate networking. Use QR codes on attendee badges to instantly share vCards and track session attendance.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant vCard sharing",
+      "Session attendance tracking",
+      "Lead generation for sponsors",
+      "Digital brochure downloads"
+    ],
+    faqs: [
+      { q: "What is a vCard QR code?", a: "It's a QR code that directly prompts the scanner to save contact information (like phone number, email, and LinkedIn profile) to their phone's address book." },
+      { q: "How do sponsors use these for lead capture?", a: "Sponsors can scan an attendee's badge to instantly collect their contact details, eliminating the need for business cards." },
+      { q: "Can we track which sessions an attendee visits?", a: "Yes, staff can scan attendee badges at the door of each breakout session to record attendance for analytics." }
+    ]
+  },
+  {
+    slug: "wedding-rsvp-qr-codes",
+    title: "Wedding RSVPs",
+    headline: "QR Codes for Wedding Invitations & RSVPs",
+    description: "Simplify your big day. Add a QR code to your wedding invitations to direct guests straight to your online RSVP form and registry.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant online RSVPs",
+      "Direct link to wedding registry",
+      "Venue map and directions",
+      "Digital guestbook links"
+    ],
+    faqs: [
+      { q: "Where should the QR code go on the invitation?", a: "It's best placed on a separate RSVP insert card to keep the main invitation's design clean and elegant." },
+      { q: "Will older guests know how to use it?", a: "QR code usage is now mainstream across all demographics, but it's still a good idea to include a short URL alongside the code just in case." },
+      { q: "Can I customize the QR code to match our wedding colors?", a: "Absolutely. You can change the foreground and background colors to perfectly match your wedding theme." }
+    ]
+  },
+  {
+    slug: "trade-show-lead-capture-qr-codes",
+    title: "Trade Show Lead Capture",
+    headline: "QR Codes for Trade Show Lead Generation",
+    description: "Maximize your booth's ROI. Use QR codes on trade show displays to instantly capture leads and distribute digital marketing materials.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Frictionless lead capture forms",
+      "Digital product catalog access",
+      "Demo request scheduling",
+      "Booth gamification and giveaways"
+    ],
+    faqs: [
+      { q: "How big should the QR code be on a booth banner?", a: "For a banner intended to be scanned from 10 feet away, the QR code should be at least 10x10 inches." },
+      { q: "Can we link the QR code to our CRM?", a: "Yes, you can link the QR code to a web form that automatically syncs submissions directly into your CRM software." },
+      { q: "Should we use static or dynamic codes for trade shows?", a: "Always use dynamic codes so you can update the destination link (e.g., to a new product demo) without reprinting the expensive banner." }
+    ]
+  },
+  {
+    slug: "charity-gala-donation-qr-codes",
+    title: "Charity Gala Donations",
+    headline: "QR Codes for Charity Galas & Auctions",
+    description: "Increase fundraising at your charity event. Place QR codes on tables and auction items for instant, frictionless digital donations.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant mobile donations",
+      "Silent auction bidding portals",
+      "Impact story videos",
+      "Sponsor recognition links"
+    ],
+    faqs: [
+      { q: "Is it safe to accept donations via QR code?", a: "Yes, as long as the QR code links to a secure, encrypted payment processor like PayPal or Stripe." },
+      { q: "Where is the best place to put donation QR codes?", a: "Centerpieces on dining tables, printed programs, and next to physical silent auction items are highly effective locations." },
+      { q: "Can we track how much was raised through the QR codes?", a: "By using specific UTM parameters in the QR code's link, you can track exactly how many donations originated from a specific code." }
+    ]
+  },
+  {
     slug: "clinic-patient-intake",
     title: "Clinic Patient Intake",
     headline: "QR Codes for Patient Intake Forms",
