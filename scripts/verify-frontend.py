@@ -41,6 +41,12 @@ def test_qr_generation(page):
 
 def run_verification():
     urls_to_check = [
+        "/blog/how-to-use-qr-codes-for-event-management-guide",
+        "/qr-codes/music-festival-wristband-qr-codes",
+        "/qr-codes/corporate-conference-badge-qr-codes",
+        "/qr-codes/wedding-rsvp-qr-codes",
+        "/qr-codes/trade-show-lead-capture-qr-codes",
+        "/qr-codes/charity-gala-donation-qr-codes",
         "/blog/qr-codes-for-government-services-guide",
         "/qr-codes/city-parking-meters",
         "/qr-codes/public-transit-schedules",
