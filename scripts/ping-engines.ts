@@ -11,6 +11,12 @@ const NEW_URLS = [
   `${SITE_URL}/qr-codes/city-parking-meters`,
   `${SITE_URL}/qr-codes/public-transit-schedules`,
   `${SITE_URL}/qr-codes/voter-registration-forms`,
+  `${SITE_URL}/blog/qr-codes-for-anti-counterfeit-guide`,
+  `${SITE_URL}/qr-codes/luxury-goods-authentication`,
+  `${SITE_URL}/qr-codes/electronics-warranty-activation`,
+  `${SITE_URL}/qr-codes/pharmaceutical-drug-verification`,
+  `${SITE_URL}/qr-codes/apparel-authenticity-tags`,
+  `${SITE_URL}/qr-codes/wine-spirits-authentication`,
   `${SITE_URL}/qr-codes/municipal-tax-payments`,
   `${SITE_URL}/qr-codes/town-hall-meeting-feedback`,
 
