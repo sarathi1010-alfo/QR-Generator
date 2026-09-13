@@ -51,6 +51,12 @@ def run_verification():
         "/qr-codes/city-parking-meters",
         "/qr-codes/public-transit-schedules",
         "/qr-codes/voter-registration-forms",
+        "/blog/qr-codes-for-anti-counterfeit-guide",
+        "/qr-codes/luxury-goods-authentication",
+        "/qr-codes/electronics-warranty-activation",
+        "/qr-codes/pharmaceutical-drug-verification",
+        "/qr-codes/apparel-authenticity-tags",
+        "/qr-codes/wine-spirits-authentication",
         "/qr-codes/municipal-tax-payments",
         "/qr-codes/town-hall-meeting-feedback",
 

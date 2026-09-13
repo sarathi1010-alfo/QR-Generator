@@ -3,6 +3,101 @@ import { SEOPageConfig } from "./seo-config";
 
 export const longTailUseCases: SEOPageConfig[] = [
   {
+    slug: "luxury-goods-authentication",
+    title: "Luxury Goods Authentication",
+    headline: "QR Codes for Luxury Goods Authentication",
+    description: "Protect your high-end brand and reassure customers. Link luxury apparel and accessories to cryptographically secure digital certificates.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Cryptographically secure verification",
+      "Dynamic scan tracking and anomaly detection",
+      "Irrefutable proof of provenance",
+      "Tamper-evident label integration"
+    ],
+    faqs: [
+      { q: "How do QR codes protect luxury bags?", a: "By embedding a unique, serialized QR code on a tamper-evident label inside the bag, customers can scan it to verify authenticity against the brand's secure database." },
+      { q: "Can counterfeiters copy the QR code?", a: "While they can copy the pattern, a serialized dynamic QR code will flag anomalous scan behavior (e.g., thousands of scans from different countries) and alert the system to a cloned code." },
+      { q: "Do customers need a special app?", a: "No, standard smartphone cameras can scan the QR code and securely open the brand's authentication portal in the web browser." }
+    ]
+  },
+  {
+    slug: "electronics-warranty-activation",
+    title: "Electronics Warranty Activation",
+    headline: "QR Codes for Electronics Warranty Activation",
+    description: "Streamline the warranty registration process. Allow customers to instantly register their electronics and verify authenticity with a quick scan.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Frictionless warranty registration",
+      "Instant authenticity verification",
+      "Digital manual and support access",
+      "Direct customer relationship building"
+    ],
+    faqs: [
+      { q: "How does QR warranty registration work?", a: "The QR code links directly to a pre-filled or simplified warranty registration form, removing the need for customers to mail in physical cards." },
+      { q: "Does this help verify the electronic device is genuine?", a: "Yes, by integrating the warranty registration with a serialized authentication database, the brand can confirm the device is authentic upon registration." },
+      { q: "Where should the QR code be placed?", a: "It is best placed on the device itself (if feasible) or prominently on the internal packaging alongside the quick-start guide." }
+    ]
+  },
+  {
+    slug: "pharmaceutical-drug-verification",
+    title: "Pharmaceutical Drug Verification",
+    headline: "QR Codes for Pharmaceutical Verification",
+    description: "Ensure patient safety and combat counterfeit drugs. Use serialized QR codes for track-and-trace compliance and instant dosage information.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Track-and-trace compliance",
+      "Instant patient verification",
+      "Digital dosage and interaction information",
+      "Supply chain diversion detection"
+    ],
+    faqs: [
+      { q: "Why are QR codes important for pharmaceuticals?", a: "They provide a crucial line of defense against counterfeit drugs by allowing pharmacists and patients to verify the medication's origin and authenticity." },
+      { q: "Can a QR code provide medical information?", a: "Yes, scanning the code can instantly open a digital leaflet containing up-to-date dosage instructions, side effects, and allergy warnings." },
+      { q: "How do QR codes help the supply chain?", a: "Scanning the codes at various distribution nodes allows pharmaceutical companies to track the product's journey and ensure it hasn't been diverted to unauthorized markets." }
+    ]
+  },
+  {
+    slug: "apparel-authenticity-tags",
+    title: "Apparel Authenticity Tags",
+    headline: "QR Codes for Apparel Authenticity",
+    description: "Defend your fashion brand from knock-offs. Integrate QR codes into clothing tags for instant verification and sustainable supply chain transparency.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant knock-off detection",
+      "Supply chain transparency data",
+      "Sustainable material sourcing info",
+      "Care instructions and styling tips"
+    ],
+    faqs: [
+      { q: "Can a QR code survive washing?", a: "Yes, QR codes can be printed or woven into durable fabric tags designed to withstand standard washing and drying cycles." },
+      { q: "How does this prevent fake clothing?", a: "By using a serialized code, brands can track individual garments. If a fake manufacturer copies one tag and prints it on 10,000 shirts, the system will detect the cloned scans." },
+      { q: "Can I show customers where the garment was made?", a: "Absolutely. The authentication page can also display the garment's journey from raw material sourcing to manufacturing, proving ethical practices." }
+    ]
+  },
+  {
+    slug: "wine-spirits-authentication",
+    title: "Wine & Spirits Authentication",
+    headline: "QR Codes for Wine & Spirits Authentication",
+    description: "Protect rare vintages and premium spirits. Ensure bottle integrity and provide rich tasting notes with secure QR code seals.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Tamper-evident bottle seals",
+      "Rare vintage verification",
+      "Rich tasting notes and pairings",
+      "Direct-to-consumer brand engagement"
+    ],
+    faqs: [
+      { q: "How do QR codes protect wine bottles?", a: "A QR code can be integrated into a tamper-evident seal over the cork. If the bottle is opened and refilled, the seal is broken, preventing resale as authentic." },
+      { q: "What information can be linked for the consumer?", a: "Consumers scanning the bottle can view the vineyard's history, tasting notes, food pairing recommendations, and ideal serving temperatures." },
+      { q: "Is this useful for investment-grade spirits?", a: "Yes, for high-value spirits, serialized QR codes linked to blockchain records provide irrefutable proof of provenance for collectors and auction houses." }
+    ]
+  },
+  {
     slug: "music-festival-wristband-qr-codes",
     title: "Music Festival Wristbands",
     headline: "QR Codes for Music Festival Wristbands",
