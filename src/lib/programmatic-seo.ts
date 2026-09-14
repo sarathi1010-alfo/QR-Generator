@@ -3605,6 +3605,101 @@ export const longTailUseCases: SEOPageConfig[] = [
       { q: "Can we use this for public construction projects?", a: "Yes, placing a QR code on construction site fencing allows passing citizens to instantly view project details and submit their feedback." },
       { q: "Are the survey results anonymous?", a: "That depends on how you configure the linked survey form. You can choose to allow anonymous submissions to encourage honest feedback." }
     ]
+  },
+  {
+    slug: "hospital-bed-management",
+    title: "Hospital Bed Management",
+    headline: "QR Codes for Hospital Bed Management",
+    description: "Optimize hospital capacity and streamline patient flow. Use QR codes on hospital beds to instantly update their occupancy and cleaning status in real-time.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Real-time bed availability updates",
+      "Instant notification for environmental services",
+      "Reduce patient wait times in the ER",
+      "Integration with central admission systems"
+    ],
+    faqs: [
+      { q: "How do QR codes help with hospital bed turnover?", a: "When a patient is discharged, a nurse scans the bed's QR code to instantly alert the cleaning staff. Once clean, staff scan it again to mark it available for a new admission." },
+      { q: "Do environmental services need a special app?", a: "No, cleaning staff can use hospital-issued smartphones to scan the code, which securely routes them to a mobile-friendly status update form." },
+      { q: "Can we track how long a bed stays empty?", a: "Yes, by logging the timestamps of each scan, administrators can analyze the data to identify bottlenecks in the turnover process." }
+    ]
+  },
+  {
+    slug: "surgical-instrument-tracking",
+    title: "Surgical Instrument Tracking",
+    headline: "QR Codes for Surgical Instrument Tracking",
+    description: "Ensure patient safety in the OR. Utilize highly durable QR codes to track the sterilization and usage history of individual surgical instruments.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Track sterilization cycles accurately",
+      "Ensure all instruments are accounted for post-surgery",
+      "Access digital maintenance logs instantly",
+      "Reduce the risk of surgical site infections"
+    ],
+    faqs: [
+      { q: "Can QR codes survive the autoclave sterilization process?", a: "Yes, when laser-etched directly onto the surgical steel or printed on specialized high-temperature tags, they can withstand repeated autoclave cycles." },
+      { q: "How does this prevent retained surgical instruments?", a: "Nurses scan all instruments before and after the procedure. The digital manifest instantly flags if an instrument is missing before the patient is closed." },
+      { q: "What data does the QR code store?", a: "The code itself is a unique identifier linking to a secure database containing the instrument's entire lifecycle, including usage and sterilization records." }
+    ]
+  },
+  {
+    slug: "ambulance-dispatch-routing",
+    title: "Ambulance Dispatch Routing",
+    headline: "QR Codes for Ambulance Dispatch & Routing",
+    description: "Accelerate emergency response times. Equip ambulances with QR codes that, when scanned by the crew, instantly load the fastest digital route and patient incident data.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant turn-by-turn navigation loading",
+      "Secure access to preliminary patient data",
+      "Reduce radio chatter and manual entry errors",
+      "Dynamic rerouting based on live traffic updates"
+    ],
+    faqs: [
+      { q: "How does scanning a QR code help paramedics?", a: "Instead of manually typing an address into a GPS under high stress, a paramedic scans a code on their dispatch screen to instantly launch the navigation app with the pre-loaded destination." },
+      { q: "Is the patient's data secure?", a: "Yes, the code links to an encrypted portal that requires the paramedic's secure login credentials to view any sensitive medical details regarding the incident." },
+      { q: "Can it integrate with hospital receiving teams?", a: "Absolutely. The same system can allow paramedics to scan a code upon arrival to instantly transfer the digital patient care record to the ER's system." }
+    ]
+  },
+  {
+    slug: "healthcare-staff-id-badges",
+    title: "Healthcare Staff ID Badges",
+    headline: "QR Codes for Healthcare Staff ID Badges",
+    description: "Enhance security and streamline clinical workflows by incorporating dynamic QR codes onto physician and nursing staff identification badges.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Secure facility access control",
+      "Instant vCard sharing with colleagues",
+      "Verify clinical credentials dynamically",
+      "Track staff attendance in continuing education seminars"
+    ],
+    faqs: [
+      { q: "How do QR codes on ID badges improve security?", a: "A dynamic QR code can be scanned by security personnel to verify the staff member's active status in real-time, preventing the use of terminated employee badges." },
+      { q: "Can patients scan a doctor's badge?", a: "Yes, some facilities allow patients to scan a clinician's badge to view their professional profile, specialties, and spoken languages on the hospital's official website." },
+      { q: "What happens if a badge is lost?", a: "Because the QR code links to a centralized digital system, administrators can instantly deactivate the code, rendering it useless for facility access." }
+    ]
+  },
+  {
+    slug: "clinic-waiting-room-triage",
+    title: "Clinic Waiting Room Triage",
+    headline: "QR Codes for Clinic Waiting Room Triage",
+    description: "Reduce patient wait times and optimize clinical resources by implementing a digital triage system accessed via QR codes in your waiting area.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Contactless initial symptom screening",
+      "Prioritize patients based on urgency dynamically",
+      "Reduce crowds at the physical reception desk",
+      "Seamless integration with existing EHR platforms"
+    ],
+    faqs: [
+      { q: "How does a QR code help with patient triage?", a: "Upon entering, patients scan a code to access a secure digital questionnaire regarding their symptoms. This data is instantly sent to the nursing station, allowing them to prioritize care." },
+      { q: "Is it difficult for elderly patients to use?", a: "While it requires a smartphone, the process is often simpler than filling out pages of paperwork. Clinics should always offer physical forms as a backup for those who need assistance." },
+      { q: "Does the triage data integrate with the patient's record?", a: "Yes, when configured correctly, the data submitted via the secure QR portal flows directly into the patient's Electronic Health Record, saving clinicians time during the exam." }
+    ]
   }
 
 ];
