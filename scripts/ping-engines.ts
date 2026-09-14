@@ -192,6 +192,12 @@ const NEW_URLS = [
   `${SITE_URL}/qr-codes/airport-baggage-tracking`,
   `${SITE_URL}/qr-codes/rental-car-check-in`,
   `${SITE_URL}/qr-codes/travel-agency-itineraries`,
+  `${SITE_URL}/blog/healthcare-qr-code-innovation-guide`,
+  `${SITE_URL}/qr-codes/hospital-bed-management`,
+  `${SITE_URL}/qr-codes/surgical-instrument-tracking`,
+  `${SITE_URL}/qr-codes/ambulance-dispatch-routing`,
+  `${SITE_URL}/qr-codes/healthcare-staff-id-badges`,
+  `${SITE_URL}/qr-codes/clinic-waiting-room-triage`,
 ];
 
 const INDEXNOW_KEY = '550e8400e29b41d4a716446655440000';

@@ -207,6 +207,12 @@ def run_verification():
         "/qr-codes/airport-baggage-tracking",
         "/qr-codes/rental-car-check-in",
         "/qr-codes/travel-agency-itineraries",
+        "/blog/healthcare-qr-code-innovation-guide",
+        "/qr-codes/hospital-bed-management",
+        "/qr-codes/surgical-instrument-tracking",
+        "/qr-codes/ambulance-dispatch-routing",
+        "/qr-codes/healthcare-staff-id-badges",
+        "/qr-codes/clinic-waiting-room-triage",
     ]
 
     os.makedirs(VIDEOS_DIR, exist_ok=True)
