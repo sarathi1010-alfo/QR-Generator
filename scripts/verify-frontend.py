@@ -41,6 +41,12 @@ def test_qr_generation(page):
 
 def run_verification():
     urls_to_check = [
+        "/blog/qr-codes-for-logistics-tracking",
+        "/qr-codes/warehouse-pallet-tracking",
+        "/qr-codes/last-mile-delivery-confirmation",
+        "/qr-codes/supply-chain-temperature-logs",
+        "/qr-codes/freight-forwarding-manifests",
+        "/qr-codes/forklift-safety-checklists",
         "/blog/how-to-use-qr-codes-for-event-management-guide",
         "/qr-codes/music-festival-wristband-qr-codes",
         "/qr-codes/corporate-conference-badge-qr-codes",
