@@ -3702,6 +3702,98 @@ export const longTailUseCases: SEOPageConfig[] = [
     ]
   }
 
+,
+
+  {
+    slug: "warehouse-pallet-tracking",
+    title: "Warehouse Pallet Tracking",
+    headline: "QR Codes for Warehouse Pallet Tracking",
+    description: "Optimize warehouse inventory management with dynamic QR codes on pallets for real-time tracking.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Real-time pallet location updates",
+      "Instant inventory cycle counting",
+      "Durable labels for warehouse environments",
+      "Seamless WMS integration"
+    ],
+    faqs: [
+      { q: "How do QR codes improve pallet tracking?", a: "They allow workers to instantly scan pallets to log location changes, reducing manual entry errors and speeding up inventory audits." },
+      { q: "Can we track pallets across multiple warehouses?", a: "Yes, scanning the QR code updates a centralized database, providing visibility of the pallet regardless of which facility it is currently in." }
+    ]
+  },
+  {
+    slug: "last-mile-delivery-confirmation",
+    title: "Last-Mile Delivery Confirmation",
+    headline: "QR Codes for Last-Mile Delivery Confirmation",
+    description: "Streamline proof of delivery and customer notifications with scannable QR codes for last-mile logistics.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant proof of delivery (POD)",
+      "Automated customer notifications",
+      "Driver route optimization logging",
+      "Digital signature capture"
+    ],
+    faqs: [
+      { q: "How does a QR code confirm delivery?", a: "The driver scans the code on the package at the destination, which instantly updates the central system and triggers a delivery notification to the customer." },
+      { q: "Do drivers need special scanners?", a: "No, last-mile delivery QR codes can be scanned using standard smartphones, making it cost-effective to equip temporary or contract drivers." }
+    ]
+  },
+  {
+    slug: "supply-chain-temperature-logs",
+    title: "Supply Chain Temperature Logs",
+    headline: "QR Codes for Supply Chain Temperature Logs",
+    description: "Ensure cold chain integrity by using QR codes to instantly access and update digital temperature logs during transit.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Digital temperature logging",
+      "Cold chain compliance tracking",
+      "Instant alerts for temperature deviations",
+      "Secure access to sensitive handling data"
+    ],
+    faqs: [
+      { q: "How are QR codes used in cold chain logistics?", a: "They are placed on refrigerated containers; workers scan them at various checkpoints to log the current temperature and ensure it remains within safe limits." },
+      { q: "Can the QR code itself measure temperature?", a: "No, the QR code acts as a link to a digital form or database where the temperature reading is securely logged by the handler." }
+    ]
+  },
+  {
+    slug: "freight-forwarding-manifests",
+    title: "Freight Forwarding Manifests",
+    headline: "QR Codes for Freight Forwarding Manifests",
+    description: "Accelerate customs clearance and cargo handoffs with QR codes linking directly to digital freight manifests.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant access to digital manifests",
+      "Streamlined customs clearance",
+      "Secure custody transfer logging",
+      "Reduced paperwork delays"
+    ],
+    faqs: [
+      { q: "How do QR codes help at customs borders?", a: "Customs agents can scan a code on the container to instantly view the digital manifest and clearance documents, reducing physical paperwork processing time." },
+      { q: "Is the manifest data secure?", a: "Yes, the QR code can link to an encrypted portal that requires authorized credentials to view the sensitive manifest information." }
+    ]
+  },
+  {
+    slug: "forklift-safety-checklists",
+    title: "Forklift Safety Checklists",
+    headline: "QR Codes for Forklift Safety Checklists",
+    description: "Ensure OSHA compliance and reduce equipment downtime with QR codes that link to digital pre-trip forklift safety inspections.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Digital pre-trip inspections",
+      "Automated maintenance alerts",
+      "OSHA compliance logging",
+      "Reduction in vehicle downtime"
+    ],
+    faqs: [
+      { q: "How does a driver perform a safety check using a QR code?", a: "Before operating the forklift, the driver scans a QR code on the dashboard, which opens a digital checklist on their device to log the vehicle's condition." },
+      { q: "What happens if a safety issue is reported?", a: "The digital form instantly alerts the maintenance team and logs the forklift as 'out of service' until the issue is resolved." }
+    ]
+  }
 ];
 
 export const downloadFormats: SEOPageConfig[] = [];
