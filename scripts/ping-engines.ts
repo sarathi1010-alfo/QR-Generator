@@ -32,6 +32,12 @@ const NEW_URLS = [
   `${SITE_URL}/qr-codes/clinic-staff-directory`,
   `${SITE_URL}/qr-codes/clinic-feedback-forms`,
   `${SITE_URL}/qr-codes/clinic-discharge-instructions`,
+  `${SITE_URL}/blog/qr-codes-for-entertainment-industry-guide`,
+  `${SITE_URL}/qr-codes/movie-theater-seat-ordering`,
+  `${SITE_URL}/qr-codes/theme-park-virtual-queuing`,
+  `${SITE_URL}/qr-codes/concert-venue-interactive-schedules`,
+  `${SITE_URL}/qr-codes/theater-digital-playbills`,
+  `${SITE_URL}/qr-codes/escape-room-digital-clues`,
 
   `${SITE_URL}/blog/create-qr-code-for-business-guide`,
   `${SITE_URL}/qr-codes/customer-feedback-collection`,

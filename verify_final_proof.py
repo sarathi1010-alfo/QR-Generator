@@ -39,6 +39,13 @@ def run_verification():
     "/qr-codes/clinic-feedback-forms",
     "/qr-codes/clinic-discharge-instructions",
 
+        "/blog/qr-codes-for-entertainment-industry-guide",
+        "/qr-codes/movie-theater-seat-ordering",
+        "/qr-codes/theme-park-virtual-queuing",
+        "/qr-codes/concert-venue-interactive-schedules",
+        "/qr-codes/theater-digital-playbills",
+        "/qr-codes/escape-room-digital-clues",
+
         "/blog/create-qr-code-for-business-guide",
         "/qr-codes/customer-feedback-collection",
         "/qr-codes/manufacturing-warranty-registration",

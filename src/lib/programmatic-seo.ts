@@ -3,6 +3,101 @@ import { SEOPageConfig } from "./seo-config";
 
 export const longTailUseCases: SEOPageConfig[] = [
   {
+    slug: "movie-theater-seat-ordering",
+    title: "Movie Theater Seat Ordering",
+    headline: "QR Codes for Movie Theater Seat Ordering",
+    description: "Increase concession sales and improve the cinematic experience. Use QR codes on theater seats for contactless food and beverage ordering.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Contactless at-seat ordering",
+      "Dynamic digital menus",
+      "Seamless payment integration",
+      "Reduced lobby congestion"
+    ],
+    faqs: [
+      { q: "How do QR codes work for in-seat ordering?", a: "Patrons scan a QR code on their armrest, which opens a digital menu where they can order and pay for concessions to be delivered to their seat." },
+      { q: "Do patrons need an app?", a: "No, scanning the code opens a secure ordering portal in their default mobile web browser." },
+      { q: "Can we track which seat ordered?", a: "Yes, you can generate unique QR codes for each seat or row, automatically appending the location to the order details." }
+    ]
+  },
+  {
+    slug: "theme-park-virtual-queuing",
+    title: "Theme Park Virtual Queuing",
+    headline: "QR Codes for Theme Park Virtual Queuing",
+    description: "Eliminate long physical lines and improve guest satisfaction. Implement QR codes for virtual queuing and real-time wait time updates.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Virtual line management",
+      "Real-time wait time updates",
+      "Interactive park maps",
+      "Fast-pass upgrades"
+    ],
+    faqs: [
+      { q: "How does a virtual queue work?", a: "Guests scan a QR code near the ride entrance to secure a spot in a digital line, allowing them to explore the park until they are notified it's their turn." },
+      { q: "What if guests don't have smartphones?", a: "While most guests do, parks typically offer kiosk alternatives for those who cannot scan a QR code." },
+      { q: "Can we use this for character meet-and-greets?", a: "Absolutely. Virtual queuing is perfect for managing high-demand character interactions without creating physical crowds." }
+    ]
+  },
+  {
+    slug: "concert-venue-interactive-schedules",
+    title: "Concert Venue Interactive Schedules",
+    headline: "QR Codes for Concert Venue Interactive Schedules",
+    description: "Keep attendees informed at massive music festivals. Link QR codes to dynamic stage schedules and artist information.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Live stage schedules",
+      "Artist biographies and setlists",
+      "Emergency broadcast updates",
+      "Merchandise purchasing portals"
+    ],
+    faqs: [
+      { q: "What happens if a set time changes?", a: "By using dynamic QR codes, organizers can update the schedule link in real-time without needing to reprint the physical codes placed around the venue." },
+      { q: "Can we link to streaming music?", a: "Yes, the destination page can include embedded Spotify or Apple Music links for attendees to discover new artists playing at the festival." },
+      { q: "Where should these be placed?", a: "On stage banners, information kiosks, wristbands, and near food vendor areas." }
+    ]
+  },
+  {
+    slug: "theater-digital-playbills",
+    title: "Theater Digital Playbills",
+    headline: "QR Codes for Theater Digital Playbills",
+    description: "Reduce printing costs and environmental impact. Replace physical programs with rich, interactive digital playbills accessed via QR code.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Eco-friendly digital programs",
+      "Cast biographies and interviews",
+      "Post-show review prompts",
+      "Upcoming season ticket sales"
+    ],
+    faqs: [
+      { q: "Are digital playbills better than paper?", a: "They are more sustainable, cheaper to produce, and can include multimedia elements like cast video interviews that paper cannot support." },
+      { q: "How do we ensure patrons turn off their phones?", a: "A best practice is to design the digital playbill with a prominent prompt encouraging users to silence their devices before the curtain rises." },
+      { q: "Can we sell ad space on a digital playbill?", a: "Yes, digital playbills offer excellent, trackable real estate for local sponsors and advertisers." }
+    ]
+  },
+  {
+    slug: "escape-room-digital-clues",
+    title: "Escape Room Digital Clues",
+    headline: "QR Codes for Escape Room Digital Clues",
+    description: "Enhance immersion and puzzle complexity. Integrate QR codes into escape rooms to deliver audio, video, or augmented reality clues.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Multimedia clue delivery",
+      "Augmented reality integration",
+      "Automated hint systems",
+      "Post-game completion certificates"
+    ],
+    faqs: [
+      { q: "Can players use their own phones in escape rooms?", a: "Many modern escape rooms allow phone use specifically for scanning clues, or provide a dedicated 'prop' phone for the team to use." },
+      { q: "What kind of clues can a QR code reveal?", a: "A code can link to an encrypted audio file, a video of a 'hostage', or a digital keypad required to unlock a physical door." },
+      { q: "How does this help game masters?", a: "It automates hint delivery, allowing game masters to monitor multiple rooms simultaneously without needing to manually slip notes under doors." }
+    ]
+  },
+  {
     slug: "luxury-goods-authentication",
     title: "Luxury Goods Authentication",
     headline: "QR Codes for Luxury Goods Authentication",
