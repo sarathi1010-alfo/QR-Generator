@@ -15,3 +15,5 @@ Task    Status  Notes
 13. GSC Coverage Simulation     ✅ COMPLETE  Simulated; no crawl blocks or issues.
 14. Content Decay Refresh       ✅ COMPLETE  Updated legacy "Why use QRBuild?" section on Homepage with new link and date.
 15. Final Pre-Publish Checklist ✅ COMPLETE  All checkpoints are GREEN.
+16. Week 1 Monday Content       ✅ COMPLETE  Published "Ultimate Guide to QR Codes" + 5 Micros. Updated metadata.
+17. Saturday 4xx Zombie Scan    ✅ COMPLETE  Scanned sitemaps for 4xx errors; zero errors found.
