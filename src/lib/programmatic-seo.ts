@@ -3888,6 +3888,101 @@ export const longTailUseCases: SEOPageConfig[] = [
       { q: "How does a driver perform a safety check using a QR code?", a: "Before operating the forklift, the driver scans a QR code on the dashboard, which opens a digital checklist on their device to log the vehicle's condition." },
       { q: "What happens if a safety issue is reported?", a: "The digital form instantly alerts the maintenance team and logs the forklift as 'out of service' until the issue is resolved." }
     ]
+  },
+  {
+    slug: "event-ticketing-scanners",
+    title: "Event Ticketing Scanners",
+    headline: "QR Codes for Event Ticketing Scanners",
+    description: "Streamline event entry by using dynamic QR codes that link securely to your backend ticketing database for rapid verification.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Rapid ticket verification at the door",
+      "Prevent duplicate entries instantly",
+      "Compatible with standard smartphone cameras",
+      "Secure backend data synchronization"
+    ],
+    faqs: [
+      { q: "How fast is QR code ticket scanning?", a: "When properly configured, a modern smartphone or dedicated scanner can read and verify an event QR code ticket in milliseconds." },
+      { q: "Does the scanner require an internet connection?", a: "While live databases require internet to prevent double-entry globally, some local caching systems allow for offline scanning that syncs later." },
+      { q: "Can attendees just use their phones to show the ticket?", a: "Yes, event ticketing QR codes are designed to be easily read directly from an attendee's smartphone screen." }
+    ]
+  },
+  {
+    slug: "conference-schedule-access",
+    title: "Conference Schedule Access",
+    headline: "QR Codes for Conference Schedule Access",
+    description: "Provide attendees with an interactive, always-up-to-date digital event schedule by placing a QR code on their lanyard.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Real-time schedule updates",
+      "Interactive venue maps",
+      "Eliminate paper printing costs",
+      "Push notifications for room changes"
+    ],
+    faqs: [
+      { q: "How do I update the conference schedule?", a: "By using a dynamic QR code, you update the schedule on the destination web page; the physical code does not need to change." },
+      { q: "Can the schedule be saved to the attendee's phone?", a: "Yes, the destination portal can offer an 'Add to Calendar' button or prompt users to download a progressive web app." },
+      { q: "Where should the QR code be placed?", a: "The most effective placement is directly on the attendee's badge or lanyard, as well as on large signage at the venue entrance." }
+    ]
+  },
+  {
+    slug: "trade-show-digital-brochures",
+    title: "Trade Show Digital Brochures",
+    headline: "QR Codes for Trade Show Digital Brochures",
+    description: "Ditch the heavy paper catalogs. Allow trade show attendees to instantly download your digital brochures via a quick QR code scan.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant PDF brochure downloads",
+      "Reduce printing and shipping costs",
+      "Track which brochures are most popular",
+      "Eco-friendly marketing alternative"
+    ],
+    faqs: [
+      { q: "Do attendees prefer digital brochures?", a: "Yes, attendees often prefer not to carry heavy paper materials around a trade show floor all day." },
+      { q: "How can I track the ROI of my digital brochure?", a: "Dynamic QR codes allow you to track scan volume, letting you see exactly how many attendees downloaded your materials." },
+      { q: "Can I link the QR code to a lead capture form first?", a: "Absolutely. You can require the attendee to enter their email address before the brochure PDF unlocks." }
+    ]
+  },
+  {
+    slug: "vip-lounge-entry-codes",
+    title: "VIP Lounge Entry Codes",
+    headline: "QR Codes for VIP Lounge Entry",
+    description: "Secure your exclusive event areas with dynamic QR codes that verify VIP access credentials in real-time.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Secure tier-based access control",
+      "Real-time credential verification",
+      "Display guest photos on scanner to prevent pass sharing",
+      "Track VIP lounge capacity"
+    ],
+    faqs: [
+      { q: "How do you stop people from sharing VIP screenshots?", a: "You can implement rotating dynamic QR codes that refresh every few seconds, rendering static screenshots useless." },
+      { q: "Do security guards need special equipment?", a: "No, standard smartphones equipped with your event management scanning app are sufficient for secure verification." },
+      { q: "Can the QR code trigger a personalized greeting?", a: "Yes, when scanned, the staff's device can display the VIP's name and preferences, elevating the guest experience." }
+    ]
+  },
+  {
+    slug: "concert-merchandise-ordering",
+    title: "Concert Merchandise Ordering",
+    headline: "QR Codes for Concert Merchandise Ordering",
+    description: "Eliminate long lines at the merch table. Let concertgoers order apparel directly from their seats using a scannable QR code.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Seat-based mobile ordering",
+      "Cashless digital payments",
+      "Reduce merch table bottlenecks",
+      "Increase total merchandise sales"
+    ],
+    faqs: [
+      { q: "How does seat-based merch ordering work?", a: "Attendees scan a code on the seatback, browse the inventory, pay via digital wallet, and pick up the items at a dedicated express lane." },
+      { q: "Can this system handle high traffic during intermissions?", a: "Yes, offloading the browsing and payment process to individual smartphones drastically reduces the transaction time at the counter." },
+      { q: "Does the QR code link to a specific seat?", a: "If you generate unique codes per section or seat, the system can even support in-seat delivery for VIP ticket holders." }
+    ]
   }
 ];
 

@@ -210,6 +210,12 @@ const NEW_URLS = [
   `${SITE_URL}/qr-codes/ambulance-dispatch-routing`,
   `${SITE_URL}/qr-codes/healthcare-staff-id-badges`,
   `${SITE_URL}/qr-codes/clinic-waiting-room-triage`,
+  `${SITE_URL}/blog/how-to-create-qr-code-for-events`,
+  `${SITE_URL}/qr-codes/event-ticketing-scanners`,
+  `${SITE_URL}/qr-codes/conference-schedule-access`,
+  `${SITE_URL}/qr-codes/trade-show-digital-brochures`,
+  `${SITE_URL}/qr-codes/vip-lounge-entry-codes`,
+  `${SITE_URL}/qr-codes/concert-merchandise-ordering`,
 ];
 
 const INDEXNOW_KEY = '550e8400e29b41d4a716446655440000';

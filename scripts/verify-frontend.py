@@ -41,6 +41,12 @@ def test_qr_generation(page):
 
 def run_verification():
     urls_to_check = [
+        "/blog/how-to-create-qr-code-for-events",
+        "/qr-codes/event-ticketing-scanners",
+        "/qr-codes/conference-schedule-access",
+        "/qr-codes/trade-show-digital-brochures",
+        "/qr-codes/vip-lounge-entry-codes",
+        "/qr-codes/concert-merchandise-ordering",
         "/blog/qr-codes-for-logistics-tracking",
         "/qr-codes/warehouse-pallet-tracking",
         "/qr-codes/last-mile-delivery-confirmation",
