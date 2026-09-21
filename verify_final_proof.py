@@ -7,6 +7,13 @@ def run_verification():
     os.makedirs("/home/jules/verification/screenshots", exist_ok=True)
 
     urls_to_test = [
+
+        "/blog/qr-codes-for-music-industry-guide",
+        "/qr-codes/music-venue-digital-ticketing",
+        "/qr-codes/concert-merchandise-sales",
+        "/qr-codes/band-tour-schedules",
+        "/qr-codes/artist-spotify-links",
+        "/qr-codes/vip-backstage-passes",
         "/blog/qr-codes-for-logistics-tracking",
         "/qr-codes/warehouse-pallet-tracking",
         "/qr-codes/last-mile-delivery-confirmation",

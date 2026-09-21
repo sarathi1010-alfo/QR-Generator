@@ -41,6 +41,13 @@ def test_qr_generation(page):
 
 def run_verification():
     urls_to_check = [
+
+        "/blog/qr-codes-for-music-industry-guide",
+        "/qr-codes/music-venue-digital-ticketing",
+        "/qr-codes/concert-merchandise-sales",
+        "/qr-codes/band-tour-schedules",
+        "/qr-codes/artist-spotify-links",
+        "/qr-codes/vip-backstage-passes",
         "/blog/how-to-create-qr-code-for-events",
         "/qr-codes/event-ticketing-scanners",
         "/qr-codes/conference-schedule-access",

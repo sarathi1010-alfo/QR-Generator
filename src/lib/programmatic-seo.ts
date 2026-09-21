@@ -3,6 +3,101 @@ import { SEOPageConfig } from "./seo-config";
 
 export const longTailUseCases: SEOPageConfig[] = [
   {
+    slug: "music-venue-digital-ticketing",
+    title: "Music Venue Ticketing",
+    headline: "QR Codes for Music Venue Digital Ticketing",
+    description: "Streamline entry to your music venue with highly secure, scannable QR code tickets that prevent fraud and speed up lines.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Dynamic secure QR tickets",
+      "Instant scan at entry",
+      "Fraud prevention tracking",
+      "Real-time attendance analytics"
+    ],
+    faqs: [
+      { q: "How do QR code tickets prevent fraud?", a: "Dynamic QR tickets update automatically and cannot be simply screenshotted and shared, ensuring only the valid ticket holder gains entry." },
+      { q: "Can attendees scan concert tickets from their phones?", a: "Yes, our high-contrast QR codes are designed to be easily read from mobile screens, even in the low-light conditions often found outside music venues." },
+      { q: "Do these integrate with existing ticketing software?", a: "QR codes generated via our platform can be linked to any standard URL-based validation endpoint provided by your primary ticketing software." }
+    ]
+  },
+  {
+    slug: "concert-merchandise-sales",
+    title: "Concert Merchandise Sales",
+    headline: "QR Codes for Concert Merchandise Sales",
+    description: "Reduce wait times at the merch booth. Allow fans to scan a QR code, view the catalog, and pre-order their items instantly.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Digital merch catalogs",
+      "Cashless pre-ordering",
+      "Line reduction",
+      "Inventory tracking integration"
+    ],
+    faqs: [
+      { q: "How does a merch QR code reduce lines?", a: "Fans scan the code while waiting, allowing them to browse items, check sizing, and decide on their purchase before reaching the front of the line." },
+      { q: "Can fans pay directly after scanning?", a: "Yes, if the QR code links to your e-commerce store or a mobile payment gateway like Apple Pay or Google Pay." },
+      { q: "Where should we place the QR code?", a: "Print the code on large posters near the merch table, on digital screens behind the counter, and on flyers handed out to fans in line." }
+    ]
+  },
+  {
+    slug: "band-tour-schedules",
+    title: "Band Tour Schedules",
+    headline: "QR Codes for Band Tour Schedules",
+    description: "Keep your fans updated on your latest tour dates. Link a dynamic QR code to your live schedule so it's never out of date.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Dynamic link updating",
+      "Instant access to dates",
+      "Easy ticket purchasing links",
+      "Analytics on scan locations"
+    ],
+    faqs: [
+      { q: "What if a tour date gets cancelled?", a: "If you use a dynamic QR code, simply update the destination link or the webpage it points to; the physical QR code on your posters remains valid." },
+      { q: "Can we track where fans are scanning from?", a: "Yes, by adding UTM parameters to your URL or using a dynamic tracking service, you can see geographic data on your scans." },
+      { q: "Should we put this on our album art?", a: "Absolutely. Placing a tour schedule QR code on physical album releases is a great way to drive ticket sales from dedicated fans." }
+    ]
+  },
+  {
+    slug: "artist-spotify-links",
+    title: "Artist Spotify Links",
+    headline: "QR Codes for Artist Spotify Links",
+    description: "Instantly connect fans with your music. Generate QR codes that link directly to your Spotify, Apple Music, or YouTube artist profile.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Direct app linking",
+      "Increased streaming numbers",
+      "Easy sharing on physical media",
+      "Customizable design with artist logo"
+    ],
+    faqs: [
+      { q: "Does the QR code open the Spotify app directly?", a: "Yes, if configured correctly, scanning the code on a mobile device will prompt the native streaming app to open rather than the web browser." },
+      { q: "Can I use one code for multiple platforms?", a: "Yes, you can link the QR code to a smart link service (like Linktree or Feature.fm) that allows fans to choose their preferred streaming service." },
+      { q: "Can I add my band's logo to the QR code?", a: "Our generator allows you to add custom logos and adjust the colors of the QR code to match your band's branding." }
+    ]
+  },
+  {
+    slug: "vip-backstage-passes",
+    title: "VIP Backstage Passes",
+    headline: "QR Codes for VIP Backstage Passes",
+    description: "Manage exclusive access to backstage and VIP areas securely with scannable QR code lanyards and digital passes.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Secure area management",
+      "Digital pass scanning",
+      "Fraud prevention",
+      "VIP attendee tracking"
+    ],
+    faqs: [
+      { q: "How secure are QR codes for backstage access?", a: "Very secure. Unlike a simple laminate pass that can be copied, a digital QR code must validate against your security database when scanned." },
+      { q: "Can we print these on physical lanyards?", a: "Yes, you can generate the QR code, export it as a high-quality SVG, and have it printed directly onto physical VIP lanyards." },
+      { q: "What happens if a pass is lost?", a: "The digital access associated with the lost QR code can be instantly revoked in your system, rendering it useless if found by an unauthorized person." }
+    ]
+  },
+  {
     slug: "movie-theater-seat-ordering",
     title: "Movie Theater Seat Ordering",
     headline: "QR Codes for Movie Theater Seat Ordering",
