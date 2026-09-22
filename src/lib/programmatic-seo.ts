@@ -3,6 +3,96 @@ import { SEOPageConfig } from "./seo-config";
 
 export const longTailUseCases: SEOPageConfig[] = [
   {
+    slug: "event-vip-wristbands",
+    title: "Event VIP Wristbands",
+    headline: "QR Codes for Event VIP Wristbands",
+    description: "Manage exclusive event areas with dynamic QR codes that verify VIP access credentials in real-time, right from an attendee's wristband.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Secure tier-based access control",
+      "Real-time credential verification",
+      "Display guest photos on scanner to prevent pass sharing",
+      "Track VIP lounge capacity"
+    ],
+    faqs: [
+      { q: "How do you stop people from sharing VIP wristbands?", a: "By using dynamic QR codes that link to a backend database, security can see exactly who the wristband belongs to, including a photo ID prompt on the scanner." },
+      { q: "Can the QR code trigger a personalized greeting?", a: "Yes, when scanned, the staff's device can display the VIP's name and preferences, elevating the guest experience." }
+    ]
+  },
+  {
+    slug: "event-food-vendor-menus",
+    title: "Event Food Vendor Menus",
+    headline: "QR Codes for Event Food Vendor Menus",
+    description: "Reduce lines and improve hygiene at event food stalls by using QR codes to instantly display menus and facilitate mobile ordering.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Contactless menu viewing",
+      "Mobile ordering and payment integration",
+      "Easily update pricing or sold-out items",
+      "Reduce wait times at vendor stalls"
+    ],
+    faqs: [
+      { q: "Do attendees need an app to view the menu?", a: "No, attendees can simply scan the QR code with their native smartphone camera to view the menu directly in their mobile browser." },
+      { q: "How quickly can vendors update the menu?", a: "Because the QR code links to a dynamic webpage, vendors can update pricing or mark items as sold out instantly, without printing new signs." }
+    ]
+  },
+  {
+    slug: "event-parking-passes",
+    title: "Event Parking Passes",
+    headline: "QR Codes for Event Parking Passes",
+    description: "Streamline venue traffic flow with scannable digital parking passes that verify access and assign designated zones.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Digital parking pass verification",
+      "Zone and lot assignment tracking",
+      "Prevent counterfeit parking tickets",
+      "Faster entry for high-traffic events"
+    ],
+    faqs: [
+      { q: "How do QR code parking passes reduce traffic?", a: "Attendants can scan digital passes in seconds, significantly reducing the transaction time per vehicle compared to cash payments or manual checks." },
+      { q: "Can a parking pass be scanned more than once?", a: "The backend system will instantly flag if a QR code has already been scanned, preventing users from sharing a single pass for multiple cars." }
+    ]
+  },
+  {
+    slug: "event-session-feedback",
+    title: "Event Session Feedback",
+    headline: "QR Codes for Event Session Feedback",
+    description: "Increase response rates for post-event surveys by displaying QR codes at the end of sessions for immediate attendee feedback.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Immediate feedback collection",
+      "Link directly to mobile-optimized surveys",
+      "Track responses by specific session or speaker",
+      "Higher response rates than email follow-ups"
+    ],
+    faqs: [
+      { q: "Where is the best place to put a feedback QR code?", a: "The most effective placements are on the final presentation slide of a session, or on digital displays right near the room's exit doors." },
+      { q: "Can I use the same QR code for every session?", a: "It's best to use a unique dynamic QR code for each session so you can automatically segment the feedback by topic and speaker." }
+    ]
+  },
+  {
+    slug: "event-sponsor-booth-check-in",
+    title: "Event Sponsor Booth Check-In",
+    headline: "QR Codes for Event Sponsor Booth Check-In",
+    description: "Maximize lead generation for event sponsors by allowing attendees to instantly share their contact details with a simple QR scan.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant lead capture for sponsors",
+      "Frictionless contact sharing",
+      "Integrate directly into sponsor CRM systems",
+      "Track booth engagement and ROI"
+    ],
+    faqs: [
+      { q: "How does a sponsor collect leads via QR code?", a: "The sponsor can display a QR code that, when scanned by an attendee, directs them to a quick form or uses a badge-scanning app to log their details." },
+      { q: "Is this more effective than business cards?", a: "Yes, digital capture via QR codes prevents lost cards and allows sponsors to immediately sync the data with their sales pipelines for faster follow-up." }
+    ]
+  },
+  {
     slug: "music-venue-digital-ticketing",
     title: "Music Venue Ticketing",
     headline: "QR Codes for Music Venue Digital Ticketing",
