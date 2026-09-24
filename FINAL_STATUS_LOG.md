@@ -17,3 +17,6 @@ Task    Status  Notes
 15. Final Pre-Publish Checklist ✅ COMPLETE  All checkpoints are GREEN.
 16. Week 1 Monday Content       ✅ COMPLETE  Published "Ultimate Guide to QR Codes" + 5 Micros. Updated metadata.
 17. Saturday 4xx Zombie Scan    ✅ COMPLETE  Scanned sitemaps for 4xx errors; zero errors found.
+18. Daily Content: Dental Clinics ✅ COMPLETE  Published ~1,600-word Tier 1 Guide on Dental Clinics.
+19. Programmatic: Dental Use Cases✅ COMPLETE  Injected 5 long-tail pages (intake, wifi, maintenance, etc.).
+20. Internal Linking & Decay Refresh✅ COMPLETE  Updated homepage "Why use QRBuild?" section and 2 legacy guides to link to new dental content.
