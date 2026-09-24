@@ -228,6 +228,12 @@ const NEW_URLS = [
   `${SITE_URL}/qr-codes/trade-show-digital-brochures`,
   `${SITE_URL}/qr-codes/vip-lounge-entry-codes`,
   `${SITE_URL}/qr-codes/concert-merchandise-ordering`,
+  `${SITE_URL}/blog/how-to-use-qr-codes-for-dental-clinics`,
+  `${SITE_URL}/qr-codes/dental-patient-intake`,
+  `${SITE_URL}/qr-codes/orthodontic-treatment-tracking`,
+  `${SITE_URL}/qr-codes/dental-office-wifi`,
+  `${SITE_URL}/qr-codes/dental-equipment-maintenance`,
+  `${SITE_URL}/qr-codes/dental-hygiene-instructions`,
 ];
 
 const INDEXNOW_KEY = '550e8400e29b41d4a716446655440000';

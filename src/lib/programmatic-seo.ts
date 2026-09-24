@@ -3,6 +3,96 @@ import { SEOPageConfig } from "./seo-config";
 
 export const longTailUseCases: SEOPageConfig[] = [
   {
+    slug: "dental-patient-intake",
+    title: "Dental Patient Intake",
+    headline: "QR Codes for Dental Patient Intake",
+    description: "Modernize your dental practice by allowing patients to securely complete intake and medical history forms on their own smartphones.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Contactless patient registration",
+      "Secure integration with dental software",
+      "Eliminate manual data entry errors",
+      "Reduce waiting room congestion"
+    ],
+    faqs: [
+      { q: "Is the patient data secure?", a: "Yes, the QR code links to an encrypted, HIPAA-compliant form hosted by your practice management software." },
+      { q: "Do patients need a special app?", a: "No, patients can scan the code using the native camera app on their iOS or Android smartphones." }
+    ]
+  },
+  {
+    slug: "orthodontic-treatment-tracking",
+    title: "Orthodontic Treatment Tracking",
+    headline: "QR Codes for Orthodontic Treatment Tracking",
+    description: "Provide orthodontic patients with instant access to their treatment progress, 3D scans, and upcoming aligner change schedules.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant access to treatment timelines",
+      "View 3D progression models",
+      "Automated aligner change reminders",
+      "Secure patient portal access"
+    ],
+    faqs: [
+      { q: "Can parents access their child's records?", a: "Yes, the QR code can link to a family portal where authorized guardians can view treatment updates." },
+      { q: "Where should the QR code be placed?", a: "It is highly effective when printed on the aligner case or the initial treatment plan documentation." }
+    ]
+  },
+  {
+    slug: "dental-office-wifi",
+    title: "Dental Office WiFi",
+    headline: "QR Codes for Dental Office WiFi",
+    description: "Enhance the waiting room experience by allowing patients to instantly connect to your guest network with a single scan.",
+    category: "business",
+    primaryUse: "wifi",
+    features: [
+      "Instant network connection",
+      "No typing complex passwords",
+      "Secure guest network segregation",
+      "Improved patient satisfaction"
+    ],
+    faqs: [
+      { q: "Does scanning the code reveal the password?", a: "Depending on the operating system, the connection happens automatically without displaying the password in plain text." },
+      { q: "Is it safe to use a WiFi QR code?", a: "Yes, it is safer than displaying the password openly, provided you use a properly segregated guest network." }
+    ]
+  },
+  {
+    slug: "dental-equipment-maintenance",
+    title: "Dental Equipment Maintenance",
+    headline: "QR Codes for Dental Equipment Maintenance",
+    description: "Streamline the tracking and servicing of expensive dental equipment like intraoral scanners and autoclaves using durable QR code tags.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant access to maintenance logs",
+      "Quickly file repair tickets",
+      "View equipment manuals dynamically",
+      "Track sterilization cycles"
+    ],
+    faqs: [
+      { q: "Can the QR codes withstand sterilization?", a: "For autoclaved instruments, you must use specialized, laser-etched metal tags or high-heat resistant labels rather than standard printed paper." },
+      { q: "How does this help with compliance?", a: "Scanning the code makes it easy to log daily or weekly maintenance checks required by health and safety regulations." }
+    ]
+  },
+  {
+    slug: "dental-hygiene-instructions",
+    title: "Dental Hygiene Instructions",
+    headline: "QR Codes for Dental Hygiene Instructions",
+    description: "Provide patients with engaging, multimedia post-op care and daily hygiene instructions by adding QR codes to discharge summaries.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Link to instructional videos",
+      "Access interactive brushing guides",
+      "Reduce post-op complications",
+      "Easily update educational content"
+    ],
+    faqs: [
+      { q: "Why use a QR code instead of a brochure?", a: "QR codes can link to dynamic video content, which is proven to increase patient comprehension and adherence compared to static text." },
+      { q: "Can I update the instructions later?", a: "Yes, if you use a dynamic QR code, you can update the linked video or document without having to reprint the physical handout." }
+    ]
+  },
+  {
     slug: "event-vip-wristbands",
     title: "Event VIP Wristbands",
     headline: "QR Codes for Event VIP Wristbands",

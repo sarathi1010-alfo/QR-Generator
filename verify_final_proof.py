@@ -7,6 +7,13 @@ def run_verification():
     os.makedirs("/home/jules/verification/screenshots", exist_ok=True)
 
     urls_to_test = [
+    '/blog/how-to-use-qr-codes-for-dental-clinics',
+    '/qr-codes/dental-patient-intake',
+    '/qr-codes/orthodontic-treatment-tracking',
+    '/qr-codes/dental-office-wifi',
+    '/qr-codes/dental-equipment-maintenance',
+    '/qr-codes/dental-hygiene-instructions',
+
         "/blog/qr-codes-for-event-management-complete-guide",
         "/qr-codes/event-vip-wristbands",
         "/qr-codes/event-food-vendor-menus",
