@@ -1,6 +1,12 @@
 const SITE_URL = "https://qr.alfo.online";
 
 const NEW_URLS = [
+  `${SITE_URL}/blog/qr-codes-for-architecture-firms-guide`,
+  `${SITE_URL}/qr-codes/architecture-3d-model-viewing`,
+  `${SITE_URL}/qr-codes/architecture-project-site-access`,
+  `${SITE_URL}/qr-codes/architecture-portfolio-sharing`,
+  `${SITE_URL}/qr-codes/architecture-material-specifications`,
+  `${SITE_URL}/qr-codes/architecture-blueprint-revisions`,
   `${SITE_URL}/blog/the-ultimate-guide-to-qr-codes-in-2026`,
   `${SITE_URL}/blog/what-is-a-qr-code-the-ultimate-2026-guide`,
   `${SITE_URL}/blog/what-is-a-url-qr-code`,

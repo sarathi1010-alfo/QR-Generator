@@ -41,6 +41,12 @@ def test_qr_generation(page):
 
 def run_verification():
     urls_to_check = [
+    '/blog/qr-codes-for-architecture-firms-guide',
+    '/qr-codes/architecture-3d-model-viewing',
+    '/qr-codes/architecture-project-site-access',
+    '/qr-codes/architecture-portfolio-sharing',
+    '/qr-codes/architecture-material-specifications',
+    '/qr-codes/architecture-blueprint-revisions',
     '/blog/how-to-use-qr-codes-for-dental-clinics',
     '/qr-codes/dental-patient-intake',
     '/qr-codes/orthodontic-treatment-tracking',

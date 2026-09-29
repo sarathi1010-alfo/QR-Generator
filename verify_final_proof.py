@@ -7,6 +7,12 @@ def run_verification():
     os.makedirs("/home/jules/verification/screenshots", exist_ok=True)
 
     urls_to_test = [
+    '/blog/qr-codes-for-architecture-firms-guide',
+    '/qr-codes/architecture-3d-model-viewing',
+    '/qr-codes/architecture-project-site-access',
+    '/qr-codes/architecture-portfolio-sharing',
+    '/qr-codes/architecture-material-specifications',
+    '/qr-codes/architecture-blueprint-revisions',
     '/blog/how-to-use-qr-codes-for-dental-clinics',
     '/qr-codes/dental-patient-intake',
     '/qr-codes/orthodontic-treatment-tracking',
