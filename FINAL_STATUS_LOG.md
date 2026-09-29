@@ -20,3 +20,6 @@ Task    Status  Notes
 18. Daily Content: Dental Clinics ✅ COMPLETE  Published ~1,600-word Tier 1 Guide on Dental Clinics.
 19. Programmatic: Dental Use Cases✅ COMPLETE  Injected 5 long-tail pages (intake, wifi, maintenance, etc.).
 20. Internal Linking & Decay Refresh✅ COMPLETE  Updated homepage "Why use QRBuild?" section and 2 legacy guides to link to new dental content.
+21. Daily Content: Architecture Firms ✅ COMPLETE  Published ~1,300-word Tier 1 Guide on Architecture Firms.
+22. Programmatic: Architecture Use Cases✅ COMPLETE  Injected 5 long-tail pages (3d models, site access, portfolio, specs, blueprints).
+23. Internal Linking & Decay Refresh✅ COMPLETE  Updated homepage "Why use QRBuild?" section and 2 legacy guides to link to new architecture content.

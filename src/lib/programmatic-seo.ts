@@ -3,6 +3,96 @@ import { SEOPageConfig } from "./seo-config";
 
 export const longTailUseCases: SEOPageConfig[] = [
   {
+    slug: "architecture-3d-model-viewing",
+    title: "Architecture 3D Model Viewing",
+    headline: "QR Codes for Architecture 3D Model Viewing",
+    description: "Enable clients and contractors to instantly access immersive 3D renderings and AR models by scanning a QR code on a physical blueprint.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant access to cloud-hosted 3D models",
+      "Seamless AR integration on mobile",
+      "Eliminate heavy file email attachments",
+      "Interactive client presentations"
+    ],
+    faqs: [
+      { q: "What is the best QR code for sharing a 3D model?", a: "A dynamic URL QR code is best, allowing you to link directly to a web-based 3D viewer like Sketchfab or Autodesk Viewer." },
+      { q: "Can clients view models on their phones?", a: "Yes, modern smartphones can render high-quality 3D models directly in the mobile browser without an app." }
+    ]
+  },
+  {
+    slug: "architecture-project-site-access",
+    title: "Architecture Project Site Access",
+    headline: "QR Codes for Project Site Access",
+    description: "Streamline construction site security and safety protocols with rapid QR-based check-ins and instant access to site guidelines.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Rapid worker check-ins",
+      "Instant safety manual access",
+      "Real-time site management",
+      "Durable weather-resistant sign deployment"
+    ],
+    faqs: [
+      { q: "How do QR codes improve site safety?", a: "They provide instant access to the latest emergency procedures and safety data sheets (SDS) right at the site entrance." },
+      { q: "Can I update the linked document later?", a: "Yes, dynamic QR codes allow you to change the destination URL anytime without reprinting the physical code." }
+    ]
+  },
+  {
+    slug: "architecture-portfolio-sharing",
+    title: "Architecture Portfolio Sharing",
+    headline: "QR Codes for Architecture Portfolio Sharing",
+    description: "Modernize your firm's marketing by embedding QR codes into physical brochures, directing prospects to your dynamic digital portfolio.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Connect physical brochures to digital media",
+      "Share high-res video walkthroughs",
+      "Track prospective client engagement",
+      "Update portfolio without reprinting"
+    ],
+    faqs: [
+      { q: "How can I track my portfolio QR code?", a: "By using dynamic QR codes, you can view scan analytics, including time, location, and device type in the dashboard." },
+      { q: "Should I put a QR code on my business card?", a: "Absolutely. A vCard or URL QR code on a business card instantly saves your contact info or links to your work." }
+    ]
+  },
+  {
+    slug: "architecture-material-specifications",
+    title: "Architecture Material Specifications",
+    headline: "QR Codes for Material Specifications",
+    description: "Enhance material sample boards with QR codes that link directly to supplier specs, sustainability data, and installation guides.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant access to detailed specs",
+      "Link to sustainability/LEED data",
+      "Declutter physical presentation boards",
+      "Easy updates for discontinued materials"
+    ],
+    faqs: [
+      { q: "Can I link a QR code to a PDF of specs?", a: "Yes, you can use a PDF QR code or a URL QR code pointing to a cloud-hosted PDF document." },
+      { q: "Is it easy to update material links?", a: "Yes, with dynamic codes, if a supplier changes a link, you update the destination, and the printed code remains valid." }
+    ]
+  },
+  {
+    slug: "architecture-blueprint-revisions",
+    title: "Architecture Blueprint Revisions",
+    headline: "QR Codes for Blueprint Revisions",
+    description: "Ensure contractors always have the latest plans by printing a dynamic QR code on the title block linking to the current digital revision.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Ensure version control on site",
+      "Reduce costly construction errors",
+      "Instant access to latest CAD files",
+      "Secure password-protected links"
+    ],
+    faqs: [
+      { q: "How do I secure the blueprint link?", a: "You can point the QR code to a password-protected directory or a secure document sharing platform." },
+      { q: "Can I use QR codes on large format prints?", a: "Yes, always download your QR code as an SVG or high-res PNG to ensure it scales cleanly on A0/A1 blueprints." }
+    ]
+  },
+  {
     slug: "dental-patient-intake",
     title: "Dental Patient Intake",
     headline: "QR Codes for Dental Patient Intake",
