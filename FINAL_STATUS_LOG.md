@@ -23,3 +23,6 @@ Task    Status  Notes
 21. Daily Content: Architecture Firms ✅ COMPLETE  Published ~1,300-word Tier 1 Guide on Architecture Firms.
 22. Programmatic: Architecture Use Cases✅ COMPLETE  Injected 5 long-tail pages (3d models, site access, portfolio, specs, blueprints).
 23. Internal Linking & Decay Refresh✅ COMPLETE  Updated homepage "Why use QRBuild?" section and 2 legacy guides to link to new architecture content.
+24. Daily Content: Interior Design	✅ COMPLETE	Published ~1,200-word Tier 1 Guide on Interior Design.
+25. Programmatic: Interior Design Use Cases	✅ COMPLETE	Injected 5 long-tail pages (portfolio, 3d, materials, etc.).
+26. Internal Linking & Decay Refresh	✅ COMPLETE	Updated homepage "Why use QRBuild?" section and 2 legacy guides to link to new interior design content.

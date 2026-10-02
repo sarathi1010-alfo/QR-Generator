@@ -41,6 +41,12 @@ def test_qr_generation(page):
 
 def run_verification():
     urls_to_check = [
+        '/blog/qr-codes-for-interior-design-guide',
+        '/qr-codes/interior-design-portfolio-sharing',
+        '/qr-codes/interior-design-3d-renderings',
+        '/qr-codes/interior-design-material-sourcing',
+        '/qr-codes/interior-design-client-feedback',
+        '/qr-codes/interior-design-virtual-staging',
     '/blog/qr-codes-for-architecture-firms-guide',
     '/qr-codes/architecture-3d-model-viewing',
     '/qr-codes/architecture-project-site-access',

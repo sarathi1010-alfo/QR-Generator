@@ -1,6 +1,12 @@
 const SITE_URL = "https://qr.alfo.online";
 
 const NEW_URLS = [
+  `${SITE_URL}/blog/qr-codes-for-interior-design-guide`,
+  `${SITE_URL}/qr-codes/interior-design-portfolio-sharing`,
+  `${SITE_URL}/qr-codes/interior-design-3d-renderings`,
+  `${SITE_URL}/qr-codes/interior-design-material-sourcing`,
+  `${SITE_URL}/qr-codes/interior-design-client-feedback`,
+  `${SITE_URL}/qr-codes/interior-design-virtual-staging`,
   `${SITE_URL}/blog/qr-codes-for-architecture-firms-guide`,
   `${SITE_URL}/qr-codes/architecture-3d-model-viewing`,
   `${SITE_URL}/qr-codes/architecture-project-site-access`,
