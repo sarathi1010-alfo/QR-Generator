@@ -2,6 +2,97 @@
 import { SEOPageConfig } from "./seo-config";
 
 export const longTailUseCases: SEOPageConfig[] = [
+
+  {
+    slug: "interior-design-portfolio-sharing",
+    title: "Interior Design Portfolio Sharing",
+    headline: "QR Codes for Interior Design Portfolio Sharing",
+    description: "Instantly share your interior design portfolio with prospective clients using high-quality dynamic URL QR codes.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Share high-res digital portfolios",
+      "Update content without reprinting",
+      "Track portfolio scans and engagement",
+      "Enhance networking events"
+    ],
+    faqs: [
+      { q: "What is the best QR code for sharing a design portfolio?", a: "A dynamic URL QR code is best, allowing you to link directly to a living digital portfolio." },
+      { q: "Can I update my portfolio link later?", a: "Yes, dynamic QR codes let you change the destination URL anytime." }
+    ]
+  },
+  {
+    slug: "interior-design-3d-renderings",
+    title: "Interior Design 3D Renderings",
+    headline: "QR Codes for Interior Design 3D Renderings",
+    description: "Connect physical mood boards and 2D floor plans to immersive 3D renderings using QR codes.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Launch web-based 3D viewers instantly",
+      "Enable AR visualization on mobile",
+      "Bridge 2D plans to 3D models",
+      "Enhance client presentations"
+    ],
+    faqs: [
+      { q: "Do clients need an app to view 3D models via QR code?", a: "No, most modern web-based 3D viewers launch directly in the smartphone's native browser." },
+      { q: "Can I place QR codes on physical blueprints?", a: "Yes, embedding a QR code directly on a blueprint provides a seamless transition from physical to digital." }
+    ]
+  },
+  {
+    slug: "interior-design-material-sourcing",
+    title: "Interior Design Material Sourcing",
+    headline: "QR Codes for Interior Design Material Sourcing",
+    description: "Streamline material sourcing by tagging physical samples with QR codes linked to digital specifications.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Create smart material samples",
+      "Access digital specs and pricing instantly",
+      "Eliminate bulky specification binders",
+      "Update product availability dynamically"
+    ],
+    faqs: [
+      { q: "How do QR codes help with material samples?", a: "Placing a QR code on a fabric or tile sample links directly to its digital spec sheet, streamlining the sourcing process." },
+      { q: "What if a material is discontinued?", a: "With a dynamic QR code, you can redirect the link to an alternative material without recalling the physical sample." }
+    ]
+  },
+  {
+    slug: "interior-design-client-feedback",
+    title: "Interior Design Client Feedback",
+    headline: "QR Codes for Interior Design Client Feedback",
+    description: "Facilitate structured, timely client feedback on design iterations with easily scannable QR codes.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Launch digital feedback forms instantly",
+      "Streamline client communication",
+      "Embed email links on presentation boards",
+      "Accelerate the design approval process"
+    ],
+    faqs: [
+      { q: "Can a QR code open an email draft?", a: "Yes, an Email QR code can automatically open the client's email app with a pre-filled subject and recipient address." },
+      { q: "How do QR codes improve the feedback loop?", a: "By removing the friction of finding a link or typing an email, clients are more likely to provide immediate, structured feedback." }
+    ]
+  },
+  {
+    slug: "interior-design-virtual-staging",
+    title: "Interior Design Virtual Staging",
+    headline: "QR Codes for Interior Design Virtual Staging",
+    description: "Showcase fully furnished virtual staging concepts in empty properties using QR codes on physical placards.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Present multiple design styles per room",
+      "Reduce physical staging costs",
+      "Enhance real estate marketing",
+      "Provide high-res virtual walkthroughs"
+    ],
+    faqs: [
+      { q: "How does virtual staging with QR codes work?", a: "A potential buyer scans a QR code placed in an empty room, launching a high-resolution, virtually staged image of that specific space." },
+      { q: "Is virtual staging cost-effective?", a: "Yes, it eliminates the costs associated with renting, moving, and insuring physical furniture." }
+    ]
+  },
   {
     slug: "architecture-3d-model-viewing",
     title: "Architecture 3D Model Viewing",
