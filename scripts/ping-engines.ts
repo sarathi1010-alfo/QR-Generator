@@ -1,6 +1,12 @@
 const SITE_URL = "https://qr.alfo.online";
 
 const NEW_URLS = [
+  'https://qr.alfo.online/blog/how-to-use-qr-codes-for-pharmacies-guide',
+  'https://qr.alfo.online/qr-codes/pharmacy-prescription-refills',
+  'https://qr.alfo.online/qr-codes/pharmacy-medication-instructions',
+  'https://qr.alfo.online/qr-codes/pharmacy-patient-scheduling',
+  'https://qr.alfo.online/qr-codes/pharmacy-loyalty-programs',
+  'https://qr.alfo.online/qr-codes/pharmacy-health-screening-info',
   `${SITE_URL}/blog/qr-codes-for-interior-design-guide`,
   `${SITE_URL}/qr-codes/interior-design-portfolio-sharing`,
   `${SITE_URL}/qr-codes/interior-design-3d-renderings`,

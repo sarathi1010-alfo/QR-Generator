@@ -26,3 +26,6 @@ Task    Status  Notes
 24. Daily Content: Interior Design	✅ COMPLETE	Published ~1,200-word Tier 1 Guide on Interior Design.
 25. Programmatic: Interior Design Use Cases	✅ COMPLETE	Injected 5 long-tail pages (portfolio, 3d, materials, etc.).
 26. Internal Linking & Decay Refresh	✅ COMPLETE	Updated homepage "Why use QRBuild?" section and 2 legacy guides to link to new interior design content.
+27. Daily Content: Pharmacies	✅ COMPLETE	Published ~1,100-word Tier 1 Guide on Pharmacies.
+28. Programmatic: Pharmacy Use Cases	✅ COMPLETE	Injected 5 long-tail pages (refills, instructions, scheduling, loyalty, info).
+29. Internal Linking & Decay Refresh	✅ COMPLETE	Updated homepage 'Why use QRBuild?' section and 2 legacy healthcare guides to link to new pharmacy content.
