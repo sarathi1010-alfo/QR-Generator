@@ -4,6 +4,97 @@ import { SEOPageConfig } from "./seo-config";
 export const longTailUseCases: SEOPageConfig[] = [
 
   {
+    slug: "pharmacy-prescription-refills",
+    title: "Pharmacy Prescription Refills",
+    headline: "QR Codes for Pharmacy Prescription Refills",
+    description: "Streamline the prescription refill process by allowing patients to scan a QR code on their medication bottle to instantly request a refill.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant scan-to-refill portals",
+      "Reduce call volume and wait times",
+      "Secure and HIPAA-compliant routing",
+      "Update destination URLs dynamically"
+    ],
+    faqs: [
+      { q: "How do QR codes work for prescription refills?", a: "Patients scan a dynamic QR code on their pill bottle, which takes them directly to a secure online refill request form." },
+      { q: "Are prescription refill QR codes secure?", a: "Yes, the QR code simply links to a secure, encrypted pharmacy portal where patient verification is required." }
+    ]
+  },
+  {
+    slug: "pharmacy-medication-instructions",
+    title: "Pharmacy Medication Instructions",
+    headline: "QR Codes for Pharmacy Medication Instructions",
+    description: "Provide patients with instant access to detailed medication instructions, side effect profiles, and video tutorials via QR code.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Link to video tutorials for medical devices",
+      "Provide accessible multi-language PDFs",
+      "Improve patient adherence rates",
+      "Reduce pharmacist consultation time"
+    ],
+    faqs: [
+      { q: "Can QR codes link to video instructions?", a: "Absolutely. A QR code can direct a patient to a YouTube video or private hosting site showing exactly how to use devices like inhalers." },
+      { q: "Do patients need an app to read the instructions?", a: "No, most modern smartphone cameras natively scan QR codes and open the associated instruction page in the default web browser." }
+    ]
+  },
+  {
+    slug: "pharmacy-patient-scheduling",
+    title: "Pharmacy Patient Scheduling",
+    headline: "QR Codes for Pharmacy Patient Scheduling",
+    description: "Allow patients to easily schedule clinical services like flu shots or consultations by scanning a QR code on in-store signage.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Contactless appointment booking",
+      "Reduce waiting room congestion",
+      "Ideal for flu shot clinics and MTM",
+      "Integrates with existing scheduling software"
+    ],
+    faqs: [
+      { q: "Where should scheduling QR codes be placed?", a: "Place them on prominent posters, window clings, and at the pharmacy drop-off counter." },
+      { q: "Can the scheduling link be updated later?", a: "Yes, by using a dynamic QR code, the pharmacy can change the scheduling link without reprinting posters." }
+    ]
+  },
+  {
+    slug: "pharmacy-loyalty-programs",
+    title: "Pharmacy Loyalty Programs",
+    headline: "QR Codes for Pharmacy Loyalty Programs",
+    description: "Boost customer retention by allowing easy sign-ups and rapid digital loyalty card scanning at the pharmacy checkout.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Frictionless reward program enrollment",
+      "Digital loyalty cards on smartphones",
+      "Increase repeat retail business",
+      "Track customer purchasing habits"
+    ],
+    faqs: [
+      { q: "How do loyalty QR codes work?", a: "Customers can either scan a code to sign up for the program, or present their own unique digital QR code at checkout to claim rewards." },
+      { q: "Is it faster than traditional loyalty cards?", a: "Yes, scanning a QR code from a phone is typically much faster than typing in a phone number or finding a physical card." }
+    ]
+  },
+  {
+    slug: "pharmacy-health-screening-info",
+    title: "Pharmacy Health Screening Info",
+    headline: "QR Codes for Pharmacy Health Screening Info",
+    description: "Disseminate important public health information, seasonal tips, and product recall notices instantly via QR codes.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant access to public health updates",
+      "Link to daily pollen or flu trackers",
+      "Provide immediate recall instructions",
+      "Educate the community efficiently"
+    ],
+    faqs: [
+      { q: "Can I use QR codes for product recalls?", a: "Yes, placing a QR code at the counter allows patients to quickly check if their medication batch was affected by a recall." },
+      { q: "What kind of health info can be shared?", a: "Pharmacies can share allergy forecasts, dietary tips, immunization schedules, and much more." }
+    ]
+  },
+
+  {
     slug: "interior-design-portfolio-sharing",
     title: "Interior Design Portfolio Sharing",
     headline: "QR Codes for Interior Design Portfolio Sharing",
