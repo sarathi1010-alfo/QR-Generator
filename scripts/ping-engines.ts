@@ -258,6 +258,12 @@ const NEW_URLS = [
   `${SITE_URL}/qr-codes/dental-office-wifi`,
   `${SITE_URL}/qr-codes/dental-equipment-maintenance`,
   `${SITE_URL}/qr-codes/dental-hygiene-instructions`,
+  `${SITE_URL}/blog/qr-codes-for-technology-companies-guide`,
+  `${SITE_URL}/qr-codes/software-download-links`,
+  `${SITE_URL}/qr-codes/tech-support-ticketing`,
+  `${SITE_URL}/qr-codes/hardware-instruction-manuals`,
+  `${SITE_URL}/qr-codes/smart-home-device-setup`,
+  `${SITE_URL}/qr-codes/it-asset-tracking`
 ];
 
 const INDEXNOW_KEY = '550e8400e29b41d4a716446655440000';

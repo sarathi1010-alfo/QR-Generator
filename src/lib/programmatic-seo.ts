@@ -4530,6 +4530,96 @@ export const longTailUseCases: SEOPageConfig[] = [
       { q: "Can this system handle high traffic during intermissions?", a: "Yes, offloading the browsing and payment process to individual smartphones drastically reduces the transaction time at the counter." },
       { q: "Does the QR code link to a specific seat?", a: "If you generate unique codes per section or seat, the system can even support in-seat delivery for VIP ticket holders." }
     ]
+  },
+  {
+    slug: "software-download-links",
+    title: "Software Download Links",
+    headline: "QR Codes for Software Download Links",
+    description: "Provide users with an instant, frictionless way to download your mobile or desktop applications across platforms.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Cross-platform app store routing",
+      "Instant beta testing access",
+      "Printable on product packaging",
+      "Track download conversion rates"
+    ],
+    faqs: [
+      { q: "How do QR codes route to the right app store?", a: "By using a dynamic URL link that detects the user's operating system (iOS or Android) and redirects them to the corresponding app store." },
+      { q: "Can I use QR codes for desktop software?", a: "Yes, you can direct users to a direct download link or a landing page optimized for their desktop OS." }
+    ]
+  },
+  {
+    slug: "tech-support-ticketing",
+    title: "Tech Support Ticketing",
+    headline: "QR Codes for Tech Support Ticketing",
+    description: "Accelerate resolution times by letting users scan a code on their device to instantly open a pre-filled support ticket.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant access to help desks",
+      "Pre-filled serial number integration",
+      "Reduce customer support call volumes",
+      "Direct link to troubleshooting guides"
+    ],
+    faqs: [
+      { q: "How does a QR code pre-fill a ticket?", a: "The QR code can contain a unique URL that includes the device's serial number or model as UTM parameters, automatically populating the support form." },
+      { q: "Is the support data secure?", a: "Yes, the QR code simply acts as a link to your authenticated and encrypted customer support portal." }
+    ]
+  },
+  {
+    slug: "hardware-instruction-manuals",
+    title: "Hardware Instruction Manuals",
+    headline: "QR Codes for Hardware Instruction Manuals",
+    description: "Replace bulky paper manuals with a simple QR code on your product packaging that links to interactive digital guides.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Reduce printing costs and waste",
+      "Instantly update manuals post-launch",
+      "Link to video tutorials",
+      "Provide multi-language support easily"
+    ],
+    faqs: [
+      { q: "What if the user doesn't have internet access?", a: "For critical safety instructions, a brief printed summary should be included, while the QR code provides the comprehensive guide for when they are connected." },
+      { q: "Can I host the manual as a PDF?", a: "Yes, you can link the QR code directly to a hosted PDF or a mobile-optimized webpage." }
+    ]
+  },
+  {
+    slug: "smart-home-device-setup",
+    title: "Smart Home Device Setup",
+    headline: "QR Codes for Smart Home Device Setup",
+    description: "Eliminate frustration during IoT configuration. Use QR codes to securely pass network credentials and setup data to new devices.",
+    category: "business",
+    primaryUse: "wifi",
+    features: [
+      "Frictionless IoT onboarding",
+      "Secure network credential transfer",
+      "Reduce product return rates",
+      "Automate device pairing"
+    ],
+    faqs: [
+      { q: "How do QR codes help with Wi-Fi setup?", a: "Users can scan a code to instantly pass the necessary configuration details to the companion app, avoiding manual password entry." },
+      { q: "Are setup QR codes unique per device?", a: "Often, yes. Manufacturers can print unique codes that contain specific pairing keys to ensure secure connections." }
+    ]
+  },
+  {
+    slug: "it-asset-tracking",
+    title: "IT Asset Tracking",
+    headline: "QR Codes for IT Asset Tracking",
+    description: "Streamline enterprise inventory management. Affix QR codes to servers and laptops for instant location and maintenance updates.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Real-time inventory logging",
+      "Instant access to maintenance history",
+      "More durable than traditional barcodes",
+      "Assign hardware to employees easily"
+    ],
+    faqs: [
+      { q: "Why use QR codes instead of barcodes for assets?", a: "QR codes can hold more data, are easier to scan from various angles, and can be read by standard smartphones without specialized scanners." },
+      { q: "Can the tracking database be kept private?", a: "Absolutely. The QR code links to your internal IT management software, which requires employee authentication to view or edit data." }
+    ]
   }
 ];
 
