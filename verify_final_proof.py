@@ -192,6 +192,12 @@ def run_verification():
         "/qr-codes/ambulance-dispatch-routing",
         "/qr-codes/healthcare-staff-id-badges",
         "/qr-codes/clinic-waiting-room-triage",
+        "/blog/qr-codes-for-technology-companies-guide",
+        "/qr-codes/software-download-links",
+        "/qr-codes/tech-support-ticketing",
+        "/qr-codes/hardware-instruction-manuals",
+        "/qr-codes/smart-home-device-setup",
+        "/qr-codes/it-asset-tracking"
     ]
 
     base_url = "http://localhost:3000"
