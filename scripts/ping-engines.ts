@@ -263,7 +263,13 @@ const NEW_URLS = [
   `${SITE_URL}/qr-codes/tech-support-ticketing`,
   `${SITE_URL}/qr-codes/hardware-instruction-manuals`,
   `${SITE_URL}/qr-codes/smart-home-device-setup`,
-  `${SITE_URL}/qr-codes/it-asset-tracking`
+  `${SITE_URL}/qr-codes/it-asset-tracking`,
+  `${SITE_URL}/blog/qr-codes-for-human-resources-guide`,
+  `${SITE_URL}/qr-codes/hr-employee-onboarding`,
+  `${SITE_URL}/qr-codes/hr-benefits-enrollment`,
+  `${SITE_URL}/qr-codes/hr-time-tracking`,
+  `${SITE_URL}/qr-codes/hr-employee-feedback`,
+  `${SITE_URL}/qr-codes/hr-training-materials`
 ];
 
 const INDEXNOW_KEY = '550e8400e29b41d4a716446655440000';
