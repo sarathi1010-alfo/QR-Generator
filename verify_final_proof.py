@@ -197,7 +197,13 @@ def run_verification():
         "/qr-codes/tech-support-ticketing",
         "/qr-codes/hardware-instruction-manuals",
         "/qr-codes/smart-home-device-setup",
-        "/qr-codes/it-asset-tracking"
+        "/qr-codes/it-asset-tracking",
+        "/blog/qr-codes-for-human-resources-guide",
+        "/qr-codes/hr-employee-onboarding",
+        "/qr-codes/hr-benefits-enrollment",
+        "/qr-codes/hr-time-tracking",
+        "/qr-codes/hr-employee-feedback",
+        "/qr-codes/hr-training-materials"
     ]
 
     base_url = "http://localhost:3000"

@@ -4620,6 +4620,96 @@ export const longTailUseCases: SEOPageConfig[] = [
       { q: "Why use QR codes instead of barcodes for assets?", a: "QR codes can hold more data, are easier to scan from various angles, and can be read by standard smartphones without specialized scanners." },
       { q: "Can the tracking database be kept private?", a: "Absolutely. The QR code links to your internal IT management software, which requires employee authentication to view or edit data." }
     ]
+  },
+  {
+    slug: "hr-employee-onboarding",
+    title: "HR Employee Onboarding",
+    headline: "QR Codes for HR Employee Onboarding",
+    description: "Streamline the new hire experience. Use QR codes to instantly link to digital onboarding portals, welcome videos, and digital employee handbooks.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Frictionless access to onboarding materials",
+      "Reduce printing costs for welcome packets",
+      "Easily update handbooks and policies digitally",
+      "Improve new hire engagement and satisfaction"
+    ],
+    faqs: [
+      { q: "How do QR codes help with onboarding?", a: "A single QR code in a welcome letter can link directly to a secure portal where new hires can complete all necessary paperwork and training modules." },
+      { q: "Are digital handbooks secure?", a: "Yes. The QR code can link to an authenticated portal requiring the new hire's secure login credentials." }
+    ]
+  },
+  {
+    slug: "hr-benefits-enrollment",
+    title: "HR Benefits Enrollment",
+    headline: "QR Codes for HR Benefits Enrollment",
+    description: "Simplify open enrollment by placing QR codes on posters or mailers that link directly to your company's digital benefits selection portal.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant access to complex benefits info",
+      "Higher enrollment completion rates",
+      "Easily distribute instructional videos",
+      "Reduce HR support queries during open enrollment"
+    ],
+    faqs: [
+      { q: "Can QR codes link to specific benefits videos?", a: "Yes. You can use multiple QR codes, one linking to the enrollment portal and others linking to explanatory videos for different health plans." },
+      { q: "How do employees access this if working remotely?", a: "You can include the QR code in digital newsletters or physical mailers sent to their home addresses." }
+    ]
+  },
+  {
+    slug: "hr-time-tracking",
+    title: "HR Time and Attendance Tracking",
+    headline: "QR Codes for HR Time Tracking",
+    description: "Implement a modern, contactless punch clock. Employees simply scan a dynamic QR code at the office entrance to log their hours.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Contactless and hygienic time tracking",
+      "Real-time data integration with payroll",
+      "Prevent buddy-punching with dynamic codes",
+      "Easy deployment across multiple office locations"
+    ],
+    faqs: [
+      { q: "How do you prevent employees from scanning the code from home?", a: "The QR code can be dynamic (changing every few seconds) or integrated with geolocation to ensure the scan occurs on-site." },
+      { q: "Do employees need a special app?", a: "Usually, they just need their smartphone's native camera to scan the code, which authenticates them into your HR system." }
+    ]
+  },
+  {
+    slug: "hr-employee-feedback",
+    title: "HR Employee Feedback",
+    headline: "QR Codes for HR Employee Feedback",
+    description: "Gather real-time, actionable insights by placing QR codes in breakrooms that link to anonymous micro-surveys and suggestion boxes.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Higher participation rates than email surveys",
+      "Capture sentiment in the moment",
+      "Completely anonymous submission option",
+      "Easy to update survey questions dynamically"
+    ],
+    faqs: [
+      { q: "Are these surveys truly anonymous?", a: "Yes. You can configure the destination survey platform to not collect identifiable information like IP addresses or login data." },
+      { q: "Where is the best place to put feedback QR codes?", a: "High-traffic common areas like cafeterias, breakrooms, or near the exits of large meeting rooms." }
+    ]
+  },
+  {
+    slug: "hr-training-materials",
+    title: "HR Training Materials",
+    headline: "QR Codes for HR Training Materials",
+    description: "Deliver just-in-time learning. Affix QR codes to equipment or workstations to provide instant access to safety protocols and video tutorials.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Immediate access to critical safety info",
+      "Supports continuous on-the-job learning",
+      "Reduces reliance on bulky printed manuals",
+      "Easily track which training modules are accessed most"
+    ],
+    faqs: [
+      { q: "Can we track who scans the training QR code?", a: "Yes. If the destination URL requires an employee login, your LMS can track completion and viewing metrics." },
+      { q: "What if the training material needs to be updated?", a: "By using dynamic QR codes, you simply change the backend link to point to the new video or PDF without reprinting the physical sticker." }
+    ]
   }
 ];
 
