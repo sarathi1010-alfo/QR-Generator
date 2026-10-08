@@ -41,6 +41,12 @@ def test_qr_generation(page):
 
 def run_verification():
     urls_to_check = [
+    '/blog/how-to-use-qr-codes-for-veterinary-clinics',
+    '/qr-codes/veterinary-patient-intake',
+    '/qr-codes/veterinary-appointment-scheduling',
+    '/qr-codes/veterinary-medication-instructions',
+    '/qr-codes/veterinary-post-op-care',
+    '/qr-codes/veterinary-dietary-information',
         '/blog/qr-codes-for-interior-design-guide',
         '/qr-codes/interior-design-portfolio-sharing',
         '/qr-codes/interior-design-3d-renderings',

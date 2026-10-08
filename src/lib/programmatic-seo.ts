@@ -4,6 +4,98 @@ import { SEOPageConfig } from "./seo-config";
 export const longTailUseCases: SEOPageConfig[] = [
 
   {
+    slug: "veterinary-patient-intake",
+    title: "Veterinary Patient Intake",
+    headline: "QR Codes for Veterinary Patient Intake",
+    description: "Streamline the check-in process for pets and their owners. Let them fill out necessary forms securely before entering the clinic.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Contactless digital check-ins",
+      "Secure pre-appointment form submissions",
+      "Reduce waiting room congestion",
+      "Easily update intake protocols"
+    ],
+    faqs: [
+      { q: "How can this help nervous pets?", a: "By allowing owners to fill out forms from their cars or home, you minimize the time spent in a stressful waiting room." },
+      { q: "Is the medical data secure?", a: "Yes, the QR code links directly to your secure, encrypted practice management software's intake portal." }
+    ]
+  },
+  {
+    slug: "veterinary-appointment-scheduling",
+    title: "Veterinary Appointment Scheduling",
+    headline: "QR Codes for Veterinary Appointment Scheduling",
+    description: "Make rebooking a breeze. Place QR codes on exit desks or business cards linking directly to your online veterinary booking system.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant access to your booking portal",
+      "Reduce front-desk call volume",
+      "Increase follow-up appointment compliance",
+      "Include on appointment reminder cards"
+    ],
+    faqs: [
+      { q: "Does this sync with my current calendar?", a: "The QR code will link to whatever online scheduling tool you already use, ensuring seamless calendar integration." },
+      { q: "Can I track how many appointments come from the code?", a: "Yes, by adding UTM parameters to the destination URL before generating the QR code." }
+    ]
+  },
+  {
+    slug: "veterinary-medication-instructions",
+    title: "Veterinary Medication Instructions",
+    headline: "QR Codes for Veterinary Medication Instructions",
+    description: "Ensure pets get the right care at home. Add QR codes to prescription bags linking to video tutorials on how to administer medications.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Link to instructional videos (e.g., giving a pill)",
+      "Reduce owner anxiety and mistakes",
+      "Provide detailed dosage charts",
+      "Printable on small prescription labels"
+    ],
+    faqs: [
+      { q: "What if the owner forgets the instructions?", a: "They simply scan the code on the medication bottle to replay the vet's instructional video at any time." },
+      { q: "Can I link to a PDF instead of a video?", a: "Absolutely. The QR code can point to any digital resource, including downloadable PDF care sheets." }
+    ]
+  },
+  {
+    slug: "veterinary-post-op-care",
+    title: "Veterinary Post-Op Care",
+    headline: "QR Codes for Veterinary Post-Op Care",
+    description: "Provide comprehensive post-surgical care guides. Use QR codes to give pet owners instant access to recovery timelines and emergency contacts.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Detailed post-operative care instructions",
+      "Instant access to emergency vet contacts",
+      "Visual guides for checking incisions",
+      "Easily update information if protocols change"
+    ],
+    faqs: [
+      { q: "Why use a QR code instead of a printed handout?", a: "Printed handouts can be lost or soiled. A QR code on the discharge paperwork ensures the owner always has the digital copy on their phone." },
+      { q: "Can the code link to an emergency dialer?", a: "Yes, you can create a 'Phone' type QR code that instantly prompts the user's phone to call your emergency line." }
+    ]
+  },
+  {
+    slug: "veterinary-dietary-information",
+    title: "Veterinary Dietary Information",
+    headline: "QR Codes for Veterinary Dietary Information",
+    description: "Help pet owners manage specific diets. Link QR codes to nutritional guides, feeding schedules, and recommended food purchasing links.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Detailed nutritional breakdown charts",
+      "Link to approved pet food suppliers",
+      "Custom feeding schedules based on weight",
+      "Easily share complex dietary restrictions"
+    ],
+    faqs: [
+      { q: "Can I recommend specific brands?", a: "Yes, the QR code can link to a landing page where you list your clinic's approved dietary brands and affiliate links." },
+      { q: "How do I update the diet plan?", a: "Using a dynamic QR code means you can change the underlying URL or document without the owner needing a new code." }
+    ]
+  }
+,
+
+  {
     slug: "pharmacy-prescription-refills",
     title: "Pharmacy Prescription Refills",
     headline: "QR Codes for Pharmacy Prescription Refills",

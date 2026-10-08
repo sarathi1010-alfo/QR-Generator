@@ -1,6 +1,12 @@
 const SITE_URL = "https://qr.alfo.online";
 
 const NEW_URLS = [
+  `${SITE_URL}/blog/how-to-use-qr-codes-for-veterinary-clinics`,
+  `${SITE_URL}/qr-codes/veterinary-patient-intake`,
+  `${SITE_URL}/qr-codes/veterinary-appointment-scheduling`,
+  `${SITE_URL}/qr-codes/veterinary-medication-instructions`,
+  `${SITE_URL}/qr-codes/veterinary-post-op-care`,
+  `${SITE_URL}/qr-codes/veterinary-dietary-information`,
   'https://qr.alfo.online/blog/how-to-use-qr-codes-for-pharmacies-guide',
   'https://qr.alfo.online/qr-codes/pharmacy-prescription-refills',
   'https://qr.alfo.online/qr-codes/pharmacy-medication-instructions',
