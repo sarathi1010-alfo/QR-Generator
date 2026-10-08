@@ -7,6 +7,12 @@ def run_verification():
     os.makedirs("/home/jules/verification/screenshots", exist_ok=True)
 
     urls_to_test = [
+    '/blog/how-to-use-qr-codes-for-veterinary-clinics',
+    '/qr-codes/veterinary-patient-intake',
+    '/qr-codes/veterinary-appointment-scheduling',
+    '/qr-codes/veterinary-medication-instructions',
+    '/qr-codes/veterinary-post-op-care',
+    '/qr-codes/veterinary-dietary-information',
         '/blog/qr-codes-for-interior-design-guide',
         '/qr-codes/interior-design-portfolio-sharing',
         '/qr-codes/interior-design-3d-renderings',
