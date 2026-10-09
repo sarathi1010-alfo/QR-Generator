@@ -281,7 +281,14 @@ def run_verification():
         "/qr-codes/hr-time-tracking",
         "/qr-codes/hr-employee-feedback",
         "/qr-codes/hr-training-materials"
-    ]
+    ,
+    '/blog/qr-codes-for-libraries-guide',
+    '/qr-codes/library-book-checkout',
+    '/qr-codes/library-study-room-booking',
+    '/qr-codes/library-digital-resources',
+    '/qr-codes/library-event-schedules',
+    '/qr-codes/library-wifi-access',
+]
 
     os.makedirs(VIDEOS_DIR, exist_ok=True)
     os.makedirs(SCREENSHOTS_DIR, exist_ok=True)
