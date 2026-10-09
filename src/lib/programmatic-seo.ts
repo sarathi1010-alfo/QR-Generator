@@ -4802,6 +4802,96 @@ export const longTailUseCases: SEOPageConfig[] = [
       { q: "Can we track who scans the training QR code?", a: "Yes. If the destination URL requires an employee login, your LMS can track completion and viewing metrics." },
       { q: "What if the training material needs to be updated?", a: "By using dynamic QR codes, you simply change the backend link to point to the new video or PDF without reprinting the physical sticker." }
     ]
+  },
+  {
+    slug: "library-book-checkout",
+    title: "Library Book Checkout",
+    headline: "QR Codes for Library Book Checkout",
+    description: "Streamline the borrowing process. Patrons scan codes on book covers to instantly check out materials using your library's mobile app.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Frictionless self-checkout",
+      "Reduce circulation desk lines",
+      "Integrate directly with ILS systems",
+      "Improve patron satisfaction"
+    ],
+    faqs: [
+      { q: "Do patrons need a special app?", a: "Yes, they typically use the library's official mobile app, which is authenticated with their library card and linked to the ILS." },
+      { q: "How do we prevent theft?", a: "The QR code checkout process integrates with your RFID security gates, deactivating the security tag upon successful checkout." }
+    ]
+  },
+  {
+    slug: "library-study-room-booking",
+    title: "Library Study Room Booking",
+    headline: "QR Codes for Library Study Room Booking",
+    description: "Optimize library space. Affix QR codes to study room doors for instant viewing of schedules and frictionless reservations.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant room availability checking",
+      "Frictionless mobile booking",
+      "Reduce double-bookings",
+      "Maximize space utilization"
+    ],
+    faqs: [
+      { q: "What happens if a room is full?", a: "The mobile booking portal can automatically suggest other available rooms in the library." },
+      { q: "Can we limit booking durations?", a: "Yes, your backend booking software controls the rules, such as maximum time limits or restricting bookings to active students." }
+    ]
+  },
+  {
+    slug: "library-digital-resources",
+    title: "Library Digital Resources",
+    headline: "QR Codes for Library Digital Resources",
+    description: "Bridge the physical and digital stacks. Link physical shelves to relevant e-books, audiobooks, and academic databases.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Increase digital circulation",
+      "Provide access when physical books are checked out",
+      "Link directly to research databases",
+      "Enhance discoverability"
+    ],
+    faqs: [
+      { q: "Where should these codes be placed?", a: "Place them on shelf talkers next to popular series, or on the covers of display books." },
+      { q: "Do they bypass login screens?", a: "The QR code links to the resource; patrons will still need to authenticate with their library credentials if they are off the library's network." }
+    ]
+  },
+  {
+    slug: "library-event-schedules",
+    title: "Library Event Schedules",
+    headline: "QR Codes for Library Event Schedules",
+    description: "Promote community programming. Replace printed flyers with dynamic QR codes that link to live, up-to-date event calendars.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Real-time schedule updates",
+      "Reduce printing costs",
+      "Direct links to registration forms",
+      "Easy integration with digital signage"
+    ],
+    faqs: [
+      { q: "Why use dynamic codes for events?", a: "Event details like times and locations often change. Dynamic codes allow you to update the linked calendar without reprinting the posters." },
+      { q: "Can we track engagement?", a: "Yes, you can track how many people scan the codes to gauge interest in specific programs." }
+    ]
+  },
+  {
+    slug: "library-wifi-access",
+    title: "Library WiFi Access",
+    headline: "QR Codes for Library WiFi Access",
+    description: "Provide instant internet access. Patrons can scan a QR code to automatically join the library's public WiFi network without typing passwords.",
+    category: "business",
+    primaryUse: "wifi",
+    features: [
+      "Instant network connection",
+      "Eliminate password typing errors",
+      "Reduce IT helpdesk requests",
+      "Secure credential transfer"
+    ],
+    faqs: [
+      { q: "Is scanning for WiFi secure?", a: "Yes, the QR code securely passes the SSID and password directly to the device's network settings." },
+      { q: "Does it work on all devices?", a: "Modern iOS and Android devices natively support joining WiFi networks via QR code scans from the default camera app." }
+    ]
   }
 ];
 

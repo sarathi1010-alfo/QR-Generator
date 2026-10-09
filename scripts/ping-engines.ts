@@ -275,7 +275,14 @@ const NEW_URLS = [
   `${SITE_URL}/qr-codes/hr-benefits-enrollment`,
   `${SITE_URL}/qr-codes/hr-time-tracking`,
   `${SITE_URL}/qr-codes/hr-employee-feedback`,
-  `${SITE_URL}/qr-codes/hr-training-materials`
+  `${SITE_URL}/qr-codes/hr-training-materials`,
+
+  `${SITE_URL}/blog/qr-codes-for-libraries-guide`,
+  `${SITE_URL}/qr-codes/library-book-checkout`,
+  `${SITE_URL}/qr-codes/library-study-room-booking`,
+  `${SITE_URL}/qr-codes/library-digital-resources`,
+  `${SITE_URL}/qr-codes/library-event-schedules`,
+  `${SITE_URL}/qr-codes/library-wifi-access`,
 ];
 
 const INDEXNOW_KEY = '550e8400e29b41d4a716446655440000';
