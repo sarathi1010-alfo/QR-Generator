@@ -53,3 +53,7 @@ Task    Status  Notes
 34. Programmatic: Library Use Cases	✅ COMPLETE	Injected 5 long-tail pages (checkout, study rooms, digital resources, events, wifi).
 35. Internal Linking & Decay Refresh	✅ COMPLETE	Updated homepage and legacy education guide to link to new library content.
 36. IndexNow & Google Ping (Libraries)	✅ COMPLETE	Scripts executed successfully for new library URLs.
+38. Update BLUEPRINT.md      ✅ COMPLETE  Updated to enforce Week 1 instructions with proper INDEXNOW_KEY.
+39. Week 1 Monday Content       ✅ COMPLETE  Re-published Ultimate Guide to QR Codes + 5 Micros with today's date.
+40. Saturday 4xx Zombie Scan    ✅ COMPLETE  Verified no 4xx errors.
+41. Content Decay Refresh       ✅ COMPLETE  Updated legacy "Why use QRBuild?" section on Homepage with new date.
