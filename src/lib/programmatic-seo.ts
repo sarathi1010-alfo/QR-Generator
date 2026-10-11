@@ -4893,6 +4893,102 @@ export const longTailUseCases: SEOPageConfig[] = [
       { q: "Does it work on all devices?", a: "Modern iOS and Android devices natively support joining WiFi networks via QR code scans from the default camera app." }
     ]
   }
+,
+  {
+    slug: "photography-client-galleries",
+    title: "Client Photo Galleries",
+    headline: "QR Codes for Client Photo Galleries",
+    description: "Instantly share secure, high-resolution photo galleries with clients using a quick scan from physical thank-you cards.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Frictionless access to digital client galleries",
+      "Easily update the destination link if your hosting provider changes",
+      "Provide a premium, physical touch point in your delivery",
+      "Track scan rates for your physical marketing materials"
+    ],
+    faqs: [
+      { q: "How do QR codes work for sharing photography galleries?", a: "Photographers can print a QR code on a card included with a physical delivery or contract. When the client scans it, they are instantly taken to their password-protected online gallery." },
+      { q: "Are client photos secure?", a: "Yes, the QR code simply acts as a link to your secure gallery hosting platform. Clients will still need to enter their password if the gallery is protected." },
+      { q: "Can I use dynamic QR codes for this?", a: "Absolutely. Using dynamic QR codes is recommended so you can update the gallery link without needing to reprint the physical card." }
+    ]
+  },
+  {
+    slug: "photography-session-booking",
+    title: "Photography Session Booking",
+    headline: "QR Codes for Photography Session Booking",
+    description: "Streamline your booking process. Allow prospective clients to schedule their sessions instantly by scanning a QR code.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Direct link to scheduling software like Calendly or HoneyBook",
+      "Remove friction from the client inquiry process",
+      "Capture leads instantly at networking events",
+      "Display on business cards or studio front doors"
+    ],
+    faqs: [
+      { q: "Where is the best place to put a booking QR code?", a: "Place the code on your business cards, flyers distributed at bridal shows, or on the window of your photography studio." },
+      { q: "Do clients need to download an app to book?", a: "No, scanning the code will open their mobile browser and take them directly to your online booking calendar." },
+      { q: "Can I track how many bookings come from the QR code?", a: "Yes, by adding UTM tracking parameters to the destination URL, you can see exactly how many clients booked through a specific printed material." }
+    ]
+  },
+  {
+    slug: "photography-portfolio-vcard",
+    title: "Photography Portfolio & vCard",
+    headline: "vCard QR Codes for Photographers",
+    description: "Make a lasting impression at networking events. Instantly share your portfolio and contact information directly to a potential client's phone.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instantly save contact details to the client's phone",
+      "Direct link to your mobile-optimized portfolio",
+      "Eliminate the need to carry physical business cards",
+      "Seamlessly link to your professional Instagram feed"
+    ],
+    faqs: [
+      { q: "What is a vCard QR code?", a: "It is a QR code that, when scanned, prompts the user to save your contact information (name, phone number, email, and website) directly to their phone's address book." },
+      { q: "Can I link to my Instagram instead of a website?", a: "Yes, you can use a standard URL QR code that links directly to your Instagram profile or a Linktree page featuring your best work." },
+      { q: "How should I display my portfolio QR code?", a: "Keep it on your phone screen to show people when networking, or print it on high-quality cardstock to hand out at events." }
+    ]
+  },
+  {
+    slug: "photography-print-ordering",
+    title: "Photography Print Ordering",
+    headline: "QR Codes for Photography Print Ordering",
+    description: "Boost your print sales. Place QR codes next to physical prints in galleries or your studio so clients can purchase them instantly.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Enable instant mobile print purchasing",
+      "Provide an 'endless aisle' for different sizes and frames",
+      "Ideal for gallery exhibitions and studio displays",
+      "Frictionless checkout via Apple Pay or Google Pay"
+    ],
+    faqs: [
+      { q: "How do QR codes help sell photography prints?", a: "By placing a QR code next to a physical print, clients can scan it to instantly view pricing, framing options, and check out directly on their phone." },
+      { q: "Is the checkout process secure?", a: "Yes, the QR code links directly to your secure e-commerce storefront, using standard encrypted payment gateways." },
+      { q: "Can I link to specific product variants?", a: "Yes, you can generate a specific QR code for each image, linking directly to that exact product page." }
+    ]
+  },
+  {
+    slug: "photography-event-photo-booths",
+    title: "Event Photo Booth Delivery",
+    headline: "QR Codes for Event Photo Booth Delivery",
+    description: "Provide instant gratification at events. Let guests scan a QR code to immediately download and share their photo booth pictures.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant digital photo delivery for event guests",
+      "Eliminate slow manual email entry on shared tablets",
+      "Encourage rapid sharing on social media",
+      "Include your branding on the gallery landing page"
+    ],
+    faqs: [
+      { q: "How does QR delivery work for photo booths?", a: "After a guest takes a photo, a unique QR code is displayed on the screen. The guest scans it to instantly access their photo on a secure, branded webpage." },
+      { q: "Does this require an internet connection?", a: "Yes, the photo booth software needs an internet connection to upload the photo and generate the live URL." },
+      { q: "Can guests share the photos directly to Instagram?", a: "Yes, once they access the photo via the QR code, they can easily save the image to their camera roll and share it on any social platform." }
+    ]
+  }
 ];
 
 export const downloadFormats: SEOPageConfig[] = [];
