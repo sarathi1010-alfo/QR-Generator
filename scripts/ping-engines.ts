@@ -276,6 +276,12 @@ const NEW_URLS = [
   `${SITE_URL}/qr-codes/hr-time-tracking`,
   `${SITE_URL}/qr-codes/hr-employee-feedback`,
   `${SITE_URL}/qr-codes/hr-training-materials`,
+  `${SITE_URL}/blog/how-to-use-qr-codes-for-photography-businesses`,
+  `${SITE_URL}/qr-codes/photography-client-galleries`,
+  `${SITE_URL}/qr-codes/photography-session-booking`,
+  `${SITE_URL}/qr-codes/photography-portfolio-vcard`,
+  `${SITE_URL}/qr-codes/photography-print-ordering`,
+  `${SITE_URL}/qr-codes/photography-event-photo-booths`,
 
   `${SITE_URL}/blog/qr-codes-for-libraries-guide`,
   `${SITE_URL}/qr-codes/library-book-checkout`,
