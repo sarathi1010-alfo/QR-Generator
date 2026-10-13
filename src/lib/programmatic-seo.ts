@@ -4988,6 +4988,96 @@ export const longTailUseCases: SEOPageConfig[] = [
       { q: "Does this require an internet connection?", a: "Yes, the photo booth software needs an internet connection to upload the photo and generate the live URL." },
       { q: "Can guests share the photos directly to Instagram?", a: "Yes, once they access the photo via the QR code, they can easily save the image to their camera roll and share it on any social platform." }
     ]
+  },
+  {
+    slug: "salon-appointment-booking",
+    title: "Salon Appointment Booking",
+    headline: "QR Codes for Salon Appointment Booking",
+    description: "Streamline the scheduling process for your salon. Allow clients to instantly access your booking portal by scanning a code.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Contactless appointment scheduling",
+      "Direct link to Mindbody, Phorest, or Vagaro",
+      "Display on storefront windows for after-hours booking",
+      "Increase rebooking rates with simple access"
+    ],
+    faqs: [
+      { q: "Can clients book appointments after hours?", a: "Yes, placing the QR code on a window decal allows clients to access your scheduling software 24/7." },
+      { q: "Does this integrate with my existing software?", a: "The QR code can be linked to any web-based scheduling platform you currently use." }
+    ]
+  },
+  {
+    slug: "salon-service-menu",
+    title: "Salon Service Menu",
+    headline: "QR Codes for Salon Service Menus",
+    description: "Replace easily damaged and outdated paper menus with a dynamic digital service menu accessed instantly via QR code.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Cost-effective updates when prices change",
+      "Promote high-margin add-on services easily",
+      "Reduce clutter at styling stations",
+      "Present beautiful, branded digital menus"
+    ],
+    faqs: [
+      { q: "Do I need to reprint the code when prices change?", a: "No, if you use a dynamic QR code, you simply update the destination URL or the digital menu file without changing the physical code." },
+      { q: "Where is the best place for a menu QR code?", a: "Place small, elegantly designed codes at each styling station, massage room, or in the waiting area." }
+    ]
+  },
+  {
+    slug: "salon-loyalty-programs",
+    title: "Salon Loyalty Programs",
+    headline: "QR Codes for Salon Loyalty Programs",
+    description: "Drive digital loyalty program sign-ups effortlessly. Increase repeat business without the hassle of lost paper punch cards.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Frictionless onboarding for loyalty programs",
+      "Direct link to rewards app downloads",
+      "Encourage sign-ups at the point of sale",
+      "Track customer retention effectively"
+    ],
+    faqs: [
+      { q: "Why are digital programs better than punch cards?", a: "Digital programs are harder to lose, provide actionable data on client behavior, and allow for automated rewards tracking." },
+      { q: "How do QR codes help?", a: "They remove the friction of manually searching for an app or typing a URL, significantly increasing adoption rates." }
+    ]
+  },
+  {
+    slug: "salon-wifi-access",
+    title: "Salon WiFi Access",
+    headline: "QR Codes for Salon WiFi Access",
+    description: "Provide clients with instant, secure access to your salon's guest network without needing to share complex passwords.",
+    category: "business",
+    primaryUse: "wifi",
+    features: [
+      "Instant connection for clients in the chair",
+      "Eliminate password sharing interruptions",
+      "Enhance the premium guest experience",
+      "Secure and convenient for everyone"
+    ],
+    faqs: [
+      { q: "Is it safe to use a WiFi QR code?", a: "Yes, it safely embeds your network credentials so clients can connect without you broadcasting the password verbally." },
+      { q: "Do clients need a special app?", a: "No, modern iOS and Android smartphones have built-in camera scanners that automatically read WiFi QR codes and prompt the connection." }
+    ]
+  },
+  {
+    slug: "salon-stylist-portfolios",
+    title: "Salon Stylist Portfolios",
+    headline: "QR Codes for Stylist Portfolios",
+    description: "Empower your stylists to build their personal brands. Link directly to their Instagram feeds or professional galleries.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Showcase individual stylist expertise",
+      "Build trust and encourage rebooking",
+      "Personalized codes for each station",
+      "Easy integration with social media platforms"
+    ],
+    faqs: [
+      { q: "Can each stylist have their own code?", a: "Yes, you can generate a unique QR code for every stylist that links specifically to their individual portfolio or booking link." },
+      { q: "What should the code link to?", a: "A professional Instagram profile, a specific gallery page on the salon's website, or a Linktree showcasing their work." }
+    ]
   }
 ];
 

@@ -293,6 +293,12 @@ def run_verification():
     '/qr-codes/library-digital-resources',
     '/qr-codes/library-event-schedules',
     '/qr-codes/library-wifi-access',
+    '/blog/how-to-use-qr-codes-for-salons-and-spas',
+    '/qr-codes/salon-appointment-booking',
+    '/qr-codes/salon-service-menu',
+    '/qr-codes/salon-loyalty-programs',
+    '/qr-codes/salon-wifi-access',
+    '/qr-codes/salon-stylist-portfolios',
 ]
 
     os.makedirs(VIDEOS_DIR, exist_ok=True)
