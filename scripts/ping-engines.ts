@@ -289,6 +289,12 @@ const NEW_URLS = [
   `${SITE_URL}/qr-codes/library-digital-resources`,
   `${SITE_URL}/qr-codes/library-event-schedules`,
   `${SITE_URL}/qr-codes/library-wifi-access`,
+  `${SITE_URL}/blog/how-to-use-qr-codes-for-salons-and-spas`,
+  `${SITE_URL}/qr-codes/salon-appointment-booking`,
+  `${SITE_URL}/qr-codes/salon-service-menu`,
+  `${SITE_URL}/qr-codes/salon-loyalty-programs`,
+  `${SITE_URL}/qr-codes/salon-wifi-access`,
+  `${SITE_URL}/qr-codes/salon-stylist-portfolios`
 ];
 
 const INDEXNOW_KEY = '550e8400e29b41d4a716446655440000';
