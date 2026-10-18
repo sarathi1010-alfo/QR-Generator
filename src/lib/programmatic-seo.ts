@@ -5078,6 +5078,96 @@ export const longTailUseCases: SEOPageConfig[] = [
       { q: "Can each stylist have their own code?", a: "Yes, you can generate a unique QR code for every stylist that links specifically to their individual portfolio or booking link." },
       { q: "What should the code link to?", a: "A professional Instagram profile, a specific gallery page on the salon's website, or a Linktree showcasing their work." }
     ]
+  },
+  {
+    slug: "daycare-parent-check-in",
+    title: "Daycare Parent Check-In",
+    headline: "QR Codes for Daycare Parent Check-In",
+    description: "Streamline the morning drop-off routine with contactless QR code check-ins for parents and guardians.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Contactless sign-in and sign-out",
+      "Accurate attendance and time tracking",
+      "Secure identity verification",
+      "Integrates with daycare management software"
+    ],
+    faqs: [
+      { q: "How do QR code check-ins work for daycares?", a: "Parents scan a displayed QR code with their phones, taking them to a secure portal to log their child's arrival or departure." },
+      { q: "Is this secure enough for child safety?", a: "Yes, the destination URL can require parents to log in or enter a unique PIN to verify their identity before the check-in is logged." }
+    ]
+  },
+  {
+    slug: "daycare-daily-reports",
+    title: "Daycare Daily Reports",
+    headline: "QR Codes for Daycare Daily Reports",
+    description: "Instantly share daily activity summaries, meal logs, and nap schedules with parents via a simple QR scan.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant access to daily activity logs",
+      "Share photos of learning and play",
+      "Reduce paper waste and printing costs",
+      "Keep parents engaged and informed"
+    ],
+    faqs: [
+      { q: "Can I link to a specific child's report?", a: "Yes, you can generate a unique QR code for each child's cubby that links to their specific secure digital report." },
+      { q: "Do parents need a special app to view the reports?", a: "No, the QR code can link to a mobile-friendly web portal accessible from any standard smartphone browser." }
+    ]
+  },
+  {
+    slug: "daycare-emergency-contacts",
+    title: "Daycare Emergency Contacts",
+    headline: "QR Codes for Daycare Emergency Contacts",
+    description: "Provide staff with instant access to crucial emergency contact details and allergy alerts.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant retrieval of emergency contacts",
+      "Quick access to allergy and medical info",
+      "Crucial for field trips and off-site activities",
+      "Secure, staff-only access"
+    ],
+    faqs: [
+      { q: "Where should these QR codes be placed?", a: "On staff lanyards, classroom clipboards, or discreetly on a child's cubby—always ensuring they are out of reach of unauthorized visitors." },
+      { q: "Are medical details secure?", a: "The QR code must link to a secure, password-protected database to ensure sensitive medical information remains private and compliant." }
+    ]
+  },
+  {
+    slug: "daycare-event-calendars",
+    title: "Daycare Event Calendars",
+    headline: "QR Codes for Daycare Event Calendars",
+    description: "Keep parents informed about upcoming field trips, dress-up days, and holiday closures with a scannable calendar link.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Always up-to-date schedule information",
+      "Easy access to weekly lunch menus",
+      "Reduce questions to the front desk",
+      "Parents can save events directly to their phones"
+    ],
+    faqs: [
+      { q: "Do I need a new QR code every month?", a: "No, by using a dynamic QR code, you can update the destination link or file (like a new PDF calendar) without changing the printed code." },
+      { q: "Where is the best place to display this code?", a: "On the parent notice board, near the sign-in kiosk, or on the monthly newsletter." }
+    ]
+  },
+  {
+    slug: "daycare-tuition-payments",
+    title: "Daycare Tuition Payments",
+    headline: "QR Codes for Daycare Tuition Payments",
+    description: "Simplify billing by allowing parents to scan and pay tuition invoices instantly from their mobile devices.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Frictionless mobile payments",
+      "Link directly to Stripe, PayPal, or invoicing software",
+      "Include on paper or digital invoices",
+      "Improve on-time payment rates"
+    ],
+    faqs: [
+      { q: "Is it safe to pay tuition via a QR code?", a: "Yes, the QR code simply directs the parent to your established, secure payment gateway, utilizing standard encryption." },
+      { q: "Can I use this for fundraisers as well?", a: "Absolutely. A QR code on a flyer can direct parents and community members directly to a donation page for a specific cause." }
+    ]
   }
 ];
 

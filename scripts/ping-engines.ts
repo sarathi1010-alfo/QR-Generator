@@ -294,7 +294,13 @@ const NEW_URLS = [
   `${SITE_URL}/qr-codes/salon-service-menu`,
   `${SITE_URL}/qr-codes/salon-loyalty-programs`,
   `${SITE_URL}/qr-codes/salon-wifi-access`,
-  `${SITE_URL}/qr-codes/salon-stylist-portfolios`
+  `${SITE_URL}/qr-codes/salon-stylist-portfolios`,
+  `${SITE_URL}/blog/how-to-use-qr-codes-for-daycares`,
+  `${SITE_URL}/qr-codes/daycare-parent-check-in`,
+  `${SITE_URL}/qr-codes/daycare-daily-reports`,
+  `${SITE_URL}/qr-codes/daycare-emergency-contacts`,
+  `${SITE_URL}/qr-codes/daycare-event-calendars`,
+  `${SITE_URL}/qr-codes/daycare-tuition-payments`
 ];
 
 const INDEXNOW_KEY = '550e8400e29b41d4a716446655440000';
