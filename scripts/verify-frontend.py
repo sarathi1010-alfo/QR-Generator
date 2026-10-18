@@ -298,7 +298,13 @@ def run_verification():
     '/qr-codes/salon-service-menu',
     '/qr-codes/salon-loyalty-programs',
     '/qr-codes/salon-wifi-access',
-    '/qr-codes/salon-stylist-portfolios',
+        '/qr-codes/salon-stylist-portfolios',
+        '/blog/how-to-use-qr-codes-for-daycares',
+        '/qr-codes/daycare-parent-check-in',
+        '/qr-codes/daycare-daily-reports',
+        '/qr-codes/daycare-emergency-contacts',
+        '/qr-codes/daycare-event-calendars',
+        '/qr-codes/daycare-tuition-payments'
 ]
 
     os.makedirs(VIDEOS_DIR, exist_ok=True)
