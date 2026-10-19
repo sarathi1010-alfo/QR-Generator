@@ -304,7 +304,13 @@ def run_verification():
         '/qr-codes/daycare-daily-reports',
         '/qr-codes/daycare-emergency-contacts',
         '/qr-codes/daycare-event-calendars',
-        '/qr-codes/daycare-tuition-payments'
+        '/qr-codes/daycare-tuition-payments',
+        '/blog/qr-codes-for-hvac-companies-guide',
+        '/qr-codes/hvac-equipment-maintenance',
+        '/qr-codes/hvac-emergency-service-booking',
+        '/qr-codes/hvac-digital-invoices',
+        '/qr-codes/hvac-warranty-registration',
+        '/qr-codes/hvac-filter-replacement-reminders'
 ]
 
     os.makedirs(VIDEOS_DIR, exist_ok=True)

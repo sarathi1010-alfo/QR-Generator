@@ -300,7 +300,13 @@ const NEW_URLS = [
   `${SITE_URL}/qr-codes/daycare-daily-reports`,
   `${SITE_URL}/qr-codes/daycare-emergency-contacts`,
   `${SITE_URL}/qr-codes/daycare-event-calendars`,
-  `${SITE_URL}/qr-codes/daycare-tuition-payments`
+  `${SITE_URL}/qr-codes/daycare-tuition-payments`,
+  `${SITE_URL}/blog/qr-codes-for-hvac-companies-guide`,
+  `${SITE_URL}/qr-codes/hvac-equipment-maintenance`,
+  `${SITE_URL}/qr-codes/hvac-emergency-service-booking`,
+  `${SITE_URL}/qr-codes/hvac-digital-invoices`,
+  `${SITE_URL}/qr-codes/hvac-warranty-registration`,
+  `${SITE_URL}/qr-codes/hvac-filter-replacement-reminders`
 ];
 
 const INDEXNOW_KEY = '550e8400e29b41d4a716446655440000';
