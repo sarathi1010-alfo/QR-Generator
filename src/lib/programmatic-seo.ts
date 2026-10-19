@@ -5168,6 +5168,96 @@ export const longTailUseCases: SEOPageConfig[] = [
       { q: "Is it safe to pay tuition via a QR code?", a: "Yes, the QR code simply directs the parent to your established, secure payment gateway, utilizing standard encryption." },
       { q: "Can I use this for fundraisers as well?", a: "Absolutely. A QR code on a flyer can direct parents and community members directly to a donation page for a specific cause." }
     ]
+  },
+  {
+    slug: "hvac-equipment-maintenance",
+    title: "HVAC Equipment Maintenance",
+    headline: "QR Codes for HVAC Equipment Maintenance",
+    description: "Streamline field service operations by tagging HVAC units with QR codes that link directly to digital maintenance logs and service histories.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Access digital service records instantly",
+      "Link to specific unit manuals and diagrams",
+      "Update records in real-time from the field",
+      "Weather-resistant for outdoor deployments"
+    ],
+    faqs: [
+      { q: "Are QR codes durable enough for outdoor AC units?", a: "Yes, when printed on industrial-grade vinyl with UV-resistant ink, they can withstand harsh weather for years." },
+      { q: "How do technicians scan the codes?", a: "Technicians simply use their smartphone's native camera or your field service app to scan the code." }
+    ]
+  },
+  {
+    slug: "hvac-emergency-service-booking",
+    title: "HVAC Emergency Service Booking",
+    headline: "QR Codes for HVAC Emergency Service",
+    description: "Provide peace of mind to homeowners. Place QR codes on electrical panels or thermostats for instant, frictionless emergency dispatch booking.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "One-scan emergency dispatch",
+      "Increase customer retention",
+      "Direct routing to your dispatch portal",
+      "Capture customer details automatically"
+    ],
+    faqs: [
+      { q: "Where should I place the emergency QR code?", a: "Place a branded magnet on the electrical panel or a sticker directly on the indoor thermostat." },
+      { q: "Can the code update the estimated arrival time?", a: "Yes, if the dynamic code links to your live dispatch portal, the customer can see real-time updates." }
+    ]
+  },
+  {
+    slug: "hvac-digital-invoices",
+    title: "HVAC Digital Invoices",
+    headline: "QR Codes for HVAC Digital Invoices",
+    description: "Accelerate your billing cycle. Allow customers to pay their HVAC service invoices instantly by scanning a secure payment QR code.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Frictionless on-site payments",
+      "Link directly to Stripe or Square",
+      "Reduce 30-day billing delays",
+      "Printable on physical invoices"
+    ],
+    faqs: [
+      { q: "Is it secure for customers to pay via QR code?", a: "Absolutely. The code simply routes the customer to your secure, encrypted payment gateway." },
+      { q: "Can the technician generate the code on their tablet?", a: "Yes, modern invoicing software can generate a unique payment QR code directly on the technician's screen." }
+    ]
+  },
+  {
+    slug: "hvac-warranty-registration",
+    title: "HVAC Warranty Registration",
+    headline: "QR Codes for HVAC Warranty Registration",
+    description: "Ensure customers never lose their coverage. Use QR codes to instantly route them to their specific equipment's digital warranty registration form.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant paperless registration",
+      "Capture customer emails for marketing",
+      "Link to specific manufacturer portals",
+      "Reduce administrative data entry"
+    ],
+    faqs: [
+      { q: "Can the code pre-fill the serial number?", a: "Yes, you can generate a custom URL QR code that appends the specific serial number to the registration link." },
+      { q: "When should the customer scan this code?", a: "The technician should instruct the customer to scan the code immediately after the final installation walkthrough." }
+    ]
+  },
+  {
+    slug: "hvac-filter-replacement-reminders",
+    title: "HVAC Filter Replacement Reminders",
+    headline: "QR Codes for HVAC Filter Replacements",
+    description: "Drive recurring revenue by placing QR codes on air handlers that link directly to an automatic filter replacement subscription or reorder page.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Generate recurring revenue",
+      "Ensure customers order the correct size",
+      "Link directly to your e-commerce portal",
+      "Improve long-term system efficiency"
+    ],
+    faqs: [
+      { q: "How does the customer know which filter to buy?", a: "The dynamic QR code is programmed to link directly to the specific filter size required for that exact unit." },
+      { q: "Can we track how many filters are ordered this way?", a: "Yes, by adding UTM parameters to the destination URL, you can perfectly track the ROI of these specific codes." }
+    ]
   }
 ];
 
