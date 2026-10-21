@@ -5258,6 +5258,96 @@ export const longTailUseCases: SEOPageConfig[] = [
       { q: "How does the customer know which filter to buy?", a: "The dynamic QR code is programmed to link directly to the specific filter size required for that exact unit." },
       { q: "Can we track how many filters are ordered this way?", a: "Yes, by adding UTM parameters to the destination URL, you can perfectly track the ROI of these specific codes." }
     ]
+  },
+  {
+    slug: "landscaping-estimate-requests",
+    title: "Landscaping Estimate Requests",
+    headline: "QR Codes for Landscaping Estimate Requests",
+    description: "Make it effortless for potential clients to request a landscaping estimate. Link QR codes on yard signs directly to your digital intake forms.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant lead capture from yard signs",
+      "Mobile-friendly quote request forms",
+      "Streamline the sales funnel",
+      "Reduce friction for new customers"
+    ],
+    faqs: [
+      { q: "Where is the best place to put an estimate QR code?", a: "Yard signs on completed projects are ideal, as neighbors can see your work and immediately request a quote for their own lawn." },
+      { q: "What should the QR code link to?", a: "It should link to a short, mobile-optimized form asking for the client's name, address, and the type of service they need." }
+    ]
+  },
+  {
+    slug: "landscaping-yard-signs",
+    title: "Landscaping Yard Signs",
+    headline: "QR Codes for Landscaping Yard Signs",
+    description: "Transform static yard signs into interactive lead generation tools. Showcase your portfolio and capture contact information instantly.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Showcase before-and-after galleries",
+      "Provide immediate contact options",
+      "Measure the ROI of physical signs",
+      "Engage neighbors of current clients"
+    ],
+    faqs: [
+      { q: "How large should a QR code be on a yard sign?", a: "It should be at least 3x3 inches to ensure it can be easily scanned by someone walking by on the sidewalk." },
+      { q: "Should I include a call to action?", a: "Yes, always include text like 'Scan to see our portfolio!' next to the code to encourage scans." }
+    ]
+  },
+  {
+    slug: "landscaping-seasonal-maintenance",
+    title: "Landscaping Seasonal Maintenance",
+    headline: "QR Codes for Landscaping Seasonal Maintenance",
+    description: "Keep clients informed about seasonal lawn care needs. Link QR codes on invoices to schedules and booking pages for upcoming services.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Promote recurring seasonal services",
+      "Educate clients on proper lawn care",
+      "Easy booking for aeration and cleanups",
+      "Include codes directly on printed invoices"
+    ],
+    faqs: [
+      { q: "How can this help with customer retention?", a: "By proactively providing seasonal advice, you position your business as an expert and remind them to book their next service before it's too late." },
+      { q: "Can I update the information without changing the QR code?", a: "Yes, if you use a dynamic QR code, you can update the linked webpage every season while keeping the same printed code on your materials." }
+    ]
+  },
+  {
+    slug: "landscaping-customer-reviews",
+    title: "Landscaping Customer Reviews",
+    headline: "QR Codes for Landscaping Customer Reviews",
+    description: "Boost your local SEO by making it incredibly easy for satisfied landscaping clients to leave a review on Google or Yelp.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Direct link to Google My Business",
+      "Increase the volume of online reviews",
+      "Leave-behind cards for completed jobs",
+      "Build local trust and authority"
+    ],
+    faqs: [
+      { q: "When is the best time to present a review QR code?", a: "The best time is immediately after completing a major project when the customer is most satisfied with the results." },
+      { q: "Does the code link directly to the review form?", a: "Yes, you can generate a specific link from Google My Business that opens the review dialog box automatically when scanned." }
+    ]
+  },
+  {
+    slug: "landscaping-digital-business-cards",
+    title: "Landscaping Digital Business Cards",
+    headline: "QR Codes for Landscaping Digital Business Cards",
+    description: "Never lose a contact again. Use vCard QR codes to allow clients to save your landscaping business details directly to their phones.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant contact saving to smartphones",
+      "Include phone, email, and website",
+      "Environmentally friendly alternative",
+      "Perfect for networking and direct sales"
+    ],
+    faqs: [
+      { q: "What information can a vCard QR code hold?", a: "It can hold your name, company name, phone numbers, email addresses, website URLs, and even physical addresses." },
+      { q: "Do clients need a special app to scan a vCard code?", a: "No, the built-in camera app on almost all modern iOS and Android smartphones can read vCard QR codes natively." }
+    ]
   }
 ];
 
