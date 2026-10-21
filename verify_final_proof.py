@@ -7,6 +7,12 @@ def run_verification():
     os.makedirs("/home/jules/verification/screenshots", exist_ok=True)
 
     urls_to_test = [
+    '/blog/how-to-use-qr-codes-for-landscaping-businesses',
+    '/qr-codes/landscaping-estimate-requests',
+    '/qr-codes/landscaping-yard-signs',
+    '/qr-codes/landscaping-seasonal-maintenance',
+    '/qr-codes/landscaping-customer-reviews',
+    '/qr-codes/landscaping-digital-business-cards',
     '/blog/how-to-use-qr-codes-for-veterinary-clinics',
     '/qr-codes/veterinary-patient-intake',
     '/qr-codes/veterinary-appointment-scheduling',

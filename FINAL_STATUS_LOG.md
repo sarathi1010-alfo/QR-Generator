@@ -73,3 +73,7 @@ Task    Status  Notes
 55. Programmatic: HVAC Use Cases ✅ COMPLETE Injected 5 long-tail pages (maintenance, dispatch, invoices, warranty, filters).
 56. Internal Linking & Decay Refresh ✅ COMPLETE Updated homepage and legacy home service/business guides to link to new HVAC content.
 57. IndexNow & Google Ping (HVAC) ✅ COMPLETE Scripts executed successfully for new HVAC URLs.
+58. Daily Content: Landscaping Businesses ✅ COMPLETE Published ~1,300-word Tier 1 Guide on Landscaping Businesses.
+59. Programmatic: Landscaping Use Cases ✅ COMPLETE Injected 5 long-tail pages (estimate requests, yard signs, seasonal maintenance, customer reviews, digital business cards).
+60. Internal Linking & Decay Refresh ✅ COMPLETE Updated homepage and legacy home service guide to link to new landscaping content.
+61. IndexNow & Google Ping (Landscaping) ✅ COMPLETE Scripts executed successfully for new landscaping URLs.

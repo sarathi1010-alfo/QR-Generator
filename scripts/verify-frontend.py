@@ -41,6 +41,12 @@ def test_qr_generation(page):
 
 def run_verification():
     urls_to_check = [
+    '/blog/how-to-use-qr-codes-for-landscaping-businesses',
+    '/qr-codes/landscaping-estimate-requests',
+    '/qr-codes/landscaping-yard-signs',
+    '/qr-codes/landscaping-seasonal-maintenance',
+    '/qr-codes/landscaping-customer-reviews',
+    '/qr-codes/landscaping-digital-business-cards',
     '/blog/how-to-use-qr-codes-for-veterinary-clinics',
     '/qr-codes/veterinary-patient-intake',
     '/qr-codes/veterinary-appointment-scheduling',

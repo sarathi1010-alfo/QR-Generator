@@ -1,6 +1,12 @@
 const SITE_URL = "https://qr.alfo.online";
 
 const NEW_URLS = [
+  `${SITE_URL}/blog/how-to-use-qr-codes-for-landscaping-businesses`,
+  `${SITE_URL}/qr-codes/landscaping-estimate-requests`,
+  `${SITE_URL}/qr-codes/landscaping-yard-signs`,
+  `${SITE_URL}/qr-codes/landscaping-seasonal-maintenance`,
+  `${SITE_URL}/qr-codes/landscaping-customer-reviews`,
+  `${SITE_URL}/qr-codes/landscaping-digital-business-cards`,
   `${SITE_URL}/blog/how-to-use-qr-codes-for-veterinary-clinics`,
   `${SITE_URL}/qr-codes/veterinary-patient-intake`,
   `${SITE_URL}/qr-codes/veterinary-appointment-scheduling`,
