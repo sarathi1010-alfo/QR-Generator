@@ -5341,12 +5341,101 @@ export const longTailUseCases: SEOPageConfig[] = [
     features: [
       "Instant contact saving to smartphones",
       "Include phone, email, and website",
-      "Environmentally friendly alternative",
-      "Perfect for networking and direct sales"
+      "Environmentally friendly alternative"
     ],
     faqs: [
-      { q: "What information can a vCard QR code hold?", a: "It can hold your name, company name, phone numbers, email addresses, website URLs, and even physical addresses." },
-      { q: "Do clients need a special app to scan a vCard code?", a: "No, the built-in camera app on almost all modern iOS and Android smartphones can read vCard QR codes natively." }
+      { q: "How does a vCard QR code work?", a: "When scanned, it prompts the user's phone to automatically download and save your contact information directly into their address book." },
+      { q: "Can I update my contact info later?", a: "Yes, if you use a dynamic vCard QR code, you can update your phone number or email address without needing to reprint the physical card." }
+    ]
+  },
+  {
+    slug: "cleaning-service-booking",
+    title: "Cleaning Service Booking",
+    headline: "QR Codes for Cleaning Service Booking",
+    description: "Streamline new client acquisition. Use QR codes on flyers and business cards to instantly route prospects to your digital booking and quote generation portal.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant access to quote request forms",
+      "Mobile-friendly scheduling calendars",
+      "Frictionless lead capture from physical marketing",
+      "Increase conversion rates over phone calls"
+    ],
+    faqs: [
+      { q: "Where should cleaning businesses place booking QR codes?", a: "Place them on direct mail flyers, company vehicles, and door hangers left in neighborhoods where you are already working." },
+      { q: "Can the QR code link to a specific service package?", a: "Yes, you can generate unique codes that link directly to specific services, like 'Deep Clean' or 'Move-Out Clean'." }
+    ]
+  },
+  {
+    slug: "cleaning-digital-checklists",
+    title: "Cleaning Digital Checklists",
+    headline: "QR Codes for Cleaning Checklists",
+    description: "Ensure consistent quality and accountability. Place QR codes in client homes or commercial properties that link staff to location-specific digital cleaning checklists.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Location-specific task lists for staff",
+      "Digital sign-off upon completion",
+      "Real-time accountability and progress tracking",
+      "Eliminate lost paper checklists"
+    ],
+    faqs: [
+      { q: "How does a QR checklist improve quality control?", a: "It forces staff to review and sign off on specific tasks digitally, providing managers with a timestamped record of completion." },
+      { q: "Can clients see the completed checklist?", a: "Depending on your software, you can configure the system to automatically email the completed checklist to the client after the scan." }
+    ]
+  },
+  {
+    slug: "cleaning-customer-reviews",
+    title: "Cleaning Customer Reviews",
+    headline: "QR Codes for Cleaning Reviews",
+    description: "Build your local reputation effortlessly. Leave behind a branded card with a QR code that routes satisfied clients directly to your Google Business Profile to leave a 5-star review.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Direct link to Google or Yelp review pages",
+      "Capture feedback while satisfaction is highest",
+      "Automated review requests via leave-behinds",
+      "Boost local SEO rankings"
+    ],
+    faqs: [
+      { q: "When is the best time to present a review QR code?", a: "The optimal time is immediately after the cleaning is finished, often as a leave-behind on the kitchen counter alongside a 'Thank You' note." },
+      { q: "Does the code link directly to the review form?", a: "Yes, you can generate a specific link from Google My Business that opens the review dialog box automatically when scanned." }
+    ]
+  },
+  {
+    slug: "cleaning-digital-invoices",
+    title: "Cleaning Digital Invoices",
+    headline: "QR Codes for Cleaning Invoices",
+    description: "Accelerate your billing cycle. Allow clients to pay their cleaning invoices instantly by scanning a secure payment QR code left on-site.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Frictionless on-site payments",
+      "Link directly to Stripe, Square, or PayPal",
+      "Reduce 30-day billing delays",
+      "Secure, contactless transactions"
+    ],
+    faqs: [
+      { q: "Can I put a payment QR code on a paper invoice?", a: "Yes, printing a payment QR code on a physical invoice allows the client to pay immediately with their phone rather than mailing a check." },
+      { q: "Is QR code payment secure for clients?", a: "Yes, the QR code simply acts as a link to your secure payment processor (like Stripe), utilizing their bank-grade encryption." }
+    ]
+  },
+  {
+    slug: "cleaning-safety-data-sheets",
+    title: "Cleaning Safety Data Sheets",
+    headline: "QR Codes for Safety Data Sheets (SDS)",
+    description: "Maintain strict OSHA compliance in commercial settings. Place QR codes on supply closets or chemical bottles that link instantly to digital Safety Data Sheets.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant access to chemical safety information",
+      "Ensure OSHA compliance without bulky binders",
+      "Always up-to-date documentation",
+      "Crucial for commercial and industrial contracts"
+    ],
+    faqs: [
+      { q: "Why use QR codes for SDS instead of binders?", a: "Digital SDS linked via QR code are instantly searchable, never get lost, and can be updated centrally without having to replace physical pages across multiple job sites." },
+      { q: "Do commercial clients require this?", a: "Many commercial and industrial clients, as well as healthcare facilities, strictly require immediate access to SDS for all chemicals used on their premises." }
     ]
   }
 ];

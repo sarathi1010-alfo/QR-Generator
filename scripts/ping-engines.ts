@@ -312,7 +312,13 @@ const NEW_URLS = [
   `${SITE_URL}/qr-codes/hvac-emergency-service-booking`,
   `${SITE_URL}/qr-codes/hvac-digital-invoices`,
   `${SITE_URL}/qr-codes/hvac-warranty-registration`,
-  `${SITE_URL}/qr-codes/hvac-filter-replacement-reminders`
+  `${SITE_URL}/qr-codes/hvac-filter-replacement-reminders`,
+  `${SITE_URL}/blog/how-to-use-qr-codes-for-cleaning-businesses`,
+  `${SITE_URL}/qr-codes/cleaning-service-booking`,
+  `${SITE_URL}/qr-codes/cleaning-digital-checklists`,
+  `${SITE_URL}/qr-codes/cleaning-customer-reviews`,
+  `${SITE_URL}/qr-codes/cleaning-digital-invoices`,
+  `${SITE_URL}/qr-codes/cleaning-safety-data-sheets`
 ];
 
 const INDEXNOW_KEY = '550e8400e29b41d4a716446655440000';
