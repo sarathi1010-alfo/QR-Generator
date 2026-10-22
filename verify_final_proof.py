@@ -234,7 +234,13 @@ def run_verification():
         '/qr-codes/daycare-daily-reports',
         '/qr-codes/daycare-emergency-contacts',
         '/qr-codes/daycare-event-calendars',
-        '/qr-codes/daycare-tuition-payments'
+        '/qr-codes/daycare-tuition-payments',
+        '/blog/how-to-use-qr-codes-for-cleaning-businesses',
+        '/qr-codes/cleaning-service-booking',
+        '/qr-codes/cleaning-digital-checklists',
+        '/qr-codes/cleaning-customer-reviews',
+        '/qr-codes/cleaning-digital-invoices',
+        '/qr-codes/cleaning-safety-data-sheets'
 ]
 
     base_url = "http://localhost:3000"
