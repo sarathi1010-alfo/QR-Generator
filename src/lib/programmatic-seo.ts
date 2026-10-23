@@ -2,6 +2,98 @@
 import { SEOPageConfig } from "./seo-config";
 
 export const longTailUseCases: SEOPageConfig[] = [
+  {
+    slug: "plumbing-services",
+    title: "Plumbing Services",
+    headline: "QR Codes for Plumbers & Contractors",
+    description: "Make it easy for clients to rebook or leave reviews. Generate durable QR codes for invoices, service stickers, and business cards.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Stickers for water heaters/boilers",
+      "Direct links to Google Reviews",
+      "Instant emergency call routing",
+      "Digital invoice payments",
+      "Durable high-error correction"
+    ],
+    faqs: [
+      { q: "Where should plumbers place QR codes?", a: "Plumbers should place QR code stickers directly on serviced equipment (like boilers) so customers can easily scan to request maintenance or emergency repairs." },
+      { q: "How do I get more Google Reviews?", a: "Generate a QR code that links directly to your Google My Business review page, and print it on the bottom of every customer invoice." },
+      { q: "Can a QR code start a phone call?", a: "Yes, by selecting the 'Phone' option in our generator, you can create a code that automatically dials your dispatch number when scanned." }
+    ]
+  },
+  {
+    slug: "plumbing-emergency-dispatch",
+    title: "Plumbing Emergency Dispatch",
+    headline: "QR Codes for Emergency Plumbing Dispatch",
+    description: "Accelerate response times during water emergencies. Provide instant call routing with a single scan.",
+    category: "business",
+    primaryUse: "phone",
+    features: [
+      "Instant phone dialing",
+      "No typing required",
+      "Prominent placement on service vans",
+      "Quick access during crises"
+    ],
+    faqs: [
+      { q: "Can a QR code make a phone call?", a: "Yes, a 'Phone' QR code will automatically populate the user's dialer with your dispatch number when scanned." },
+      { q: "Where should we place emergency QR codes?", a: "On company vehicles, business cards, and as magnets left on refrigerators or water heaters." }
+    ]
+  },
+  {
+    slug: "plumbing-digital-invoices",
+    title: "Plumbing Digital Invoices",
+    headline: "QR Codes for Plumbing Invoices",
+    description: "Get paid faster by linking directly to your secure payment portal on physical invoices.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Contactless payments",
+      "Link to Square, Stripe, or PayPal",
+      "Reduce overdue accounts",
+      "Seamless customer experience"
+    ],
+    faqs: [
+      { q: "How do customers pay via QR code?", a: "They scan the code on the invoice, which opens a secure payment gateway on their phone where they can use Apple Pay, Google Pay, or a credit card." },
+      { q: "Can we track which invoice was paid?", a: "Yes, by generating unique QR codes with tracking parameters, or linking directly to a specific invoice ID in your billing software." }
+    ]
+  },
+  {
+    slug: "plumbing-equipment-maintenance",
+    title: "Plumbing Equipment Maintenance",
+    headline: "QR Codes for Plumbing Maintenance Logs",
+    description: "Provide instant access to digital service history for commercial boilers, water heaters, and complex systems.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Digital service records",
+      "Equipment spec sheets",
+      "Quick reorder links for parts",
+      "Durable tag placement"
+    ],
+    faqs: [
+      { q: "What should the maintenance QR code link to?", a: "It should link to a secure digital log detailing past service dates, replaced parts, and upcoming maintenance schedules." },
+      { q: "Are the codes waterproof?", a: "The codes themselves are digital, but they must be printed on waterproof vinyl or metal-backed tags to survive in utility rooms." }
+    ]
+  },
+  {
+    slug: "plumbing-customer-reviews",
+    title: "Plumbing Customer Reviews",
+    headline: "QR Codes for Plumbing Reviews",
+    description: "Build local trust and SEO by easily collecting 5-star Google reviews after successful service calls.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Direct Google Review link",
+      "Leave-behind cards",
+      "Increase local SEO ranking",
+      "Frictionless review process"
+    ],
+    faqs: [
+      { q: "When is the best time to ask for a review?", a: "Immediately after resolving the customer's plumbing issue, ideally by handing them a card with the review QR code before leaving." },
+      { q: "Does the code go straight to the review page?", a: "Yes, you can generate a specific URL from your Google My Business profile that opens the review dialog directly." }
+    ]
+  },
 
   {
     slug: "veterinary-patient-intake",

@@ -7,6 +7,12 @@ def run_verification():
     os.makedirs("/home/jules/verification/screenshots", exist_ok=True)
 
     urls_to_test = [
+    '/blog/how-to-use-qr-codes-for-plumbing-businesses',
+    '/qr-codes/plumbing-services',
+    '/qr-codes/plumbing-emergency-dispatch',
+    '/qr-codes/plumbing-digital-invoices',
+    '/qr-codes/plumbing-equipment-maintenance',
+    '/qr-codes/plumbing-customer-reviews',
     '/blog/how-to-use-qr-codes-for-landscaping-businesses',
     '/qr-codes/landscaping-estimate-requests',
     '/qr-codes/landscaping-yard-signs',
