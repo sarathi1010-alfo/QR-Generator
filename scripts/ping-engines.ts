@@ -1,6 +1,11 @@
 const SITE_URL = "https://qr.alfo.online";
 
 const NEW_URLS = [
+  `${SITE_URL}/blog/how-to-use-qr-codes-for-plumbing-businesses`,
+  `${SITE_URL}/qr-codes/plumbing-emergency-dispatch`,
+  `${SITE_URL}/qr-codes/plumbing-digital-invoices`,
+  `${SITE_URL}/qr-codes/plumbing-equipment-maintenance`,
+  `${SITE_URL}/qr-codes/plumbing-customer-reviews`,
   `${SITE_URL}/blog/how-to-use-qr-codes-for-landscaping-businesses`,
   `${SITE_URL}/qr-codes/landscaping-estimate-requests`,
   `${SITE_URL}/qr-codes/landscaping-yard-signs`,
