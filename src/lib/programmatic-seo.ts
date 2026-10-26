@@ -5529,6 +5529,96 @@ export const longTailUseCases: SEOPageConfig[] = [
       { q: "Why use QR codes for SDS instead of binders?", a: "Digital SDS linked via QR code are instantly searchable, never get lost, and can be updated centrally without having to replace physical pages across multiple job sites." },
       { q: "Do commercial clients require this?", a: "Many commercial and industrial clients, as well as healthcare facilities, strictly require immediate access to SDS for all chemicals used on their premises." }
     ]
+  },
+  {
+    slug: "event-schedule-qr",
+    title: "Event Schedules",
+    headline: "QR Codes for Dynamic Event Schedules",
+    description: "Replace printed itineraries with dynamic QR codes. Give attendees real-time access to event schedules, speaker sessions, and room changes.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Real-time schedule updates",
+      "Interactive session booking",
+      "Reduce printing costs and waste",
+      "Instant push notifications for changes"
+    ],
+    faqs: [
+      { q: "Can I update the schedule after printing the QR code?", a: "Yes, by using a dynamic URL QR code, you can update the linked schedule document or web page at any time without reprinting the codes." },
+      { q: "Where is the best place to put schedule QR codes?", a: "Print them prominently on attendee badges, registration desks, and digital signage throughout the venue." }
+    ]
+  },
+  {
+    slug: "exhibitor-lead-capture",
+    title: "Exhibitor Lead Capture",
+    headline: "QR Codes for Exhibitor Lead Capture",
+    description: "Empower event sponsors and exhibitors to capture qualified leads instantly. Attendees scan the booth's QR code to securely share their contact info.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Frictionless lead generation",
+      "Direct CRM integration",
+      "Eliminate manual data entry",
+      "High-conversion digital forms"
+    ],
+    faqs: [
+      { q: "How do exhibitors collect the data?", a: "The QR code links to a customized landing page or form where attendees can enter their details to request more information or enter a giveaway." },
+      { q: "Is this GDPR compliant?", a: "Yes, as long as the linked form includes explicit opt-in checkboxes for data collection and marketing communications." }
+    ]
+  },
+  {
+    slug: "event-speaker-bios",
+    title: "Event Speaker Bios",
+    headline: "QR Codes for Event Speaker Bios",
+    description: "Enhance audience engagement by linking directly to speaker profiles. Place QR codes on presentation slides or program guides for instant access to bios and slides.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant access to speaker credentials",
+      "Direct links to presentation downloads",
+      "Foster post-session networking",
+      "Seamless LinkedIn integration"
+    ],
+    faqs: [
+      { q: "Can speakers put QR codes on their presentation slides?", a: "Absolutely. Placing a large, high-contrast QR code on the final slide is the best way to share contact info or supplementary materials." },
+      { q: "What should the QR code link to?", a: "It typically links to a digital business card (vCard), a LinkedIn profile, or a dedicated landing page with the session's slide deck." }
+    ]
+  },
+  {
+    slug: "event-feedback-surveys",
+    title: "Event Feedback Surveys",
+    headline: "QR Codes for Event Feedback & Surveys",
+    description: "Capture attendee sentiment while it's fresh. Use QR codes at the exit of sessions or venues to instantly launch mobile-friendly feedback surveys.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Higher response rates than email",
+      "Real-time sentiment analysis",
+      "Anonymous submission options",
+      "Incentivized survey completion"
+    ],
+    faqs: [
+      { q: "Why are QR codes better for surveys?", a: "They capture feedback in the moment. Attendees are much more likely to complete a quick survey while walking out of a session than via an email sent days later." },
+      { q: "How can I increase the survey completion rate?", a: "Offer an incentive, such as an entry into a prize draw or access to exclusive content, upon completion of the survey." }
+    ]
+  },
+  {
+    slug: "event-networking-badges",
+    title: "Event Networking Badges",
+    headline: "QR Codes for Event Networking Badges",
+    description: "Modernize networking by printing personalized vCard QR codes directly on attendee lanyards. Swap contact details with a single scan.",
+    category: "business",
+    primaryUse: "vcard",
+    features: [
+      "Instant contact exchange",
+      "Eliminate paper business cards",
+      "Profile photo and social links",
+      "Direct save to smartphone contacts"
+    ],
+    faqs: [
+      { q: "Do attendees need an app to scan the badges?", a: "No, the native camera app on both iOS and Android can scan vCard QR codes and prompt the user to save the contact directly to their phone." },
+      { q: "What information can be stored in the code?", a: "vCard QR codes can store names, titles, companies, phone numbers, email addresses, websites, and even social media profiles." }
+    ]
   }
 ];
 

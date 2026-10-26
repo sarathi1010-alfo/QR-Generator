@@ -41,6 +41,12 @@ def test_qr_generation(page):
 
 def run_verification():
     urls_to_check = [
+    '/blog/qr-codes-for-event-management',
+    '/qr-codes/event-schedule-qr',
+    '/qr-codes/exhibitor-lead-capture',
+    '/qr-codes/event-speaker-bios',
+    '/qr-codes/event-feedback-surveys',
+    '/qr-codes/event-networking-badges',
     '/blog/how-to-use-qr-codes-for-landscaping-businesses',
     '/qr-codes/landscaping-estimate-requests',
     '/qr-codes/landscaping-yard-signs',
