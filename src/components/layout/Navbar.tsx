@@ -53,7 +53,7 @@ export default function Navbar() {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-accent hover:text-cta p-2"
+              className="text-accent hover:text-cta min-w-[44px] min-h-[44px] flex items-center justify-center p-2"
               aria-label="Toggle menu"
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}

@@ -32,33 +32,36 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    default: "QRBuild - Free QR Code Generator Online | Create Custom QR Codes Instantly",
+    default: "Free QR Code Generator | Custom QR Codes Online - QRBuild",
     template: "%s | QRBuild"
   },
   description:
-    "Create free, customizable QR codes for URLs, WiFi, vCards, social media, and more. No registration required. Download as PNG or SVG instantly.",
+    "Create custom QR codes for URLs, WiFi, vCards, and social media instantly. Free online QR generator with logos, custom colors, and SVG/PNG download.",
+  alternates: {
+    canonical: "https://qr.alfo.online/",
+  },
   openGraph: {
-    title: "QRBuild - Free QR Code Generator Online | Create Custom QR Codes Instantly",
-    description: "Create free, customizable QR codes for URLs, WiFi, vCards, social media, and more. No registration required. Download as PNG or SVG instantly.",
-    url: SITE_URL,
+    title: "Free QR Code Generator | Custom QR Codes Online - QRBuild",
+    description: "Create custom QR codes for URLs, WiFi, vCards, and social media instantly. Free online QR generator with logos, custom colors, and SVG/PNG download.",
+    url: "https://qr.alfo.online/",
     siteName: "QRBuild",
     type: "website",
     images: [
       {
-        url: `${SITE_URL}/og-image.jpg`,
+        url: "https://qr.alfo.online/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "QRBuild - Free QR Code Generator",
+        alt: "Free QR Code Generator - QRBuild",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "QRBuild - Free QR Code Generator Online | Create Custom QR Codes Instantly",
-    description: "Create free, customizable QR codes for URLs, WiFi, vCards, social media, and more. No registration required. Download as PNG or SVG instantly.",
-    images: [`${SITE_URL}/og-image.jpg`],
+    title: "Free QR Code Generator | Custom QR Codes Online - QRBuild",
+    description: "Create custom QR codes for URLs, WiFi, vCards, and social media instantly. Free online QR generator with logos, custom colors, and SVG/PNG download.",
+    images: ["https://qr.alfo.online/og-image.jpg"],
   },
-  metadataBase: new URL(SITE_URL),
+  metadataBase: new URL("https://qr.alfo.online"),
 
   verification: {
     google: "Y94cBgBDh-ApjaS4Xfym1S2i2fNXeDpkGNpyfVZoCo",
@@ -137,6 +140,13 @@ export default function RootLayout({
       <body
         className={`${syne.variable} ${dmSans.variable} ${jetbrainsMono.variable} font-sans bg-bg text-accent antialiased`}
       >
+        <a
+          href="#main-content"
+          id="skip-link"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-cta focus:text-white focus:rounded-md focus:shadow-lg focus:outline-none"
+        >
+          Skip to content
+        </a>
         {process.env.NEXT_PUBLIC_ADSENSE_CLIENT && (
           <Script
             async
@@ -145,9 +155,9 @@ export default function RootLayout({
             strategy="afterInteractive"
           />
         )}
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col min-h-screen overflow-x-hidden w-full max-w-full">
           <Navbar />
-          <main className="flex-grow">{children}</main>
+          <main id="main-content" className="flex-grow overflow-x-hidden w-full max-w-full">{children}</main>
           <Footer />
         </div>
       </body>
