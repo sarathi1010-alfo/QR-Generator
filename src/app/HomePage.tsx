@@ -19,14 +19,13 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
           >
-            <h1 className="font-display text-5xl md:text-7xl font-bold tracking-tight mb-6">
-              Generate QR Codes. <br />
-              <span className="text-cta">Free. Instant. Beautiful.</span>
+            <h1 className="font-display text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight mb-6">
+              Create Custom QR Codes Instantly and Free
             </h1>
-            <p className="text-xl text-muted max-w-2xl mx-auto mb-10">
-              The fastest, cleanest QR code generator on the web. Generate, customize, and download in under 10 seconds. No sign-up required.
+            <p className="text-lg sm:text-xl text-muted max-w-3xl mx-auto mb-10 leading-relaxed">
+              Generate high-resolution custom QR codes for website URLs, WiFi connections, vCards, emails, and social media links. QRBuild lets you customize colors, shapes, corner dots, and center brand logos with real-time error-correction previews. Download vector SVG or high-res PNG codes free with zero expiration dates and no account required.
             </p>
-            <Link href="#generator" className="btn-primary inline-flex items-center gap-2 text-lg px-8 py-4">
+            <Link href="#generator" className="btn-primary inline-flex items-center justify-center gap-2 text-lg px-8 py-4 min-h-[44px]">
               Create Your QR Code Now
               <ArrowRight className="w-5 h-5" />
             </Link>
@@ -77,6 +76,52 @@ export default function Home() {
         </div>
       </section>
 
+      {/* How It Works Section */}
+      <section className="bg-bg py-20 border-b border-border">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <span className="px-4 py-1.5 rounded-full bg-cta/10 text-cta text-xs font-bold uppercase tracking-widest inline-block mb-3">
+              Simple 4-Step Process
+            </span>
+            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">How It Works</h2>
+            <p className="text-muted max-w-xl mx-auto">
+              Follow these simple steps to generate print-ready, professional QR codes in seconds.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div className="card p-6 space-y-3">
+              <div className="w-10 h-10 rounded-xl bg-cta/10 text-cta font-bold flex items-center justify-center text-lg">1</div>
+              <h3 className="font-display font-bold text-xl">Choose Content Type</h3>
+              <p className="text-muted text-sm leading-relaxed">
+                Select from URL, Plain Text, WiFi Network, Contact Card (vCard), Email, or SMS.
+              </p>
+            </div>
+            <div className="card p-6 space-y-3">
+              <div className="w-10 h-10 rounded-xl bg-cta/10 text-cta font-bold flex items-center justify-center text-lg">2</div>
+              <h3 className="font-display font-bold text-xl">Enter Data</h3>
+              <p className="text-muted text-sm leading-relaxed">
+                Type in your destination URL, WiFi SSID and password, or contact information.
+              </p>
+            </div>
+            <div className="card p-6 space-y-3">
+              <div className="w-10 h-10 rounded-xl bg-cta/10 text-cta font-bold flex items-center justify-center text-lg">3</div>
+              <h3 className="font-display font-bold text-xl">Customize Design</h3>
+              <p className="text-muted text-sm leading-relaxed">
+                Choose custom brand colors, corner eye styles, background shapes, or upload a center logo icon.
+              </p>
+            </div>
+            <div className="card p-6 space-y-3">
+              <div className="w-10 h-10 rounded-xl bg-cta/10 text-cta font-bold flex items-center justify-center text-lg">4</div>
+              <h3 className="font-display font-bold text-xl">Download QR Code</h3>
+              <p className="text-muted text-sm leading-relaxed">
+                Download print-ready vector SVG or crisp PNG files with error correction level H.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
        {/* Ad Unit */}
       <div className="max-w-7xl mx-auto w-full px-4">
         <AdUnit slot="homepage-bottom-leaderboard" />
@@ -121,6 +166,38 @@ export default function Home() {
               <UseCaseLink key={fc.slug} href={`/qr-codes/${fc.slug}`} title={fc.title} />
             ))}
             <UseCaseLink href="/scanner" title="QR Code Scanner" />
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-24 bg-surface border-t border-border">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+          <div className="text-center space-y-4">
+            <h2 className="font-display text-3xl md:text-4xl font-bold">Frequently Asked Questions</h2>
+            <p className="text-muted text-lg">Everything you need to know about creating custom QR codes online.</p>
+          </div>
+          <div className="space-y-6">
+            <div className="p-6 bg-bg rounded-2xl border border-border shadow-sm">
+              <h3 className="text-xl font-bold mb-3">Do QR codes generated on QRBuild ever expire?</h3>
+              <p className="text-muted leading-relaxed">No. All QR codes created on QRBuild are permanent static QR codes that never expire and have no scan count limits.</p>
+            </div>
+            <div className="p-6 bg-bg rounded-2xl border border-border shadow-sm">
+              <h3 className="text-xl font-bold mb-3">Can I add my company logo to the center of the QR code?</h3>
+              <p className="text-muted leading-relaxed">Yes, upload your PNG or SVG logo icon. QRBuild automatically sets Level H (30%) Reed-Solomon error correction so the code remains 100% scannable.</p>
+            </div>
+            <div className="p-6 bg-bg rounded-2xl border border-border shadow-sm">
+              <h3 className="text-xl font-bold mb-3">Is QRBuild completely free to use without registration?</h3>
+              <p className="text-muted leading-relaxed">Yes, QRBuild is 100% free with unlimited scans, no sign-up requirement, no watermark, and instant vector SVG and PNG downloads.</p>
+            </div>
+            <div className="p-6 bg-bg rounded-2xl border border-border shadow-sm">
+              <h3 className="text-xl font-bold mb-3">How does a WiFi QR code work?</h3>
+              <p className="text-muted leading-relaxed">When a mobile device scans a WiFi QR code, it automatically connects to the encrypted network without manually typing the password.</p>
+            </div>
+            <div className="p-6 bg-bg rounded-2xl border border-border shadow-sm">
+              <h3 className="text-xl font-bold mb-3">Why should I download SVG vector format for print materials?</h3>
+              <p className="text-muted leading-relaxed">SVG vector files scale infinitely without pixelation or blurriness, making them ideal for billboards, restaurant menus, product packaging, and posters.</p>
+            </div>
           </div>
         </div>
       </section>
