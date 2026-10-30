@@ -3,6 +3,7 @@
 import { useState, useCallback, useEffect, useRef } from "react";
 import { QROptions } from "@/types/qr.types";
 import { generateQRCodeToCanvas } from "@/lib/qr-generator";
+import { trackEvent } from "@/lib/gtag";
 
 export const useQRGenerator = (initialText: string, initialOptions: QROptions) => {
   const [text, setText] = useState(initialText);
@@ -23,6 +24,7 @@ export const useQRGenerator = (initialText: string, initialOptions: QROptions) =
           }
         }
         await generateQRCodeToCanvas(canvasRef.current, previewText, options);
+        trackEvent('generate_qr', { length: previewText.length, errorLevel: options.errorLevel });
       } catch (err) {
         console.error("Failed to generate QR code:", err);
       }

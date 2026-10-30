@@ -18,6 +18,7 @@ import qrTypes from "@/data/qr-types.json";
 import { motion, AnimatePresence } from "framer-motion";
 import { downloadPNG, downloadSVG, copyCanvasToClipboard } from "@/lib/download";
 import * as Toast from "@radix-ui/react-toast";
+import { trackEvent } from "@/lib/gtag";
 
 const ICONS: Record<string, any> = { Link, Type, Wifi, Mail, Phone, User, Layers };
 
@@ -51,6 +52,7 @@ export default function QRGeneratorRoot({ initialTab = "url" }: { initialTab?: s
 
   const handleDownloadPNG = () => {
     if (canvasRef.current && text) {
+      trackEvent('download_qr', { format: 'png', tab: activeTab });
       downloadPNG(canvasRef.current);
       addToHistory({ type: activeTab as any, data: text });
     }
@@ -58,6 +60,7 @@ export default function QRGeneratorRoot({ initialTab = "url" }: { initialTab?: s
 
   const handleDownloadSVG = async () => {
     if (text) {
+      trackEvent('download_qr', { format: 'svg', tab: activeTab });
       await downloadSVG(text, options);
       addToHistory({ type: activeTab as any, data: text });
     }
@@ -77,6 +80,7 @@ export default function QRGeneratorRoot({ initialTab = "url" }: { initialTab?: s
 
   const handleBatchDownload = async (format: "png" | "svg") => {
     if (!text) return;
+    trackEvent('download_qr', { format, batch: true });
     const urls = text.split('\n').map(l => l.trim()).filter(l => l.length > 0);
     if (urls.length === 0) return;
 
