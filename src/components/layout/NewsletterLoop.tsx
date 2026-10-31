@@ -16,7 +16,7 @@ export default function NewsletterLoop() {
           </div>
 
           <form
-            className="flex w-full md:w-auto gap-2"
+            className="flex flex-col sm:flex-row w-full md:w-auto gap-2"
             action="https://formspree.io/f/mqkopkge"
             method="POST"
           >

@@ -122,7 +122,9 @@ export default function RootLayout({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('config', 'G-HZQ3QT11QC');
+            gtag('config', 'G-HZQ3QT11QC', {
+              cookie_domain: 'auto'
+            });
           `}
         </Script>
         {process.env.NEXT_PUBLIC_ADSENSE_CLIENT && (

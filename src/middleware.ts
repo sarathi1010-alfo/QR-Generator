@@ -16,8 +16,14 @@ export function middleware(request: NextRequest) {
   if (!hostname.includes('localhost') && protocol !== 'https' && protocol !== 'https:') {
     const url = request.nextUrl.clone();
     url.protocol = 'https:';
-    // We replace the host just in case it is somehow malformed, but clone() keeps it intact.
-    return NextResponse.redirect(url, 301);
+    return NextResponse.redirect(url, 308);
+  }
+
+  // Trailing slash normalization (strip trailing slash except root /)
+  const url = request.nextUrl.clone();
+  if (url.pathname !== '/' && url.pathname.endsWith('/')) {
+    url.pathname = url.pathname.slice(0, -1);
+    return NextResponse.redirect(url, 308);
   }
 
   const response = NextResponse.next();
