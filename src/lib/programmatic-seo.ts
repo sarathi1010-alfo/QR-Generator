@@ -3,6 +3,101 @@ import { SEOPageConfig } from "./seo-config";
 
 export const longTailUseCases: SEOPageConfig[] = [
   {
+    slug: "photography-client-galleries",
+    title: "Photography Client Galleries",
+    headline: "QR Codes for Photography Client Galleries",
+    description: "Provide instant access to digital photo galleries. Use QR codes on table tents at events to let guests view and download photos immediately.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant gallery access",
+      "Lead capture for future bookings",
+      "Secure password protection links",
+      "Seamless photo downloading"
+    ],
+    faqs: [
+      { q: "How do QR codes work for event galleries?", a: "Place a QR code on a card or table tent. Guests scan it with their phone to be instantly taken to the digital photo gallery for that event." },
+      { q: "Can I require an email address before they view the photos?", a: "Yes, you can link the QR code to a landing page that requires an email opt-in before redirecting to the actual gallery." },
+      { q: "Do the QR codes expire?", a: "If you use a dynamic QR code, it never expires, but you can change where it points or disable the link whenever you choose." }
+    ]
+  },
+  {
+    slug: "wedding-photo-booths",
+    title: "Wedding Photo Booths",
+    headline: "QR Codes for Wedding Photo Booths",
+    description: "Modernize your photo booth experience. Generate QR codes so guests can instantly download their digital photo strips to their smartphones.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant digital downloads",
+      "Easy social media sharing",
+      "Eliminate printing wait times",
+      "Reduce paper and ink costs"
+    ],
+    faqs: [
+      { q: "How do guests get their photos via QR code?", a: "After taking their photos, the booth's screen displays a unique QR code. The guest scans it to instantly save the digital file to their phone." },
+      { q: "Do I still need a printer?", a: "No! Many modern photo booths operate entirely digitally, using QR codes or SMS to deliver the photos, saving you money on consumables." },
+      { q: "Can the QR code link to a branded page?", a: "Absolutely. You can link the code to a download page that features your logo, website, and a link to book your services." }
+    ]
+  },
+  {
+    slug: "photographer-business-cards",
+    title: "Photographer Business Cards",
+    headline: "QR Codes for Photographer Business Cards",
+    description: "Transform your business card into a digital portfolio. Add a QR code that instantly links potential clients to your best work.",
+    category: "business",
+    primaryUse: "vcard",
+    features: [
+      "Instant portfolio access",
+      "Direct calendar booking links",
+      "Save contact info instantly",
+      "Track scan analytics"
+    ],
+    faqs: [
+      { q: "What should a photographer's QR code link to?", a: "It's best to link to a mobile-optimized 'link-in-bio' style page that offers options to view your portfolio, contact you, or follow your social media." },
+      { q: "How large should the QR code be on my card?", a: "To ensure it scans reliably on all devices, the QR code should be at least 2cm x 2cm (0.8 x 0.8 inches)." },
+      { q: "Can I update the link later?", a: "Yes, by using a dynamic QR code, you can change the destination URL anytime without having to reprint your business cards." }
+    ]
+  },
+  {
+    slug: "photo-print-orders",
+    title: "Photo Print Orders",
+    headline: "QR Codes for Photo Print Orders",
+    description: "Make it frictionless for clients to order prints. Include a QR code with your digital deliveries that links directly to your print shop.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Frictionless print ordering",
+      "Direct links to specific client galleries",
+      "Increase print sales revenue",
+      "Easy re-ordering for family members"
+    ],
+    faqs: [
+      { q: "How do I use QR codes for print sales?", a: "When you deliver a physical album or a USB drive, include a beautiful card with a QR code that links to the client's online gallery where they can purchase additional prints." },
+      { q: "Can the QR code link directly to a specific product?", a: "Yes, you can generate a QR code that links directly to a specific product page, like a canvas print or a photo book." },
+      { q: "Is it safe to link to an online store?", a: "Yes, as long as your online store uses a secure, encrypted connection (HTTPS) for processing payments." }
+    ]
+  },
+  {
+    slug: "studio-booking-forms",
+    title: "Studio Booking Forms",
+    headline: "QR Codes for Studio Booking Forms",
+    description: "Streamline your scheduling process. Place QR codes on your marketing materials to let clients book studio sessions instantly.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant appointment scheduling",
+      "Reduce back-and-forth emails",
+      "Collect deposits upfront",
+      "Sync directly with your calendar"
+    ],
+    faqs: [
+      { q: "How does a booking QR code work?", a: "A client scans the code and is taken directly to your online calendar (like Calendly or Acuity), where they can select a time, fill out their details, and pay a deposit." },
+      { q: "Where should I put the booking QR code?", a: "Place it on flyers, your studio window, social media graphics, and the back of your business cards." },
+      { q: "Can I use a QR code to collect payments?", a: "Yes, your booking software can handle the payment processing, and the QR code simply directs the client to that secure form." }
+    ]
+  },
+  {
     slug: "movie-theater-seat-ordering",
     title: "Movie Theater Seat Ordering",
     headline: "QR Codes for Movie Theater Seat Ordering",

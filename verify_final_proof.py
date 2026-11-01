@@ -7,6 +7,12 @@ def run_verification():
     os.makedirs("/home/jules/verification/screenshots", exist_ok=True)
 
     urls_to_test = [
+        "/blog/create-qr-code-for-photography-guide",
+        "/qr-codes/photography-client-galleries",
+        "/qr-codes/wedding-photo-booths",
+        "/qr-codes/photographer-business-cards",
+        "/qr-codes/photo-print-orders",
+        "/qr-codes/studio-booking-forms",
         "/blog/qr-codes-for-logistics-tracking",
         "/qr-codes/warehouse-pallet-tracking",
         "/qr-codes/last-mile-delivery-confirmation",
