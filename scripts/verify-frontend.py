@@ -41,6 +41,12 @@ def test_qr_generation(page):
 
 def run_verification():
     urls_to_check = [
+        "/blog/create-qr-code-for-photography-guide",
+        "/qr-codes/photography-client-galleries",
+        "/qr-codes/wedding-photo-booths",
+        "/qr-codes/photographer-business-cards",
+        "/qr-codes/photo-print-orders",
+        "/qr-codes/studio-booking-forms",
         "/blog/how-to-create-qr-code-for-events",
         "/qr-codes/event-ticketing-scanners",
         "/qr-codes/conference-schedule-access",
