@@ -4078,6 +4078,101 @@ export const longTailUseCases: SEOPageConfig[] = [
       { q: "Can this system handle high traffic during intermissions?", a: "Yes, offloading the browsing and payment process to individual smartphones drastically reduces the transaction time at the counter." },
       { q: "Does the QR code link to a specific seat?", a: "If you generate unique codes per section or seat, the system can even support in-seat delivery for VIP ticket holders." }
     ]
+  },
+  {
+    slug: "hr-employee-handbooks",
+    title: "Employee Handbooks",
+    headline: "QR Codes for Digital Employee Handbooks",
+    description: "Provide instant access to company policies and procedures. Link a QR code to your digital employee handbook for easy updates and zero printing costs.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant access to company policies",
+      "Zero printing costs",
+      "Real-time digital updates",
+      "Mobile-optimized reading experience"
+    ],
+    faqs: [
+      { q: "How do we update the handbook if the QR code is printed?", a: "By using a dynamic QR code, you can change the destination URL to point to the newest version of the handbook without needing to reprint the QR code." },
+      { q: "Can we track if employees are reading the handbook?", a: "Yes, dynamic QR codes provide scan analytics, allowing you to see how often the handbook is being accessed." },
+      { q: "Is the handbook secure?", a: "You can host the handbook on your company intranet or a password-protected portal, ensuring only authorized employees can access the document after scanning the QR code." }
+    ]
+  },
+  {
+    slug: "hr-job-fair-recruiting",
+    title: "Job Fair Recruiting",
+    headline: "QR Codes for Job Fair Recruiting",
+    description: "Streamline talent acquisition at physical events. Place QR codes on your recruitment booth to direct candidates to digital application portals instantly.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Frictionless application process",
+      "Direct link to career portals",
+      "Modernize recruitment booths",
+      "Reduce paper resumes"
+    ],
+    faqs: [
+      { q: "How does a QR code help at a job fair?", a: "Instead of collecting physical resumes or handing out flyers, candidates can scan your code to apply directly from their smartphones, saving time and paper." },
+      { q: "What should the QR code link to?", a: "It can link to a specific job listing, a general career page, or a mobile-friendly intake form designed specifically for the event." },
+      { q: "Can we track which job fair generated the most scans?", a: "Yes, by generating a unique dynamic QR code for each event, you can track the analytics to see which location provided the highest engagement." }
+    ]
+  },
+  {
+    slug: "hr-employee-feedback",
+    title: "Employee Feedback Surveys",
+    headline: "QR Codes for Employee Feedback Surveys",
+    description: "Increase participation in internal surveys. Place QR codes in breakrooms or common areas linking to anonymous feedback forms and pulse surveys.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Higher survey participation rates",
+      "Anonymous feedback collection",
+      "Easy access in physical spaces",
+      "Real-time employee sentiment tracking"
+    ],
+    faqs: [
+      { q: "Why use a QR code instead of an email link for surveys?", a: "QR codes capture employees in the moment, such as in the breakroom, providing an alternative channel to crowded email inboxes and often resulting in higher participation." },
+      { q: "Can the surveys be anonymous?", a: "Yes, the QR code simply directs the user to a survey platform (like Google Forms or SurveyMonkey). You can configure the survey itself to be completely anonymous." },
+      { q: "How often should we change the survey?", a: "Using a dynamic QR code allows you to update the linked survey (e.g., from a monthly pulse survey to a specific event feedback form) without changing the physical printed code." }
+    ]
+  },
+  {
+    slug: "hr-benefits-enrollment",
+    title: "Benefits Enrollment",
+    headline: "QR Codes for Benefits Enrollment",
+    description: "Simplify the open enrollment process. Direct employees to detailed benefit plan comparisons, FAQs, and enrollment portals via easily scannable QR codes.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Direct access to enrollment portals",
+      "Link to detailed plan comparisons",
+      "Reduce HR support inquiries",
+      "Streamline the open enrollment period"
+    ],
+    faqs: [
+      { q: "How do QR codes help with benefits enrollment?", a: "They provide a direct, frictionless link to complex enrollment platforms, reducing the time employees spend searching for the right portal on the company intranet." },
+      { q: "Can we link to multiple documents?", a: "Yes, you can link the QR code to a landing page (like a Linktree for HR) that houses links to the enrollment portal, the FAQ document, and the plan comparison charts." },
+      { q: "Are these links secure?", a: "The QR code will direct employees to your secure HR platform, where they will still need to log in with their secure credentials to access personal benefits information." }
+    ]
+  },
+  {
+    slug: "hr-time-tracking",
+    title: "Employee Time Tracking",
+    headline: "QR Codes for Employee Time Tracking",
+    description: "Modernize attendance tracking and clock-ins. Provide dynamic QR codes that employees scan to log their arrival and departure times seamlessly.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Contactless clock-in and clock-out",
+      "Integration with payroll systems",
+      "Accurate attendance logging",
+      "Eliminate physical punch cards"
+    ],
+    faqs: [
+      { q: "How does a QR code time tracking system work?", a: "Employees use a specialized app to scan a dynamic QR code displayed at the entrance, which logs their timestamp and ID into the centralized time and attendance system." },
+      { q: "Can employees scan a photo of the QR code from home?", a: "Secure systems use dynamic QR codes that refresh every few seconds on a display tablet, preventing employees from taking a picture and scanning it later or from a different location." },
+      { q: "Does this integrate with existing HR software?", a: "Yes, the data captured from the QR scan can typically be routed via API directly into most modern payroll and workforce management platforms." }
+    ]
   }
 ];
 
