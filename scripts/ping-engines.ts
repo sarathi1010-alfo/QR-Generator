@@ -222,6 +222,12 @@ const NEW_URLS = [
   `${SITE_URL}/qr-codes/trade-show-digital-brochures`,
   `${SITE_URL}/qr-codes/vip-lounge-entry-codes`,
   `${SITE_URL}/qr-codes/concert-merchandise-ordering`,
+  `${SITE_URL}/blog/qr-codes-for-human-resources-guide`,
+  `${SITE_URL}/qr-codes/hr-employee-handbooks`,
+  `${SITE_URL}/qr-codes/hr-job-fair-recruiting`,
+  `${SITE_URL}/qr-codes/hr-employee-feedback`,
+  `${SITE_URL}/qr-codes/hr-benefits-enrollment`,
+  `${SITE_URL}/qr-codes/hr-time-tracking`,
 ];
 
 const INDEXNOW_KEY = '550e8400e29b41d4a716446655440000';
