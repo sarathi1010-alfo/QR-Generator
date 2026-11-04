@@ -228,6 +228,12 @@ const NEW_URLS = [
   `${SITE_URL}/qr-codes/hr-employee-feedback`,
   `${SITE_URL}/qr-codes/hr-benefits-enrollment`,
   `${SITE_URL}/qr-codes/hr-time-tracking`,
+  `${SITE_URL}/blog/qr-codes-for-public-transportation-guide`,
+  `${SITE_URL}/qr-codes/public-transit-ticketing`,
+  `${SITE_URL}/qr-codes/bus-stop-schedules`,
+  `${SITE_URL}/qr-codes/subway-station-maps`,
+  `${SITE_URL}/qr-codes/train-delay-notifications`,
+  `${SITE_URL}/qr-codes/bike-sharing-unlocks`,
 ];
 
 const INDEXNOW_KEY = '550e8400e29b41d4a716446655440000';

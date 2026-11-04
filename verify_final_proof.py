@@ -173,6 +173,12 @@ def run_verification():
         "/qr-codes/ambulance-dispatch-routing",
         "/qr-codes/healthcare-staff-id-badges",
         "/qr-codes/clinic-waiting-room-triage",
+        "/blog/qr-codes-for-public-transportation-guide",
+        "/qr-codes/public-transit-ticketing",
+        "/qr-codes/bus-stop-schedules",
+        "/qr-codes/subway-station-maps",
+        "/qr-codes/train-delay-notifications",
+        "/qr-codes/bike-sharing-unlocks",
     ]
 
     base_url = "http://localhost:3000"
