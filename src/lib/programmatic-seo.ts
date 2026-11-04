@@ -3,6 +3,101 @@ import { SEOPageConfig } from "./seo-config";
 
 export const longTailUseCases: SEOPageConfig[] = [
   {
+    slug: "public-transit-ticketing",
+    title: "Public Transit Ticketing",
+    headline: "QR Codes for Public Transit Ticketing",
+    description: "Modernize your fare collection. Generate QR codes to enable contactless mobile ticketing, speeding up boarding times and reducing ticket machine maintenance.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Contactless fare payments",
+      "Dynamic secure tickets",
+      "Faster boarding for passengers",
+      "Reduced infrastructure costs"
+    ],
+    faqs: [
+      { q: "How do QR codes work for public transit ticketing?", a: "Passengers buy a ticket via a mobile app, which generates a unique, dynamic QR code. They scan this code at the turnstile or reader to board." },
+      { q: "Are mobile tickets secure?", a: "Yes, dynamic QR codes refresh regularly and are tied to a specific app or user account to prevent screenshot sharing and fraud." },
+      { q: "Do I need special hardware to read them?", a: "Transit authorities will need optical scanners at turnstiles or handheld devices for conductors to read the generated QR codes." }
+    ]
+  },
+  {
+    slug: "bus-stop-schedules",
+    title: "Bus Stop Schedules",
+    headline: "QR Codes for Bus Stop Schedules",
+    description: "Provide commuters with up-to-the-minute arrival times. Place QR codes at bus stops linking directly to real-time tracking dashboards.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Real-time arrival predictions",
+      "Route map access",
+      "Service disruption alerts",
+      "Cost-effective information display"
+    ],
+    faqs: [
+      { q: "Why use a QR code instead of a printed schedule?", a: "Printed schedules can't account for traffic or delays. A QR code links passengers directly to live GPS data so they know exactly when the bus is arriving." },
+      { q: "Where should the QR codes be placed?", a: "They should be placed prominently on the bus stop pole or shelter, at a height easily accessible to all passengers, including those in wheelchairs." },
+      { q: "Does this require passengers to download an app?", a: "No, a standard URL QR code will open the real-time schedule directly in the passenger's mobile web browser." }
+    ]
+  },
+  {
+    slug: "subway-station-maps",
+    title: "Subway Station Maps",
+    headline: "QR Codes for Subway Station Maps",
+    description: "Help passengers navigate complex transit hubs. Use QR codes to provide interactive digital maps and station accessibility information.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Interactive digital wayfinding",
+      "Live elevator/escalator status",
+      "Nearby point-of-interest guides",
+      "Multi-language support options"
+    ],
+    faqs: [
+      { q: "How can QR codes improve station navigation?", a: "Instead of relying on static wall maps, passengers scan a code to view an interactive digital map that can provide turn-by-turn directions to specific exits or lines." },
+      { q: "Can these maps help with accessibility?", a: "Yes, digital maps linked via QR code can highlight accessible routes, provide real-time updates on elevator outages, and offer high-contrast viewing modes." },
+      { q: "What if there is no cell service in the station?", a: "Many stations now offer WiFi. Additionally, some transit apps can cache the maps if the QR code points to a deep link within a downloaded app." }
+    ]
+  },
+  {
+    slug: "train-delay-notifications",
+    title: "Train Delay Notifications",
+    headline: "QR Codes for Train Delay Notifications",
+    description: "Keep commuters informed during service disruptions. Deploy QR codes that link passengers to live disruption dashboards and alternative route options.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant disruption alerts",
+      "Alternative routing suggestions",
+      "Reduced crowding on platforms",
+      "Proactive passenger communication"
+    ],
+    faqs: [
+      { q: "How do QR codes help during a service delay?", a: "During a delay, agencies can display a QR code on digital screens or temporary signage, linking passengers to a live feed of updates and alternative travel options." },
+      { q: "Should I use static or dynamic QR codes for this?", a: "Always use dynamic QR codes. This allows you to print the code once and update the destination URL whenever the status of the delay changes." },
+      { q: "Can passengers use these to claim delay compensation?", a: "Yes, the QR code could also link to a streamlined digital form where passengers can easily submit a claim for a delayed journey." }
+    ]
+  },
+  {
+    slug: "bike-sharing-unlocks",
+    title: "Bike Sharing Unlocks",
+    headline: "QR Codes for Bike Sharing Unlocks",
+    description: "Seamlessly integrate micro-mobility into your transit network. Allow users to rent and unlock shared bikes or scooters with a simple QR scan.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Frictionless vehicle unlocking",
+      "Integrated payment processing",
+      "Vehicle tracking and identification",
+      "First/last mile connectivity"
+    ],
+    faqs: [
+      { q: "How does a QR code unlock a shared bike?", a: "Each bike has a unique QR code. The user scans it with the rental app, which identifies the bike, processes payment, and sends an over-the-air signal to unlock the physical mechanism." },
+      { q: "What if the QR code on the bike gets damaged?", a: "Most providers include the numerical ID of the bike below the QR code so the user can manually enter it into the app as a fallback." },
+      { q: "Are these QR codes dynamic?", a: "In this specific use case, the QR code is usually static, acting as a unique identifier for that specific vehicle, while the app handles the dynamic backend logic." }
+    ]
+  },
+  {
     slug: "photography-client-galleries",
     title: "Photography Client Galleries",
     headline: "QR Codes for Photography Client Galleries",
