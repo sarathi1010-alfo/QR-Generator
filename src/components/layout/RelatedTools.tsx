@@ -32,7 +32,7 @@ export default function RelatedTools() {
             <h2 className="font-display text-2xl md:text-3xl font-bold mb-2">Related Tools</h2>
             <p className="text-muted">Explore more free utilities from the alfo.online ecosystem.</p>
           </div>
-          <a href="https://alfo.online/tools" target="_blank" rel="noopener noreferrer" className="text-cta font-bold flex items-center gap-2 hover:underline">
+          <a href="https://alfo.online/tools" target="_blank" rel="noopener" className="text-cta font-bold flex items-center gap-2 hover:underline">
             View all tools <ArrowRight className="w-4 h-4" />
           </a>
         </div>
@@ -43,7 +43,7 @@ export default function RelatedTools() {
               key={tool.name}
               href={tool.url}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               className="card p-6 flex flex-col hover:bg-bg hover:border-cta transition-colors group"
             >
               <h3 className="font-bold text-lg mb-2 group-hover:text-cta transition-colors">{tool.name}</h3>

@@ -18,7 +18,7 @@ export default function Navbar() {
                 <QrCode className="w-8 h-8 text-cta transition-transform group-hover:scale-110" />
                 <span className="font-display text-xl font-bold tracking-tight">QRBuild</span>
               </Link>
-              <a href="https://alfo.online" target="_blank" rel="noopener noreferrer" className="text-[10px] text-muted hover:text-cta ml-10 -mt-1 transition-colors">
+              <a href="https://alfo.online" target="_blank" rel="noopener" className="text-[10px] text-muted hover:text-cta ml-10 -mt-1 transition-colors">
                 Powered by alfo.online
               </a>
             </div>
@@ -36,11 +36,11 @@ export default function Navbar() {
 
               {isToolsOpen && (
                 <div className="absolute top-full left-1/2 -translate-x-1/2 w-48 bg-surface border border-border rounded-xl shadow-lg py-2 z-50 animate-in fade-in slide-in-from-top-2">
-                  <a href="https://pdfutility.app" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-sm hover:bg-bg hover:text-cta">PDF Utility</a>
-                  <a href="https://resumeforge.alfo.online" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-sm hover:bg-bg hover:text-cta">Resume Forge</a>
-                  <a href="https://paletteflow.alfo.online" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-sm hover:bg-bg hover:text-cta">Palette Flow</a>
-                  <a href="https://compresspro.alfo.online" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-sm hover:bg-bg hover:text-cta">Compress Pro</a>
-                  <a href="https://alfo.online/tools" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 text-sm font-bold text-cta hover:bg-bg border-t border-border mt-1 pt-2">View All Tools →</a>
+                  <a href="https://pdfutility.app" target="_blank" rel="noopener" className="block px-4 py-2 text-sm hover:bg-bg hover:text-cta">PDF Utility</a>
+                  <a href="https://resumeforge.alfo.online" target="_blank" rel="noopener" className="block px-4 py-2 text-sm hover:bg-bg hover:text-cta">Resume Forge</a>
+                  <a href="https://paletteflow.alfo.online" target="_blank" rel="noopener" className="block px-4 py-2 text-sm hover:bg-bg hover:text-cta">Palette Flow</a>
+                  <a href="https://compresspro.alfo.online" target="_blank" rel="noopener" className="block px-4 py-2 text-sm hover:bg-bg hover:text-cta">Compress Pro</a>
+                  <a href="https://alfo.online/tools" target="_blank" rel="noopener" className="block px-4 py-2 text-sm font-bold text-cta hover:bg-bg border-t border-border mt-1 pt-2">View All Tools →</a>
                 </div>
               )}
             </div>
@@ -84,11 +84,11 @@ export default function Navbar() {
             <div className="px-3 py-2">
               <div className="text-base font-medium text-muted mb-2">Related Tools</div>
               <div className="pl-4 space-y-2 border-l-2 border-border">
-                <a href="https://pdfutility.app" target="_blank" rel="noopener noreferrer" className="block text-sm hover:text-cta">PDF Utility</a>
-                <a href="https://resumeforge.alfo.online" target="_blank" rel="noopener noreferrer" className="block text-sm hover:text-cta">Resume Forge</a>
-                <a href="https://paletteflow.alfo.online" target="_blank" rel="noopener noreferrer" className="block text-sm hover:text-cta">Palette Flow</a>
-                <a href="https://compresspro.alfo.online" target="_blank" rel="noopener noreferrer" className="block text-sm hover:text-cta">Compress Pro</a>
-                <a href="https://alfo.online/tools" target="_blank" rel="noopener noreferrer" className="block text-sm font-bold text-cta">View All Tools →</a>
+                <a href="https://pdfutility.app" target="_blank" rel="noopener" className="block text-sm hover:text-cta">PDF Utility</a>
+                <a href="https://resumeforge.alfo.online" target="_blank" rel="noopener" className="block text-sm hover:text-cta">Resume Forge</a>
+                <a href="https://paletteflow.alfo.online" target="_blank" rel="noopener" className="block text-sm hover:text-cta">Palette Flow</a>
+                <a href="https://compresspro.alfo.online" target="_blank" rel="noopener" className="block text-sm hover:text-cta">Compress Pro</a>
+                <a href="https://alfo.online/tools" target="_blank" rel="noopener" className="block text-sm font-bold text-cta">View All Tools →</a>
               </div>
             </div>
 

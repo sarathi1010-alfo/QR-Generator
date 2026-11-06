@@ -24,11 +24,11 @@ export default function Footer() {
           <div>
             <h4 className="font-display font-bold mb-4">Tools Hub</h4>
             <ul className="space-y-2 text-sm opacity-80">
-              <li><a href="https://pdfutility.app" target="_blank" rel="noopener noreferrer" className="hover:text-cta transition-colors">PDF Utility</a></li>
-              <li><a href="https://resumeforge.alfo.online" target="_blank" rel="noopener noreferrer" className="hover:text-cta transition-colors">Resume Forge</a></li>
-              <li><a href="https://paletteflow.alfo.online" target="_blank" rel="noopener noreferrer" className="hover:text-cta transition-colors">Palette Flow</a></li>
-              <li><a href="https://compresspro.alfo.online" target="_blank" rel="noopener noreferrer" className="hover:text-cta transition-colors">Compress Pro</a></li>
-              <li><a href="https://alfo.online/tools" target="_blank" rel="noopener noreferrer" className="hover:text-cta transition-colors text-cta font-medium">View All Tools →</a></li>
+              <li><a href="https://pdfutility.app" target="_blank" rel="noopener" className="hover:text-cta transition-colors">PDF Utility</a></li>
+              <li><a href="https://resumeforge.alfo.online" target="_blank" rel="noopener" className="hover:text-cta transition-colors">Resume Forge</a></li>
+              <li><a href="https://paletteflow.alfo.online" target="_blank" rel="noopener" className="hover:text-cta transition-colors">Palette Flow</a></li>
+              <li><a href="https://compresspro.alfo.online" target="_blank" rel="noopener" className="hover:text-cta transition-colors">Compress Pro</a></li>
+              <li><a href="https://alfo.online/tools" target="_blank" rel="noopener" className="hover:text-cta transition-colors text-cta font-medium">View All Tools →</a></li>
             </ul>
           </div>
 
