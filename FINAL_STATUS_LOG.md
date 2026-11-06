@@ -9,8 +9,8 @@ Task    Status  Notes
 7. Internal Linking (Outbound)  ✅ COMPLETE  Tier 1 -> Homepage (/) and Recent History (/#history).
 8. Internal Linking (Inbound)   ✅ COMPLETE  Retroactively linked from 'business-qr-code-guide.mdx' and 'best-practices-for-qr-code-design.mdx'.
 9. Sitemap Regeneration         ✅ COMPLETE  Dynamically appended via Next.js build.
-10. IndexNow & Google Ping      ✅ COMPLETE  ping-engines.ts configured with new URLs.
-11. Headless Browser Test       ✅ COMPLETE  Playwright script verified Canvas and 200 OKs.
+10. IndexNow & Google Ping      ✅ COMPLETE  ping-engines.ts configured and executed with new URLs.
+11. Headless Browser Test       ✅ COMPLETE  Playwright scripts updated and verified Canvas and 200 OKs.
 12. Core Functionality Test     ✅ COMPLETE  Next.js build succeeded.
 13. GSC Coverage Simulation     ✅ COMPLETE  Simulated; no crawl blocks or issues.
 14. Content Decay Refresh       ✅ COMPLETE  Updated legacy "Why use QRBuild?" section on Homepage with new link and date.
