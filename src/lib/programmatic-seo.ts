@@ -5531,6 +5531,96 @@ export const longTailUseCases: SEOPageConfig[] = [
     ]
   },
   {
+    slug: "electrical-panel-maintenance",
+    title: "Electrical Panel Maintenance",
+    headline: "QR Codes for Electrical Panel Maintenance",
+    description: "Modernize your electrical maintenance tracking. Affix QR codes to electrical panels to instantly link technicians to digital service histories and maintenance logs.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant access to digital service history",
+      "Eliminate paper logbooks",
+      "Ensure compliance and safety",
+      "Durable tracking for commercial installations"
+    ],
+    faqs: [
+      { q: "How do QR codes improve electrical panel maintenance?", a: "They provide a single point of truth on the hardware itself, linking instantly to the cloud-hosted service history and preventing lost paperwork." },
+      { q: "What kind of QR code should I use on an electrical panel?", a: "Always use a dynamic URL QR code printed on durable, industrial-grade vinyl or metal tags to withstand harsh environments." }
+    ]
+  },
+  {
+    slug: "electrical-dispatch-tracking",
+    title: "Electrical Dispatch Tracking",
+    headline: "QR Codes for Electrical Emergency Dispatch",
+    description: "Accelerate emergency response times. Provide clients with magnets or stickers featuring a QR code that instantly opens an emergency dispatch request form.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Frictionless emergency dispatch requests",
+      "Instant location capture",
+      "Reduce call center bottlenecks",
+      "Improve client peace of mind"
+    ],
+    faqs: [
+      { q: "Can a QR code automatically request emergency electrical service?", a: "Yes, a QR code can link to an automated dispatch form that immediately alerts your on-call technicians." },
+      { q: "Where should clients place the emergency QR code?", a: "Provide it as a fridge magnet or a sticker to place on their main breaker box for quick access during power outages." }
+    ]
+  },
+  {
+    slug: "electrical-invoicing-payments",
+    title: "Electrical Invoicing & Payments",
+    headline: "QR Codes for Electrical Invoicing",
+    description: "Get paid faster. Add a payment QR code to your physical or digital electrical invoices, allowing clients to pay instantly via their smartphone.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant contactless payments",
+      "Reduce 30-day billing cycles",
+      "Link to secure payment gateways",
+      "Professional and modern customer experience"
+    ],
+    faqs: [
+      { q: "How do I add a QR code to my electrical invoice?", a: "Generate a URL QR code that links to your payment processor (like Stripe or Square) and insert the image onto your invoice template." },
+      { q: "Is it secure for clients to pay via QR code?", a: "Yes, the QR code simply acts as a shortcut to a secure, encrypted payment gateway." }
+    ]
+  },
+  {
+    slug: "electrical-safety-inspections",
+    title: "Electrical Safety Inspections",
+    headline: "QR Codes for Electrical Safety Inspections",
+    description: "Streamline OSHA compliance. Use QR codes to instantly pull up site-specific safety checklists and Safety Data Sheets (SDS) for your electrical team.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant access to OSHA compliance checklists",
+      "Immediate retrieval of Safety Data Sheets (SDS)",
+      "Digital paper trail of safety reviews",
+      "Protect your workforce on commercial sites"
+    ],
+    faqs: [
+      { q: "Can QR codes replace physical safety binders?", a: "Yes, linking to digital safety documents via QR code is more efficient and ensures information is always up-to-date across all job sites." },
+      { q: "Where should safety QR codes be placed?", a: "Place them at job site entrances, on heavy machinery, and on hazardous material storage containers." }
+    ]
+  },
+  {
+    slug: "electrical-service-agreements",
+    title: "Electrical Service Agreements",
+    headline: "QR Codes for Electrical Service Agreements",
+    description: "Simplify contract management. Allow commercial clients to instantly review and sign digital electrical service agreements via a quick QR scan.",
+    category: "business",
+    primaryUse: "url",
+    features: [
+      "Instant access to digital contracts",
+      "Secure digital signature integration",
+      "Eliminate manual paperwork processing",
+      "Speed up project onboarding"
+    ],
+    faqs: [
+      { q: "Can clients sign electrical contracts via QR code?", a: "Yes, the QR code can route them to platforms like DocuSign or HelloSign to review and execute agreements directly on their phone." },
+      { q: "How does this benefit commercial electrical contractors?", a: "It removes the friction of emailing PDFs back and forth, significantly speeding up the administrative onboarding process for new projects." }
+    ]
+  },
+  {
     slug: "event-schedule-qr",
     title: "Event Schedules",
     headline: "QR Codes for Dynamic Event Schedules",

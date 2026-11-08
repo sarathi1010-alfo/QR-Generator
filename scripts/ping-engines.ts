@@ -329,7 +329,13 @@ const NEW_URLS = [
   `${SITE_URL}/qr-codes/cleaning-digital-checklists`,
   `${SITE_URL}/qr-codes/cleaning-customer-reviews`,
   `${SITE_URL}/qr-codes/cleaning-digital-invoices`,
-  `${SITE_URL}/qr-codes/cleaning-safety-data-sheets`
+  `${SITE_URL}/qr-codes/cleaning-safety-data-sheets`,
+  `${SITE_URL}/blog/how-to-use-qr-codes-for-electrical-businesses`,
+  `${SITE_URL}/qr-codes/electrical-panel-maintenance`,
+  `${SITE_URL}/qr-codes/electrical-dispatch-tracking`,
+  `${SITE_URL}/qr-codes/electrical-invoicing-payments`,
+  `${SITE_URL}/qr-codes/electrical-safety-inspections`,
+  `${SITE_URL}/qr-codes/electrical-service-agreements`
 ];
 
 const INDEXNOW_KEY = '550e8400e29b41d4a716446655440000';
